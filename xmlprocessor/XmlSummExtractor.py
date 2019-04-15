@@ -24,7 +24,7 @@ for xmlFile in xmlFiles:
 
     for child in root:
         crashSummary = child.find('Crash/CRASH/XML_CASESUMMARY/SUMMARY')
-        dict[crashSummary.tag] = crashSummary.text
+        dict[crashSummary.tag] = crashSummary.text.strip().replace("\n", "")
     #    print(crashSummary.text)
     summJson = json.dumps(dict)
     print(summJson)
