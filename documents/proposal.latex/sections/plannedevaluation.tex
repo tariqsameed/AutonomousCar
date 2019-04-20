@@ -1,0 +1,56 @@
+%!TEX root = ../proposal.tex
+\section{Planned Evaluation}
+
+The goal of the research is to explore the velocity and steering angle parameters that reflect to the description given in the car crash report. These parameters would aid us in the speed adjustment of the autonomous cars and the safety of the autonomous cars in critical scenarios. 
+\\ 
+
+The Abbreviations are Predicted Simulation (P),  
+ Original Scenario  (O), 
+ Striking Car  (S) , 
+ Victim Car (V) 
+ Velocity  (VL) , 
+ Damage Level (DL) ,  
+ Damage Area (DA) ,    
+ Angle from Crash Point (ACP) , 
+ Zone (Distance) of Car after crash (ZCP) , 
+ High (H), 
+ Medium (M),  
+ Low (L), 
+ Front-Right (FR), 
+ Front-Left (FL),  
+ Left-Side (LS), 
+ Right-Side (RS), 
+ Back-Left (BL),  
+ Back-Right (BR), 
+ Close-To-Vehicle (Z1), 
+ Near-To-Vehicle (Z2),  
+ Far-To-Vehicle (Z3), \\
+
+
+
+A lot of simulation should be run to get the required parameters close to the original scenario. The combination of the qualitative and quantitative analysis of different features will produce the final output. The output-label will classify the result as High, Medium and Low similarity to original scenario. This thesis will fulfills the requirement at-least 5 crash scenarios and at the most 10 crash scenarios. 
+
+The result will be evaluated as it given in the table below.
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{| *{16}{c|} }
+
+    \hline
+Case ID & VL & DL  
+& \multicolumn{2}{c|}{DA (O)}
+& \multicolumn{2}{c|}{DA (P)}
+            & \multicolumn{2}{c|}{ACP (O)}
+            & \multicolumn{2}{c|}{ACP (P)}
+                    & \multicolumn{2}{c|}{ZCP (O)}
+                    & \multicolumn{2}{c|}{ZCP (P)}
+                            & \multicolumn{1}{c|}{Label}                \\
+    \hline
+  & &   &   \textbf{S}  &   \textbf{V} &   \textbf{S}  &   \textbf{V} &   \textbf{S}  &   \textbf{V} &   \textbf{S}  &   \textbf{V}  &   \textbf{S}  &   \textbf{V}  &   \textbf{S}  &   \textbf{V}  &    \\
+    \hline
+1234   & 25 &   L  &   FL  &   FR &   FL  &   FR  &   12  &   12 &   17  &   17  &   Z1  &   Z1 &   Z1  &   Z1 &   High  \\
+    \hline
+\end{tabular}
+\end{table}
+
+

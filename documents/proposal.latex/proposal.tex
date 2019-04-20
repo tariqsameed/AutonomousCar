@@ -1,0 +1,45 @@
+\documentclass[10pt,a4paper, final]{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage[a4paper]{geometry}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{booktabs}
+
+\usepackage{graphicx}
+
+\usepackage{standalone}
+\usepackage{datetime}
+
+\usepackage{float}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{3ex plus 2ex minus 2ex}
+
+\begin{document}
+	% Title page	
+	\input{title.tex}
+
+	% Abstract page
+	\pagestyle{empty}
+	\include{sections/abstract}
+	
+	\pagestyle{plain}
+
+	\input{sections/introduction}
+	\input{sections/backgroundandsota}
+	\input{sections/proposedmethod}
+	\input{sections/plannedevaluation}
+	\input{sections/schedule}
+	\input{sections/criteria}
+
+	\pagebreak
+	%\nocite{*}% This show the entire content of the biblio.bib file, please comment this before the final submission
+	%\bibliographystyle{plain}%plain | unsrt | alpha
+	\clearpage
+	\bibliographystyle{unsrt}
+	\bibliography{biblio}
+
+\end{document}
