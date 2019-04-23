@@ -2,7 +2,7 @@ import xml.etree.ElementTree as ET
 import json
 import glob
 
-xmlFiles = glob.glob("../resources/nhtsa/*.xml")
+xmlFiles = glob.glob("../resources/nhtsa/*/*.xml")
 summFolderPath = "../resources/summary/"
 
 for xmlFile in xmlFiles:

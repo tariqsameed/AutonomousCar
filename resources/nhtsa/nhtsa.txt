@@ -1,2 +1,9 @@
 https://crashviewer.nhtsa.dot.gov/
 https://crashviewer.nhtsa.dot.gov/LegacyNMVCCS/Search
+
+
+Files Structure:
+
+resources/Case_Number/
+	   Case_ID.vsd,Case_ID.xml,Case_ID.jpg	
+	

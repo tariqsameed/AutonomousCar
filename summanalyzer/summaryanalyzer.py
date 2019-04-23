@@ -1,6 +1,7 @@
 import json
 import glob
 import nltk
+import extractdaytime
 
 def TokenizePOSTaggedParagrapgh(summary):
     taggedList=[]
@@ -36,5 +37,6 @@ def GetSummaryFromJSONFiles():
 summDict = GetSummaryFromJSONFiles()
 for key, value in summDict.items():
     TokenizeParagraph(value)
+    extractdaytime.dayTimeExtractorSummary(value)
 
 
