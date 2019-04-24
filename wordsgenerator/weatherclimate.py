@@ -10,7 +10,7 @@ stop_words = set(stopwords.words('english'))
 
 wordlist = []
 expandedwords = []
-with open('../resources/corpus/weatherandclimate.csv') as csvfile:
+with open('../resources/corpus/weather_corpus/weatherandclimate.csv') as csvfile:
     readCSV = csv.reader(csvfile, delimiter=',')
     # List of words in each row.
     for row in readCSV:
@@ -39,7 +39,7 @@ print(len(expandedwords))
 
 
 # File to write data in CSV file.
-out_file = open('../resources/corpus/weatherandclimateword2vec.csv','w')
+out_file = open('../resources/corpus/weather_corpus/weatherandclimateword2vec.csv','w')
 line = ""
 for item in expandedwords:
     line = line+","+item.encode('utf8').replace("_", " ")

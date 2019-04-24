@@ -9,7 +9,7 @@ def getClimateWeatherDictionary():
     climateweatherdictionary = []
 
     # Get Basic Words List
-    with open('../resources/corpus/weatherandclimate.csv') as csvfile:
+    with open('../resources/corpus/weather_corpus/weatherandclimate.csv') as csvfile:
         readCSV = csv.reader(csvfile, delimiter=',')
         # List of words in each row.
         for row in readCSV:
@@ -17,7 +17,7 @@ def getClimateWeatherDictionary():
                 climateweatherdictionary.append(item)
 
     # Get Extended Word2Vec List
-    with open('../resources/corpus/weatherandclimateword2vec.csv') as csvfile:
+    with open('../resources/corpus/weather_corpus/weatherandclimateword2vec.csv') as csvfile:
         readCSV = csv.reader(csvfile, delimiter=',')
         # List of words in each row.
         for row in readCSV:
