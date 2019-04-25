@@ -2,6 +2,7 @@ import json
 import glob
 import nltk
 import extractweatherclimate
+import extractroadtypedirection
 
 def TokenizePOSTaggedParagrapgh(summary):
     taggedList=[]
@@ -42,5 +43,12 @@ for key, value in summDict.items():
     extractweatherclimate.weatherExtractorSummary(value)
 
     # Extract Road Features
+    extractroadtypedirection.roadDirectionExtractorSummary(value)
 
+    # Extract V1 information
+    #https://www.linkedin.com/pulse/triplets-concept-extraction-from-english-sentence-deep-swamynathan
+
+    # Extract V2 information
+
+    # Extract Accident information.
 
