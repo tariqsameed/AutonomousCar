@@ -47,6 +47,9 @@ for key, value in summDict.items():
 
     # Extract V1 information
     #https://www.linkedin.com/pulse/triplets-concept-extraction-from-english-sentence-deep-swamynathan
+    #https://pypi.org/project/stanfordnlp/
+    # https://stackoverflow.com/questions/39763091/how-to-extract-subjects-in-a-sentence-and-their-respective-dependent-phrases
+    # https://github.com/krzysiekfonal/textpipeliner
 
     # Extract V2 information
 
