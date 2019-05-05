@@ -14,5 +14,5 @@ def gettripleopie(sentext):
     r = requests.get("http://localhost:8080/opie", params=payload)
     resp = r.text
     if resp['length'] > 0:
-    for val in enumerate(resp['spoList']):
-        print(val[1]['subject'],val[1]['predicate'],val[1]['object'])
+        for val in enumerate(resp['spoList']):
+            print(val[1]['subject'],val[1]['predicate'],val[1]['object'])
