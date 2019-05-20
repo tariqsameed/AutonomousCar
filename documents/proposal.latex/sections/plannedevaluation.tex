@@ -1,36 +1,11 @@
 %!TEX root = ../proposal.tex
 \section{Planned Evaluation}
 
-The goal of the research is to explore the velocity and steering angle parameters that reflect to the description given in the car crash report. These parameters would aid us in the speed adjustment of the autonomous cars and the safety of the autonomous cars in critical scenarios. 
-\\ 
+The method attempts to identify the critical, non-critical scenarios, aftermath of autonomous car and estimating the velocity, acceleration of the striking and victim car that is not currently given in the crash report. All these variables will play a vital role in enhancing the safety of autonomous cars and speed adjustment of autonomous vehicles with respect to road geometry. The results are bases on the assumption that car mass, inertia is same for all autonomous cars in the crash report. \\ 
+ 
+A lot of simulation should be run to get the required parameters and aftermath close to the original scenario. The combination of the qualitative and quantitative analysis of different features will produce the final output. The output-label will classify the result as High, Medium and Low similarity to original scenario.\\
 
-The Abbreviations are Predicted Simulation (P),  
- Original Scenario  (O), 
- Striking Car  (S) , 
- Victim Car (V) 
- Velocity  (VL) , 
- Damage Level (DL) ,  
- Damage Area (DA) ,    
- Angle from Crash Point (ACP) , 
- Zone (Distance) of Car after crash (ZCP) , 
- High (H), 
- Medium (M),  
- Low (L), 
- Front-Right (FR), 
- Front-Left (FL),  
- Left-Side (LS), 
- Right-Side (RS), 
- Back-Left (BL),  
- Back-Right (BR), 
- Close-To-Vehicle (Z1), 
- Near-To-Vehicle (Z2),  
- Far-To-Vehicle (Z3), \\
-
-
-
-A lot of simulation should be run to get the required parameters close to the original scenario. The combination of the qualitative and quantitative analysis of different features will produce the final output. The output-label will classify the result as High, Medium and Low similarity to original scenario. This thesis will fulfills the requirement at-least 5 crash scenarios and at the most 10 crash scenarios. 
-
-The result will be evaluated as it given in the table below.
+The top N simulation will be selected from the series of simulation to get the best accurate result as close to the description of natural language and the result will be evaluated as it given in the table below. \\
 
 \begin{table}[h!]
 \centering
@@ -54,3 +29,24 @@ Case ID & VL & DL
 \end{table}
 
 
+The Abbreviations are Predicted Simulation (P),  
+ Original Scenario  (O), 
+ Striking Car  (S) , 
+ Victim Car (V) 
+ Velocity  (VL) , 
+ Damage Level (DL) ,  
+ Damage Area (DA) ,    
+ Angle from Crash Point (ACP) , 
+ Zone (Distance) of Car after crash (ZCP) , 
+ High (H), 
+ Medium (M),  
+ Low (L), 
+ Front-Right (FR), 
+ Front-Left (FL),  
+ Left-Side (LS), 
+ Right-Side (RS), 
+ Back-Left (BL),  
+ Back-Right (BR), 
+ Close-To-Vehicle (Z1), 
+ Near-To-Vehicle (Z2),  
+ Far-To-Vehicle (Z3), \\

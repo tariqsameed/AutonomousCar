@@ -11,7 +11,7 @@ In the growing world of internet and online services, the data is available in g
 
 \begin{figure}[H]
 \centering
-  \includegraphics[scale= 0.6]{pictures/Architecture_Diagram_AT.png}
+  \includegraphics[scale=0.55]{pictures/Architecture_Diagram_Proposal_AT.jpg}
   \caption{Architecture Diagram}
 \end{figure}
 
@@ -38,8 +38,8 @@ The initial step of analyzing the text content is to break down the paragraph in
 \paragraph{Part of Speech Tagging}
 Part of Speech tagging is useful for identifying the grammatical group of a given keyword based on the contextual information.  The word tags can be a Noun, Pronoun, Adjective, Verb, Adverb based on the preceding word and avoid disambiguation. 
 
-\paragraph{Chunking (Shallow Parsing}
-Part of Speech tagging does not give enough information to retrieve the information about the sentence and waste time to parse the tree of the sentence. A shallow parsing is a technique that gives us a bunch of words related to our application-oriented processing such as Noun Phrase and Verb Phrase to get the semantic information. 
+\paragraph{Chunking (Shallow Parsing)}
+Part of Speech tagging does not give enough information to retrieve the information about the sentence and waste time to parse the tree of the sentence. A shallow parsing is a technique that gives us a bunch of words related to our application-oriented processing such as Noun Phrase and Verb Phrase to get the semantic information. Alternatively, the subject, verb and object triples can be extracted from the sentences using stanford OpenIE. 
 
 \paragraph{Dependency Tree Parsing}
 In each sentence, there is a root words and all other words are directly or indirectly linked to root node. The dependency-based grammars is used to identify each word relationship with root node to get structural and semantic information about the sentence. The dependent words information help us to extract and generate the sequence of action describe in natural language. The Spacy,Penn Tree Bank and Stanford parser are the most useful libraries for dependency tree parsing. 
@@ -59,12 +59,26 @@ The other way of doing it is using the Named Entity recognition of Stanford pars
 
 All thye information extracted is stored in the XML/JSON file, it will be further processed to create scenarios in Open Street Map and BeamNG. 
 
+\subsection{NHSTA Trajectory Generation from Images - (Network Path Generation)}
+The NHTSA crash viewer provide an information that how the car followed a path before the crash and after the crash. This information is usually displayed in the images. The manual user will interpret these images and create the original trajectory path of the vehicles. The original trajectory path will be compared with the predicted simulation path to to categorize the simulation and calculate mean square error with original NHTSA crash trajectory. The NetworkX \cite{SciPyProceedings_11} library enable us to convert the continuous data into discrete nodes.      
+
+\begin{figure}[H]
+\centering
+  \includegraphics[scale= 0.4]{pictures/SO1_NET.png}
+  \caption{Trajectory Network From NHTSA Image}
+\end{figure}
 
 \subsection{Open Street Map - (Optional)}
 The Open Street Map (OSM) is an open source platform to extract the data about roads and nearby characteristic such as building in the given region of interest. Open Street Map allow users to edit map and use data free of cost. Our objective is to extract the data from the open street map according to the description given in the natural language processing. The roads can highways, urban road, rural road, junctions. However, the location is rarely specified in the description so we will assume our region of interest and try to extract the best possible scenario from Open Street Map. The car trajectory with different colors for each vehicle will be shown on the Open Street Map for visualizations. 
 
+\begin{figure}[H]
+\centering
+  \includegraphics[scale= 0.7]{pictures/nodes-and-ways.png}
+  \caption{Open Street Map Nodes}
+\end{figure}
+
 \subsubsection{Data Extraction from Open Street Map}
-The Open Street Map\cite{haklay2008openstreetmap} data can be extracted from Xapi Api. After obtaining the response from API request, the XML object is parsed to extract the roads and link roads according to the tagged provided in the smart query. The road can be filtered from large data-set and small visualization can be drawn on the Open Street Map. 
+The Open Street Map\cite{haklay2008openstreetmap} data can be extracted from Xapi Api. After obtaining the response from API request, the XML object is parsed to extract the roads and link roads according to the tagged provided in the smart query. The target attribute is the width of the road and it can be filtered from large data-set and small visualization can be drawn on the Open Street Map. 
 
 \subsection{Generation Test Cases Scenarios in BeamNG}
 The BeamNG is open source tool for studying and developing vehicle accidents of self-driving cars with an integrated option of Artificial Intelligence. The BeamNG provide the realistic figures of car dynamics, car damage, environment and roads etc. It provides us the features to extract the data from the simulation, record videos for analysis and provide mechanism to set up speed, start, stop, steering angle, direction of car in the scenarios. Additionally, the BeamNG (3D) will be used to simulate the scenario demonstrated in Open Street Map (2D) with an access to unlimited research version of BeamNG.  
@@ -91,39 +105,23 @@ The BeamNG provide the feature to extract the key components such as speed and p
 
 In addition, the damage of the ego vehicle and the leading vehicle will be considered to know the exact point of impact on the roads and which region of the car is damaged. It will help us to separate critical (collision of cars) and non-critical (no collision of cars) scenarios in the large parameter space. Moreover, the numerical values will be monitored at every 0.5 sec to 1 sec to reduced the computation times and reduced the number of nodes on the graph. The NetworkX \cite{SciPyProceedings_11} library enable us to convert the continuous data into discrete nodes.     
 
-\subsubsection{NHSTA Trajectory Generation from Images - (Network Path Generation)}
-The NHTSA crash viewer provide an information that how the car followed a path before the crash and after the crash. This information is usually displayed in the images. The manual user will interpret these images and create the original trajectory path of the vehicles. The original trajectory path will be compared with the predicted simulation path to to categorize the simulation and calculate mean square error with original NHTSA crash trajectory. The NetworkX \cite{SciPyProceedings_11} library enable us to convert the continuous data into discrete nodes.      
-
-\begin{figure}[H]
-\centering
-  \includegraphics[scale= 0.4]{pictures/SO1_NET.png}
-  \caption{Trajectory Network From NHTSA Image}
-\end{figure}
-
-
 \subsubsection{Simulation Categorization and Similarity Computation}
-For the analysis of precrash and aftermath of car crash to calculate the accuracy of the simulation between the original simulation and predicted simulation. Both the critical and non-critical scenarios will be evaluated for the decision tree to choose the next parameter for the simulation.\\
-The aftermath of car crash like striking car and victim car distance from the point of crash and deflection from the original path will be considered for both predicted and original network of nodes (Trajectory). Furthermore, the area or region of damage on the car with severity level required examination to compare with the original description.   
-
-
-\subsubsection{Decision Tree Generation}
-
-The primary focus of my research is to focus on the velocity and steering angle parameters of the car crash and analyze the behaviours of the self-driving car after the car crash. These parameters are usually are not described in the accident scenario and aid the autonomous vehicles in speed adjustment and safety of the car. Hence, i have to run a lot of simulations and categorize the critical scenarios and Mean Square Error (mse) at each simulation. After gathering the data on each simulation, the Decision Tree will be constructed for the classification of results and uses tree-like model of decisions. In decision analysis, it has a good advantage because i can easily demonstrate my result to a non technical audience and produce good results with incomplete data. The trajectory result of each simulation will be constructed on the Decision Tree to choose the best possible Test case. \par 
-The Decision Tree variables are
-
-\begin{itemize}
-  \item	Critical or Non Critical
-  \item	MSE
-  \item	Velocity
-  \item	Steering Angle
-\end{itemize}
+For the analysis of precrash and aftermath of car crash to calculate the accuracy of the simulation between the original simulation and predicted simulation. Both the critical and non-critical scenarios will be evaluated to choose the next parameter for the simulation.\\
+Insert Image
+The aftermath of car crash like striking car and victim car distance from the point of crash and deflection from the original path will be considered for both predicted and original network of nodes (Trajectory). Furthermore, the area or region of damage on the car with severity level required examination to compare with the original description. \\  
 
 
 \begin{figure}[H]
 \centering
-  \includegraphics[scale = 0.4]{pictures/Decision_Tree.png}
-  \caption{Decision Tree}
+  \includegraphics[scale = 0.4]{pictures/criticalandnoncriticalscenarios.png}
+  \caption{Critical and Non Critical Scenarios}
 \end{figure}
+
+
+The primary focus of my research is to focus on the velocity and steering angle parameters of the car crash and analyze the behaviours of the self-driving car after the car crash. These parameters are usually are not described in the accident scenario and aid the autonomous vehicles in speed adjustment and safety of the car. Hence, i have to run a lot of simulations and categorize the critical scenarios and measure the distance and rotation quantities at each simulation. The top-K simulations will be selected to evaluate the end result of each simulation. 
+
+The observable variables are Critical or Non Critical Scenario, Velocity,	Steering Angle,	Distance of striking car after impact, Rotation of car after impact.
+
 
 \subsubsection{Parameters Tuning}
 The selection of the next parameter in Test Case depend upon the search space and the accuracy of the reconstructed simulation of the test case. We can restrict the regions of the search space based on the feedback from the simulation and reduce the time of simulation and computation cost. Since, our evaluation is dependent upon the matching of frames of each simulation and choosing the best test case of the simulation from the Decision tree/ Binary Search Tree. For Example,In the initial scenario the ego car crash with the leading car with a speed/velocity of 20m/s and stays in the exact same position. However we have to explore the velocity at which the ego car crash with the leading car and go away from the impact point in the given direction. It means that we have to collide car with more momentum and speed to reproduce the desired scenario.
