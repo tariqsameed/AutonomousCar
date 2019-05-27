@@ -1,0 +1,1676 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<osm version="0.6" generator="osmconvert 0.8.4" timestamp="2019-05-20T01:59:52Z">
+	<bounds minlat="48.57" minlon="13.457" maxlat="48.571" maxlon="13.4600002"/>
+	<node id="50376711" lat="48.570427" lon="13.4583615" version="1">
+		<tag k="highway" v="traffic_signals"/>
+	</node>
+	<node id="55474763" lat="48.5702084" lon="13.4584447" version="1"/>
+	<node id="60631339" lat="48.5705161" lon="13.4585069" version="1"/>
+	<node id="60631342" lat="48.5706833" lon="13.4587882" version="1"/>
+	<node id="60631348" lat="48.5705899" lon="13.4588999" version="1"/>
+	<node id="60631519" lat="48.570928" lon="13.4577898" version="1"/>
+	<node id="60641005" lat="48.5700412" lon="13.4573619" version="1"/>
+	<node id="60742435" lat="48.5700077" lon="13.4574246" version="1"/>
+	<node id="60742437" lat="48.5703082" lon="13.4582102" version="1"/>
+	<node id="60742438" lat="48.5701796" lon="13.4583338" version="1"/>
+	<node id="261655937" lat="48.5709408" lon="13.4597249" version="1"/>
+	<node id="267679186" lat="48.5706504" lon="13.4579197" version="1"/>
+	<node id="267679191" lat="48.5706121" lon="13.4578344" version="1"/>
+	<node id="267679217" lat="48.5705114" lon="13.457019" version="1"/>
+	<node id="267679221" lat="48.5706096" lon="13.4571967" version="1"/>
+	<node id="267679233" lat="48.5701157" lon="13.4573615" version="1"/>
+	<node id="267679236" lat="48.570314" lon="13.4572812" version="1"/>
+	<node id="267679244" lat="48.5704204" lon="13.4578931" version="1"/>
+	<node id="267679245" lat="48.5707217" lon="13.4576503" version="1"/>
+	<node id="267679250" lat="48.5700938" lon="13.458237" version="1"/>
+	<node id="267833935" lat="48.5702346" lon="13.4571558" version="1"/>
+	<node id="281733048" lat="48.5702208" lon="13.4571751" version="1">
+		<tag k="name" v="Gmoa"/>
+		<tag k="access" v="private"/>
+		<tag k="amenity" v="pub"/>
+		<tag k="website" v="http://gmoa.ksg-passau.de/"/>
+	</node>
+	<node id="303812223" lat="48.5705387" lon="13.457504" version="1">
+		<tag k="name" v="St. Nikola"/>
+		<tag k="amenity" v="place_of_worship"/>
+		<tag k="religion" v="christian"/>
+		<tag k="denomination" v="catholic"/>
+	</node>
+	<node id="304689596" lat="48.5709611" lon="13.4576618" version="1">
+		<tag k="amenity" v="telephone"/>
+	</node>
+	<node id="339108590" lat="48.5706412" lon="13.4589637" version="1">
+		<tag k="name" v="Die Küche"/>
+		<tag k="amenity" v="cafe"/>
+		<tag k="addr:city" v="Passau"/>
+		<tag k="addr:street" v="Innstraße"/>
+		<tag k="addr:postcode" v="94032"/>
+		<tag k="addr:housenumber" v="21"/>
+	</node>
+	<node id="415427186" lat="48.5701612" lon="13.4583691" version="1"/>
+	<node id="415427188" lat="48.5702012" lon="13.4583307" version="1"/>
+	<node id="415427190" lat="48.5703466" lon="13.4581902" version="1"/>
+	<node id="497002381" lat="48.5704875" lon="13.4584629" version="1">
+		<tag k="highway" v="crossing"/>
+		<tag k="crossing" v="traffic_signals"/>
+	</node>
+	<node id="497002383" lat="48.570485" lon="13.4582919" version="1">
+		<tag k="highway" v="crossing"/>
+		<tag k="crossing" v="traffic_signals"/>
+	</node>
+	<node id="776445199" lat="48.5705455" lon="13.4589942" version="1">
+		<tag k="tourism" v="information"/>
+		<tag k="board_type" v="history"/>
+		<tag k="information" v="board"/>
+	</node>
+	<node id="776445206" lat="48.5705633" lon="13.4590188" version="1">
+		<tag k="tourism" v="information"/>
+		<tag k="map_size" v="site"/>
+		<tag k="map_type" v="street"/>
+		<tag k="information" v="map"/>
+	</node>
+	<node id="827594919" lat="48.5701864" lon="13.4583668" version="1">
+		<tag k="tourism" v="information"/>
+		<tag k="information" v="sitemap"/>
+	</node>
+	<node id="871152554" lat="48.5701607" lon="13.4577111" version="1">
+		<tag k="bus" v="yes"/>
+		<tag k="name" v="Augustinergasse"/>
+		<tag k="operator" v="Stadtwerke Passau"/>
+		<tag k="public_transport" v="stop_position"/>
+	</node>
+	<node id="871152560" lat="48.5701989" lon="13.4576693" version="1">
+		<tag k="bus" v="yes"/>
+		<tag k="name" v="Augustinergasse"/>
+		<tag k="shelter" v="no"/>
+		<tag k="operator" v="Stadtwerke Passau"/>
+		<tag k="public_transport" v="platform"/>
+	</node>
+	<node id="871152575" lat="48.5700728" lon="13.457463" version="1">
+		<tag k="bus" v="yes"/>
+		<tag k="name" v="Augustinergasse"/>
+		<tag k="operator" v="Stadtwerke Passau"/>
+		<tag k="public_transport" v="stop_position"/>
+	</node>
+	<node id="871152595" lat="48.5700376" lon="13.4574933" version="1">
+		<tag k="bus" v="yes"/>
+		<tag k="name" v="Augustinergasse"/>
+		<tag k="shelter" v="no"/>
+		<tag k="operator" v="Stadtwerke Passau"/>
+		<tag k="public_transport" v="platform"/>
+	</node>
+	<node id="979731234" lat="48.570915" lon="13.4587592" version="1"/>
+	<node id="979731240" lat="48.5707023" lon="13.4592071" version="1"/>
+	<node id="979731253" lat="48.5709046" lon="13.4584994" version="1"/>
+	<node id="979731254" lat="48.570836" lon="13.4588787" version="1"/>
+	<node id="979731266" lat="48.5706023" lon="13.459076" version="1"/>
+	<node id="979731318" lat="48.5706316" lon="13.4591002" version="1"/>
+	<node id="979731356" lat="48.570931" lon="13.4583369" version="1"/>
+	<node id="979731364" lat="48.5705531" lon="13.4589964" version="1"/>
+	<node id="979731380" lat="48.5707284" lon="13.4581549" version="1"/>
+	<node id="979731386" lat="48.5706957" lon="13.4585287" version="1"/>
+	<node id="979731388" lat="48.5709069" lon="13.4582933" version="1"/>
+	<node id="979731421" lat="48.570996" lon="13.4588789" version="1"/>
+	<node id="979731422" lat="48.570681" lon="13.4589657" version="1"/>
+	<node id="979731426" lat="48.5709501" lon="13.4592692" version="1"/>
+	<node id="979731433" lat="48.5709629" lon="13.4584261" version="1"/>
+	<node id="979731440" lat="48.5707002" lon="13.458365" version="1"/>
+	<node id="979731471" lat="48.5707473" lon="13.458461" version="1"/>
+	<node id="979731492" lat="48.5706318" lon="13.4588861" version="1"/>
+	<node id="979731538" lat="48.5708087" lon="13.4590472" version="1"/>
+	<node id="979731539" lat="48.570854" lon="13.459396" version="1"/>
+	<node id="979731576" lat="48.5707254" lon="13.4587334" version="1"/>
+	<node id="979731595" lat="48.5706354" lon="13.458436" version="1"/>
+	<node id="979731606" lat="48.570738" lon="13.4589403" version="1"/>
+	<node id="979731616" lat="48.5709911" lon="13.4596324" version="1"/>
+	<node id="979731626" lat="48.5709615" lon="13.4585925" version="1"/>
+	<node id="979731669" lat="48.5705682" lon="13.4584932" version="1"/>
+	<node id="979731681" lat="48.5708628" lon="13.4584143" version="1"/>
+	<node id="979731711" lat="48.5705118" lon="13.4583725" version="1"/>
+	<node id="1097441058" lat="48.5704712" lon="13.4582085" version="1"/>
+	<node id="1097441063" lat="48.5703808" lon="13.458127" version="1"/>
+	<node id="1097441093" lat="48.570519" lon="13.4581746" version="1"/>
+	<node id="1097441096" lat="48.5704262" lon="13.4581895" version="1"/>
+	<node id="1117854867" lat="48.5703174" lon="13.4570336" version="1">
+		<tag k="amenity" v="bench"/>
+		<tag k="direction" v="60"/>
+	</node>
+	<node id="1117854889" lat="48.5703083" lon="13.4570147" version="1">
+		<tag k="natural" v="tree"/>
+		<tag k="leaf_type" v="broadleaved"/>
+	</node>
+	<node id="1117854897" lat="48.5706618" lon="13.4579446" version="1">
+		<tag k="barrier" v="gate"/>
+	</node>
+	<node id="1117854929" lat="48.5702944" lon="13.4570308" version="1">
+		<tag k="amenity" v="bench"/>
+		<tag k="direction" v="150"/>
+	</node>
+	<node id="1117854938" lat="48.5706763" lon="13.4579688" version="1"/>
+	<node id="1145383794" lat="48.5709148" lon="13.4591154" version="1">
+		<tag k="bus" v="yes"/>
+		<tag k="name" v="Augustinergasse"/>
+		<tag k="bench" v="no"/>
+		<tag k="network" v="Verkehrsbetriebsgesellschaft Passau"/>
+		<tag k="shelter" v="no"/>
+		<tag k="operator" v="Stadtwerke Passau"/>
+		<tag k="network:guid" v="DE-BY-VBP"/>
+		<tag k="network:short" v="VBP"/>
+		<tag k="tactile_paving" v="no"/>
+		<tag k="public_transport" v="platform"/>
+	</node>
+	<node id="1145383802" lat="48.5708858" lon="13.4591525" version="1">
+		<tag k="bus" v="yes"/>
+		<tag k="name" v="Augustinergasse"/>
+		<tag k="bench" v="no"/>
+		<tag k="shelter" v="no"/>
+		<tag k="operator" v="Stadtwerke Passau"/>
+		<tag k="tactile_paving" v="no"/>
+		<tag k="public_transport" v="platform"/>
+	</node>
+	<node id="1156451003" lat="48.5707737" lon="13.4589943" version="1">
+		<tag k="entrance" v="yes"/>
+	</node>
+	<node id="1376214131" lat="48.5702439" lon="13.458272" version="1">
+		<tag k="entrance" v="yes"/>
+	</node>
+	<node id="1469756510" lat="48.5705005" lon="13.4583268" version="1"/>
+	<node id="1469756512" lat="48.5705157" lon="13.4583623" version="1"/>
+	<node id="1469756514" lat="48.570731" lon="13.4580633" version="1"/>
+	<node id="1469756516" lat="48.5707585" lon="13.4581198" version="1"/>
+	<node id="1469756518" lat="48.5707728" lon="13.4580317" version="1"/>
+	<node id="1469756520" lat="48.5708954" lon="13.4582705" version="1"/>
+	<node id="1469756522" lat="48.5709264" lon="13.4578559" version="1"/>
+	<node id="1470046936" lat="48.5700057" lon="13.4580265" version="1">
+		<tag k="natural" v="tree"/>
+		<tag k="leaf_type" v="broadleaved"/>
+	</node>
+	<node id="1470046938" lat="48.5700512" lon="13.4581291" version="1">
+		<tag k="natural" v="tree"/>
+		<tag k="leaf_type" v="broadleaved"/>
+	</node>
+	<node id="1630499641" lat="48.5700502" lon="13.4584498" version="1"/>
+	<node id="1630499643" lat="48.5701489" lon="13.4586162" version="1"/>
+	<node id="1630499645" lat="48.5702045" lon="13.4599167" version="1"/>
+	<node id="1630499666" lat="48.5702884" lon="13.4587939" version="1"/>
+	<node id="1630499670" lat="48.5703849" lon="13.45895" version="1"/>
+	<node id="1630499674" lat="48.5704935" lon="13.4591437" version="1"/>
+	<node id="1630499676" lat="48.5705907" lon="13.4593032" version="1"/>
+	<node id="1630499684" lat="48.5707076" lon="13.4595094" version="1"/>
+	<node id="1630499702" lat="48.5708094" lon="13.4596826" version="1"/>
+	<node id="1630499705" lat="48.5709089" lon="13.459841" version="1"/>
+	<node id="1641256218" lat="48.5708996" lon="13.4591373" version="1">
+		<tag k="bus" v="yes"/>
+		<tag k="name" v="Augustinergasse"/>
+		<tag k="highway" v="bus_stop"/>
+		<tag k="network" v="Verkehrsbetriebsgesellschaft Passau"/>
+		<tag k="uic_ref" v="245049"/>
+		<tag k="operator" v="Stadtwerke Passau"/>
+		<tag k="network:guid" v="DE-BY-VBP"/>
+		<tag k="network:short" v="VBP"/>
+		<tag k="public_transport" v="stop_position"/>
+	</node>
+	<node id="1698021803" lat="48.5709913" lon="13.4577834" version="1"/>
+	<node id="1698021806" lat="48.5709191" lon="13.4590777" version="1"/>
+	<node id="1772004516" lat="48.5703535" lon="13.4570908" version="1"/>
+	<node id="1772004517" lat="48.5704336" lon="13.4570901" version="1"/>
+	<node id="1772004519" lat="48.5704456" lon="13.4571804" version="1"/>
+	<node id="1772004521" lat="48.5704912" lon="13.4570727" version="1"/>
+	<node id="1772004522" lat="48.5705032" lon="13.457163" version="1"/>
+	<node id="1772004523" lat="48.57078" lon="13.4577959" version="1"/>
+	<node id="1772004524" lat="48.5708124" lon="13.4580241" version="1">
+		<tag k="natural" v="tree"/>
+		<tag k="leaf_type" v="broadleaved"/>
+		<tag k="est_height" v="11"/>
+	</node>
+	<node id="1772004526" lat="48.5709038" lon="13.4582103" version="1">
+		<tag k="natural" v="tree"/>
+		<tag k="leaf_type" v="broadleaved"/>
+		<tag k="est_height" v="8"/>
+	</node>
+	<node id="1912368247" lat="48.5702152" lon="13.4574429" version="1">
+		<tag k="natural" v="tree"/>
+		<tag k="leaf_type" v="broadleaved"/>
+		<tag k="est_height" v="15"/>
+	</node>
+	<node id="1912368248" lat="48.5702299" lon="13.4577213" version="1"/>
+	<node id="1912368249" lat="48.5704017" lon="13.4581625" version="1"/>
+	<node id="1912368250" lat="48.5704501" lon="13.4582054" version="1"/>
+	<node id="1912368251" lat="48.5704536" lon="13.4581285" version="1">
+		<tag k="natural" v="tree"/>
+		<tag k="leaf_type" v="broadleaved"/>
+		<tag k="est_height" v="15"/>
+	</node>
+	<node id="1912368252" lat="48.5704716" lon="13.4579473" version="1">
+		<tag k="natural" v="tree"/>
+		<tag k="leaf_type" v="broadleaved"/>
+		<tag k="est_height" v="15"/>
+	</node>
+	<node id="1912368253" lat="48.5704965" lon="13.4581995" version="1"/>
+	<node id="1912368254" lat="48.5706706" lon="13.4571619" version="1"/>
+	<node id="1912368255" lat="48.5707804" lon="13.457195" version="1"/>
+	<node id="1912368256" lat="48.5707807" lon="13.4572381" version="1"/>
+	<node id="1912368257" lat="48.5707904" lon="13.4574988" version="1"/>
+	<node id="1912368258" lat="48.5707962" lon="13.4571531" version="1"/>
+	<node id="1912368259" lat="48.5707976" lon="13.4572805" version="1"/>
+	<node id="1912368260" lat="48.5708187" lon="13.4572234" version="1"/>
+	<node id="1912368261" lat="48.570819" lon="13.457208" version="1"/>
+	<node id="1912368262" lat="48.5708201" lon="13.4571318" version="1"/>
+	<node id="1912368263" lat="48.5708224" lon="13.4572353" version="1"/>
+	<node id="1912368264" lat="48.5708231" lon="13.4573011" version="1"/>
+	<node id="1912368265" lat="48.570825" lon="13.4571941" version="1"/>
+	<node id="1912368266" lat="48.5708324" lon="13.4572454" version="1"/>
+	<node id="1912368267" lat="48.5708342" lon="13.4571873" version="1"/>
+	<node id="1912368268" lat="48.570842" lon="13.4571873" version="1"/>
+	<node id="1912368269" lat="48.5708448" lon="13.4572449" version="1"/>
+	<node id="1912368270" lat="48.5708513" lon="13.4571308" version="1"/>
+	<node id="1912368271" lat="48.5708518" lon="13.4571952" version="1"/>
+	<node id="1912368272" lat="48.570853" lon="13.4573" version="1"/>
+	<node id="1912368273" lat="48.5708542" lon="13.4572341" version="1"/>
+	<node id="1912368274" lat="48.5708569" lon="13.4572074" version="1"/>
+	<node id="1912368275" lat="48.5708577" lon="13.4572202" version="1"/>
+	<node id="1912368276" lat="48.5708795" lon="13.4571563" version="1"/>
+	<node id="1912368277" lat="48.570881" lon="13.4572726" version="1"/>
+	<node id="1912368278" lat="48.5708926" lon="13.4571913" version="1"/>
+	<node id="1912368279" lat="48.5708939" lon="13.4572314" version="1"/>
+	<node id="2396619899" lat="48.5702819" lon="13.4584567" version="1"/>
+	<node id="2396619900" lat="48.5703556" lon="13.4584338" version="1"/>
+	<node id="2512980208" lat="48.570402" lon="13.4572071" version="1">
+		<tag k="addr:city" v="Passau"/>
+		<tag k="addr:street" v="Kleiner Exerzierplatz"/>
+		<tag k="addr:suburb" v="St. Nikola"/>
+		<tag k="addr:country" v="DE"/>
+		<tag k="addr:postcode" v="94032"/>
+		<tag k="addr:housenumber" v="15a"/>
+	</node>
+	<node id="2512980218" lat="48.5709913" lon="13.4589792" version="1">
+		<tag k="addr:city" v="Passau"/>
+		<tag k="addr:street" v="Innstraße"/>
+		<tag k="addr:suburb" v="Haidenhof"/>
+		<tag k="addr:country" v="DE"/>
+		<tag k="addr:postcode" v="94032"/>
+		<tag k="addr:housenumber" v="30"/>
+	</node>
+	<node id="2512980219" lat="48.570654" lon="13.458544" version="1">
+		<tag k="addr:city" v="Passau"/>
+		<tag k="addr:street" v="Innstraße"/>
+		<tag k="addr:suburb" v="Haidenhof"/>
+		<tag k="addr:country" v="DE"/>
+		<tag k="addr:postcode" v="94032"/>
+		<tag k="addr:housenumber" v="36"/>
+	</node>
+	<node id="3200605827" lat="48.5700045" lon="13.4570451" version="1">
+		<tag k="height" v="4"/>
+		<tag k="highway" v="street_lamp"/>
+		<tag k="lamp_type" v="electric"/>
+	</node>
+	<node id="3200605828" lat="48.5704923" lon="13.4582107" version="1">
+		<tag k="height" v="8"/>
+		<tag k="highway" v="street_lamp"/>
+		<tag k="lamp_type" v="electric"/>
+	</node>
+	<node id="3200605829" lat="48.57068" lon="13.4579917" version="1">
+		<tag k="height" v="8"/>
+		<tag k="highway" v="street_lamp"/>
+		<tag k="lamp_type" v="electric"/>
+	</node>
+	<node id="3200605830" lat="48.5708749" lon="13.457754" version="1">
+		<tag k="height" v="8"/>
+		<tag k="highway" v="street_lamp"/>
+		<tag k="lamp_type" v="electric"/>
+	</node>
+	<node id="3368182825" lat="48.5707492" lon="13.4593218" version="1"/>
+	<node id="3440550837" lat="48.5700539" lon="13.4575167" version="1"/>
+	<node id="3440550839" lat="48.5700854" lon="13.4581997" version="1"/>
+	<node id="3440550840" lat="48.5701484" lon="13.4577772" version="1"/>
+	<node id="3440550841" lat="48.5701739" lon="13.4583469" version="1"/>
+	<node id="3440550842" lat="48.5703116" lon="13.4582114" version="1"/>
+	<node id="4541667251" lat="48.5703883" lon="13.4585008" version="1">
+		<tag k="barrier" v="lift_gate"/>
+	</node>
+	<node id="4541667252" lat="48.5705783" lon="13.4587869" version="1"/>
+	<node id="4541667253" lat="48.5705304" lon="13.4588459" version="1"/>
+	<node id="4541667255" lat="48.5703334" lon="13.4585106" version="1"/>
+	<node id="4541667256" lat="48.5703745" lon="13.4584231" version="1"/>
+	<node id="4751514927" lat="48.5707482" lon="13.4588931" version="1"/>
+	<node id="4753149335" lat="48.5700154" lon="13.4573822" version="1"/>
+	<node id="4753153064" lat="48.5702698" lon="13.4582865" version="1">
+		<tag k="amenity" v="waste_basket"/>
+	</node>
+	<node id="4753153447" lat="48.5703082" lon="13.4583627" version="1">
+		<tag k="amenity" v="bicycle_parking"/>
+		<tag k="capacity" v="12"/>
+		<tag k="bicycle_parking" v="anchors"/>
+	</node>
+	<node id="4753161621" lat="48.5703797" lon="13.4587077" version="1">
+		<tag k="colour" v="brown"/>
+		<tag k="amenity" v="bench"/>
+		<tag k="backrest" v="yes"/>
+		<tag k="material" v="wood"/>
+	</node>
+	<node id="4753165035" lat="48.5707558" lon="13.4593476" version="1">
+		<tag k="colour" v="yellow"/>
+		<tag k="amenity" v="bench"/>
+		<tag k="backrest" v="yes"/>
+		<tag k="material" v="wood"/>
+	</node>
+	<node id="4753184093" lat="48.5703257" lon="13.458587" version="1">
+		<tag k="seats" v="4"/>
+		<tag k="colour" v="brown"/>
+		<tag k="amenity" v="bench"/>
+		<tag k="backrest" v="yes"/>
+		<tag k="material" v="wood"/>
+	</node>
+	<node id="4753184094" lat="48.5707193" lon="13.4592561" version="1">
+		<tag k="seats" v="4"/>
+		<tag k="colour" v="yellow"/>
+		<tag k="amenity" v="bench"/>
+		<tag k="backrest" v="yes"/>
+		<tag k="material" v="wood"/>
+	</node>
+	<node id="4753184136" lat="48.5704791" lon="13.4588582" version="1">
+		<tag k="colour" v="brown"/>
+		<tag k="amenity" v="bench"/>
+		<tag k="backrest" v="yes"/>
+		<tag k="material" v="wood"/>
+	</node>
+	<node id="4753184139" lat="48.5704276" lon="13.4587713" version="1">
+		<tag k="amenity" v="waste_basket"/>
+	</node>
+	<node id="4753184142" lat="48.5707124" lon="13.4592537" version="1">
+		<tag k="amenity" v="waste_basket"/>
+	</node>
+	<node id="4753208963" lat="48.570919" lon="13.4592292" version="1"/>
+	<node id="4753208964" lat="48.5707172" lon="13.4592339" version="1"/>
+	<node id="4753208965" lat="48.5708227" lon="13.4590792" version="1"/>
+	<node id="4753208966" lat="48.5708134" lon="13.4593839" version="1"/>
+	<node id="4753225678" lat="48.5705047" lon="13.4585701" version="1">
+		<tag k="amenity" v="waste_basket"/>
+	</node>
+	<node id="4753262169" lat="48.5706439" lon="13.4587861" version="1">
+		<tag k="bicycle" v="yes"/>
+		<tag k="tourism" v="information"/>
+		<tag k="information" v="guidepost"/>
+	</node>
+	<node id="4753343226" lat="48.5708534" lon="13.4594747" version="1">
+		<tag k="emergency" v="life_ring"/>
+	</node>
+	<node id="4754778205" lat="48.5705939" lon="13.4591185" version="1"/>
+	<node id="5366320191" lat="48.5704143" lon="13.4584974" version="1"/>
+	<node id="6042358461" lat="48.5704161" lon="13.4584444" version="1">
+		<tag k="highway" v="traffic_mirror"/>
+		<tag k="support" v="pole"/>
+		<tag k="direction" v="280"/>
+	</node>
+	<node id="6439469780" lat="48.5707318" lon="13.4580089" version="1"/>
+	<node id="6439469781" lat="48.5708965" lon="13.4583653" version="1"/>
+	<node id="6439469782" lat="48.5709292" lon="13.4578605" version="1"/>
+	<node id="6439469783" lat="48.5708225" lon="13.4581282" version="1">
+		<tag k="note" v="Bayernflagge"/>
+		<tag k="man_made" v="flagpole"/>
+		<tag k="flag:type" v="governmental"/>
+		<tag k="flag:orientation" v="vertical"/>
+	</node>
+	<node id="6439469784" lat="48.5708057" lon="13.4580956" version="1">
+		<tag k="country" v="DE"/>
+		<tag k="man_made" v="flagpole"/>
+		<tag k="flag:type" v="national"/>
+		<tag k="flag:orientation" v="vertical"/>
+	</node>
+	<node id="6439470485" lat="48.5709189" lon="13.4578978" version="1">
+		<tag k="natural" v="tree"/>
+		<tag k="leaf_type" v="broadleaved"/>
+	</node>
+	<node id="6439470486" lat="48.5708215" lon="13.457982" version="1"/>
+	<node id="6439470487" lat="48.570999" lon="13.4581414" version="1"/>
+	<node id="6439470488" lat="48.570889" lon="13.4579075" version="1"/>
+	<node id="6439470489" lat="48.5709262" lon="13.4578654" version="1"/>
+	<node id="6439470490" lat="48.5707782" lon="13.4580327" version="1"/>
+	<node id="6439470491" lat="48.5708801" lon="13.4582315" version="1"/>
+	<node id="6439470492" lat="48.5708102" lon="13.457919" version="1"/>
+	<node id="6439470493" lat="48.5709306" lon="13.458167" version="1"/>
+	<node id="6439470494" lat="48.5709814" lon="13.458114" version="1"/>
+	<node id="6439470495" lat="48.5709453" lon="13.4581526" version="1"/>
+	<node id="6439470496" lat="48.5708513" lon="13.4579521" version="1"/>
+	<node id="6439470497" lat="48.5708866" lon="13.4579114" version="1"/>
+	<node id="6439470498" lat="48.570881" lon="13.458226" version="1"/>
+	<node id="6439470499" lat="48.570808" lon="13.4580796" version="1"/>
+	<node id="6439470500" lat="48.5709164" lon="13.4581857" version="1"/>
+	<node id="6439470501" lat="48.5708434" lon="13.4580393" version="1"/>
+	<node id="6450097988" lat="48.5709946" lon="13.4578123" version="1"/>
+	<node id="6450097989" lat="48.5709762" lon="13.4578324" version="1"/>
+	<node id="6450097991" lat="48.5709998" lon="13.4578818" version="1"/>
+	<node id="6450098004" lat="48.570973" lon="13.4580752" version="1"/>
+	<node id="6450098005" lat="48.5709599" lon="13.4580472" version="1"/>
+	<node id="6450098006" lat="48.5709467" lon="13.4580191" version="1"/>
+	<node id="6450098007" lat="48.5709336" lon="13.457991" version="1"/>
+	<node id="6450098008" lat="48.5709205" lon="13.457963" version="1"/>
+	<node id="6450098010" lat="48.570993" lon="13.4580117" version="1"/>
+	<node id="6450098011" lat="48.5709799" lon="13.4579837" version="1"/>
+	<node id="6450098012" lat="48.5709668" lon="13.4579556" version="1"/>
+	<node id="6450098013" lat="48.5709536" lon="13.4579275" version="1"/>
+	<node id="6450098014" lat="48.5709319" lon="13.458124" version="1"/>
+	<node id="6450098015" lat="48.5709184" lon="13.4580953" version="1"/>
+	<node id="6450098016" lat="48.570905" lon="13.4580667" version="1"/>
+	<node id="6450098017" lat="48.5708916" lon="13.458038" version="1"/>
+	<node id="6450098018" lat="48.5708782" lon="13.4580094" version="1"/>
+	<node id="6450098019" lat="48.5708647" lon="13.4579807" version="1"/>
+	<node id="6450098020" lat="48.5709679" lon="13.4580851" version="1"/>
+	<node id="6450098021" lat="48.5709543" lon="13.4580561" version="1"/>
+	<node id="6450098022" lat="48.5709408" lon="13.4580272" version="1"/>
+	<node id="6450098023" lat="48.5709272" lon="13.4579982" version="1"/>
+	<node id="6450098024" lat="48.5709137" lon="13.4579693" version="1"/>
+	<node id="6450098025" lat="48.5709001" lon="13.4579403" version="1"/>
+	<node id="6450098027" lat="48.5709861" lon="13.4581033" version="1"/>
+	<node id="6450098029" lat="48.5709073" lon="13.4579349" version="1"/>
+	<node id="6450098030" lat="48.5709405" lon="13.4578995" version="1"/>
+	<node id="6450098031" lat="48.5709337" lon="13.4578818" version="1"/>
+	<way id="6100985" version="1">
+		<nd ref="60631519"/>
+		<tag k="name" v="Augustinergasse"/>
+		<tag k="width" v="12 m"/>
+		<tag k="divider" v="dashed_line"/>
+		<tag k="highway" v="unclassified"/>
+		<tag k="incline" v="down"/>
+		<tag k="surface" v="asphalt"/>
+		<tag k="sidewalk" v="both"/>
+	</way>
+	<way id="8092865" version="1">
+		<nd ref="60631342"/>
+		<nd ref="60631348"/>
+		<tag k="foot" v="yes"/>
+		<tag k="bicycle" v="yes"/>
+		<tag k="highway" v="footway"/>
+	</way>
+	<way id="8092867" version="1">
+		<nd ref="60631348"/>
+		<tag k="name" v="Innsteg"/>
+		<tag k="image" v="https://commons.wikimedia.org/wiki/File%3APassau_Fuenferlsteg.jpg"/>
+		<tag k="layer" v="1"/>
+		<tag k="width" v="3 m"/>
+		<tag k="bridge" v="yes"/>
+		<tag k="bicycle" v="no"/>
+		<tag k="highway" v="footway"/>
+		<tag k="surface" v="paved"/>
+		<tag k="alt_name" v="Hindenburgsteg"/>
+		<tag k="heritage" v="yes"/>
+		<tag k="historic" v="bridge"/>
+		<tag k="loc_name" v="Fünferlsteg"/>
+		<tag k="old_name" v="Fünferlsteg"/>
+		<tag k="ref:BLfD" v="D-2-62-000-812"/>
+		<tag k="description" v="&#34;Fünferlsteg“ über den Inn in Passau"/>
+		<tag k="source:width" v="estimated"/>
+		<tag k="BLfD:criteria" v="Baudenkmal"/>
+		<tag k="official_name" v="Hindenburgbrücke"/>
+		<tag k="bridge:railing" v="yes"/>
+		<tag k="heritage:operator" v="BLfD"/>
+	</way>
+	<way id="8092881" version="1">
+		<nd ref="60631519"/>
+		<tag k="highway" v="service"/>
+		<tag k="sidewalk" v="right"/>
+	</way>
+	<way id="8092911" version="1">
+		<nd ref="55474763"/>
+		<nd ref="2396619899"/>
+		<nd ref="2396619900"/>
+		<nd ref="4541667256"/>
+		<tag k="foot" v="designated"/>
+		<tag k="horse" v="no"/>
+		<tag k="bicycle" v="designated"/>
+		<tag k="highway" v="cycleway"/>
+		<tag k="traffic_sign" v="DE:240"/>
+	</way>
+	<way id="8093956" version="1">
+		<nd ref="4753149335"/>
+		<nd ref="60641005"/>
+		<tag k="highway" v="footway"/>
+	</way>
+	<way id="8106960" version="1">
+		<nd ref="60742435"/>
+		<nd ref="60742437"/>
+		<nd ref="1376214131"/>
+		<nd ref="60742438"/>
+		<tag k="name" v="Innsteg-Aula"/>
+		<tag k="name:en" v="Innsteg Auditorium"/>
+		<tag k="building" v="yes"/>
+		<tag k="old_name" v="Innsteg-Turnhalle"/>
+		<tag k="addr:city" v="Passau"/>
+		<tag k="addr:street" v="Innstraße"/>
+		<tag k="addr:country" v="DE"/>
+		<tag k="addr:housenumber" v="23"/>
+		<tag k="building:material" v="brick"/>
+	</way>
+	<way id="24154797" version="1">
+		<nd ref="261655937"/>
+		<tag k="highway" v="footway"/>
+	</way>
+	<way id="24624498" version="1">
+		<nd ref="267679217"/>
+		<nd ref="1772004516"/>
+		<nd ref="267833935"/>
+	</way>
+	<way id="24624501" version="1">
+		<nd ref="267679221"/>
+		<nd ref="267679245"/>
+		<nd ref="267679221"/>
+		<tag k="leisure" v="garden"/>
+	</way>
+	<way id="24624505" version="1">
+		<nd ref="267679233"/>
+		<nd ref="267679236"/>
+		<nd ref="267679244"/>
+		<nd ref="267679191"/>
+		<nd ref="267679186"/>
+		<nd ref="1772004523"/>
+		<nd ref="267679233"/>
+	</way>
+	<way id="24728104" version="1">
+		<nd ref="50376711"/>
+		<nd ref="497002381"/>
+		<nd ref="60631339"/>
+		<nd ref="60631342"/>
+		<tag k="name" v="Innstraße"/>
+		<tag k="lanes" v="2"/>
+		<tag k="highway" v="tertiary"/>
+		<tag k="surface" v="asphalt"/>
+		<tag k="maxspeed" v="30"/>
+		<tag k="sidewalk" v="both"/>
+		<tag k="turn:lanes:backward" v="through;right"/>
+	</way>
+	<way id="35415533" version="1">
+		<nd ref="415427186"/>
+		<nd ref="415427188"/>
+		<tag k="highway" v="steps"/>
+		<tag k="incline" v="up"/>
+		<tag k="handrail" v="yes"/>
+	</way>
+	<way id="35415534" version="1">
+		<nd ref="415427188"/>
+		<nd ref="415427190"/>
+		<tag k="highway" v="footway"/>
+	</way>
+	<way id="56681221" version="1">
+		<nd ref="1630499645"/>
+		<tag k="name" v="Inn"/>
+		<tag k="name:ru" v="Инн"/>
+		<tag k="waterway" v="river"/>
+	</way>
+	<way id="62225703" version="1">
+		<nd ref="267679250"/>
+		<nd ref="415427186"/>
+		<nd ref="55474763"/>
+		<nd ref="4754778205"/>
+		<nd ref="261655937"/>
+		<tag k="foot" v="designated"/>
+		<tag k="name" v="Innpromenade"/>
+		<tag k="horse" v="no"/>
+		<tag k="oneway" v="no"/>
+		<tag k="bicycle" v="designated"/>
+		<tag k="highway" v="cycleway"/>
+		<tag k="surface" v="asphalt"/>
+		<tag k="traffic_sign" v="DE:240"/>
+	</way>
+	<way id="62568050" version="1">
+		<nd ref="267833935"/>
+		<nd ref="1772004516"/>
+		<nd ref="267679217"/>
+	</way>
+	<way id="84223117" version="1">
+		<nd ref="979731539"/>
+		<nd ref="979731426"/>
+		<nd ref="979731616"/>
+		<nd ref="979731539"/>
+		<tag k="source" v="geoimage.at"/>
+		<tag k="building" v="yes"/>
+		<tag k="addr:city" v="Passau"/>
+		<tag k="roof:shape" v="hipped"/>
+		<tag k="addr:street" v="Innstraße"/>
+		<tag k="roof:colour" v="brown"/>
+		<tag k="addr:country" v="DE"/>
+		<tag k="addr:postcode" v="94032"/>
+		<tag k="building:colour" v="white"/>
+		<tag k="building:levels" v="4"/>
+		<tag k="addr:housenumber" v="17"/>
+	</way>
+	<way id="84223120" version="1">
+		<nd ref="979731576"/>
+		<nd ref="979731669"/>
+		<nd ref="979731711"/>
+		<nd ref="979731380"/>
+		<nd ref="979731681"/>
+		<nd ref="979731356"/>
+		<nd ref="979731388"/>
+		<nd ref="979731433"/>
+		<nd ref="979731626"/>
+		<nd ref="979731253"/>
+		<nd ref="979731576"/>
+	</way>
+	<way id="84223126" version="1">
+		<nd ref="979731234"/>
+		<nd ref="979731421"/>
+		<nd ref="979731626"/>
+		<nd ref="979731254"/>
+		<nd ref="979731234"/>
+		<tag k="name" v="Agentur für Arbeit Passau"/>
+		<tag k="office" v="employment_agency"/>
+		<tag k="alt_name" v="Arbeitsagentur Passau"/>
+		<tag k="building" v="yes"/>
+		<tag k="old_name" v="Arbeitsamt Passau"/>
+		<tag k="addr:city" v="Passau"/>
+		<tag k="roof:shape" v="flat"/>
+		<tag k="addr:street" v="Innstraße"/>
+		<tag k="addr:country" v="DE"/>
+		<tag k="building:levels" v="5"/>
+		<tag k="addr:housenumber" v="20"/>
+		<tag k="building:material" v="concrete"/>
+	</way>
+	<way id="84223131" version="1">
+		<nd ref="979731422"/>
+		<nd ref="979731266"/>
+		<nd ref="979731364"/>
+		<nd ref="979731492"/>
+		<nd ref="979731422"/>
+		<tag k="building" v="yes"/>
+		<tag k="addr:city" v="Passau"/>
+		<tag k="addr:street" v="Innstraße"/>
+		<tag k="addr:suburb" v="Haidenhof"/>
+		<tag k="addr:country" v="DE"/>
+		<tag k="addr:postcode" v="94032"/>
+		<tag k="addr:housenumber" v="21"/>
+	</way>
+	<way id="84223154" version="1">
+		<nd ref="979731538"/>
+		<nd ref="979731240"/>
+		<nd ref="979731318"/>
+		<nd ref="979731606"/>
+		<nd ref="1156451003"/>
+		<nd ref="979731538"/>
+		<tag k="name" v="Auferstehungskirche"/>
+		<tag k="amenity" v="place_of_worship"/>
+		<tag k="building" v="yes"/>
+		<tag k="religion" v="christian"/>
+		<tag k="addr:city" v="Passau"/>
+		<tag k="roof:shape" v="gabled"/>
+		<tag k="addr:street" v="Innstraße"/>
+		<tag k="addr:suburb" v="Haidenhof"/>
+		<tag k="roof:colour" v="red"/>
+		<tag k="addr:country" v="DE"/>
+		<tag k="denomination" v="old_catholic"/>
+		<tag k="addr:postcode" v="94032"/>
+		<tag k="building:colour" v="white"/>
+		<tag k="addr:housenumber" v="19"/>
+	</way>
+	<way id="84223160" version="1">
+		<nd ref="979731471"/>
+		<nd ref="979731440"/>
+		<nd ref="979731595"/>
+		<nd ref="979731386"/>
+		<nd ref="979731471"/>
+	</way>
+	<way id="94483112" version="1">
+		<nd ref="267679233"/>
+		<nd ref="1912368248"/>
+		<nd ref="1097441063"/>
+		<nd ref="1912368249"/>
+		<nd ref="1097441096"/>
+		<nd ref="1912368250"/>
+		<nd ref="1097441058"/>
+		<nd ref="1912368253"/>
+		<nd ref="1097441093"/>
+		<nd ref="1117854938"/>
+		<nd ref="1117854897"/>
+		<nd ref="267679186"/>
+		<tag k="TODO" v="prüfen; Ende ergänzen"/>
+		<tag k="height" v="3 m"/>
+		<tag k="barrier" v="wall"/>
+	</way>
+	<way id="98905801" version="1">
+		<nd ref="60641005"/>
+		<nd ref="871152575"/>
+		<nd ref="871152554"/>
+		<nd ref="415427190"/>
+		<nd ref="50376711"/>
+		<tag k="lit" v="yes"/>
+		<tag k="name" v="Innstraße"/>
+		<tag k="lanes" v="3"/>
+		<tag k="width" v="10"/>
+		<tag k="highway" v="tertiary"/>
+		<tag k="surface" v="asphalt"/>
+		<tag k="maxspeed" v="30"/>
+		<tag k="sidewalk" v="both"/>
+		<tag k="turn:lanes:forward" v="left|through"/>
+	</way>
+	<way id="108277170" version="1">
+		<nd ref="60631342"/>
+		<nd ref="4751514927"/>
+		<nd ref="1641256218"/>
+		<tag k="name" v="Innstraße"/>
+		<tag k="lanes" v="2"/>
+		<tag k="highway" v="tertiary"/>
+		<tag k="surface" v="asphalt"/>
+		<tag k="maxspeed" v="30"/>
+		<tag k="sidewalk" v="both"/>
+	</way>
+	<way id="123393791" version="1">
+		<nd ref="1376214131"/>
+		<tag k="roof:ridge" v="yes"/>
+	</way>
+	<way id="133533282" version="1">
+		<nd ref="1469756514"/>
+		<nd ref="1469756516"/>
+		<nd ref="1469756512"/>
+		<nd ref="1469756510"/>
+		<nd ref="1469756514"/>
+		<tag k="access" v="customers"/>
+		<tag k="amenity" v="parking"/>
+		<tag k="parking" v="surface"/>
+		<tag k="operator" v="Finanzamt Passau"/>
+		<tag k="wheelchair" v="limited"/>
+	</way>
+	<way id="133533283" version="1">
+		<nd ref="1469756522"/>
+		<nd ref="6439469782"/>
+		<nd ref="1469756520"/>
+		<nd ref="6439469783"/>
+		<nd ref="6439469784"/>
+		<nd ref="1469756518"/>
+		<nd ref="1469756522"/>
+		<tag k="access" v="private"/>
+		<tag k="amenity" v="parking"/>
+		<tag k="parking" v="surface"/>
+		<tag k="operator" v="Finanzamt Passau"/>
+	</way>
+	<way id="135301741" version="1">
+		<nd ref="1630499645"/>
+		<tag k="name" v="Beiderwiesbach"/>
+		<tag k="width" v="3"/>
+		<tag k="tunnel" v="no"/>
+		<tag k="waterway" v="stream"/>
+		<tag k="est_width" v="1"/>
+	</way>
+	<way id="150130636" version="1">
+		<nd ref="1630499705"/>
+		<nd ref="1630499702"/>
+		<nd ref="1630499684"/>
+		<nd ref="1630499676"/>
+		<nd ref="1630499674"/>
+		<nd ref="1630499670"/>
+		<nd ref="1630499666"/>
+		<nd ref="1630499643"/>
+		<nd ref="1630499641"/>
+	</way>
+	<way id="152747900" version="1">
+		<nd ref="3440550839"/>
+		<nd ref="3440550841"/>
+		<nd ref="3440550842"/>
+		<nd ref="3440550840"/>
+		<nd ref="3440550837"/>
+		<tag k="name" v="Universität Passau"/>
+		<tag k="amenity" v="university"/>
+		<tag k="name:en" v="University of Passau"/>
+		<tag k="name:ru" v="Университет Пассау"/>
+	</way>
+	<way id="154955358" version="1">
+		<nd ref="60641005"/>
+		<tag k="lit" v="yes"/>
+		<tag k="name" v="Innstraße"/>
+		<tag k="lanes" v="2"/>
+		<tag k="width" v="13 m"/>
+		<tag k="highway" v="tertiary"/>
+		<tag k="surface" v="asphalt"/>
+		<tag k="maxspeed" v="30"/>
+		<tag k="sidewalk" v="both"/>
+	</way>
+	<way id="165661193" version="1">
+		<nd ref="1772004523"/>
+		<nd ref="267679245"/>
+		<nd ref="267679221"/>
+		<nd ref="267679217"/>
+		<tag k="roof:colour" v="red"/>
+		<tag k="roof:levels" v="1"/>
+		<tag k="building:part" v="yes"/>
+		<tag k="building:colour" v="white"/>
+		<tag k="building:levels" v="4"/>
+	</way>
+	<way id="165661195" version="1">
+		<nd ref="1772004517"/>
+		<nd ref="1772004521"/>
+		<nd ref="1772004522"/>
+		<nd ref="1772004519"/>
+		<nd ref="1772004517"/>
+		<tag k="height" v="24"/>
+		<tag k="roof:shape" v="pyramidal"/>
+		<tag k="roof:colour" v="black"/>
+		<tag k="roof:height" v="10"/>
+		<tag k="seamark:type" v="landmark"/>
+		<tag k="building:part" v="yes"/>
+		<tag k="building:colour" v="white"/>
+		<tag k="seamark:landmark:category" v="tower"/>
+		<tag k="seamark:landmark:function" v="church"/>
+		<tag k="seamark:landmark:conspicuity" v="conspicuous"/>
+	</way>
+	<way id="165661196" version="1">
+		<nd ref="1772004516"/>
+		<nd ref="267679236"/>
+		<nd ref="267679233"/>
+		<nd ref="267833935"/>
+		<nd ref="1772004516"/>
+		<tag k="roof:shape" v="gabled"/>
+		<tag k="roof:colour" v="red"/>
+		<tag k="roof:levels" v="1"/>
+		<tag k="building:part" v="yes"/>
+		<tag k="building:colour" v="white"/>
+		<tag k="building:levels" v="4"/>
+	</way>
+	<way id="165661199" version="1">
+		<nd ref="267833935"/>
+		<nd ref="267679233"/>
+		<tag k="roof:shape" v="hipped"/>
+		<tag k="roof:colour" v="red"/>
+		<tag k="roof:levels" v="1"/>
+		<tag k="building:part" v="yes"/>
+		<tag k="building:colour" v="white"/>
+		<tag k="building:levels" v="5"/>
+	</way>
+	<way id="165661200" version="1">
+		<nd ref="267679217"/>
+		<nd ref="267679221"/>
+		<nd ref="267679245"/>
+		<nd ref="1772004523"/>
+		<nd ref="267679186"/>
+		<nd ref="267679191"/>
+		<nd ref="267679244"/>
+		<nd ref="267679236"/>
+		<nd ref="1772004516"/>
+		<nd ref="267679217"/>
+		<tag k="building:part" v="yes"/>
+		<tag k="building:colour" v="white"/>
+	</way>
+	<way id="180769679" version="1">
+		<nd ref="1912368268"/>
+		<nd ref="1912368271"/>
+		<nd ref="1912368274"/>
+		<nd ref="1912368275"/>
+		<nd ref="1912368273"/>
+		<nd ref="1912368269"/>
+		<nd ref="1912368266"/>
+		<nd ref="1912368263"/>
+		<nd ref="1912368260"/>
+		<nd ref="1912368261"/>
+		<nd ref="1912368265"/>
+		<nd ref="1912368267"/>
+		<nd ref="1912368268"/>
+		<tag k="foot" v="private"/>
+		<tag k="highway" v="footway"/>
+		<tag k="surface" v="gravel"/>
+	</way>
+	<way id="180769680" version="1">
+		<nd ref="1912368264"/>
+		<nd ref="1912368272"/>
+		<nd ref="1912368277"/>
+		<nd ref="1912368279"/>
+		<nd ref="1912368278"/>
+		<nd ref="1912368276"/>
+		<nd ref="1912368270"/>
+		<nd ref="1912368262"/>
+		<nd ref="1912368258"/>
+		<nd ref="1912368255"/>
+		<nd ref="1912368256"/>
+		<nd ref="1912368259"/>
+		<nd ref="1912368264"/>
+		<tag k="foot" v="private"/>
+		<tag k="highway" v="footway"/>
+		<tag k="surface" v="gravel"/>
+	</way>
+	<way id="180769681" version="1">
+		<nd ref="1912368261"/>
+		<nd ref="1912368255"/>
+		<nd ref="1912368254"/>
+		<tag k="foot" v="private"/>
+		<tag k="highway" v="footway"/>
+		<tag k="surface" v="gravel"/>
+	</way>
+	<way id="180769682" version="1">
+		<nd ref="1912368279"/>
+		<nd ref="1912368275"/>
+		<tag k="foot" v="private"/>
+		<tag k="highway" v="footway"/>
+		<tag k="surface" v="gravel"/>
+	</way>
+	<way id="180769683" version="1">
+		<nd ref="1912368266"/>
+		<nd ref="1912368264"/>
+		<nd ref="1912368257"/>
+		<tag k="foot" v="private"/>
+		<tag k="highway" v="footway"/>
+		<tag k="surface" v="gravel"/>
+	</way>
+	<way id="180769684" version="1">
+		<nd ref="1912368270"/>
+		<nd ref="1912368268"/>
+		<tag k="foot" v="private"/>
+		<tag k="highway" v="footway"/>
+		<tag k="surface" v="gravel"/>
+	</way>
+	<way id="213442649" version="1">
+		<nd ref="60631519"/>
+		<nd ref="6439470492"/>
+		<nd ref="6439469780"/>
+		<nd ref="497002383"/>
+		<nd ref="50376711"/>
+		<tag k="name" v="Augustinergasse"/>
+		<tag k="width" v="12"/>
+		<tag k="divider" v="dashed_line"/>
+		<tag k="highway" v="unclassified"/>
+		<tag k="incline" v="down"/>
+		<tag k="surface" v="asphalt"/>
+		<tag k="sidewalk" v="both"/>
+		<tag k="turn:lanes:forward" v="left;right"/>
+	</way>
+	<way id="329870498" version="1">
+		<nd ref="3368182825"/>
+		<nd ref="1698021806"/>
+		<nd ref="1698021803"/>
+	</way>
+	<way id="458118924" version="1">
+		<nd ref="4541667251"/>
+		<nd ref="5366320191"/>
+		<nd ref="4541667252"/>
+		<nd ref="4541667253"/>
+		<nd ref="4541667255"/>
+		<nd ref="4541667251"/>
+		<tag k="access" v="no"/>
+		<tag k="amenity" v="parking"/>
+	</way>
+	<way id="458118926" version="1">
+		<nd ref="4541667251"/>
+		<nd ref="4541667256"/>
+		<nd ref="50376711"/>
+		<tag k="highway" v="service"/>
+	</way>
+	<way id="482502058" version="1">
+		<nd ref="4753208965"/>
+		<nd ref="4753208963"/>
+		<nd ref="4753208966"/>
+		<nd ref="4753208964"/>
+		<nd ref="4753208965"/>
+		<tag k="access" v="private"/>
+		<tag k="amenity" v="parking"/>
+		<tag k="parking" v="surface"/>
+	</way>
+	<way id="482674960" version="1">
+		<nd ref="4754778205"/>
+		<nd ref="4751514927"/>
+		<tag k="foot" v="designated"/>
+		<tag k="bicycle" v="designated"/>
+		<tag k="highway" v="footway"/>
+		<tag k="surface" v="paved"/>
+		<tag k="segregated" v="no"/>
+	</way>
+	<way id="686947296" version="1">
+		<nd ref="6439469781"/>
+		<nd ref="6439469780"/>
+		<tag k="highway" v="service"/>
+	</way>
+	<way id="686947297" version="1">
+		<nd ref="6450098031"/>
+		<nd ref="6439470489"/>
+		<nd ref="6439470488"/>
+		<nd ref="6439470487"/>
+		<tag k="barrier" v="fence"/>
+		<tag k="fence_type" v="railing"/>
+	</way>
+	<way id="686947298" version="1">
+		<nd ref="6439470491"/>
+		<nd ref="6439470490"/>
+		<nd ref="6439470486"/>
+		<tag k="barrier" v="fence"/>
+		<tag k="fence_type" v="railing"/>
+	</way>
+	<way id="686947300" version="1">
+		<nd ref="6439470493"/>
+		<nd ref="6439470492"/>
+		<tag k="highway" v="service"/>
+		<tag k="service" v="parking_aisle"/>
+	</way>
+	<way id="686947302" version="1">
+		<nd ref="6439470497"/>
+		<nd ref="6450098025"/>
+		<nd ref="6450098019"/>
+		<nd ref="6439470496"/>
+		<nd ref="6439470497"/>
+		<tag k="amenity" v="parking_space"/>
+	</way>
+	<way id="686947304" version="1">
+		<nd ref="6439470501"/>
+		<nd ref="6439470499"/>
+		<nd ref="6439470498"/>
+		<nd ref="6439470500"/>
+		<nd ref="6439470501"/>
+		<tag k="amenity" v="parking_space"/>
+	</way>
+	<way id="687993419" version="1">
+		<nd ref="6450097991"/>
+		<nd ref="6450097989"/>
+		<nd ref="6450097988"/>
+		<tag k="amenity" v="parking_space"/>
+		<tag k="markings:colour" v="white"/>
+	</way>
+	<way id="687993420" version="1">
+		<nd ref="6450097991"/>
+		<tag k="amenity" v="parking_space"/>
+		<tag k="markings:colour" v="white"/>
+	</way>
+	<way id="687993425" version="1">
+		<nd ref="6450098027"/>
+		<nd ref="6450098004"/>
+		<tag k="amenity" v="parking_space"/>
+		<tag k="surface" v="asphalt"/>
+		<tag k="markings:material" v="cobblestone"/>
+	</way>
+	<way id="687993426" version="1">
+		<nd ref="6450098010"/>
+		<nd ref="6450098004"/>
+		<nd ref="6450098005"/>
+		<nd ref="6450098010"/>
+		<tag k="amenity" v="parking_space"/>
+		<tag k="surface" v="asphalt"/>
+		<tag k="markings:material" v="cobblestone"/>
+	</way>
+	<way id="687993427" version="1">
+		<nd ref="6450098011"/>
+		<nd ref="6450098010"/>
+		<nd ref="6450098005"/>
+		<nd ref="6450098006"/>
+		<nd ref="6450098011"/>
+		<tag k="amenity" v="parking_space"/>
+		<tag k="surface" v="asphalt"/>
+		<tag k="markings:material" v="cobblestone"/>
+	</way>
+	<way id="687993428" version="1">
+		<nd ref="6450098012"/>
+		<nd ref="6450098011"/>
+		<nd ref="6450098006"/>
+		<nd ref="6450098007"/>
+		<nd ref="6450098012"/>
+		<tag k="amenity" v="parking_space"/>
+		<tag k="surface" v="asphalt"/>
+		<tag k="markings:material" v="cobblestone"/>
+	</way>
+	<way id="687993429" version="1">
+		<nd ref="6450098013"/>
+		<nd ref="6450098012"/>
+		<nd ref="6450098007"/>
+		<nd ref="6450098008"/>
+		<nd ref="6450098013"/>
+		<tag k="amenity" v="parking_space"/>
+		<tag k="surface" v="asphalt"/>
+		<tag k="markings:material" v="cobblestone"/>
+	</way>
+	<way id="687993430" version="1">
+		<nd ref="6450098030"/>
+		<nd ref="6450098013"/>
+		<nd ref="6450098008"/>
+		<nd ref="6450098029"/>
+		<nd ref="6450098030"/>
+		<tag k="amenity" v="parking_space"/>
+		<tag k="surface" v="cobblestone"/>
+		<tag k="markings:material" v="cobblestone"/>
+	</way>
+	<way id="687993431" version="1">
+		<nd ref="6450098020"/>
+		<nd ref="6439470494"/>
+		<nd ref="6439470495"/>
+		<nd ref="6450098014"/>
+		<nd ref="6450098020"/>
+		<tag k="amenity" v="parking_space"/>
+	</way>
+	<way id="687993432" version="1">
+		<nd ref="6450098021"/>
+		<nd ref="6450098020"/>
+		<nd ref="6450098014"/>
+		<nd ref="6450098015"/>
+		<nd ref="6450098021"/>
+		<tag k="amenity" v="parking_space"/>
+	</way>
+	<way id="687993433" version="1">
+		<nd ref="6450098022"/>
+		<nd ref="6450098021"/>
+		<nd ref="6450098015"/>
+		<nd ref="6450098016"/>
+		<nd ref="6450098022"/>
+		<tag k="amenity" v="parking_space"/>
+	</way>
+	<way id="687993434" version="1">
+		<nd ref="6450098023"/>
+		<nd ref="6450098022"/>
+		<nd ref="6450098016"/>
+		<nd ref="6450098017"/>
+		<nd ref="6450098023"/>
+		<tag k="amenity" v="parking_space"/>
+	</way>
+	<way id="687993435" version="1">
+		<nd ref="6450098024"/>
+		<nd ref="6450098023"/>
+		<nd ref="6450098017"/>
+		<nd ref="6450098018"/>
+		<nd ref="6450098024"/>
+		<tag k="amenity" v="parking_space"/>
+	</way>
+	<way id="687993436" version="1">
+		<nd ref="6450098025"/>
+		<nd ref="6450098024"/>
+		<nd ref="6450098018"/>
+		<nd ref="6450098019"/>
+		<nd ref="6450098025"/>
+		<tag k="amenity" v="parking_space"/>
+	</way>
+	<relation id="15228" version="1">
+		<member type="way" ref="24624498" role="inner"/>
+		<member type="way" ref="24624501" role="inner"/>
+		<member type="way" ref="24624505" role="outer"/>
+		<tag k="name" v="Nikolakloster"/>
+		<tag k="type" v="multipolygon"/>
+		<tag k="building" v="yes"/>
+		<tag k="wikidata" v="Q768419"/>
+		<tag k="wikipedia" v="de:Augustinerchorherrenstift St. Nikola (Passau)"/>
+	</relation>
+	<relation id="31294" version="1">
+		<member type="way" ref="62225703" role=""/>
+		<tag k="ref" v="R6"/>
+		<tag k="name" v="R6, Römerweg"/>
+		<tag k="type" v="route"/>
+		<tag k="route" v="bicycle"/>
+		<tag k="network" v="rcn"/>
+		<tag k="operator" v="Oberösterreich Tourismus GmbH"/>
+	</relation>
+	<relation id="34214" version="1">
+		<member type="way" ref="152747900" role="perimeter"/>
+		<member type="way" ref="8106960" role=""/>
+		<tag k="name" v="Universität Passau"/>
+		<tag k="site" v="university"/>
+		<tag k="type" v="site"/>
+		<tag k="amenity" v="university"/>
+		<tag k="name:en" v="University of Passau"/>
+		<tag k="name:ru" v="Университет Пассау"/>
+		<tag k="website" v="http://www.uni-passau.de/"/>
+		<tag k="wikidata" v="Q704468"/>
+		<tag k="wikipedia" v="de:Universität Passau"/>
+	</relation>
+	<relation id="142704" version="1">
+		<member type="way" ref="108277170" role="from"/>
+		<tag k="name" v="Innstraße x Gottfried-Schäffer-Straße"/>
+		<tag k="type" v="restriction"/>
+		<tag k="restriction" v="only_straight_on"/>
+	</relation>
+	<relation id="399729" version="1">
+		<member type="node" ref="871152575" role="stop"/>
+		<member type="node" ref="3440550837" role="stop"/>
+		<member type="node" ref="871152595" role="platform"/>
+		<member type="way" ref="154955358" role=""/>
+		<member type="way" ref="98905801" role=""/>
+		<member type="way" ref="213442649" role=""/>
+		<member type="way" ref="6100985" role=""/>
+		<tag k="to" v="Königschalding"/>
+		<tag k="ref" v="8"/>
+		<tag k="from" v="Kohlbruck / Erlebnisbad"/>
+		<tag k="name" v="Linie 8 Richtung Königschalding"/>
+		<tag k="type" v="route"/>
+		<tag k="route" v="bus"/>
+		<tag k="colour" v="#f3aaac"/>
+		<tag k="network" v="Verkehrsbetriebsgesellschaft Passau"/>
+		<tag k="by_night" v="no"/>
+		<tag k="operator" v="Stadtwerke Passau"/>
+		<tag k="alternate" v="no"/>
+		<tag k="on_demand" v="no"/>
+		<tag k="network:guid" v="DE-BY-VBP"/>
+		<tag k="network:short" v="VBP"/>
+		<tag k="public_transport:version" v="2"/>
+	</relation>
+	<relation id="406437" version="1">
+		<member type="way" ref="56681221" role=""/>
+		<tag k="name" v="Inn"/>
+		<tag k="type" v="waterway"/>
+		<tag k="GEW_ID" v="T1772R1"/>
+		<tag k="HZBGEW" v="2-8"/>
+		<tag k="name:de" v="Inn"/>
+		<tag k="name:rm" v="En"/>
+		<tag k="name:ru" v="Инн"/>
+		<tag k="ref:fgkz" v="18"/>
+		<tag k="waterway" v="river"/>
+		<tag k="wikidata" v="Q14369"/>
+		<tag k="wikipedia" v="de:Inn"/>
+		<tag k="GEW_NAME_A" v="Inn"/>
+		<tag k="destination" v="Donau"/>
+	</relation>
+	<relation id="1130981" version="1">
+		<member type="way" ref="6100985" role=""/>
+		<member type="way" ref="213442649" role=""/>
+		<member type="way" ref="98905801" role=""/>
+		<member type="way" ref="154955358" role=""/>
+		<member type="node" ref="871152554" role="stop"/>
+		<member type="node" ref="3440550840" role="stop"/>
+		<member type="node" ref="871152560" role="platform"/>
+		<tag k="to" v="Kohlbruck / Erlebnisbad"/>
+		<tag k="ref" v="9"/>
+		<tag k="from" v="Königschalding"/>
+		<tag k="name" v="Linie 9 Richtung Kohlbruck / Erlebnisbad"/>
+		<tag k="type" v="route"/>
+		<tag k="route" v="bus"/>
+		<tag k="colour" v="#076a6c"/>
+		<tag k="network" v="Verkehrsbetriebsgesellschaft Passau"/>
+		<tag k="by_night" v="no"/>
+		<tag k="operator" v="Stadtwerke Passau"/>
+		<tag k="alternate" v="no"/>
+		<tag k="on_demand" v="no"/>
+		<tag k="network:guid" v="DE-BY-VBP"/>
+		<tag k="network:short" v="VBP"/>
+		<tag k="public_transport:version" v="2"/>
+	</relation>
+	<relation id="1132110" version="1">
+		<member type="node" ref="871152554" role="stop"/>
+		<member type="node" ref="3440550840" role="stop"/>
+		<member type="node" ref="871152560" role="platform"/>
+		<member type="way" ref="6100985" role=""/>
+		<member type="way" ref="213442649" role=""/>
+		<member type="way" ref="98905801" role=""/>
+		<member type="way" ref="154955358" role=""/>
+		<tag k="to" v="Kohlbruck / Erlebnisbad"/>
+		<tag k="ref" v="8"/>
+		<tag k="from" v="Königschalding"/>
+		<tag k="name" v="Linie 8 Richtung Kohlbruck / Erlebnisbad"/>
+		<tag k="type" v="route"/>
+		<tag k="fixme" v="role platform ist bei Relations nicht bekannt!"/>
+		<tag k="route" v="bus"/>
+		<tag k="colour" v="#f3aaac"/>
+		<tag k="network" v="Verkehrsbetriebsgesellschaft Passau"/>
+		<tag k="by_night" v="no"/>
+		<tag k="operator" v="Stadtwerke Passau"/>
+		<tag k="alternate" v="no"/>
+		<tag k="on_demand" v="no"/>
+		<tag k="network:guid" v="DE-BY-VBP"/>
+		<tag k="network:short" v="VBP"/>
+		<tag k="public_transport:version" v="2"/>
+	</relation>
+	<relation id="1132126" version="1">
+		<member type="node" ref="871152575" role="stop"/>
+		<member type="node" ref="3440550837" role="stop"/>
+		<member type="node" ref="871152595" role="platform"/>
+		<member type="way" ref="154955358" role=""/>
+		<member type="way" ref="98905801" role=""/>
+		<member type="way" ref="213442649" role=""/>
+		<member type="way" ref="6100985" role=""/>
+		<tag k="to" v="Königschalding"/>
+		<tag k="ref" v="9"/>
+		<tag k="from" v="Kohlbruck / Erlebnisbad"/>
+		<tag k="name" v="Linie 9 Richtung Königschalding"/>
+		<tag k="type" v="route"/>
+		<tag k="route" v="bus"/>
+		<tag k="colour" v="#076a6c"/>
+		<tag k="network" v="Verkehrsbetriebsgesellschaft Passau"/>
+		<tag k="by_night" v="no"/>
+		<tag k="operator" v="Stadtwerke Passau"/>
+		<tag k="alternate" v="no"/>
+		<tag k="on_demand" v="no"/>
+		<tag k="network:guid" v="DE-BY-VBP"/>
+		<tag k="network:short" v="VBP"/>
+		<tag k="public_transport:version" v="2"/>
+	</relation>
+	<relation id="1132127" version="1">
+		<member type="relation" ref="1132110" role=""/>
+		<member type="relation" ref="399729" role=""/>
+		<tag k="ref" v="8"/>
+		<tag k="line" v="bus"/>
+		<tag k="name" v="Linie 8"/>
+		<tag k="type" v="route_master"/>
+		<tag k="colour" v="#f3aaac"/>
+		<tag k="network" v="Verkehrsbetriebsgesellschaft Passau"/>
+		<tag k="by_night" v="no"/>
+		<tag k="operator" v="Stadtwerke Passau"/>
+		<tag k="on_demand" v="no"/>
+		<tag k="network:guid" v="DE-BY-VBP"/>
+		<tag k="route_master" v="bus"/>
+		<tag k="network:short" v="VBP"/>
+	</relation>
+	<relation id="1132128" version="1">
+		<member type="relation" ref="1130981" role=""/>
+		<member type="relation" ref="1132126" role=""/>
+		<tag k="ref" v="9"/>
+		<tag k="line" v="bus"/>
+		<tag k="name" v="Linie 9"/>
+		<tag k="type" v="route_master"/>
+		<tag k="colour" v="#e6357f"/>
+		<tag k="network" v="Verkehrsbetriebsgesellschaft Passau"/>
+		<tag k="by_night" v="no"/>
+		<tag k="operator" v="Stadtwerke Passau"/>
+		<tag k="on_demand" v="no"/>
+		<tag k="network:guid" v="DE-BY-VBP"/>
+		<tag k="route_master" v="bus"/>
+		<tag k="network:short" v="VBP"/>
+	</relation>
+	<relation id="1132567" version="1">
+		<member type="relation" ref="1132127" role=""/>
+		<member type="relation" ref="1132128" role=""/>
+		<member type="node" ref="871152554" role=""/>
+		<member type="node" ref="871152575" role=""/>
+		<member type="node" ref="3440550837" role=""/>
+		<member type="node" ref="1641256218" role=""/>
+		<tag k="name" v="Stadtbusverkehr Passau"/>
+		<tag k="type" v="public_transport"/>
+		<tag k="network" v="Stadtwerke Passau"/>
+		<tag k="operator" v="Stadtwerke Passau"/>
+		<tag k="abbreviation" v="SWP"/>
+		<tag k="public_transport" v="network"/>
+	</relation>
+	<relation id="1260102" version="1">
+		<member type="way" ref="84223120" role="outer"/>
+		<member type="way" ref="84223160" role="inner"/>
+		<tag k="name" v="Finanzamt Passau"/>
+		<tag k="type" v="multipolygon"/>
+		<tag k="office" v="government"/>
+		<tag k="building" v="public"/>
+		<tag k="government" v="tax"/>
+		<tag k="addr:street" v="Innstraße"/>
+		<tag k="roof:colour" v="black"/>
+		<tag k="building:colour" v="green"/>
+		<tag k="building:levels" v="6"/>
+		<tag k="contact:website" v="http://www.finanzamt.bayern.de/Passau/"/>
+		<tag k="addr:housenumber" v="36"/>
+	</relation>
+	<relation id="1314558" version="1">
+		<member type="way" ref="108277170" role="backward"/>
+		<member type="way" ref="24728104" role="backward"/>
+		<member type="way" ref="213442649" role="backward"/>
+		<member type="way" ref="6100985" role="backward"/>
+		<member type="node" ref="1145383794" role="platform"/>
+		<member type="node" ref="1641256218" role="stop"/>
+		<tag k="to" v="Hals-Hochstein"/>
+		<tag k="ref" v="4"/>
+		<tag k="from" v="Innstadt-Achleiten"/>
+		<tag k="name" v="Linie 4 Richtung Hochstein"/>
+		<tag k="type" v="route"/>
+		<tag k="route" v="bus"/>
+		<tag k="colour" v="#C6692e"/>
+		<tag k="network" v="Verkehrsbetriebsgesellschaft Passau"/>
+		<tag k="by_night" v="no"/>
+		<tag k="operator" v="Stadtwerke Passau"/>
+		<tag k="alternate" v="no"/>
+		<tag k="on_demand" v="no"/>
+		<tag k="network:guid" v="DE-BY-VBP"/>
+		<tag k="network:short" v="VBP"/>
+		<tag k="public_transport:version" v="1"/>
+	</relation>
+	<relation id="1538278" version="1">
+		<member type="way" ref="6100985" role=""/>
+		<member type="way" ref="213442649" role=""/>
+		<member type="way" ref="24728104" role=""/>
+		<member type="way" ref="8092865" role=""/>
+		<member type="way" ref="8092867" role=""/>
+		<tag k="name" v="Passau - Kasten Donausteig Etappe"/>
+		<tag k="type" v="route"/>
+		<tag k="route" v="foot"/>
+		<tag k="network" v="rwn"/>
+		<tag k="operator" v="WGD Donau Oberösterreich Tourismus GmbH"/>
+		<tag k="sac_scale" v="hiking"/>
+		<tag k="osmc:symbol" v="blue:blue:green_lower:~:white"/>
+	</relation>
+	<relation id="1560864" version="1">
+		<member type="relation" ref="1538278" role=""/>
+		<tag k="url" v="http://www.donausteig.com/"/>
+		<tag k="name" v="Donausteig Wanderungen"/>
+		<tag k="note" v="Superrelation der Donausteig Wanderungen"/>
+		<tag k="type" v="superroute"/>
+		<tag k="route" v="hiking"/>
+		<tag k="network" v="nwn"/>
+		<tag k="short_name" v="Donausteig"/>
+		<tag k="osmc:symbol" v="blue:blue:white_bar:green_lower"/>
+	</relation>
+	<relation id="1742370" version="1">
+		<member type="way" ref="329870498" role="outer"/>
+		<tag k="type" v="multipolygon"/>
+		<tag k="landuse" v="residential"/>
+	</relation>
+	<relation id="1830722" version="1">
+		<member type="way" ref="6100985" role="forward"/>
+		<member type="way" ref="213442649" role="forward"/>
+		<member type="way" ref="24728104" role="forward"/>
+		<member type="way" ref="108277170" role="forward"/>
+		<member type="node" ref="1641256218" role="stop"/>
+		<member type="node" ref="1145383802" role="platform"/>
+		<tag k="to" v="Innstadt-Achleiten"/>
+		<tag k="ref" v="4"/>
+		<tag k="from" v="Hals-Hochstein"/>
+		<tag k="name" v="Linie 4 Richtung Achleiten"/>
+		<tag k="type" v="route"/>
+		<tag k="route" v="bus"/>
+		<tag k="colour" v="#C6692e"/>
+		<tag k="network" v="Verkehrsbetriebsgesellschaft Passau"/>
+		<tag k="by_night" v="no"/>
+		<tag k="operator" v="Stadtwerke Passau"/>
+		<tag k="alternate" v="no"/>
+		<tag k="on_demand" v="no"/>
+		<tag k="network:guid" v="DE-BY-VBP"/>
+		<tag k="network:short" v="VBP"/>
+		<tag k="public_transport:version" v="1"/>
+	</relation>
+	<relation id="2034179" version="1">
+		<member type="relation" ref="1314558" role=""/>
+		<member type="relation" ref="1830722" role=""/>
+		<tag k="ref" v="4"/>
+		<tag k="line" v="bus"/>
+		<tag k="name" v="Linie 4"/>
+		<tag k="type" v="route_master"/>
+		<tag k="colour" v="#C6692e"/>
+		<tag k="network" v="Verkehrsbetriebsgesellschaft Passau"/>
+		<tag k="by_night" v="no"/>
+		<tag k="operator" v="Stadtwerke Passau"/>
+		<tag k="on_demand" v="no"/>
+		<tag k="network:guid" v="DE-BY-VBP"/>
+		<tag k="route_master" v="bus"/>
+		<tag k="network:short" v="VBP"/>
+	</relation>
+	<relation id="2034282" version="1">
+		<member type="way" ref="108277170" role="backward"/>
+		<member type="way" ref="24728104" role="backward"/>
+		<member type="way" ref="213442649" role="backward"/>
+		<member type="way" ref="6100985" role="backward"/>
+		<member type="node" ref="1641256218" role="stop"/>
+		<member type="node" ref="1145383794" role="platform"/>
+		<tag k="to" v="Bäckerholz"/>
+		<tag k="ref" v="3"/>
+		<tag k="from" v="Achleiten"/>
+		<tag k="name" v="Linie 3 Richtung Bäckerholz"/>
+		<tag k="type" v="route"/>
+		<tag k="route" v="bus"/>
+		<tag k="network" v="Verkehrsbetriebsgesellschaft Passau"/>
+		<tag k="by_night" v="no"/>
+		<tag k="operator" v="Stadtwerke Passau"/>
+		<tag k="alternate" v="no"/>
+		<tag k="on_demand" v="no"/>
+		<tag k="network:guid" v="DE-BY-VBP"/>
+		<tag k="network:short" v="VBP"/>
+		<tag k="public_transport:version" v="1"/>
+	</relation>
+	<relation id="2035598" version="1">
+		<member type="relation" ref="2034282" role=""/>
+		<member type="relation" ref="2417248" role=""/>
+		<tag k="ref" v="3"/>
+		<tag k="line" v="bus"/>
+		<tag k="name" v="Linie 3"/>
+		<tag k="type" v="route_master"/>
+		<tag k="network" v="Verkehrsbetriebsgesellschaft Passau"/>
+		<tag k="by_night" v="no"/>
+		<tag k="operator" v="Stadtwerke Passau"/>
+		<tag k="on_demand" v="no"/>
+		<tag k="network:guid" v="DE-BY-VBP"/>
+		<tag k="route_master" v="bus"/>
+		<tag k="network:short" v="VBP"/>
+	</relation>
+	<relation id="2093797" version="1">
+		<member type="relation" ref="2434722" role=""/>
+		<tag k="name" v="Südostbayerische Jakobswege"/>
+		<tag k="type" v="route"/>
+		<tag k="route" v="hiking"/>
+		<tag k="network" v="nwn"/>
+		<tag k="int_name" v="Camino de Santiago"/>
+		<tag k="wikidata" v="Q41150"/>
+		<tag k="wikipedia" v="de:Jakobsweg"/>
+		<tag k="osmc:symbol" v="blue:blue:shell_modern"/>
+		<tag k="wikipedia:en" v="Way_of_St._James"/>
+		<tag k="wikipedia:fr" v="Pèlerinage_de_Saint-Jacques-de-Compostelle"/>
+		<tag k="description:de" v="Wege des &#34;Voralpinen Jakobswegs&#34;, &#34;Jakobswegs Böhmen-Bayern-Tirol&#34; und deren Wegevarianten."/>
+	</relation>
+	<relation id="2417248" version="1">
+		<member type="way" ref="6100985" role="forward"/>
+		<member type="way" ref="213442649" role="forward"/>
+		<member type="way" ref="24728104" role="forward"/>
+		<member type="way" ref="108277170" role="forward"/>
+		<member type="node" ref="1641256218" role="stop"/>
+		<member type="node" ref="1145383794" role="platform"/>
+		<tag k="to" v="Achleiten"/>
+		<tag k="ref" v="3"/>
+		<tag k="from" v="Bäckerholz"/>
+		<tag k="name" v="Linie 3 Richtung Achleiten"/>
+		<tag k="type" v="route"/>
+		<tag k="route" v="bus"/>
+		<tag k="network" v="Verkehrsbetriebsgesellschaft Passau"/>
+		<tag k="by_night" v="no"/>
+		<tag k="operator" v="Stadtwerke Passau"/>
+		<tag k="alternate" v="no"/>
+		<tag k="on_demand" v="no"/>
+		<tag k="network:guid" v="DE-BY-VBP"/>
+		<tag k="network:short" v="VBP"/>
+		<tag k="public_transport:version" v="1"/>
+	</relation>
+	<relation id="2434722" version="1">
+		<member type="way" ref="62225703" role=""/>
+		<tag k="ref" v="JBBT"/>
+		<tag k="name" v="Jakobsweg Böhmen-Bayern-Tirol"/>
+		<tag k="type" v="route"/>
+		<tag k="route" v="hiking"/>
+		<tag k="network" v="nwn"/>
+		<tag k="int_name" v="Camino de Santiago"/>
+		<tag k="religion" v="christian"/>
+		<tag k="wikidata" v="Q41150"/>
+		<tag k="wikipedia" v="de:Jakobsweg"/>
+		<tag k="pilgrimage" v="yes"/>
+		<tag k="description" v="Von Krumau nach Breitenbach"/>
+		<tag k="osmc:symbol" v="blue:blue:shell_modern"/>
+		<tag k="wikipedia:en" v="Way_of_St._James"/>
+		<tag k="wikipedia:fr" v="Pèlerinage_de_Saint-Jacques-de-Compostelle"/>
+	</relation>
+	<relation id="2845688" version="1">
+		<member type="way" ref="8092867" role=""/>
+		<member type="way" ref="8092865" role=""/>
+		<member type="way" ref="24728104" role=""/>
+		<member type="way" ref="213442649" role=""/>
+		<tag k="ref" v="4"/>
+		<tag k="name" v="Schardenberg - Passau"/>
+		<tag k="type" v="route"/>
+		<tag k="route" v="hiking"/>
+		<tag k="network" v="lwn"/>
+		<tag k="operator" v="Bayerischer Wald-Verein e.V. Sektion Passau"/>
+		<tag k="roundtrip" v="no"/>
+		<tag k="osmc:symbol" v="red:red:red_lower:4:white"/>
+	</relation>
+	<relation id="3235848" version="1">
+		<member type="relation" ref="8448513" role=""/>
+		<tag k="ref" v="JW"/>
+		<tag k="name" v="Jakobswege in Deutschland"/>
+		<tag k="type" v="network"/>
+		<tag k="route" v="hiking"/>
+		<tag k="symbol" v="Gelbe Muschel auf blauem Grund"/>
+		<tag k="network" v="iwn"/>
+		<tag k="website" v="http://www.jakobusgesellschaft.eu/projekte/hunsrucker-jakobsweg/"/>
+		<tag k="int_name" v="Camino de Santiago"/>
+		<tag k="wikipedia" v="de:Jakobsweg"/>
+		<tag k="pilgrimage" v="yes"/>
+		<tag k="description" v="Netzwerk der Jakobswege in Deutschland"/>
+		<tag k="osmc:symbol" v="blue:blue:shell_modern"/>
+		<tag k="wiki:symbol" v="Symbol_Jakobsweg.png"/>
+		<tag k="wikipedia:en" v="Way_of_St._James"/>
+		<tag k="wikipedia:fr" v="Pèlerinage_de_Saint-Jacques-de-Compostelle"/>
+	</relation>
+	<relation id="3864603" version="1">
+		<member type="way" ref="62225703" role=""/>
+		<tag k="name" v="Innviertler Jakobsweg"/>
+		<tag k="type" v="route"/>
+		<tag k="route" v="hiking"/>
+		<tag k="network" v="rwn"/>
+		<tag k="osmc:symbol" v="blue:blue:shell_modern"/>
+	</relation>
+	<relation id="4621343" version="1">
+		<member type="way" ref="150130636" role="outer"/>
+		<tag k="name" v="Inn"/>
+		<tag k="type" v="multipolygon"/>
+		<tag k="waterway" v="riverbank"/>
+	</relation>
+	<relation id="4740639" version="1">
+		<member type="way" ref="62225703" role=""/>
+		<tag k="name" v="Innradweg - Bayern"/>
+		<tag k="type" v="route"/>
+		<tag k="route" v="bicycle"/>
+		<tag k="symbol" v="Weiße Schilder mit zwei blauen Wellen, den Flaggen von Österreich, Schweiz und Deutschland und der Aufschrift &#34;Innradweg&#34;. Zum Teil auch noch alte grüne Schilder."/>
+		<tag k="network" v="ncn"/>
+		<tag k="rcn_ref" v="Inn"/>
+		<tag k="wikidata" v="Q1663848"/>
+		<tag k="wikipedia" v="de:Inn-Radweg"/>
+	</relation>
+	<relation id="4740642" version="1">
+		<member type="relation" ref="4740639" role=""/>
+		<tag k="ref" v="Inn"/>
+		<tag k="name" v="Innradweg"/>
+		<tag k="type" v="superroute"/>
+		<tag k="route" v="bicycle"/>
+		<tag k="network" v="ncn"/>
+		<tag k="wikidata" v="Q1663848"/>
+		<tag k="wikipedia" v="de:Inn-Radweg"/>
+		<tag k="description" v="Radweg vom Innursprung in Maloja bis nach Passau"/>
+	</relation>
+	<relation id="8379612" version="1">
+		<member type="relation" ref="8384641" role=""/>
+		<tag k="name" v="Via Sancti Martini"/>
+		<tag k="note" v="If the route is modified (due to reasons on ground (i.e. new way, abandoned highway) please inform martinusgemeinschaft@drs.de about the change"/>
+		<tag k="type" v="superroute"/>
+		<tag k="route" v="hiking"/>
+		<tag k="symbol" v="Schräges gelbes Kreuz von links unten nach rechts oben auf rotem, aufrecht stehendem Rechteck"/>
+		<tag k="name:de" v="Martinusweg Mittelroute"/>
+		<tag k="network" v="iwn"/>
+		<tag k="website" v="http://www.martinuswege.eu/"/>
+		<tag k="operator" v="European Cultural Centre"/>
+		<tag k="pilgrimage" v="yes"/>
+		<tag k="osmc:symbol" v="red:red:yellow_cross"/>
+	</relation>
+	<relation id="8384641" version="1">
+		<member type="way" ref="62225703" role=""/>
+		<tag k="name" v="Martinusweg HW-31-01 Passau - Neuhaus am Inn"/>
+		<tag k="type" v="route"/>
+		<tag k="route" v="hiking"/>
+		<tag k="network" v="rwn"/>
+	</relation>
+	<relation id="8448513" version="1">
+		<member type="relation" ref="2093797" role=""/>
+		<tag k="name" v="Jakobswege Bayern"/>
+		<tag k="type" v="superroute"/>
+		<tag k="route" v="hiking"/>
+		<tag k="symbol" v="Jakobsmuschel"/>
+		<tag k="network" v="nwn"/>
+		<tag k="int_name" v="Camino de Santiago"/>
+		<tag k="religion" v="christian"/>
+		<tag k="wikidata" v="Q41150"/>
+		<tag k="wikipedia" v="de:Jakobsweg"/>
+		<tag k="pilgrimage" v="yes"/>
+		<tag k="osmc:symbol" v="blue:blue:shell_modern"/>
+		<tag k="wiki:symbol" v="Symbol_Jakobsweg.png"/>
+		<tag k="wikipedia:en" v="Way_of_St._James"/>
+		<tag k="wikipedia:fr" v="Pèlerinage_de_Saint-Jacques-de-Compostelle"/>
+	</relation>
+	<relation id="9563911" version="1">
+		<member type="way" ref="62568050" role="outer"/>
+		<tag k="lit" v="yes"/>
+		<tag k="type" v="multipolygon"/>
+		<tag k="highway" v="footway"/>
+		<tag k="surface" v="cobblestone"/>
+	</relation>
+</osm>

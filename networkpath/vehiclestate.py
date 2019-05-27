@@ -15,7 +15,8 @@ beamng = BeamNGpy('localhost', 64256, home='F:\Softwares\BeamNG_Research_SVN')  
 
 # Create a vehile instance that will be called 'ego' in the simulation
 # using the etk800 model the simulator ships with
-vehicle = Vehicle('ego', model='etk800', licence='PYTHON', colour='Green')
+vehicle = Vehicle('ego', model='van', licence='PYTHON', colour='white')
+vehicleV = Vehicle('victim', model='etk800', licence='PYTHON', colour='red')
 # Create an Electrics sensor and attach it to the vehicle
 electrics = Electrics()
 vehicle.attach_sensor('electrics', electrics);
@@ -29,7 +30,8 @@ scenario = Scenario('west_coast_usa', 'vehicle_state')
 # The position & orientation values were obtained by opening the level in the simulator,
 # hitting F11 to open the editor and look for a spot to spawn and simply noting down the
 # corresponding values.
-scenario.add_vehicle(vehicle, pos=(-717.121, 101, 118.675), rot=(0, 0, 45))  # 45 degree rotation around the z-axis
+scenario.add_vehicle(vehicle, pos=(-727.121, 101, 118.675), rot=(0, 0, 45))  # 45 degree rotation around the z-axis
+#scenario.add_vehicle(vehicleV,pos=(-707.121, 101, 118.675), rot=(0, 0, 45))
 
 # The make function of a scneario is used to compile the scenario and produce a scenario file the simulator can load
 scenario.make(beamng)
@@ -38,7 +40,7 @@ bng = beamng.open()
 bng.load_scenario(scenario)
 bng.start_scenario()  # After loading, the simulator waits for further input to actually start
 
-vehicle.ai_set_mode('span')
+#vehicle.ai_set_mode('span')
 
 vehicle.update_vehicle()
 sensors = bng.poll_sensors(vehicle)
@@ -69,6 +71,7 @@ directions = list()
 wheel_speeds = list()
 throttles = list()
 brakes = list()
+damages = list()
 
 for _ in range(240):
     time.sleep(0.1)
@@ -80,15 +83,17 @@ for _ in range(240):
     throttles.append(sensors['electrics']['values']['throttle'])
     brakes.append(sensors['electrics']['values']['brake'])
 
+damages.append(sensors['damages'])
 bng.close()
 
-print(wheel_speeds)
+#print(wheel_speeds)
+print(directions)
 
 
 
-x = [p[0] for p in positions]
-y = [p[1] for p in positions]
-plt.plot(x, y, '.')
-plt.axis('square')
-plt.show()
-plt.clf()
+#x = [p[0] for p in positions]
+#y = [p[1] for p in positions]
+#plt.plot(x, y, '.')
+#plt.axis('square')
+#plt.show()
+#plt.clf()
