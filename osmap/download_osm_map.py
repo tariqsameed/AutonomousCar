@@ -7,10 +7,11 @@ map_nodes_ways = path + filename + '.osm'
 
 lat = 48.5706833
 lon = 13.4587882
-around = 100
+around = 200
 
 overpass_url = "http://overpass-api.de/api/interpreter"
 overpass_query = """
+[out:xml];
 (
   way
   (around:"""+str(around)+""","""+str(lat)+""","""+str(lon)+""")
@@ -21,7 +22,6 @@ overpass_query = """
 response = requests.get(overpass_url,
                         params={'data': overpass_query})
 data = response.text
-
-f = open(map_nodes_ways, "w")
+f = open(map_nodes_ways, "w", encoding="utf8")
 f.write(data)
 f.close()

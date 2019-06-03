@@ -12,7 +12,8 @@ try:
     mapFile = open(map, 'r', encoding="utf8")
     mapNodesFile = open(map_nodes, 'w', encoding="utf8")
     for line in mapFile:
-        if line.startswith('\t<node'):
+        line =  line.lstrip()
+        if line.startswith('<node'):
             if line.endswith('/>\n'):
                 mapNodesFile.write(line)
             elif line.endswith('>\n'):
@@ -26,14 +27,16 @@ except IOError:
     print("Could not read file or file does not exist: ", map)
     sys.exit()
 
-# separate ways
+#separate ways
 try:
     mapFile = open(map, 'r', encoding="utf8")
     mapWaysFile = open(map_ways, 'w', encoding="utf8")
     for line in mapFile:
-        if line.startswith('\t<way') or line.startswith('\t</way'):
+        if line.startswith('  <way') or line.startswith('  </way'):
+            print(line)
             mapWaysFile.write(line)
-        elif line.startswith('\t\t<nd'):
+        elif line.startswith('    <nd'):
+            print(line)
             mapWaysFile.write(line)
     mapFile.close()
     mapWaysFile.close()

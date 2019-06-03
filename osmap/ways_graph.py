@@ -2,6 +2,7 @@ import networkx as nx
 import sys
 import xml.etree.ElementTree as ET
 import pickle
+from geopy.distance import great_circle
 
 filename = 'passau'
 path = "../resources/osm/"
@@ -11,6 +12,9 @@ map_ways_serialize = path + filename + '.ways.serialize'
 map_nodes_serialize = path + filename + '.nodes.serialize'
 
 try:
+    node_dict = pickle.load(open(map_nodes_serialize, "rb"))
+    print("Nodes Loaded")
+
     mapWaysFile = open(map_ways, 'r', encoding="utf8")
     graph = nx.Graph()
     wayBegin = False
@@ -22,13 +26,13 @@ try:
         lineCounter = lineCounter + 1
         if (lineCounter % 10000) == 1:
             print(lineCounter)
-        if line.startswith('\t<way') and wayBegin == False:
+        if line.startswith('  <way') and wayBegin == False:
             wayBegin = True
             continue
-        elif line.startswith('\t</way') and wayBegin == True:
+        elif line.startswith('  </way') and wayBegin == True:
             wayBegin = False
             nodeCounter = 0
-        elif line.startswith('\t\t<nd ref'):
+        elif line.startswith('    <nd ref'):
             nodeCounter = nodeCounter + 1
             node = ET.fromstring(line)
             if nodeCounter == 1:
@@ -36,7 +40,9 @@ try:
             elif nodeCounter > 1:
                 nextNode = node.attrib['ref']
                 # do not add edge weight (all edges have weight 1)
-                graph.add_edge(prevNode, nextNode)
+                # add edge weight: https://stackoverflow.com/questions/19412462/getting-distance-between-two-points-based-on-latitude-longitude
+                distance = great_circle(node_dict[nextNode], node_dict[prevNode]).m
+                graph.add_edge(prevNode, nextNode,weight=distance)
                 prevNode = nextNode
         else:
             print ("Faulty File")

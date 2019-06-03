@@ -1,23 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <osm version="0.6" generator="Overpass API 0.7.55.7 8b86ff77">
 <note>The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.</note>
-<meta osm_base="2019-05-30T09:14:02Z"/>
+<meta osm_base="2019-05-30T11:05:02Z"/>
 
+  <node id="595018" lat="48.5722233" lon="13.4600190"/>
   <node id="595019" lat="48.5718470" lon="13.4607844">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="595020" lat="48.5720271" lon="13.4613092"/>
+  <node id="50376700" lat="48.5726300" lon="13.4591918">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="50376702" lat="48.5723636" lon="13.4588862"/>
+  <node id="50376705" lat="48.5718564" lon="13.4583309"/>
+  <node id="50376709" lat="48.5713259" lon="13.4573533">
     <tag k="highway" v="traffic_signals"/>
   </node>
   <node id="50376711" lat="48.5704270" lon="13.4583615">
     <tag k="highway" v="traffic_signals"/>
   </node>
+  <node id="52301878" lat="48.5712960" lon="13.4557076"/>
+  <node id="52301881" lat="48.5709704" lon="13.4563143">
+    <tag k="crossing" v="island"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="surface" v="cobblestone"/>
+  </node>
   <node id="60631339" lat="48.5705161" lon="13.4585069"/>
   <node id="60631342" lat="48.5706833" lon="13.4587882"/>
+  <node id="60631586" lat="48.5699544" lon="13.4570229">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="60631669" lat="48.5698337" lon="13.4563758"/>
   <node id="60641005" lat="48.5700412" lon="13.4573619"/>
   <node id="60775846" lat="48.5716859" lon="13.4605162">
     <tag k="crossing" v="traffic_signals"/>
     <tag k="highway" v="crossing"/>
   </node>
+  <node id="255366224" lat="48.5709863" lon="13.4561717"/>
+  <node id="261655909" lat="48.5723494" lon="13.4597625"/>
   <node id="261655938" lat="48.5711261" lon="13.4595038"/>
+  <node id="266543691" lat="48.5714223" lon="13.4575644"/>
+  <node id="278600627" lat="48.5719627" lon="13.4584664"/>
+  <node id="278634241" lat="48.5712897" lon="13.4571948"/>
+  <node id="308547367" lat="48.5719980" lon="13.4585063"/>
+  <node id="308547447" lat="48.5709950" lon="13.4565113"/>
+  <node id="415427178" lat="48.5713960" lon="13.4575039">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="highway" v="crossing"/>
+  </node>
   <node id="415427190" lat="48.5703466" lon="13.4581902"/>
+  <node id="415427201" lat="48.5710794" lon="13.4559994"/>
   <node id="497002381" lat="48.5704875" lon="13.4584629">
     <tag k="crossing" v="traffic_signals"/>
     <tag k="highway" v="crossing"/>
@@ -34,6 +67,8 @@
     <tag k="operator" v="Stadtwerke Passau"/>
     <tag k="public_transport" v="stop_position"/>
   </node>
+  <node id="1117982368" lat="48.5717027" lon="13.4581040"/>
+  <node id="1200625339" lat="48.5721011" lon="13.4602675"/>
   <node id="1641256218" lat="48.5708996" lon="13.4591373">
     <tag k="bus" v="yes"/>
     <tag k="highway" v="bus_stop"/>
@@ -46,8 +81,45 @@
     <tag k="uic_ref" v="245049"/>
   </node>
   <node id="1771953000" lat="48.5715392" lon="13.4602792"/>
+  <node id="1771953017" lat="48.5718755" lon="13.4609440"/>
+  <node id="1788460007" lat="48.5710989" lon="13.4559720"/>
+  <node id="1806350012" lat="48.5714611" lon="13.4555019"/>
+  <node id="1853222750" lat="48.5719171" lon="13.4606418">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="on_demand" v="button"/>
+  </node>
+  <node id="3197907467" lat="48.5720695" lon="13.4603318"/>
+  <node id="3278295187" lat="48.5718514" lon="13.4608507"/>
   <node id="4751514927" lat="48.5707482" lon="13.4588931"/>
   <node id="4753184138" lat="48.5713593" lon="13.4599417"/>
+  <node id="4842300509" lat="48.5719055" lon="13.4610162"/>
+  <way id="6100986">
+    <nd ref="50376700"/>
+    <nd ref="50376702"/>
+    <tag k="highway" v="tertiary"/>
+    <tag k="lanes" v="3"/>
+    <tag k="lanes:backward" v="2"/>
+    <tag k="name" v="Lupingäßchen"/>
+    <tag k="surface" v="asphalt"/>
+    <tag k="turn:lanes:backward" v="left|left;right"/>
+  </way>
+  <way id="7623841">
+    <nd ref="595019"/>
+    <nd ref="3278295187"/>
+    <nd ref="1771953017"/>
+    <nd ref="4842300509"/>
+    <nd ref="595020"/>
+    <tag k="highway" v="primary"/>
+    <tag k="lanes" v="3"/>
+    <tag k="lanes:backward" v="2"/>
+    <tag k="maxspeed" v="50"/>
+    <tag k="name" v="Karolinenplatz"/>
+    <tag k="ref" v="St 2125"/>
+    <tag k="source:maxspeed" v="DE:urban"/>
+    <tag k="surface" v="asphalt"/>
+    <tag k="turn:lanes:backward" v="slight_left|right"/>
+  </way>
   <way id="24728104">
     <nd ref="50376711"/>
     <nd ref="497002381"/>
@@ -56,10 +128,35 @@
     <tag k="highway" v="tertiary"/>
     <tag k="lanes" v="2"/>
     <tag k="maxspeed" v="30"/>
-    <tag k="name" v="Innstra�e"/>
+    <tag k="name" v="Innstraße"/>
     <tag k="sidewalk" v="both"/>
     <tag k="surface" v="asphalt"/>
     <tag k="turn:lanes:backward" v="through;right"/>
+  </way>
+  <way id="47931759">
+    <nd ref="50376702"/>
+    <nd ref="308547367"/>
+    <tag k="highway" v="tertiary"/>
+    <tag k="lanes" v="3"/>
+    <tag k="lanes:backward" v="2"/>
+    <tag k="name" v="Kleiner Exerzierplatz"/>
+    <tag k="sidewalk" v="both"/>
+    <tag k="surface" v="asphalt"/>
+  </way>
+  <way id="51854057">
+    <nd ref="50376700"/>
+    <nd ref="261655909"/>
+    <nd ref="595018"/>
+    <tag k="cycleway:both" v="no"/>
+    <tag k="highway" v="primary"/>
+    <tag k="lanes" v="3"/>
+    <tag k="lanes:backward" v="2"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="50"/>
+    <tag k="name" v="Nikolastraße"/>
+    <tag k="source:maxspeed" v="DE:urban"/>
+    <tag k="surface" v="asphalt"/>
+    <tag k="turn:lanes:backward" v="left;through|through"/>
   </way>
   <way id="98905801">
     <nd ref="60641005"/>
@@ -71,7 +168,7 @@
     <tag k="lanes" v="3"/>
     <tag k="lit" v="yes"/>
     <tag k="maxspeed" v="30"/>
-    <tag k="name" v="Innstra�e"/>
+    <tag k="name" v="Innstraße"/>
     <tag k="sidewalk" v="both"/>
     <tag k="surface" v="asphalt"/>
     <tag k="turn:lanes:forward" v="left|through"/>
@@ -89,9 +186,111 @@
     <tag k="highway" v="tertiary"/>
     <tag k="lanes" v="2"/>
     <tag k="maxspeed" v="30"/>
-    <tag k="name" v="Innstra�e"/>
+    <tag k="name" v="Innstraße"/>
     <tag k="sidewalk" v="both"/>
     <tag k="surface" v="asphalt"/>
+  </way>
+  <way id="154955357">
+    <nd ref="60631669"/>
+    <nd ref="60631586"/>
+    <tag k="divider" v="solid_line"/>
+    <tag k="highway" v="tertiary"/>
+    <tag k="lanes" v="2"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="30"/>
+    <tag k="name" v="Innstraße"/>
+    <tag k="sidewalk" v="both"/>
+    <tag k="surface" v="asphalt"/>
+    <tag k="width" v="13 m"/>
+  </way>
+  <way id="154955358">
+    <nd ref="60631586"/>
+    <nd ref="60641005"/>
+    <tag k="highway" v="tertiary"/>
+    <tag k="lanes" v="2"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="30"/>
+    <tag k="name" v="Innstraße"/>
+    <tag k="sidewalk" v="both"/>
+    <tag k="surface" v="asphalt"/>
+    <tag k="width" v="13 m"/>
+  </way>
+  <way id="169474154">
+    <nd ref="52301881"/>
+    <nd ref="308547447"/>
+    <nd ref="278634241"/>
+    <nd ref="50376709"/>
+    <tag k="highway" v="tertiary"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="30"/>
+    <tag k="maxspeed:type" v="sign"/>
+    <tag k="name" v="Kleiner Exerzierplatz"/>
+    <tag k="sidewalk" v="both"/>
+    <tag k="surface" v="asphalt"/>
+    <tag k="width" v="10 m"/>
+  </way>
+  <way id="169474155">
+    <nd ref="1806350012"/>
+    <nd ref="52301878"/>
+    <nd ref="1788460007"/>
+    <nd ref="415427201"/>
+    <nd ref="255366224"/>
+    <nd ref="52301881"/>
+    <tag k="highway" v="tertiary"/>
+    <tag k="lit" v="yes"/>
+    <tag k="name" v="Kleiner Exerzierplatz"/>
+    <tag k="sidewalk" v="right"/>
+    <tag k="surface" v="asphalt"/>
+    <tag k="width" v="10 m"/>
+  </way>
+  <way id="313762275">
+    <nd ref="308547367"/>
+    <nd ref="278600627"/>
+    <nd ref="50376705"/>
+    <tag k="highway" v="tertiary"/>
+    <tag k="lanes" v="3"/>
+    <tag k="lanes:backward" v="2"/>
+    <tag k="name" v="Kleiner Exerzierplatz"/>
+    <tag k="sidewalk" v="both"/>
+    <tag k="surface" v="asphalt"/>
+    <tag k="turn:lanes:backward" v="left|none"/>
+  </way>
+  <way id="313762276">
+    <nd ref="50376705"/>
+    <nd ref="1117982368"/>
+    <nd ref="266543691"/>
+    <nd ref="415427178"/>
+    <nd ref="50376709"/>
+    <tag k="highway" v="tertiary"/>
+    <tag k="name" v="Kleiner Exerzierplatz"/>
+    <tag k="sidewalk" v="both"/>
+    <tag k="surface" v="asphalt"/>
+  </way>
+  <way id="313762278">
+    <nd ref="595018"/>
+    <nd ref="1200625339"/>
+    <nd ref="3197907467"/>
+    <tag k="cycleway:both" v="no"/>
+    <tag k="highway" v="primary"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="50"/>
+    <tag k="name" v="Nikolastraße"/>
+    <tag k="source:maxspeed" v="DE:urban"/>
+    <tag k="surface" v="asphalt"/>
+  </way>
+  <way id="313762279">
+    <nd ref="3197907467"/>
+    <nd ref="1853222750"/>
+    <nd ref="595019"/>
+    <tag k="cycleway:both" v="no"/>
+    <tag k="highway" v="primary"/>
+    <tag k="lanes" v="2"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="50"/>
+    <tag k="name" v="Nikolastraße"/>
+    <tag k="source:maxspeed" v="DE:urban"/>
+    <tag k="surface" v="asphalt"/>
+    <tag k="turn:lanes:forward" v="through;right"/>
   </way>
 
 </osm>
