@@ -2,7 +2,8 @@ import xml.etree.ElementTree as ET
 import json
 import glob
 
-xmlFiles = glob.glob("../resources/nhtsa/*/*.xml")
+#xmlFiles = glob.glob("../resources/nhtsa/*/*.xml")
+xmlFiles = glob.glob("../resources/nhtsa/all_cases/*.xml")
 summFolderPath = "../resources/summary/"
 
 for xmlFile in xmlFiles:
@@ -29,7 +30,7 @@ for xmlFile in xmlFiles:
     summJson = json.dumps(dict)
     print(summJson)
 
-    with open(summFolderPath+dict.get('CaseID')+'.json', 'w') as outfile:
+    with open(summFolderPath+dict.get('CaseID')+'.json', 'w', encoding='utf8') as outfile:
         json.dump(dict, outfile)
 
 
