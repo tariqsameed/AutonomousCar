@@ -21,6 +21,7 @@ import json
 import re
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
+import csv
 
 import sys
 sys.stdout = open('destination.txt','w')
@@ -30,7 +31,18 @@ nlp = StanfordCoreNLP(r'F:\Softwares\stanford-corenlp-full-2018-10-05')
 pre_crash_counter = 0
 crash_counter = 0
 pro_crash_counter = 0
+pos_crash_dict = {}
 
+
+def create_csv_file():
+    csv_columns = ['case_id','number_of_vehicles', 'striker_damage_area', 'victim_damage_area']
+    csv_file = "pos_crash_event.csv"
+    try:
+        with open(csv_file, 'w', encoding='utf-8') as csvfile:
+            writer = csv.DictWriter(csvfile, fieldnames=csv_columns, delimiter=',', lineterminator='\n')
+            writer.writeheader()
+    except IOError:
+        print("I/O error")
 
 
 def preprocessing(summary):
@@ -461,10 +473,12 @@ def crash_event(summary):
 
 
 
-
-entries = os.listdir('../resources/summary/')
+#folder_path = '../resources/summary/'
+create_csv_file()
+folder_path = '../../preprocessed_nhtsa/'
+entries = os.listdir(folder_path)
 for file in entries:
-    jsonFile = glob.glob("../resources/summary/"+file)
+    jsonFile = glob.glob(folder_path+file)
     summDict = {}
     print(jsonFile[0])
     with open(jsonFile[0], 'r', encoding='utf-8') as json_file:
@@ -474,7 +488,21 @@ for file in entries:
         striker_damage_area = data['STRIKER_AREA_DAMAGE']
         victim_damage_area = data['HIT_AREA_DAMAGE']
         pre_crash_event(data['CaseID'])
-        crash_event(summary)
+        #crash_event(summary)
+
+        pos_crash_dict['case_id'] = data['CaseID']
+        pos_crash_dict['number_of_vehicles'] = data['NumOfVehicle']
+        pos_crash_dict['striker_damage_area'] = striker_damage_area
+        pos_crash_dict['victim_damage_area'] = victim_damage_area
+
+        csv_columns = ['case_id', 'number_of_vehicles', 'striker_damage_area', 'victim_damage_area']
+        csv_file = "pos_crash_event.csv"
+        try:
+            with open(csv_file, 'a', encoding='utf-8') as csvfile:
+                writer = csv.DictWriter(csvfile, fieldnames=csv_columns, delimiter=',', lineterminator='\n')
+                writer.writerow(pos_crash_dict)
+        except IOError:
+            print("I/O error")
 
 
 print(crash_counter)
