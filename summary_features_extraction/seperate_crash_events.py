@@ -298,7 +298,80 @@ def facing_direction(crash_event_sentences):
 
 
 def destination_lane(crash_event_sentences):
-    print(crash_event_sentences)
+    direction_string = "stop, rest, face, facing, rightmost ,northbound ,southbound ,eastbound ,one closed over,righthand ,northbound,northbound ,bound carriageway,westbound,crosswalk,stoplight,eastbound,railroad crossing,northbound ,offramp,westbound,opposite direction,directions,opposite directions,toward,downward,backwards,directon,south,east,west,northeast,southeast,southwest,northwest,northern,eastern,northeast,west,north,south,southeast,northeast,southwest,northwest,eastern,southward,eastward,north,east,west,southeast,northeast,southwest,northwest,southern,eastern,northern,east,north,south,southwest,southeast,northeast,northwest,eastern,western,southwesterly direction,southbound,westbound,eastbound,southbound ,westbound ,northbound ,eastbound ,northbound ,southbound ,eastbound"
+    direction_list = direction_string.split(",")
+    for impact_sentence in crash_event_sentences:
+        if any(word in impact_sentence for word in direction_list):
+            print(impact_sentence)
+
+            # cover rest cases first
+            stop_list = ['stop', 'rest']
+            if any(word in impact_sentence for word in stop_list):
+                print(impact_sentence)
+                # NO sentence after rest =  rotate ccw and came to rest.
+                # default case
+                for word in stop_list:
+                    if word in impact_sentence:
+                        bNotFound = True
+                        # pos rest
+                        print('p1-----------')
+                        pattern = r'(?<=' + word + ').*'
+                        pos_verb = re.search(pattern, impact_sentence)
+
+                        if pos_verb[0] == '' or pos_verb[0] == '.':
+                            bNotFound = False
+                            print('Initial direction|on road|INSIDE')
+                            break
+                        print('-----------')
+                        print('p2-----------')
+                        road_list = ['roadway', 'lane', 'intersection', 'median', 'shoulder', 'road', 'exit']
+                        # detect on the roadway, off the roadway
+                        if any(word in pos_verb[0] for word in road_list):
+                            print(pos_verb[0])
+
+                            if 'roadway' in pos_verb[0] or 'road' in pos_verb[0]:
+                                print('roadway-----')
+                                road = 'road'
+                                pattern = r'.+?(?=' + road + ')'
+                                pre_road = re.search(pattern, impact_sentence)
+                                print(pre_road[0])
+
+                                off_road_list = ['off', 'outside', 'mail', 'sign','tree', 'pole', 'shoulder', 'park']
+
+                                bRoad = True
+
+                                if any(word in pre_road[0] for word in off_road_list):
+                                    print('OUTSIDE')
+                                    bRoad = False
+                                    bNotFound = False
+                                else:
+                                    print('INSIDE')
+                                    bRoad = False
+                                    bNotFound = False
+
+                                if bRoad:
+                                    print('INSIDE')
+
+
+                            if 'shoulder' in pos_verb[0] or 'median' in pos_verb[0]:
+                                print('OUTSIDE')
+
+                            if 'lane' in pos_verb[0] or 'intersection' in pos_verb[0]:
+                                off_road_list = ['off', 'outside', 'mail', 'sign', 'tree', 'pole', 'shoulder', 'park']
+
+                                if any(word in pos_verb[0] for word in off_road_list):
+                                    print('OUTSIDE')
+                                else:
+                                    print('INSIDE')
+
+                        if bNotFound:
+                            print('INSIDE')
+
+                        print('-----------')
+                        # pre rest
+
+
+
 
 
 def pre_crash_event(caseId):
@@ -355,13 +428,13 @@ def crash_event(summary):
     # Score Evaluation parameters
     # clockwise, counterclockwise, spin  --> done
     # Direction (north, south, east, west)  --> done
-    # Distance  (Lane where it comes to rest)
+    # Distance  (Lane where it comes to rest) @off road, on roads
     # Crash Event --> XML --> done
     for line in sentenceTokens:
         line = line.strip()  #\r\n , remove these from lines.
 
         if pos_crash_event:
-            pre_crash_word_list = ['precrash', 'Precrash']
+            pre_crash_word_list = ['precrash', 'Precrash','Pre-Crash', 'PreCrash']
             if any(word in line for word in pre_crash_word_list):
                 #print('precrash')
                 #print(line)
@@ -398,7 +471,9 @@ for file in entries:
         data = json.load(json_file)
         summDict[data['CaseID']] = data['SUMMARY'] # Get Id and Summary of each JSON file.
         summary = preprocessing(data['SUMMARY'])
-        #pre_crash_event(data['CaseID'])
+        striker_damage_area = data['STRIKER_AREA_DAMAGE']
+        victim_damage_area = data['HIT_AREA_DAMAGE']
+        pre_crash_event(data['CaseID'])
         crash_event(summary)
 
 
