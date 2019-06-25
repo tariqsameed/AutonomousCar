@@ -24,7 +24,7 @@ from nltk.tokenize import word_tokenize
 import csv
 
 import sys
-sys.stdout = open('destination.txt','w')
+sys.stdout = open('output.txt','w')
 
 nlp = StanfordCoreNLP(r'F:\Softwares\stanford-corenlp-full-2018-10-05')
 
@@ -35,7 +35,7 @@ pos_crash_dict = {}
 
 
 def create_csv_file():
-    csv_columns = ['case_id','number_of_vehicles', 'striker_damage_area', 'victim_damage_area']
+    csv_columns = ['case_id','number_of_vehicles', 'striker_damage_area', 'victim_damage_area','striker_rotation', 'victim_rotation', 'striker_degrees', 'vicitm_degrees', 'striker_facing', 'victim_facing', 'striker_destination_lane', 'victim_destination_lane']
     csv_file = "pos_crash_event.csv"
     try:
         with open(csv_file, 'w', encoding='utf-8') as csvfile:
@@ -75,6 +75,9 @@ def preprocessing(summary):
 
 def clockwise_counter_clockwise_rotation(crash_event_sentences):
 
+    pos_crash_dict['striker_rotation'] = 'default'
+    pos_crash_dict['victim_rotation'] = 'default'
+
     for impact_sentence in crash_event_sentences:
         rotated_list = ['rotated', 'clockwise', 'counterclockwise', 'spin','spun',]  # Create Google Word 2 Vector list to increase accuracy
         if any(word in impact_sentence for word in rotated_list):
@@ -109,17 +112,21 @@ def clockwise_counter_clockwise_rotation(crash_event_sentences):
 
                         if bClockwise and bClockwiseV1 and bCounterClockwise:
                             print('V1 Counter Clockwise')
+                            pos_crash_dict['striker_rotation'] = 'counterclockwise'
                             break
 
                         if bClockwise and bClockwiseV1:
                             print('V1 Clockwise')
+                            pos_crash_dict['striker_rotation'] = 'clockwise'
                             break
 
                         if bClockwise and bClockwiseV2 and bCounterClockwise:
                             print('V2 Counter Clockwise')
+                            pos_crash_dict['victim_rotation'] = 'counterclockwise'
                             break
                         if bClockwise and bClockwiseV2:
                             print('V2 Clockwise')
+                            pos_crash_dict['victim_rotation'] = 'clockwise'
                             break
 
                     pattern = r'(?<=' + verb + ').*'
@@ -171,6 +178,9 @@ def clockwise_counter_clockwise_rotation(crash_event_sentences):
 
 def degrees_rotation(crash_event_sentences):
 
+    pos_crash_dict['striker_degrees'] = 'default'
+    pos_crash_dict['victim_degrees'] = 'default'
+
     for impact_sentence in crash_event_sentences:
         derees_list = ['degrees']  # Create Google Word 2 Vector list to increase accuracy
         if any(word in impact_sentence for word in derees_list):
@@ -207,10 +217,12 @@ def degrees_rotation(crash_event_sentences):
 
                             if bDegreesV1:
                                 print("V1 degree "+degree_value)
+                                pos_crash_dict['striker_degrees'] = degree_value
                                 break
 
                             if bDegreesV2:
                                 print("V2 degree "+degree_value)
+                                pos_crash_dict['victim_degrees'] = degree_value
                                 break
 
                     if bVehicle and degree_value == 0:
@@ -231,10 +243,12 @@ def degrees_rotation(crash_event_sentences):
 
                                 if bDegreesV1:
                                     print("V1 degree " + degree_value)
+                                    pos_crash_dict['striker_degrees'] = degree_value
                                     break
 
                                 if bDegreesV2:
                                     print("V2 degree " + degree_value)
+                                    pos_crash_dict['victim_degrees'] = degree_value
                                     break
 
                     if degree_value == 0:
@@ -242,6 +256,10 @@ def degrees_rotation(crash_event_sentences):
 
 
 def facing_direction(crash_event_sentences):
+
+    pos_crash_dict['striker_facing'] = 'initialdirection'
+    pos_crash_dict['victim_facing'] = 'initialdirection'
+
     direction_string = "rest, face, facing, rightmost ,northbound ,southbound ,eastbound ,ONE  CLOSED OVER,righthand ,northbound,northbound ,bound carriageway,westbound,crosswalk,stoplight,eastbound,railroad crossing,northbound ,offramp,westbound,opposite direction,directions,opposite directions,toward,downward,backwards,directon,south,east,west,northeast,southeast,southwest,northwest,northern,eastern,northeast,west,north,south,southeast,northeast,southwest,northwest,eastern,southward,eastward,north,east,west,southeast,northeast,southwest,northwest,southern,eastern,northern,east,north,south,southwest,southeast,northeast,northwest,eastern,western,southwesterly direction,southbound,westbound,eastbound,southbound ,westbound ,northbound ,eastbound ,northbound ,southbound ,eastbound"
     direction_list = direction_string.split(",")
     for impact_sentence in crash_event_sentences:
@@ -293,12 +311,16 @@ def facing_direction(crash_event_sentences):
                                 print(item)
                                 if bFaceV1:
                                     print("faceCounter")
+                                    pos_crash_dict['striker_facing'] = item
 
                                 if bFaceV2:
                                     print("faceCounter")
+                                    pos_crash_dict['victim_facing'] = item
 
                                 if bFaceV1V2:
                                     print("faceCounter")
+                                    pos_crash_dict['striker_facing'] = item
+                                    pos_crash_dict['victim_facing'] = item
 
                                 break
 
@@ -310,6 +332,10 @@ def facing_direction(crash_event_sentences):
 
 
 def destination_lane(crash_event_sentences):
+
+    pos_crash_dict['striker_destination_lane'] = 'default'
+    pos_crash_dict['victim_destination_lane'] = 'default'
+
     direction_string = "stop, rest, face, facing, rightmost ,northbound ,southbound ,eastbound ,one closed over,righthand ,northbound,northbound ,bound carriageway,westbound,crosswalk,stoplight,eastbound,railroad crossing,northbound ,offramp,westbound,opposite direction,directions,opposite directions,toward,downward,backwards,directon,south,east,west,northeast,southeast,southwest,northwest,northern,eastern,northeast,west,north,south,southeast,northeast,southwest,northwest,eastern,southward,eastward,north,east,west,southeast,northeast,southwest,northwest,southern,eastern,northern,east,north,south,southwest,southeast,northeast,northwest,eastern,western,southwesterly direction,southbound,westbound,eastbound,southbound ,westbound ,northbound ,eastbound ,northbound ,southbound ,eastbound"
     direction_list = direction_string.split(",")
     for impact_sentence in crash_event_sentences:
@@ -333,7 +359,10 @@ def destination_lane(crash_event_sentences):
                         if pos_verb[0] == '' or pos_verb[0] == '.':
                             bNotFound = False
                             print('Initial direction|on road|INSIDE')
+                            pos_crash_dict['striker_destination_lane'] = 'innerzone'
+                            pos_crash_dict['victim_destination_lane'] = 'innerzone'
                             break
+
                         print('-----------')
                         print('p2-----------')
                         road_list = ['roadway', 'lane', 'intersection', 'median', 'shoulder', 'road', 'exit']
@@ -389,47 +418,6 @@ def destination_lane(crash_event_sentences):
 def pre_crash_event(caseId):
     print(caseId)
     # service call to ac3r
-    # V1 Impact area, V2 impact area
-    # Start Analysis of Specific Sentences.
-
-    # for impact_sentence in crash_event_sentences:
-    #     properties = {"annotators": "tokenize,ssplit,pos,depparse,natlog,openie",
-    #                   "outputFormat": "json", "openie.triple.strict": "true"}
-    #
-    #     output = nlp.annotate(impact_sentence, properties=properties)
-    #     output = json.loads(output)
-    #     result = [output["sentences"][0]["openie"] for item in output]
-    #     for i in result:
-    #         for rel in i:
-    #             relationSent = rel['subject'], rel['relation'], rel['object']
-    #             print(relationSent)
-    #
-    #             if any(word in rel['relation'] for word in list_):
-    #                 print(rel['relation'])
-    #
-    #                 # case 1: subject and object contain car part location.
-    #                 if (rel['subject'] in [ 'front','rear', 'back', 'right', 'left', 'right side', 'left side']) and (rel['object'] in [ 'front','rear', 'back', 'right', 'left', 'right side', 'left side']):
-    #                     print("Case 1")
-    #
-    #                     # case 2: subject is car and object contain car part location of seconde car.
-    #                 elif (rel['subject'] in ['vehicle', 'Vehicle', 'v1', 'V1', 'v2', 'V2']) and (rel['object'] in ['front', 'rear', 'back', 'right', 'left', 'right side', 'left side']):
-    #                         print("Case 2")
-    #
-    #                     # default case: (car,part location) , verb, (car,part location)
-    #                     # rear end, head on, angle/side , left, right
-    #                 else:
-    #                     print("default case")
-    #                     for word in list_:
-    #                         if word in rel['relation']:
-    #                             verb = word
-    #                             pattern = r'.+?(?='+verb+')'
-    #                             pre_verb = re.search(pattern, impact_sentence)
-    #                             print(pre_verb[0])
-    #
-    #                             pattern = r'(?<='+verb+').*'
-    #                             pre_verb = re.search(pattern, impact_sentence)
-    #                             print(pre_verb[0].strip())
-
 
 def crash_event(summary):
     global crash_counter
@@ -465,9 +453,9 @@ def crash_event(summary):
             #print(line)
             crash_event_sentences.append(line)
 
-#    clockwise_counter_clockwise_rotation(crash_event_sentences)
-#    degrees_rotation(crash_event_sentences)
-#    facing_direction(crash_event_sentences)
+    clockwise_counter_clockwise_rotation(crash_event_sentences)
+    degrees_rotation(crash_event_sentences)
+    facing_direction(crash_event_sentences)
     destination_lane(crash_event_sentences)
 
 
@@ -488,14 +476,14 @@ for file in entries:
         striker_damage_area = data['STRIKER_AREA_DAMAGE']
         victim_damage_area = data['HIT_AREA_DAMAGE']
         pre_crash_event(data['CaseID'])
-        #crash_event(summary)
+        crash_event(summary)
 
         pos_crash_dict['case_id'] = data['CaseID']
         pos_crash_dict['number_of_vehicles'] = data['NumOfVehicle']
         pos_crash_dict['striker_damage_area'] = striker_damage_area
         pos_crash_dict['victim_damage_area'] = victim_damage_area
 
-        csv_columns = ['case_id', 'number_of_vehicles', 'striker_damage_area', 'victim_damage_area']
+        csv_columns = ['case_id', 'number_of_vehicles', 'striker_damage_area', 'victim_damage_area', 'striker_rotation', 'victim_rotation', 'striker_degrees', 'victim_degrees', 'striker_facing', 'victim_facing', 'striker_destination_lane', 'victim_destination_lane']
         csv_file = "pos_crash_event.csv"
         try:
             with open(csv_file, 'a', encoding='utf-8') as csvfile:
