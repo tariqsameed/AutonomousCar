@@ -1,9 +1,5 @@
-import numpy as np
-print (np.__version__)
-
 import gensim
 import csv
-import nltk
 from nltk.corpus import stopwords
 
 stop_words = set(stopwords.words('english'))

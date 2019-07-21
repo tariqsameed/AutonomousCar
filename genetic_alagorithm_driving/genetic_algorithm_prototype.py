@@ -89,6 +89,7 @@ def tournament_parent_selection(populations, n=2, tsize=5):
 
 def crossover_and_mutation(selected_candidates):
 #   https://stackoverflow.com/questions/37021934/how-to-crossover-the-parents-when-using-a-value-encoding-method-in-genetic-algor
+#   https://towardsdatascience.com/evolution-of-a-salesman-a-complete-genetic-algorithm-tutorial-for-python-6fe5d2b3ca35
     print('crossover and mutation')
     print('Evaluation of Children')
     print('survival and replacement')

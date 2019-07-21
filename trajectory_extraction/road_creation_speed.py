@@ -45,7 +45,7 @@ def main():
         # update the state of vehicle at impact.
 
 
-        for _ in range(240):
+        for _ in range(100):
             time.sleep(0.1)
             vehicle.update_vehicle()  # Synchs the vehicle's "state" variable with the simulator
             sensors = bng.poll_sensors(vehicle)  # Polls the data of all sensors attached to the vehicle
@@ -56,7 +56,28 @@ def main():
                 vehicle.update_vehicle()
 
 
+        bng.stop_scenario()
 
+        for _ in range(20):
+            time.sleep(0.1)
+
+        bng.load_scenario(scenario)
+        bng.start_scenario()
+
+        node0 = {
+            'pos': (0, 50 , 0.163609),
+            'speed': 20,
+        }
+
+        node1 = {
+            'pos': (0, 100, 0.163609),
+            'speed': 30,
+        }
+
+        script.append(node0)
+        script.append(node1)
+
+        vehicle.ai_set_line(script)
 
         input('Press enter when done...')
     finally:

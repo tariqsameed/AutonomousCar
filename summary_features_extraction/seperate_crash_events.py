@@ -460,6 +460,23 @@ def crash_event(summary):
 
 
 
+def saveDictionaryToCsvFile():
+
+    csv_columns = ['case_id', 'number_of_vehicles', 'striker_damage_area', 'victim_damage_area', 'striker_rotation',
+                   'victim_rotation', 'striker_degrees', 'victim_degrees', 'striker_facing', 'victim_facing',
+                   'striker_destination_lane', 'victim_destination_lane']
+    csv_file = "pos_crash_event.csv"
+    try:
+        with open(csv_file, 'a', encoding='utf-8') as csvfile:
+            writer = csv.DictWriter(csvfile, fieldnames=csv_columns, delimiter=',', lineterminator='\n')
+            writer.writerow(pos_crash_dict)
+    except IOError:
+        print("I/O error")
+
+
+
+
+
 
 #folder_path = '../resources/summary/'
 create_csv_file()
@@ -483,14 +500,8 @@ for file in entries:
         pos_crash_dict['striker_damage_area'] = striker_damage_area
         pos_crash_dict['victim_damage_area'] = victim_damage_area
 
-        csv_columns = ['case_id', 'number_of_vehicles', 'striker_damage_area', 'victim_damage_area', 'striker_rotation', 'victim_rotation', 'striker_degrees', 'victim_degrees', 'striker_facing', 'victim_facing', 'striker_destination_lane', 'victim_destination_lane']
-        csv_file = "pos_crash_event.csv"
-        try:
-            with open(csv_file, 'a', encoding='utf-8') as csvfile:
-                writer = csv.DictWriter(csvfile, fieldnames=csv_columns, delimiter=',', lineterminator='\n')
-                writer.writerow(pos_crash_dict)
-        except IOError:
-            print("I/O error")
+        saveDictionaryToCsvFile()
+
 
 
 print(crash_counter)
