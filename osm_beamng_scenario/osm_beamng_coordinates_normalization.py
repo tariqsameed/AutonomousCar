@@ -82,7 +82,7 @@ def findMinMaxLonLat(graph):
 def startRoadCreation():
     try:
         beamNG_coordintes =[]
-        beamNG_lat_lon = ()
+        beamNG_lat_lon = {}
 
         #minLon, minLat, maxLon, maxLat = findMinMaxLonLat(graph)
         minMaxLonLat = findMinMaxLonLat(graph)
@@ -96,7 +96,7 @@ def startRoadCreation():
                 element = node_dict[coordinate]
                 #gridOSMx, gridOSMy = getNormalizedOSMCoordinates(minMaxLonLat[0],minMaxLonLat[1], element[0], element[1])
                 gridBeamNGx,gridBeamNGy = getNormalizedBeamNGCoordinates(minMaxLonLat[0], minMaxLonLat[1], element[0], element[1])
-                beamNG_lat_lon[element] = (gridBeamNGx,gridBeamNGy)
+                beamNG_lat_lon[coordinate] = {gridBeamNGx,gridBeamNGy}
                 beamNG_coordintes.append((gridBeamNGx,gridBeamNGy))
 
 
