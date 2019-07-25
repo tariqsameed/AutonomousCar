@@ -30,8 +30,9 @@ def createBeamNGRoads():
     print(graph.edges)
 
     graph_edges = graph.edges
-
     print(len(graph_edges))
+
+    sample_list = []
     for sample in graph_edges:
         road_a = Road('custom_track_center', looped=False)
         point1 = list(beamng_dict[sample[0]])
@@ -44,6 +45,9 @@ def createBeamNGRoads():
 
         road_a.nodes.extend(nodes0)
         scenario.add_road(road_a)
+
+        sample_list.append(point1)
+        sample_list.append(point2)
 
 
     scenario.make(beamng)
