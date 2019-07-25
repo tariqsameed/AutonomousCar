@@ -43,7 +43,7 @@ try:
                 # add edge weight: https://stackoverflow.com/questions/19412462/getting-distance-between-two-points-based-on-latitude-longitude
                 distance = great_circle(node_dict[nextNode], node_dict[prevNode]).m
                 print(distance)
-                graph.add_edge(prevNode, nextNode,weight=distance)
+                graph.add_edge(prevNode, nextNode, weight=distance)
                 prevNode = nextNode
         else:
             print ("Faulty File")

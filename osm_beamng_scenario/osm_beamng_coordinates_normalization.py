@@ -95,7 +95,7 @@ def startRoadCreation():
             for coordinate in sample:
                 element = node_dict[coordinate]
                 #gridOSMx, gridOSMy = getNormalizedOSMCoordinates(minMaxLonLat[0],minMaxLonLat[1], element[0], element[1])
-                gridBeamNGx,gridBeamNGy = getNormalizedBeamNGCoordinates(minMaxLonLat[0], minMaxLonLat[1], element[0], element[1])
+                gridBeamNGy,gridBeamNGx = getNormalizedBeamNGCoordinates(minMaxLonLat[0], minMaxLonLat[1], element[0], element[1])
                 beamNG_lat_lon[coordinate] = {gridBeamNGx,gridBeamNGy}
                 beamNG_coordintes.append((gridBeamNGx,gridBeamNGy))
 
@@ -109,6 +109,10 @@ def startRoadCreation():
         plt.figure()
         #plt.plot(x_val, y_val)
         plt.plot(x_val, y_val, 'or')
+
+        for xy in zip(x_val,y_val):  # <--
+            plt.annotate('(%s, %s)' % xy, xy=xy, textcoords='data')  # <--
+
         #plt.show()
         plt.savefig('osm_normalized_beamng.png')
 
