@@ -167,8 +167,9 @@ def createBeamNGRoads():
 
         # road edge lane marking
 
-        road_b = Road('track_editor_C_border', looped=False)
-        road_c = Road('track_editor_C_border', looped=False)
+        road_b = Road('track_editor_C_border', render_priority=10, looped=False)
+        road_c = Road('track_editor_C_border', render_priority=10, looped=False)
+
 
         point1 = list(beamng_dict[sample[0]])
         point2 = list(beamng_dict[sample[1]])
@@ -198,7 +199,7 @@ def createBeamNGRoads():
 
         for polyline in lane_marking_points:
             #print(polyline)
-            road_d = Road('track_editor_C_border', looped=False)
+            road_d = Road('track_editor_C_border', render_priority=10, looped=False)
 
             nodes0 = [
                 (polyline[0], polyline[1], -0.05, 0.05),
