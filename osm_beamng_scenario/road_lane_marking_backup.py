@@ -18,7 +18,34 @@ beamng_dict = pickle.load(open(map_beamng_serialize, "rb"))
 print("BeamNG Nodes Loaded")
 
 
-def getRoadPolyLineLaneMarking(point1,point2, width):
+def getRoadLeftLaneMarking(point1,point2, width):
+    print("Road Lanes")
+#https://stackoverflow.com/questions/47040213/find-perpendicular-line-using-points-on-that-line
+
+    print(point1, point2, width)
+
+    dx = float(point2[0] - point1[0])
+    dy = float(point2[1] - point1[1])
+
+    L = float(math.sqrt(float(float(dx * dx) + float(dy * dy))))
+    U = (float(-dy / L), float(dx / L))
+    F = float(float(width) - 0.05)
+
+# Point on other side
+    x1n = float(point1[0] - U[0] * F)
+    y1n = float(point1[1] - U[1] * F)
+
+# Point on other side
+    x2n = float(point2[0] - U[0] * F)
+    y2n = float(point2[1] - U[1] * F)
+
+    #print(x1p,y1p,x1n,y1n,x2p,y2p,x2n,y2n)
+
+    return x1n,y1n,x2n,y2n
+
+
+
+def getRoadRightLaneMarking(point1,point2, width):
     print("Road Lanes")
 #https://stackoverflow.com/questions/47040213/find-perpendicular-line-using-points-on-that-line
 
@@ -93,11 +120,19 @@ def getRoadLaneMarking(point1,point2, width, lanes):
         laneNumber = i + 1
         position_of_lane = laneNumber * laneWidth
 
-        width = float(center - position_of_lane)
-        # calculate polyline
-        lane_marking = getRoadPolyLineLaneMarking(point1,point2, width)
-        lane_marking_all.append(lane_marking)
+        if (position_of_lane < center):
+            print("left side")
+            width = float(center - position_of_lane)
+            # calculate polyline
+            lane_marking = getRoadLeftLaneMarking(point1,point2, width)
+            lane_marking_all.append(lane_marking)
 
+        if (position_of_lane > center):
+            print("right side")
+            # calculate polyline
+            width = float(center - position_of_lane)
+            lane_marking = getRoadRightLaneMarking(point1, point2, width)
+            lane_marking_all.append(lane_marking)
 
     return lane_marking_all
 
@@ -122,7 +157,7 @@ def createBeamNGLanes():
 
         for polyline in lane_marking_points:
             print(polyline)
-            road_a = Road('track_editor_C_border', looped=False)
+            road_a = Road('custom_track_center', looped=False)
 
             nodes0 = [
                 (polyline[0], polyline[1], -0.05, 0.05),
@@ -132,17 +167,17 @@ def createBeamNGLanes():
             road_a.nodes.extend(nodes0)
             scenario.add_road(road_a)
 
-    scenario.make(beamng)
-
-    bng = beamng.open(launch=True)
-    try:
-        bng.load_scenario(scenario)
-        bng.start_scenario()
-
-        input('Press enter when done...')
-
-    finally:
-        bng.close()
+    # scenario.make(beamng)
+    #
+    # bng = beamng.open(launch=True)
+    # try:
+    #     bng.load_scenario(scenario)
+    #     bng.start_scenario()
+    #
+    #     input('Press enter when done...')
+    #
+    # finally:
+    #     bng.close()
 
 
 
