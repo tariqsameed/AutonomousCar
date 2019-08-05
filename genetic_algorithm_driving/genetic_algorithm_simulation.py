@@ -64,36 +64,32 @@ def getPolyLineCoordinates(node_a,node_b, distance,width):
     real_distance = getDistance(node_a,node_b)
     t = distance / real_distance
 
-    point2 = (((1 - t) * node_a[0] + t * node_b[0]), ((1 - t) * node_a[1] + t * node_b[1]))
+    if t == 0.0:
+        t = 0.05
 
-    #print(node_a, point2, width)
+    point2 = (((1 - t) * node_a[0] + t * node_b[0]), ((1 - t) * node_a[1] + t * node_b[1]))
 
     dx = float(point2[0] - node_a[0])
     dy = float(point2[1] - node_a[1])
 
-    L = float(math.sqrt(float(float(dx * dx) + float(dy * dy))))
+    L = float(math.sqrt(float(float(dx * dx) + float(dy * dy)))) # handle division by zero
     U = (float(-dy / L), float(dx / L))
-    F = float(float(width))
+    F = float(width)
 
     # Point on one side
-    x2p = float(point2[0] - U[0] * F)
-    y2p = float(point2[1] - U[1] * F)
+    x2p = float(point2[0] + U[0] * F)
+    y2p = float(point2[1] + U[1] * F)
 
     return x2p,y2p
 
 
 def getDistance(node_a,node_b):
-    #print("get distance")
-    #print(node_a)
-    #print(node_b)
     dist = math.sqrt((node_a[1] - node_b[1]) ** 2 + (node_a[0] - node_b[0]) ** 2)
     return dist
 
 
 def getV1BeamNGCoordinaes(total_distance_v1, width):
     global road_a
-    #print("beamng v1 coordinates")
-    #print(total_distance_v1)
     v1_roads = road_a
     v1_roads_distance = road_a_distance
     #print(v1_roads_distance)
@@ -104,8 +100,8 @@ def getV1BeamNGCoordinaes(total_distance_v1, width):
     for node in v1_roads:
         node_distance = getDistance(beamng_dict[node[0]],beamng_dict[node[1]])
         v1_poly_distance = v1_poly_distance - node_distance
-
         if v1_poly_distance < 0:
+            v1_poly_distance = v1_poly_distance + node_distance
             #print("road found")
             beamng_pos =   getPolyLineCoordinates(beamng_dict[node[0]],beamng_dict[node[1]],v1_poly_distance,width)
             break
@@ -129,12 +125,13 @@ def getV2BeamNGCoordinaes(total_distance_v2, width):
     for node in v2_roads:
         node_distance = getDistance(beamng_dict[node[0]],beamng_dict[node[1]])
         v2_poly_distance = v2_poly_distance - node_distance
+
         if v2_poly_distance < 0:
+            v2_poly_distance = v2_poly_distance + node_distance
             #print("road found")
             beamng_pos = getPolyLineCoordinates(beamng_dict[node[0]],beamng_dict[node[1]], v2_poly_distance, width)
             break
 
-    print(beamng_pos)
     return beamng_pos
 
 
@@ -226,6 +223,8 @@ def geneticAlgorithmSimulation():
             road_c = way_3[2]
 
 
+
+
     road_a_distance = getRoadDistance(road_a)
     road_b_distance = getRoadDistance(road_b)
     road_c_distance = getRoadDistance(road_c)
@@ -234,7 +233,7 @@ def geneticAlgorithmSimulation():
     IMPACT_POSITION_X = impact_point[0]
     IMPACT_POSITION_Y = impact_point[1]
 
-    initial_population =  generateRandomPopulation(20)
+    initial_population =  generateRandomPopulation(10)
 
     collision_points = []
     striker_points = []
@@ -258,25 +257,28 @@ def geneticAlgorithmSimulation():
     plt.scatter(clist1, clist2, c='red', alpha=0.5, label='collision')
     plt.scatter(vlist1, vlist2, c='green', alpha=0.5, label='victim')
 
-    road_a = [i[0] for i in road_a]
     road_a_plt = []
-    for node in road_a:
+    out = [item for t in road_a for item in t]
+    for node in out:
         road_a_plt.append(beamng_dict[node])
+
 
     plta1, plta2 = zip(*road_a_plt)
     plt.plot(plta1,plta2,'k--')
 
-    road_b = [i[0] for i in road_b]
+
     road_b_plt = []
-    for node in road_b:
+    out = [item for t in road_b for item in t]
+    for node in out:
         road_b_plt.append(beamng_dict[node])
 
     pltb1, pltb2 = zip(*road_b_plt)
     plt.plot(pltb1, pltb2, 'k--')
 
-    road_c = [i[0] for i in road_c]
+
     road_c_plt = []
-    for node in road_c:
+    out = [item for t in road_c for item in t]
+    for node in out:
         road_c_plt.append(beamng_dict[node])
 
     pltc1, pltc2 = zip(*road_c_plt)
