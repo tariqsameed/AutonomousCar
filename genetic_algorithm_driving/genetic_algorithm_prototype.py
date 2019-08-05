@@ -2,7 +2,9 @@ import random
 import numpy.random as npr
 
 # Inputs of the equation.
-equation_inputs = [30,-50,3,50,4,45] # speedx, x1, x2 , speedy, y1, y2
+equation_inputs = [30,-50,3,50,4,45,5,5] # speedx, x1, x2 , speedy, y1, y2, point of impact x, point of impact y
+#https://www.researchgate.net/post/How_can_I_select_an_initial_population_for_an_optimization_algorithm
+#The equation assumes that it is the last action of the car before the crash event. it is why we choose only one way point before collision.
 
 # Defining the population size
 sol_per_pop = 100
