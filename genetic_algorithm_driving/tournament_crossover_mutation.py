@@ -55,6 +55,7 @@ def crossover_mutation(selected_parents):
                 population_next.append(mutation(child.tolist()))
 
     print(population_next)
+    return population_next
 
 
 def tournament_parent_selection(populations, n=2, tsize=5):
@@ -91,8 +92,7 @@ def setPopulationFitness(population):
 
 
 def generateRandomPopulation(N=10,Gene=14):
-    #print("random population")
-    #print([[np.random.randint(0,9) for i in range(Gene)] for j in range(N)])
+    print("random population")
     initial_population = [[np.random.randint(0,9) for i in range(Gene)] for j in range(N)]
     return initial_population
 
@@ -100,4 +100,12 @@ def generateRandomPopulation(N=10,Gene=14):
 populations = generateRandomPopulation(10,14)
 setPopulationFitness(populations)
 selected_parents = tournament_parent_selection(populations)
-crossover_mutation(selected_parents=selected_parents)
+next_population = crossover_mutation(selected_parents=selected_parents)
+setPopulationFitness(populations)
+#populations_fitness = sorted(populations_fitness.items(), key=lambda x: x[1], reverse=True)
+print(len(populations_fitness))
+# Elitism.
+# https://towardsdatascience.com/evolution-of-a-salesman-a-complete-genetic-algorithm-tutorial-for-python-6fe5d2b3ca35
+
+#https://stackoverflow.com/questions/2582138/finding-and-replacing-elements-in-a-list
+#https://thispointer.com/python-how-to-sort-a-dictionary-by-key-or-value/

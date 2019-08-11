@@ -67,7 +67,7 @@ def roullete_wheel_selection(populations):
 
 
 # Use many tournaments to get parents
-def tournament_parent_selection(populations, n=2, tsize=5):
+def tournament_parent_selection(populations, n=2, tsize=3):
     print('tournament selection')
     selected_candidates = []
     for i in range(n):
