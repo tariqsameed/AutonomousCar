@@ -4,6 +4,7 @@ import csv
 from beamngpy import BeamNGpy, Scenario, Road, Vehicle, setup_logging
 import numpy as np
 import math
+from math import atan2,degrees
 
 V1_SPEED_INDEX_1 = 0
 V1_SPEED_INDEX_2 = 1
@@ -21,12 +22,12 @@ POINT_OF_IMPACT_ANGLE_2 = 12
 POINT_OF_IMPACT_ANGLE_3 = 13
 IMPACT_POSITION_X = 1
 IMPACT_POSITION_Y = 2
-road_a = ''
-road_b = ''
-road_c = ''
-road_a_distance = 18.545010801854016
-road_b_distance = 82.41788560240022
-road_c_distance = 47.37948935299994
+road_a = [(0,0),(30,0)] # add the coordinates of the road here
+road_b = [(30,30),(30,0)] # add the cooridinates of the road here
+road_c = [(60,0),(30,0)] # add the cooridinates of the road here
+road_a_distance = 40
+road_b_distance = 40
+road_c_distance = 40
 
 
 # load configuration of the simulations
@@ -74,6 +75,12 @@ Create_csv_file()
 beamng = BeamNGpy('localhost', 64256, home='F:\Softwares\BeamNG_Research_SVN')
 scenario = Scenario('GridMap', 'crash_simulation_1')
 
+
+# create vehicles
+vehicleStriker = Vehicle('striker', model='etk800', licence='PYTHON', colour='White')
+vehicleVictim = Vehicle('victim', model='etk800', licence='PYTHON', colour='White')
+
+
 # Create required road for BeamNG
 # graph_edges = graph.edges
 
@@ -90,6 +97,10 @@ scenario = Scenario('GridMap', 'crash_simulation_1')
 #     road_a.nodes.extend(nodes0)
 #     scenario.add_road(road_a)
 
+def AngleBtw2Points(pointA, pointB):
+  changeInX = pointB[0] - pointA[0]
+  changeInY = pointB[1] - pointA[1]
+  return degrees(atan2(changeInY,changeInX)) #remove degrees if you want your answer in radians
 
 def getPolyLineCoordinates(node_a,node_b, distance,width):
     #print("get polyline coordinate")
@@ -217,29 +228,42 @@ populations = generateRandomPopulation(5,14)
 # code to run the simulation and set the fitness of the function.
 for population in populations:
     print(population)
-    beamng_param = decoding_of_parameter(population)
+    collision_points = []
+    striker_points = []
+    victim_points = []
+    striker_speeds = []
+    victim_speeds = []
+
+    beamng_parameters = decoding_of_parameter(population)
+
+    striker_speeds.append(beamng_parameters[0])
+    striker_points.append(beamng_parameters[1])
+    victim_speeds.append(beamng_parameters[2])
+    victim_points.append(beamng_parameters[3])
+    collision_points.append(beamng_parameters[4])
+
+    # create beamng scenario and run the simulation.
+    # Add it to our scenario at this position and rotation
+
+    # alpha = AngleBtw2Points([5,5],[7,4])
+    striker_alpha = ""
+    victim_alpha = ""
+    scenario.add_vehicle(vehicleStriker, pos=(striker_points[0][0], striker_points[0][1], 0), rot=(0, 0, 0)) # get car heading angle
+    scenario.add_vehicle(vehicleVictim, pos=(victim_points[0][0], victim_points[0][1], 0), rot=(0, 0, 0)) # get car heading anlge
 
 
-
-
-
-
-
-
-
-
-# fit it in the genetic algorithm.
-# scenario.make(beamng)
-#
-# bng = beamng.open(launch=True)
-# try:
-#     bng.load_scenario(scenario)
-#     bng.start_scenario()
-#
-#     input('Press enter when done...')
-#
-# finally:
-#     bng.close()
+    # fit it in the genetic algorithm.
+    # scenario.make(beamng)
+    #
+    # bng = beamng.open(launch=True)
+    # try:
+    #     bng.load_scenario(scenario)
+    #     bng.start_scenario()
+    #
+    #     input('Press enter when done...')
+    #
+    # finally:
+    #     bng.close()
 
 
 
