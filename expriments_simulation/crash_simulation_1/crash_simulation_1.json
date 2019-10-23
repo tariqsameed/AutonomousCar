@@ -1,0 +1,11 @@
+{
+  "crash_report_id": "1234",
+  "csv_file": "",
+  "striker_distance_from_center": "",
+  "victim_distance_from_center": "",
+  "collision_point" : "",
+  "collision_radius" : "",
+  "striker_car_type" : "",
+  "collision_car_type" : "",
+  "crash_simulations" : 1000
+}
