@@ -246,24 +246,61 @@ for population in populations:
     # Add it to our scenario at this position and rotation
 
     # alpha = AngleBtw2Points([5,5],[7,4])
-    striker_alpha = ""
-    victim_alpha = ""
-    scenario.add_vehicle(vehicleStriker, pos=(striker_points[0][0], striker_points[0][1], 0), rot=(0, 0, 0)) # get car heading angle
-    scenario.add_vehicle(vehicleVictim, pos=(victim_points[0][0], victim_points[0][1], 0), rot=(0, 0, 0)) # get car heading anlge
+    striker_alpha = AngleBtw2Points(road_a[0],road_a[1])
+    victim_alpha = AngleBtw2Points(road_b[0],road_b[1])
+    scenario.add_vehicle(vehicleStriker, pos=(striker_points[0][0], striker_points[0][1], 0), rot=(0, 0, striker_alpha)) # get car heading angle
+    scenario.add_vehicle(vehicleVictim, pos=(victim_points[0][0], victim_points[0][1], 0), rot=(0, 0, victim_alpha)) # get car heading anlge
 
 
     # fit it in the genetic algorithm.
-    # scenario.make(beamng)
-    #
-    # bng = beamng.open(launch=True)
-    # try:
-    #     bng.load_scenario(scenario)
-    #     bng.start_scenario()
-    #
-    #     input('Press enter when done...')
-    #
-    # finally:
-    #     bng.close()
+    scenario.make(beamng)
+
+    bng = beamng.open(launch=True)
+    try:
+        bng.load_scenario(scenario)
+        bng.start_scenario()
+
+        # path for striker vehicle
+        node0 = {
+            'pos': (striker_points[0][0], striker_points[0][1], 0),
+            'speed': 0,
+        }
+
+        node1 = {
+            'pos': (collision_points[0][0], collision_points[0][1], 0),
+            'speed': striker_speeds[0],
+        }
+
+        script = list()
+        script.append(node0)
+        script.append(node1)
+
+        vehicleStriker.ai_set_line(script)
+
+
+        # path for victim vehicle
+        node2 = {
+            'pos': (victim_points[0][0], victim_points[0][1], 0),
+            'speed': 0,
+        }
+
+        node3 = {
+            'pos': (collision_points[0][0], collision_points[0][1], 0),
+            'speed': victim_speeds[0],
+        }
+
+        script = list()
+        script.append(node2)
+        script.append(node3)
+
+        vehicleVictim.ai_set_line(script)
+
+        input('Press enter when done...')
+
+        bng.stop_scenario()
+
+    finally:
+        bng.close()
 
 
 
