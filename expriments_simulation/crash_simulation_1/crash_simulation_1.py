@@ -257,6 +257,13 @@ def decoding_of_parameter(chromosome):
     return v1_speed, v1_pos_bg, v2_speed, v2_pos_bg, impact_point
 
 
+
+
+def multiObjectiveFitnessFunction(striker_damage, striker_distance, striker_rotation, victim_damage, victim_distance, victim_rotation):
+    print("multiobjective fitness function")
+
+
+
 #initial population
 populations = generateRandomPopulation(5,14)
 
@@ -342,30 +349,22 @@ for population in populations:
             #striker vehhicle state extraction
             vehicleStriker.update_vehicle()  # Synchs the vehicle's "state" variable with the simulator
             sensorsStriker = bng.poll_sensors(vehicleStriker)  # Polls the data of all sensors attached to the vehicle
-            positions.append(vehicleStriker.state['pos'])
-            directions.append(vehicleStriker.state['dir'])
-            wheel_speeds.append(sensorsStriker['electrics']['values']['wheelspeed'])
-            throttles.append(sensorsStriker['electrics']['values']['throttle'])
-            brakes.append(sensorsStriker['electrics']['values']['brake'])
-            damages.append(sensorsStriker['damages'])
+            striker_position = vehicleStriker.state['pos']
+            striker_direction = vehicleStriker.state['dir']
+            striker_damage = sensorsStriker['damages']
 
             # victim vehicle state extraction
             vehicleVictim.update_vehicle()  # Synchs the vehicle's "state" variable with the simulator
             sensorsVictim = bng.poll_sensors(vehicleVictim)  # Polls the data of all sensors attached to the vehicle
-            positions.append(vehicleVictim.state['pos'])
-            directions.append(vehicleVictim.state['dir'])
-            wheel_speeds.append(sensorsVictim['electrics']['values']['wheelspeed'])
-            throttles.append(sensorsVictim['electrics']['values']['throttle'])
-            brakes.append(sensorsVictim['electrics']['values']['brake'])
-            damages.append(sensorsVictim['damages'])
+            victim_position = vehicleVictim.state['pos']
+            victim_direction = vehicleVictim.state['dir']
+            victim_damage = sensorsVictim['damages']
 
             print("multiobjective fitness function")
-
-
+            score = multiObjectiveFitnessFunction(striker_damage, striker_position, striker_direction, victim_damage, victim_position, victim_direction )
 
 
         #input('Press enter when done...')
-        time.sleep(15)
         bng.stop_scenario()
 
     finally:
