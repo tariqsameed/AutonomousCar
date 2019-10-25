@@ -4,7 +4,9 @@ import csv
 from beamngpy import BeamNGpy, Scenario, Road, Vehicle, setup_logging
 import numpy as np
 import math
+import time
 from math import atan2,degrees
+from beamngpy.sensors import Electrics, Damage
 
 V1_SPEED_INDEX_1 = 0
 V1_SPEED_INDEX_2 = 1
@@ -56,14 +58,15 @@ map_ways_serialize = filename + '.ways.serialize'
 map_nodes_serialize = filename + '.nodes.serialize'
 map_beamng_serialize = filename + '.nodes.serialize.beamng'
 
-node_dict = pickle.load(open(map_nodes_serialize, "rb"))
-print("Nodes Loaded")
+# node_dict = pickle.load(open(map_nodes_serialize, "rb"))
+# print("Nodes Loaded")
+#
+# graph = pickle.load(open(map_ways_serialize, "rb"))
+# print("Graph Loaded")
+#
+# beamng_dict = pickle.load(open(map_beamng_serialize, "rb"))
+# print("BeamNG Nodes Loaded")
 
-graph = pickle.load(open(map_ways_serialize, "rb"))
-print("Graph Loaded")
-
-beamng_dict = pickle.load(open(map_beamng_serialize, "rb"))
-print("BeamNG Nodes Loaded")
 
 # dictionary to save the data in csv file.
 vehicle_crash_dict = {}
@@ -75,11 +78,26 @@ Create_csv_file()
 beamng = BeamNGpy('localhost', 64256, home='F:\Softwares\BeamNG_Research_SVN')
 scenario = Scenario('GridMap', 'crash_simulation_1')
 
-
 # create vehicles
 vehicleStriker = Vehicle('striker', model='etk800', licence='PYTHON', colour='White')
 vehicleVictim = Vehicle('victim', model='etk800', licence='PYTHON', colour='White')
 
+electricsStriker = Electrics()
+damageStriker = Damage();
+vehicleStriker.attach_sensor('electrics', electricsStriker);
+vehicleStriker.attach_sensor('damages', damageStriker);
+
+electricsVictim = Electrics()
+damageVictim = Damage();
+vehicleVictim.attach_sensor('electrics', electricsVictim);
+vehicleVictim.attach_sensor('damages', damageVictim);
+
+positions = list()
+directions = list()
+wheel_speeds = list()
+throttles = list()
+brakes = list()
+damages = list()
 
 # Create required road for BeamNG
 # graph_edges = graph.edges
@@ -97,10 +115,22 @@ vehicleVictim = Vehicle('victim', model='etk800', licence='PYTHON', colour='Whit
 #     road_a.nodes.extend(nodes0)
 #     scenario.add_road(road_a)
 
+# Temporary road.
+roads = Road('track_editor_C_center', looped=False)
+nodesA = [(road_a[0][0],road_a[0][1], -4, 4),(road_a[1][0],road_a[1][1], -4, 4)]
+nodesB = [(road_b[0][0],road_b[0][1], -4, 4),(road_b[1][0],road_b[1][1], -4, 4)]
+nodesC = [(road_c[0][0],road_c[0][1], -4, 4),(road_c[1][0],road_c[1][1], -4, 4)]
+
+roads.nodes.extend(nodesA)
+roads.nodes.extend(nodesB)
+roads.nodes.extend(nodesC)
+scenario.add_road(roads)
+
+
 def AngleBtw2Points(pointA, pointB):
-  changeInX = pointB[0] - pointA[0]
-  changeInY = pointB[1] - pointA[1]
-  return degrees(atan2(changeInY,changeInX)) #remove degrees if you want your answer in radians
+    changeInX = pointB[0] - pointA[0]
+    changeInY = pointB[1] - pointA[1]
+    return degrees(atan2(changeInY,changeInX)) #remove degrees if you want your answer in radians
 
 def getPolyLineCoordinates(node_a,node_b, distance,width):
     #print("get polyline coordinate")
@@ -142,12 +172,14 @@ def getV1BeamNGCoordinaes(total_distance_v1, width):
     beamng_pos = ""
     v1_poly_distance = v1_road_max
     for node in v1_roads:
-        node_distance = getDistance(beamng_dict[node[0]],beamng_dict[node[1]])
+        #node_distance = getDistance(beamng_dict[node[0]],beamng_dict[node[1]])
+        node_distance = getDistance(v1_roads[0], v1_roads[1])
         v1_poly_distance = v1_poly_distance - node_distance
         if v1_poly_distance < 0:
             v1_poly_distance = v1_poly_distance + node_distance
             #print("road found")
-            beamng_pos =   getPolyLineCoordinates(beamng_dict[node[0]],beamng_dict[node[1]],v1_poly_distance,width)
+            #beamng_pos =   getPolyLineCoordinates(beamng_dict[node[0]],beamng_dict[node[1]],v1_poly_distance,width)
+            beamng_pos = getPolyLineCoordinates(v1_roads[0], v1_roads[1], v1_poly_distance, width)
             break
 
     #print(beamng_pos)
@@ -167,15 +199,18 @@ def getV2BeamNGCoordinaes(total_distance_v2, width):
     beamng_pos = ""
     v2_poly_distance = v2_road_max
     for node in v2_roads:
-        node_distance = getDistance(beamng_dict[node[0]],beamng_dict[node[1]])
+        #node_distance = getDistance(beamng_dict[node[0]],beamng_dict[node[1]])
+        node_distance = getDistance(v2_roads[0], v2_roads[1])
         v2_poly_distance = v2_poly_distance - node_distance
 
         if v2_poly_distance < 0:
             v2_poly_distance = v2_poly_distance + node_distance
             #print("road found")
-            beamng_pos = getPolyLineCoordinates(beamng_dict[node[0]],beamng_dict[node[1]], v2_poly_distance, width)
+            #beamng_pos = getPolyLineCoordinates(beamng_dict[node[0]],beamng_dict[node[1]], v2_poly_distance, width)
+            beamng_pos = getPolyLineCoordinates(v2_roads[0], v2_roads[1], v2_poly_distance, width)
             break
 
+    print(beamng_pos)
     return beamng_pos
 
 
@@ -235,7 +270,7 @@ for population in populations:
     victim_speeds = []
 
     beamng_parameters = decoding_of_parameter(population)
-
+    print(beamng_parameters)
     striker_speeds.append(beamng_parameters[0])
     striker_points.append(beamng_parameters[1])
     victim_speeds.append(beamng_parameters[2])
@@ -248,6 +283,10 @@ for population in populations:
     # alpha = AngleBtw2Points([5,5],[7,4])
     striker_alpha = AngleBtw2Points(road_a[0],road_a[1])
     victim_alpha = AngleBtw2Points(road_b[0],road_b[1])
+
+    print(striker_alpha)
+    print(victim_alpha)
+
     scenario.add_vehicle(vehicleStriker, pos=(striker_points[0][0], striker_points[0][1], 0), rot=(0, 0, striker_alpha)) # get car heading angle
     scenario.add_vehicle(vehicleVictim, pos=(victim_points[0][0], victim_points[0][1], 0), rot=(0, 0, victim_alpha)) # get car heading anlge
 
@@ -295,8 +334,8 @@ for population in populations:
 
         vehicleVictim.ai_set_line(script)
 
-        input('Press enter when done...')
-
+        #input('Press enter when done...')
+        time.sleep(15)
         bng.stop_scenario()
 
     finally:
