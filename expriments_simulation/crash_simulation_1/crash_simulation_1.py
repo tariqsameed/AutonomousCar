@@ -7,6 +7,7 @@ import math
 import time
 from math import atan2,degrees
 from beamngpy.sensors import Electrics, Damage
+import random
 
 V1_SPEED_INDEX_1 = 0
 V1_SPEED_INDEX_2 = 1
@@ -31,6 +32,7 @@ road_a_distance = 40
 road_b_distance = 40
 road_c_distance = 40
 
+populations_fitness = {} # fitness function to store fitness values of chromosomes.
 
 # load configuration of the simulations
 def ReadJsonFile():
@@ -84,13 +86,13 @@ vehicleVictim = Vehicle('victim', model='etk800', licence='PYTHON', colour='Whit
 
 electricsStriker = Electrics()
 damageStriker = Damage();
-vehicleStriker.attach_sensor('electrics', electricsStriker);
-vehicleStriker.attach_sensor('damages', damageStriker);
+vehicleStriker.attach_sensor('electricsS', electricsStriker);
+vehicleStriker.attach_sensor('damagesS', damageStriker);
 
 electricsVictim = Electrics()
 damageVictim = Damage();
-vehicleVictim.attach_sensor('electrics', electricsVictim);
-vehicleVictim.attach_sensor('damages', damageVictim);
+vehicleVictim.attach_sensor('electricsV', electricsVictim);
+vehicleVictim.attach_sensor('damagesV', damageVictim);
 
 positions = list()
 directions = list()
@@ -257,10 +259,73 @@ def decoding_of_parameter(chromosome):
     return v1_speed, v1_pos_bg, v2_speed, v2_pos_bg, impact_point
 
 
+def tournament_parent_selection(populations, n=2, tsize=4):
+    global populations_fitness
+    print('tournament selection')
+    selected_candidates = []
+    for i in range(n):
+        fittest_population_in_tournament = None
+        candidates = random.sample(populations, tsize) #tsize = 20% of population.
+        print(candidates)
+        current = None
+        for candidate in candidates:
+            if fittest_population_in_tournament is None:
+                fittest_population_in_tournament = populations_fitness[tuple(candidate)] # assign the fitness of current chromosome.
+                current = candidate
+
+            if populations_fitness[tuple(candidate)] > fittest_population_in_tournament:
+                current = candidate
+
+        selected_candidates.append(current)
+
+    print(selected_candidates)
+    return selected_candidates # it becomes the matinn pool
+    #https://towardsdatascience.com/evolution-of-a-salesman-a-complete-genetic-algorithm-tutorial-for-python-6fe5d2b3ca35
+
+
+def mutation(chromosome):
+    print("mutation")
+    chromosome[random.randint(0, len(chromosome) - 1)] = random.randint(min(chromosome), max(chromosome) - 1)
+    return  chromosome
+
+
+def crossover(chromosome1,chromosome2):
+    print("crossover")
+    crossover_point = random.randint(1, len(chromosome1) - 1)
+
+    # Create children. np.hstack joins two arrays
+    child_1 = np.hstack((chromosome1[0:crossover_point],
+                         chromosome2[crossover_point:]))
+
+    child_2 = np.hstack((chromosome2[0:crossover_point],
+                         chromosome1[crossover_point:]))
+
+    # Return children
+    return child_1, child_2
+
+
+
+def crossover_mutation(selected_parents):
+    print("crossover mutation")
+    # https://stackoverflow.com/questions/20161980/difference-between-exploration-and-exploitation-in-genetic-algorithm?rq=1
+    population_next = []
+    n = 2
+    for i in range(int(len(selected_parents) / 2)):
+        for j in range(n): # number of children
+            chromosome1, chromosome2 = selected_parents[i], selected_parents[len(selected_parents) - 1 - i]
+            childs = crossover(chromosome1,chromosome2)
+            for child in childs:
+                population_next.append(mutation(child.tolist()))
+
+
+    print(population_next)
+    return population_next
+
 
 
 def multiObjectiveFitnessFunction(striker_damage, striker_distance, striker_rotation, victim_damage, victim_distance, victim_rotation):
     print("multiobjective fitness function")
+    return 5.0
 
 
 
@@ -351,18 +416,18 @@ for population in populations:
             sensorsStriker = bng.poll_sensors(vehicleStriker)  # Polls the data of all sensors attached to the vehicle
             striker_position = vehicleStriker.state['pos']
             striker_direction = vehicleStriker.state['dir']
-            striker_damage = sensorsStriker['damages']
+            striker_damage = "" #sensorsStriker['damagesS']
 
             # victim vehicle state extraction
             vehicleVictim.update_vehicle()  # Synchs the vehicle's "state" variable with the simulator
             sensorsVictim = bng.poll_sensors(vehicleVictim)  # Polls the data of all sensors attached to the vehicle
             victim_position = vehicleVictim.state['pos']
             victim_direction = vehicleVictim.state['dir']
-            victim_damage = sensorsVictim['damages']
+            victim_damage = "" #sensorsVictim['damagesV']
 
             print("multiobjective fitness function")
             score = multiObjectiveFitnessFunction(striker_damage, striker_position, striker_direction, victim_damage, victim_position, victim_direction )
-
+            populations_fitness[tuple(population)] = score
 
         #input('Press enter when done...')
         bng.stop_scenario()
@@ -372,6 +437,113 @@ for population in populations:
 
 
 
+for _ in range(5):
+    print("genetic algorithm simulation")
+    selected_parents = tournament_parent_selection(populations)
+    next_population = crossover_mutation(selected_parents=selected_parents)
+
+    for children in next_population:
+        print("iteration of children")
+        collision_points = []
+        striker_points = []
+        victim_points = []
+        striker_speeds = []
+        victim_speeds = []
+
+        beamng_parameters = decoding_of_parameter(population)
+        print(beamng_parameters)
+        striker_speeds.append(beamng_parameters[0])
+        striker_points.append(beamng_parameters[1])
+        victim_speeds.append(beamng_parameters[2])
+        victim_points.append(beamng_parameters[3])
+        collision_points.append(beamng_parameters[4])
+
+        # create beamng scenario and run the simulation.
+        # Add it to our scenario at this position and rotation
+
+        # alpha = AngleBtw2Points([5,5],[7,4])
+        striker_alpha = AngleBtw2Points(road_a[0], road_a[1])
+        victim_alpha = AngleBtw2Points(road_b[0], road_b[1])
+
+        print(striker_alpha)
+        print(victim_alpha)
+
+        scenario.add_vehicle(vehicleStriker, pos=(striker_points[0][0], striker_points[0][1], 0),
+                             rot=(0, 0, striker_alpha))  # get car heading angle
+        scenario.add_vehicle(vehicleVictim, pos=(victim_points[0][0], victim_points[0][1], 0),
+                             rot=(0, 0, victim_alpha))  # get car heading anlge
+
+        # fit it in the genetic algorithm.
+        scenario.make(beamng)
+
+        bng = beamng.open(launch=True)
+        try:
+            bng.load_scenario(scenario)
+            bng.start_scenario()
+
+            # path for striker vehicle
+            node0 = {
+                'pos': (striker_points[0][0], striker_points[0][1], 0),
+                'speed': 0,
+            }
+
+            node1 = {
+                'pos': (collision_points[0][0], collision_points[0][1], 0),
+                'speed': striker_speeds[0],
+            }
+
+            script = list()
+            script.append(node0)
+            script.append(node1)
+
+            vehicleStriker.ai_set_line(script)
+
+            # path for victim vehicle
+            node2 = {
+                'pos': (victim_points[0][0], victim_points[0][1], 0),
+                'speed': 0,
+            }
+
+            node3 = {
+                'pos': (collision_points[0][0], collision_points[0][1], 0),
+                'speed': victim_speeds[0],
+            }
+
+            script = list()
+            script.append(node2)
+            script.append(node3)
+
+            vehicleVictim.ai_set_line(script)
+
+            # vehicle state extraction and fitness function here
+            for _ in range(15):
+                print("vehicle state extraction")
+                time.sleep(1.0)
+
+                # striker vehhicle state extraction
+                vehicleStriker.update_vehicle()  # Synchs the vehicle's "state" variable with the simulator
+                sensorsStriker = bng.poll_sensors(vehicleStriker)  # Polls the data of all sensors attached to the vehicle
+                striker_position = vehicleStriker.state['pos']
+                striker_direction = vehicleStriker.state['dir']
+                striker_damage = "" #sensorsStriker['damages']
+
+                # victim vehicle state extraction
+                vehicleVictim.update_vehicle()  # Synchs the vehicle's "state" variable with the simulator
+                sensorsVictim = bng.poll_sensors(vehicleVictim)  # Polls the data of all sensors attached to the vehicle
+                victim_position = vehicleVictim.state['pos']
+                victim_direction = vehicleVictim.state['dir']
+                victim_damage = "" #sensorsVictim['damages']
+
+                print("multiobjective fitness function")
+                score = multiObjectiveFitnessFunction(striker_damage, striker_position, striker_direction, victim_damage,
+                                                      victim_position, victim_direction)
+                populations_fitness[tuple(population)] = score
+
+            # input('Press enter when done...')
+            bng.stop_scenario()
+
+        finally:
+            bng.close()
 
 
 
