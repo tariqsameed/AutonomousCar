@@ -1,6 +1,6 @@
 import time
 from beamngpy import BeamNGpy, Scenario, Road, Vehicle, setup_logging
-
+from beamngpy.sensors import Electrics, Damage
 
 def createCrashSimulation():
     print("Crash Simulation")
@@ -27,11 +27,19 @@ def createCrashSimulation():
     # Create an ETK800 with the licence plate 'PYTHON'
     vehicleA = Vehicle('ego_vehicleA', model='etk800', licence='PYTHON')
     # Add it to our scenario at this position and rotation
+
+    damage = Damage();
+    vehicleA.attach_sensor('damagesS', damage);
+
     scenario.add_vehicle(vehicleA, pos=(30, 0, 0), rot=(0, 0, 90))
 
     # Create an ETK800 with the licence plate 'PYTHON'
     vehicleB = Vehicle('ego_vehicleB', model='etk800', licence='PYTHON')
     # Add it to our scenario at this position and rotation
+
+    damageV = Damage();
+    vehicleB.attach_sensor('damagesV', damageV);
+
     scenario.add_vehicle(vehicleB, pos=(0, 30, 0), rot=(0, 0, 0))
 
 
@@ -79,9 +87,16 @@ def createCrashSimulation():
 
         vehicleB.ai_set_line(script)
 
-
         input('Press enter when done...')
-       # bng.stop_scenario()
+        vehicleA.update_vehicle()  # Synchs the vehicle's "state" variable with the simulator
+        sensors = bng.poll_sensors(vehicleA)
+        print(sensors['damagesS'])
+
+        vehicleB.update_vehicle()  # Synchs the vehicle's "state" variable with the simulator
+        sensors = bng.poll_sensors(vehicleB)
+        print(sensors['damagesV'])
+
+        bng.stop_scenario()
 
         # bng.load_scenario(scenario)
         # bng.start_scenario()
