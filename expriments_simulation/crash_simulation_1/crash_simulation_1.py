@@ -323,11 +323,11 @@ def crossover_mutation(selected_parents):
 
 
 
-def multiObjectiveFitnessFunction(striker_damage, striker_distance, striker_rotation, victim_damage, victim_distance, victim_rotation):
+def multiObjectiveFitnessFunction(population, striker_damage, striker_distance, striker_rotation, victim_damage, victim_distance, victim_rotation):
     print("multiobjective fitness function")
     return 5.0
 
-
+# Genetic Algorithm Simulation Start from here.
 
 #initial population
 populations = generateRandomPopulation(5,14)
@@ -411,33 +411,34 @@ for population in populations:
             print("vehicle state extraction")
             time.sleep(1.0)
 
-            #striker vehhicle state extraction
-            vehicleStriker.update_vehicle()  # Synchs the vehicle's "state" variable with the simulator
-            sensorsStriker = bng.poll_sensors(vehicleStriker)  # Polls the data of all sensors attached to the vehicle
-            striker_position = vehicleStriker.state['pos']
-            striker_direction = vehicleStriker.state['dir']
-            striker_damage = "" #sensorsStriker['damagesS']
 
-            # victim vehicle state extraction
-            vehicleVictim.update_vehicle()  # Synchs the vehicle's "state" variable with the simulator
-            sensorsVictim = bng.poll_sensors(vehicleVictim)  # Polls the data of all sensors attached to the vehicle
-            victim_position = vehicleVictim.state['pos']
-            victim_direction = vehicleVictim.state['dir']
-            victim_damage = "" #sensorsVictim['damagesV']
+        # striker vehhicle state extraction
+        vehicleStriker.update_vehicle()  # Synchs the vehicle's "state" variable with the simulator
+        sensorsStriker = bng.poll_sensors(vehicleStriker)  # Polls the data of all sensors attached to the vehicle
+        striker_position = vehicleStriker.state['pos']
+        striker_direction = vehicleStriker.state['dir']
+        striker_damage = sensorsStriker['damagesS']
 
-            print("multiobjective fitness function")
-            score = multiObjectiveFitnessFunction(striker_damage, striker_position, striker_direction, victim_damage, victim_position, victim_direction )
-            populations_fitness[tuple(population)] = score
+        # victim vehicle state extraction
+        vehicleVictim.update_vehicle()  # Synchs the vehicle's "state" variable with the simulator
+        sensorsVictim = bng.poll_sensors(vehicleVictim)  # Polls the data of all sensors attached to the vehicle
+        victim_position = vehicleVictim.state['pos']
+        victim_direction = vehicleVictim.state['dir']
+        victim_damage = sensorsVictim['damagesV']
 
+        print("multiobjective fitness function")
+        score = multiObjectiveFitnessFunction(population, striker_damage, striker_position, striker_direction,
+                                              victim_damage, victim_position, victim_direction)
+        populations_fitness[tuple(population)] = score
         #input('Press enter when done...')
         bng.stop_scenario()
 
     finally:
         bng.close()
 
+# start here -  genetic algorithm simulation.
 
-
-for _ in range(5):
+for _ in range(5): # Number of Generations to be Iterated.
     print("genetic algorithm simulation")
     selected_parents = tournament_parent_selection(populations)
     next_population = crossover_mutation(selected_parents=selected_parents)
@@ -525,26 +526,47 @@ for _ in range(5):
                 sensorsStriker = bng.poll_sensors(vehicleStriker)  # Polls the data of all sensors attached to the vehicle
                 striker_position = vehicleStriker.state['pos']
                 striker_direction = vehicleStriker.state['dir']
-                striker_damage = "" #sensorsStriker['damages']
+                striker_damage = sensorsStriker['damages']
 
                 # victim vehicle state extraction
                 vehicleVictim.update_vehicle()  # Synchs the vehicle's "state" variable with the simulator
                 sensorsVictim = bng.poll_sensors(vehicleVictim)  # Polls the data of all sensors attached to the vehicle
                 victim_position = vehicleVictim.state['pos']
                 victim_direction = vehicleVictim.state['dir']
-                victim_damage = "" #sensorsVictim['damages']
+                victim_damage = sensorsVictim['damages']
 
                 print("multiobjective fitness function")
-                score = multiObjectiveFitnessFunction(striker_damage, striker_position, striker_direction, victim_damage,
+                score = multiObjectiveFitnessFunction(children, striker_damage, striker_position, striker_direction, victim_damage,
                                                       victim_position, victim_direction)
                 populations_fitness[tuple(population)] = score
 
             # input('Press enter when done...')
             bng.stop_scenario()
 
+
         finally:
             bng.close()
 
+        if children not in populations:
+            populations.append(children)
+
+        temporary_fitness_dict = {}
+
+        for pop in populations:
+            temporary_fitness_dict[tuple(pop)] = populations_fitness[tuple(pop)]
+
+
+        populations_fitness_tuples = sorted(temporary_fitness_dict.items(), key=lambda x: x[1], reverse=True)
+        populations_fitness = dict((x, y) for x, y in populations_fitness_tuples)
+        print(populations_fitness)
+        populations_fitness.popitem()
+        print(len(populations_fitness))
+        populations = list(populations_fitness.keys())
+
+
+    # order the iteration with respect to fitness function for the next generation.
+    # create a temporary fitness dictionary.
+    # make sure 10 sample in population.
 
 
 # Genetic algorithm
