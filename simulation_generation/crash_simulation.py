@@ -1,6 +1,67 @@
 import time
 from beamngpy import BeamNGpy, Scenario, Road, Vehicle, setup_logging
-from beamngpy.sensors import Electrics, Damage
+from beamngpy.sensors import Damage
+
+
+from math import atan2,degrees
+
+
+def AngleBtw2Points(pointA, pointB):
+  changeInX = pointB[0] - pointA[0]
+  changeInY = pointB[1] - pointA[1]
+  return degrees(atan2(changeInY,changeInX)) #remove degrees if you want your answer in radians
+
+alpha = AngleBtw2Points([5,5],[7,4])
+print(alpha)
+
+# angle between 3 points
+import math
+def getAngle(a, b, c):
+    ang = math.degrees(math.atan2(c[1] - b[1], c[0] - b[0]) - math.atan2(a[1] - b[1], a[0] - b[0]))
+    return ang
+
+
+print(getAngle((5, 0), (0, 0), (0, 5)))
+
+
+#dist = math.hypot(x2-x1, y2-y1)
+
+
+def multiObjectiveFitnessFunction(chromosome,strikerDamage, strikerPosition, strikerColliisonPosition,
+                                  victimDamage, victimPosition, victimColliisonPosition):
+    print("multiobjective_fitnessfunction")
+    population_chromosome = chromosome
+    striker_Damage = strikerDamage
+    victim_Damage = victimDamage
+
+    distance_stiker = math.hypot(strikerColliisonPosition[0] - strikerPosition[0], strikerColliisonPosition[1] - strikerPosition[1])
+    distance_victim = math.hypot(victimColliisonPosition[0] - victimPosition[0], victimColliisonPosition[1] - victimPosition[1])
+
+    print(distance_stiker)
+    print(distance_victim)
+
+    striker_alpha = getAngle((30,0), strikerColliisonPosition, strikerPosition)
+    victim_alpha = getAngle((0,30), victimColliisonPosition, victimPosition)
+
+    striker_heading = AngleBtw2Points((30,0), strikerColliisonPosition)
+
+    victim_heading = AngleBtw2Points((0,30), victimColliisonPosition)
+
+    print(striker_heading)
+    print(victim_heading)
+
+    print(striker_alpha)
+    print(victim_alpha)
+
+    print("Angle after collision")
+    print((striker_heading + striker_alpha) % 360)
+    print((victim_heading + victim_alpha) % 360)
+
+
+
+
+
+
 
 def createCrashSimulation():
     print("Crash Simulation")
@@ -19,7 +80,7 @@ def createCrashSimulation():
     nodesb = [
         (0, 30, -4, 4),
         (0, 0, -4, 4)
-    ]
+   ]
 
     road_a.nodes.extend(nodesa)
     road_b.nodes.extend(nodesb)
@@ -28,8 +89,8 @@ def createCrashSimulation():
     vehicleA = Vehicle('ego_vehicleA', model='etk800', licence='PYTHON')
     # Add it to our scenario at this position and rotation
 
-    damage = Damage();
-    vehicleA.attach_sensor('damagesS', damage);
+    damageS = Damage();
+    vehicleA.attach_sensor('damagesS', damageS);
 
     scenario.add_vehicle(vehicleA, pos=(30, 0, 0), rot=(0, 0, 90))
 
@@ -53,8 +114,6 @@ def createCrashSimulation():
         bng.load_scenario(scenario)
         bng.start_scenario()
 
-        time.sleep(3)
-
         node0 = {
             'pos': (30, 0, 0),
             'speed': 0,
@@ -62,7 +121,7 @@ def createCrashSimulation():
 
         node1 = {
             'pos': (0, 0, 0),
-            'speed': 30,
+            'speed': 20,
         }
 
         script = list()
@@ -78,7 +137,7 @@ def createCrashSimulation():
 
         node4 = {
             'pos': (0, 0, 0),
-            'speed': 30,
+            'speed': 20,
         }
 
         script = list()
@@ -87,14 +146,22 @@ def createCrashSimulation():
 
         vehicleB.ai_set_line(script)
 
-        input('Press enter when done...')
+        time.sleep(12)
+ #       input('Press enter when done...')
         vehicleA.update_vehicle()  # Synchs the vehicle's "state" variable with the simulator
         sensors = bng.poll_sensors(vehicleA)
+        damage_striker = sensors['damagesS']
         print(sensors['damagesS'])
+        print(vehicleA.state['pos'])
 
         vehicleB.update_vehicle()  # Synchs the vehicle's "state" variable with the simulator
         sensors = bng.poll_sensors(vehicleB)
+        damage_victim = sensors['damagesV']
         print(sensors['damagesV'])
+        print(vehicleB.state['pos'])
+
+        multiObjectiveFitnessFunction(123456789, damage_striker, vehicleA.state['pos'], (0,0), damage_victim, vehicleB.state['pos'], (0,0))
+        # multiobjective fitness function.
 
         bng.stop_scenario()
 
@@ -145,3 +212,4 @@ def createCrashSimulation():
 
 
 createCrashSimulation()
+
