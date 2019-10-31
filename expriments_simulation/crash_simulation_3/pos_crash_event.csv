@@ -1,0 +1,2 @@
+case_id,number_of_vehicles,striker_damage_area,victim_damage_area,striker_rotation,victim_rotation,striker_degrees,vicitm_degrees,striker_facing,victim_facing,striker_destination_lane,victim_destination_lane
+2005005447002,2,Right Side,Left Side,clockwise,clockwise,45,90,initialdirection,initialdirection,innerzone,innerzone

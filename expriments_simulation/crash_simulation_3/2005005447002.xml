@@ -1,0 +1,2141 @@
+<?xml version="1.0" ?>
+<Case CaseID="2005005447002" CaseStr="2005-005-003" Comment="File Built on XqueryFactory Engine" Location="//NHTSAREPOSITORY/xml/NMVCCS/2005/CASES/" NumOfVehicle="2" Origin="NASS-NHTSA" Version="2008-10-29-05:00" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="NMVCCS.xsd">
+	<NMVCCS>
+		<GeneralVehicle VEHICLEID="366019189">
+			<XML_INSPDELAY>
+				<INSPECTDELAY>0</INSPECTDELAY>
+			</XML_INSPDELAY>
+			<XML_SANITIZEDVIN>
+				<SANVIN>1HGCB7653LA</SANVIN>
+			</XML_SANITIZEDVIN>
+			<IMAGES>
+				<PIX_INDEX IMAGEID="366019303">
+					<IMAGEID>366019303</IMAGEID>
+					<VERSION>1</VERSION>
+					<SANITIZEDID>1</SANITIZEDID>
+					<IMAGETYPEID>1</IMAGETYPEID>
+					<SUBCATEGORYID>991</SUBCATEGORYID>
+					<CATID>22</CATID>
+					<CAPTION>FRONT</CAPTION>
+				</PIX_INDEX>
+				<PIX_INDEX IMAGEID="366019304">
+					<IMAGEID>366019304</IMAGEID>
+					<VERSION>1</VERSION>
+					<SANITIZEDID>1</SANITIZEDID>
+					<IMAGETYPEID>1</IMAGETYPEID>
+					<SUBCATEGORYID>992</SUBCATEGORYID>
+					<CATID>22</CATID>
+					<CAPTION>LEFT SIDE, FRONT 1/2</CAPTION>
+				</PIX_INDEX>
+				<PIX_INDEX IMAGEID="366019305">
+					<IMAGEID>366019305</IMAGEID>
+					<VERSION>0</VERSION>
+					<SANITIZEDID>1</SANITIZEDID>
+					<IMAGETYPEID>1</IMAGETYPEID>
+					<SUBCATEGORYID>992</SUBCATEGORYID>
+					<CATID>22</CATID>
+					<CAPTION>LEFT SIDE, REAR 1/2</CAPTION>
+				</PIX_INDEX>
+				<PIX_INDEX IMAGEID="366019306">
+					<IMAGEID>366019306</IMAGEID>
+					<VERSION>1</VERSION>
+					<SANITIZEDID>1</SANITIZEDID>
+					<IMAGETYPEID>1</IMAGETYPEID>
+					<SUBCATEGORYID>1105</SUBCATEGORYID>
+					<CATID>22</CATID>
+					<CAPTION>Back/Left Oblique</CAPTION>
+				</PIX_INDEX>
+				<PIX_INDEX IMAGEID="366019307">
+					<IMAGEID>366019307</IMAGEID>
+					<VERSION>1</VERSION>
+					<SANITIZEDID>1</SANITIZEDID>
+					<IMAGETYPEID>1</IMAGETYPEID>
+					<SUBCATEGORYID>993</SUBCATEGORYID>
+					<CATID>22</CATID>
+					<CAPTION>BACK</CAPTION>
+				</PIX_INDEX>
+				<PIX_INDEX IMAGEID="366019308">
+					<IMAGEID>366019308</IMAGEID>
+					<VERSION>1</VERSION>
+					<SANITIZEDID>1</SANITIZEDID>
+					<IMAGETYPEID>1</IMAGETYPEID>
+					<SUBCATEGORYID>1106</SUBCATEGORYID>
+					<CATID>22</CATID>
+					<CAPTION>Back/Right Oblique</CAPTION>
+				</PIX_INDEX>
+				<PIX_INDEX IMAGEID="366019309">
+					<IMAGEID>366019309</IMAGEID>
+					<VERSION>0</VERSION>
+					<SANITIZEDID>1</SANITIZEDID>
+					<IMAGETYPEID>1</IMAGETYPEID>
+					<SUBCATEGORYID>994</SUBCATEGORYID>
+					<CATID>22</CATID>
+					<CAPTION>RIGHT SIDE, REAR 1/2</CAPTION>
+				</PIX_INDEX>
+				<PIX_INDEX IMAGEID="366019310">
+					<IMAGEID>366019310</IMAGEID>
+					<VERSION>1</VERSION>
+					<SANITIZEDID>1</SANITIZEDID>
+					<IMAGETYPEID>1</IMAGETYPEID>
+					<SUBCATEGORYID>994</SUBCATEGORYID>
+					<CATID>22</CATID>
+					<CAPTION>RIGHT SIDE, FRONT 1/2</CAPTION>
+				</PIX_INDEX>
+				<PIX_INDEX IMAGEID="366019311">
+					<IMAGEID>366019311</IMAGEID>
+					<VERSION>0</VERSION>
+					<SANITIZEDID>1</SANITIZEDID>
+					<IMAGETYPEID>1</IMAGETYPEID>
+					<SUBCATEGORYID>1038</SUBCATEGORYID>
+					<CATID>22</CATID>
+					<CAPTION>RIGHT SIDE, LATERAL</CAPTION>
+				</PIX_INDEX>
+				<PIX_INDEX IMAGEID="366019312">
+					<IMAGEID>366019312</IMAGEID>
+					<VERSION>0</VERSION>
+					<SANITIZEDID>1</SANITIZEDID>
+					<IMAGETYPEID>1</IMAGETYPEID>
+					<SUBCATEGORYID>1038</SUBCATEGORYID>
+					<CATID>22</CATID>
+					<CAPTION>FRONT VIEW</CAPTION>
+				</PIX_INDEX>
+				<PIX_INDEX IMAGEID="366019314">
+					<IMAGEID>366019314</IMAGEID>
+					<VERSION>1</VERSION>
+					<SANITIZEDID>1</SANITIZEDID>
+					<IMAGETYPEID>1</IMAGETYPEID>
+					<SUBCATEGORYID>991</SUBCATEGORYID>
+					<CATID>22</CATID>
+					<CAPTION>FRONT #2</CAPTION>
+				</PIX_INDEX>
+			</IMAGES>
+			<ATMOSPHERIC_CONDITION>
+				<ATMOSPHERICCONDITION attrCat="-9999" attrCatStr="" formCat="6161" sasCode="1" value="-8841">Clear--No adverse conditions</ATMOSPHERICCONDITION>
+			</ATMOSPHERIC_CONDITION>
+			<CDC CDCID="353031629">
+				<EVENTID>353031628</EVENTID>
+				<SAS_CDCNUM>
+					<NUM>1</NUM>
+				</SAS_CDCNUM>
+				<CDCID formCat="5094">353031629</CDCID>
+				<CLOCK_FORCE attrCat="" attrCatStr="" formCat="6157" sasCode="3" value="3">03</CLOCK_FORCE>
+				<DEFORMATIONLOCATION attrCat="3" attrCatStr="" formCat="6157" sasCode="3" value="3">R Right Side</DEFORMATIONLOCATION>
+				<LONGLATLOCATION attrCat="3" attrCatStr="" formCat="6157" sasCode="15" value="15">B Side Rear - left or right</LONGLATLOCATION>
+				<VERTLATLOCATION attrCat="1" attrCatStr="" formCat="6157" sasCode="27" value="27">E Everything below belt line</VERTLATLOCATION>
+				<DAMAGEDISTRIBUTION attrCat="0" attrCatStr="" formCat="6157" sasCode="40" value="40">W Wide Impact Area</DAMAGEDISTRIBUTION>
+				<DAMAGEEXTENT attrCat="0" attrCatStr="" formCat="6157" sasCode="49" value="49">One</DAMAGEEXTENT>
+			</CDC>
+			<CDC CDCID="366019205">
+				<EVENTID>366019204</EVENTID>
+				<SAS_CDCNUM>
+					<NUM>1</NUM>
+				</SAS_CDCNUM>
+				<CDCID formCat="5094">366019205</CDCID>
+				<CLOCK_FORCE attrCat="" attrCatStr="" formCat="6157" sasCode="12" value="12">12</CLOCK_FORCE>
+				<DEFORMATIONLOCATION attrCat="1" attrCatStr="" formCat="6157" sasCode="2" value="2">F Front</DEFORMATIONLOCATION>
+				<LONGLATLOCATION attrCat="4" attrCatStr="" formCat="6157" sasCode="9" value="9">D Distributed - side or end</LONGLATLOCATION>
+				<VERTLATLOCATION attrCat="1" attrCatStr="" formCat="6157" sasCode="27" value="27">E Everything below belt line</VERTLATLOCATION>
+				<DAMAGEDISTRIBUTION attrCat="0" attrCatStr="" formCat="6157" sasCode="40" value="40">W Wide Impact Area</DAMAGEDISTRIBUTION>
+				<DAMAGEEXTENT attrCat="0" attrCatStr="" formCat="6157" sasCode="49" value="49">One</DAMAGEEXTENT>
+			</CDC>
+			<DI_DRIVER>
+				<LICENSE_STATE attrCat="" attrCatStr="" formCat="7647" sasCode="39" value="39">PA</LICENSE_STATE>
+				<LICENSE_STATUS attrCat="-9999" attrCatStr="" formCat="7647" sasCode="1" value="1">Current and valid</LICENSE_STATUS>
+				<LIC_ENDORSEMENT attrCat="-9999" attrCatStr="" formCat="7647" sasCode="1" value="1">No endorsements</LIC_ENDORSEMENT>
+				<LIC_RESTRICTION attrCat="-9999" attrCatStr="" formCat="7647" sasCode="1" value="1">No restrictions</LIC_RESTRICTION>
+				<ETHNICITY attrCat="-9999" attrCatStr="" formCat="7647" sasCode="1" value="1">White (non-Hispanic)</ETHNICITY>
+				<DRIVER_RACE attrCat="" attrCatStr="" formCat="7647" sasCode="7774" value="-7774">Not collected during this study year</DRIVER_RACE>
+				<DRIVER_ETHNICITY attrCat="" attrCatStr="" formCat="7647" sasCode="7774" value="-7774">Not collected during this study year</DRIVER_ETHNICITY>
+			</DI_DRIVER>
+			<EQUIPMENT EQUIP_TYPE="1">
+				<EQUIP_TYPE attrCat="1" attrCatStr="Safety" formCat="4238" sasCode="1" value="1">Rear crash avoidance (other than camera)</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="2">
+				<EQUIP_TYPE attrCat="4" attrCatStr="Braking and Handling" formCat="4238" sasCode="2" value="2">ABS</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="3">
+				<EQUIP_TYPE attrCat="5" attrCatStr="Advanced" formCat="4238" sasCode="3" value="3">Navigation system-installed in vehicle</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="4">
+				<EQUIP_TYPE attrCat="1" attrCatStr="Safety" formCat="4238" sasCode="4" value="4">Mirror mounted turn signals</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="5">
+				<EQUIP_TYPE attrCat="2" attrCatStr="Convenience" formCat="4238" sasCode="5" value="5">DVD player - 1st row</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="6">
+				<EQUIP_TYPE attrCat="4" attrCatStr="Braking and Handling" formCat="4238" sasCode="6" value="6">Variable suspension</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="7">
+				<EQUIP_TYPE attrCat="2" attrCatStr="Convenience" formCat="4238" sasCode="7" value="7">Radar or laser detector</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="8">
+				<EQUIP_TYPE attrCat="1" attrCatStr="Safety" formCat="4238" sasCode="8" value="8">Run-flat tires</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="9">
+				<EQUIP_TYPE attrCat="5" attrCatStr="Advanced" formCat="4238" sasCode="9" value="9">Navigation system - portable</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="10">
+				<EQUIP_TYPE attrCat="2" attrCatStr="Convenience" formCat="4238" sasCode="10" value="10">DVD player - 2nd row</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="12">
+				<EQUIP_TYPE attrCat="4" attrCatStr="Braking and Handling" formCat="4238" sasCode="12" value="12">Electronic stability control</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="14">
+				<EQUIP_TYPE attrCat="1" attrCatStr="Safety" formCat="4238" sasCode="14" value="14">Tire pressure monitoring system</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="16">
+				<EQUIP_TYPE attrCat="4" attrCatStr="Braking and Handling" formCat="4238" sasCode="16" value="16">Traction control</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="17">
+				<EQUIP_TYPE attrCat="2" attrCatStr="Convenience" formCat="4238" sasCode="17" value="17">Headlight wiper/washer</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="18">
+				<EQUIP_TYPE attrCat="1" attrCatStr="Safety" formCat="4238" sasCode="18" value="18">Wide angle mirror</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="20">
+				<EQUIP_TYPE attrCat="4" attrCatStr="Braking and Handling" formCat="4238" sasCode="20" value="20">Electronic brake assist</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="21">
+				<EQUIP_TYPE attrCat="2" attrCatStr="Convenience" formCat="4238" sasCode="21" value="21">Adjustable pedals</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="22">
+				<EQUIP_TYPE attrCat="2" attrCatStr="Convenience" formCat="4238" sasCode="22" value="22">Clothes rod</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="23">
+				<EQUIP_TYPE attrCat="2" attrCatStr="Convenience" formCat="4238" sasCode="23" value="23">Cellular/mobile phone</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="24">
+				<EQUIP_TYPE attrCat="1" attrCatStr="Safety" formCat="4238" sasCode="24" value="24">Pet/cargo barrier</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="25">
+				<EQUIP_TYPE attrCat="1" attrCatStr="Safety" formCat="4238" sasCode="25" value="25">Auto dimming rearview mirror(s)</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="26">
+				<EQUIP_TYPE attrCat="4" attrCatStr="Braking and Handling" formCat="4238" sasCode="26" value="26">4WD/AWD</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="27">
+				<EQUIP_TYPE attrCat="5" attrCatStr="Advanced" formCat="4238" sasCode="27" value="27">ITS (intelligent communication system) (specify):</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="28">
+				<EQUIP_TYPE attrCat="2" attrCatStr="Convenience" formCat="4238" sasCode="28" value="28">Sport shift transmission</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="29">
+				<EQUIP_TYPE attrCat="2" attrCatStr="Convenience" formCat="4238" sasCode="29" value="29">Steering wheel mounted radio/climate controls</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="30">
+				<EQUIP_TYPE attrCat="2" attrCatStr="Convenience" formCat="4238" sasCode="30" value="30">Window wind deflector</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="31">
+				<EQUIP_TYPE attrCat="1" attrCatStr="Safety" formCat="4238" sasCode="31" value="31">Collision warning system</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="32">
+				<EQUIP_TYPE attrCat="2" attrCatStr="Convenience" formCat="4238" sasCode="32" value="32">Rear spoiler</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="33">
+				<EQUIP_TYPE attrCat="2" attrCatStr="Convenience" formCat="4238" sasCode="33" value="33">Bug shield /hood protector</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="34">
+				<EQUIP_TYPE attrCat="1" attrCatStr="Safety" formCat="4238" sasCode="34" value="34">Lane or roadway-departure warning system</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="35">
+				<EQUIP_TYPE attrCat="2" attrCatStr="Convenience" formCat="4238" sasCode="35" value="35">Satellite radio</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="36">
+				<EQUIP_TYPE attrCat="1" attrCatStr="Safety" formCat="4238" sasCode="36" value="36">Cruise control-adaptive/intelligent</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="37">
+				<EQUIP_TYPE attrCat="2" attrCatStr="Convenience" formCat="4238" sasCode="37" value="37">Sunroof</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="38">
+				<EQUIP_TYPE attrCat="1" attrCatStr="Safety" formCat="4238" sasCode="38" value="38">Drowsy driver sensing system</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="39">
+				<EQUIP_TYPE attrCat="2" attrCatStr="Convenience" formCat="4238" sasCode="39" value="39">Child mirror</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="40">
+				<EQUIP_TYPE attrCat="4" attrCatStr="Braking and Handling" formCat="4238" sasCode="40" value="40">Altered suspension (raised, lowered, etc.)</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="41">
+				<EQUIP_TYPE attrCat="2" attrCatStr="Convenience" formCat="4238" sasCode="41" value="41">Hands free cell phone kit</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="42">
+				<EQUIP_TYPE attrCat="4" attrCatStr="Braking and Handling" formCat="4238" sasCode="42" value="42">Tires (oversized, low profile, etc.)</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="43">
+				<EQUIP_TYPE attrCat="2" attrCatStr="Convenience" formCat="4238" sasCode="43" value="43">Non-standard steering wheel</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="44">
+				<EQUIP_TYPE attrCat="2" attrCatStr="Convenience" formCat="4238" sasCode="44" value="44">Voice activated controls</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="45">
+				<EQUIP_TYPE attrCat="4" attrCatStr="Braking and Handling" formCat="4238" sasCode="45" value="45">Custom (non-OEM) wheels</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="46">
+				<EQUIP_TYPE attrCat="4" attrCatStr="Braking and Handling" formCat="4238" sasCode="46" value="46">Cargo holder - roof mounted</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="47">
+				<EQUIP_TYPE attrCat="4" attrCatStr="Braking and Handling" formCat="4238" sasCode="47" value="47">Cargo holder - rear mounted</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="48">
+				<EQUIP_TYPE attrCat="4" attrCatStr="Braking and Handling" formCat="4238" sasCode="48" value="48">Bike rack - hitch mounted</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="49">
+				<EQUIP_TYPE attrCat="4" attrCatStr="Braking and Handling" formCat="4238" sasCode="49" value="49">Bike rack - roof mounted</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="50">
+				<EQUIP_TYPE attrCat="2" attrCatStr="Convenience" formCat="4238" sasCode="50" value="50">Large speakers</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="52">
+				<EQUIP_TYPE attrCat="5" attrCatStr="Advanced" formCat="4238" sasCode="52" value="52">Rear view camera</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="54">
+				<EQUIP_TYPE attrCat="5" attrCatStr="Advanced" formCat="4238" sasCode="54" value="54">Front object sensor</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="55">
+				<EQUIP_TYPE attrCat="5" attrCatStr="Advanced" formCat="4238" sasCode="55" value="55">Heads-up display</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="57">
+				<EQUIP_TYPE attrCat="5" attrCatStr="Advanced" formCat="4238" sasCode="57" value="57">Night vision display</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="90">
+				<EQUIP_TYPE attrCat="2" attrCatStr="Convenience" formCat="4238" sasCode="90" value="90">Cruise control-conventional</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="91">
+				<EQUIP_TYPE attrCat="3" attrCatStr="Other" formCat="4238" sasCode="91" value="91">Power hand controls</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="92">
+				<EQUIP_TYPE attrCat="3" attrCatStr="Other" formCat="4238" sasCode="92" value="92">Manual hand controls</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="93">
+				<EQUIP_TYPE attrCat="3" attrCatStr="Other" formCat="4238" sasCode="93" value="93">Other adaptive equipment</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="100">
+				<EQUIP_TYPE attrCat="5" attrCatStr="Advanced" formCat="4238" sasCode="100" value="100">Adaptive Front-Light System (AFS)</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="101">
+				<EQUIP_TYPE attrCat="2" attrCatStr="Convenience" formCat="4238" sasCode="101" value="101">Integrated hands free communication system</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="102">
+				<EQUIP_TYPE attrCat="1" attrCatStr="Safety" formCat="4238" sasCode="102" value="102">Bi-Xenon headlamps</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="103">
+				<EQUIP_TYPE attrCat="1" attrCatStr="Safety" formCat="4238" sasCode="103" value="103">Daytime running lights</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="7774" value="-7774">Not collected during this study year</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="7774" value="-7774">Not collected during this study year</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="" attrCatStr="" formCat="4238" sasCode="7774" value="-7774">Not collected during this study year</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="7774" value="-7774">Not collected during this study year</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="1088">
+				<EQUIP_TYPE attrCat="1" attrCatStr="Safety" formCat="4238" sasCode="1088" value="1088">Other safety equip. (specify) :</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="2088">
+				<EQUIP_TYPE attrCat="4" attrCatStr="Braking and Handling" formCat="4238" sasCode="2088" value="2088">Other braking and handling (specify) :</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="3088">
+				<EQUIP_TYPE attrCat="5" attrCatStr="Advanced" formCat="4238" sasCode="3088" value="3088">Other advanced equip (specify) :</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="4088">
+				<EQUIP_TYPE attrCat="2" attrCatStr="Convenience" formCat="4238" sasCode="4088" value="4088">Other convenience (specify) :</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<GLAZING GLAZING_LOC="1">
+				<GLAZING_LOC attrCat="-9999" attrCatStr="" formCat="4243" sasCode="1" value="1">Windshield</GLAZING_LOC>
+				<PRESENCE attrCat="" attrCatStr="" formCat="4243" sasCode="2" value="2">Yes</PRESENCE>
+				<GLAZING_CLARITY attrCat="-9999" attrCatStr="" formCat="4243" sasCode="1" value="1">Clear</GLAZING_CLARITY>
+				<GLAZING_COND attrCat="-9999" attrCatStr="" formCat="4243" sasCode="1" value="1">Intact</GLAZING_COND>
+				<GLAZING_TINT attrCat="" attrCatStr="" formCat="4243" sasCode="2" value="1">No</GLAZING_TINT>
+			</GLAZING>
+			<GLAZING GLAZING_LOC="2">
+				<GLAZING_LOC attrCat="-9999" attrCatStr="" formCat="4243" sasCode="2" value="2">Left front</GLAZING_LOC>
+				<PRESENCE attrCat="" attrCatStr="" formCat="4243" sasCode="2" value="2">Yes</PRESENCE>
+				<GLAZING_CLARITY attrCat="-9999" attrCatStr="" formCat="4243" sasCode="1" value="1">Clear</GLAZING_CLARITY>
+				<GLAZING_COND attrCat="-9999" attrCatStr="" formCat="4243" sasCode="1" value="1">Intact</GLAZING_COND>
+				<GLAZING_TINT attrCat="" attrCatStr="" formCat="4243" sasCode="2" value="1">No</GLAZING_TINT>
+			</GLAZING>
+			<GLAZING GLAZING_LOC="3">
+				<GLAZING_LOC attrCat="-9999" attrCatStr="" formCat="4243" sasCode="3" value="3">Right front</GLAZING_LOC>
+				<PRESENCE attrCat="" attrCatStr="" formCat="4243" sasCode="2" value="2">Yes</PRESENCE>
+				<GLAZING_CLARITY attrCat="-9999" attrCatStr="" formCat="4243" sasCode="1" value="1">Clear</GLAZING_CLARITY>
+				<GLAZING_COND attrCat="-9999" attrCatStr="" formCat="4243" sasCode="1" value="1">Intact</GLAZING_COND>
+				<GLAZING_TINT attrCat="" attrCatStr="" formCat="4243" sasCode="2" value="1">No</GLAZING_TINT>
+			</GLAZING>
+			<GLAZING GLAZING_LOC="4">
+				<GLAZING_LOC attrCat="-9999" attrCatStr="" formCat="4243" sasCode="4" value="4">Left rear</GLAZING_LOC>
+				<PRESENCE attrCat="" attrCatStr="" formCat="4243" sasCode="2" value="2">Yes</PRESENCE>
+				<GLAZING_CLARITY attrCat="-9999" attrCatStr="" formCat="4243" sasCode="1" value="1">Clear</GLAZING_CLARITY>
+				<GLAZING_COND attrCat="-9999" attrCatStr="" formCat="4243" sasCode="1" value="1">Intact</GLAZING_COND>
+				<GLAZING_TINT attrCat="" attrCatStr="" formCat="4243" sasCode="2" value="1">No</GLAZING_TINT>
+			</GLAZING>
+			<GLAZING GLAZING_LOC="5">
+				<GLAZING_LOC attrCat="-9999" attrCatStr="" formCat="4243" sasCode="5" value="5">Second window left rear</GLAZING_LOC>
+				<PRESENCE attrCat="" attrCatStr="" formCat="4243" sasCode="2" value="2">Yes</PRESENCE>
+				<GLAZING_CLARITY attrCat="-9999" attrCatStr="" formCat="4243" sasCode="1" value="1">Clear</GLAZING_CLARITY>
+				<GLAZING_COND attrCat="-9999" attrCatStr="" formCat="4243" sasCode="1" value="1">Intact</GLAZING_COND>
+				<GLAZING_TINT attrCat="" attrCatStr="" formCat="4243" sasCode="2" value="1">No</GLAZING_TINT>
+			</GLAZING>
+			<GLAZING GLAZING_LOC="6">
+				<GLAZING_LOC attrCat="-9999" attrCatStr="" formCat="4243" sasCode="6" value="6">Right rear</GLAZING_LOC>
+				<PRESENCE attrCat="" attrCatStr="" formCat="4243" sasCode="2" value="2">Yes</PRESENCE>
+				<GLAZING_CLARITY attrCat="-9999" attrCatStr="" formCat="4243" sasCode="1" value="1">Clear</GLAZING_CLARITY>
+				<GLAZING_COND attrCat="-9999" attrCatStr="" formCat="4243" sasCode="1" value="1">Intact</GLAZING_COND>
+				<GLAZING_TINT attrCat="" attrCatStr="" formCat="4243" sasCode="2" value="1">No</GLAZING_TINT>
+			</GLAZING>
+			<GLAZING GLAZING_LOC="7">
+				<GLAZING_LOC attrCat="-9999" attrCatStr="" formCat="4243" sasCode="7" value="7">Second window right rear</GLAZING_LOC>
+				<PRESENCE attrCat="" attrCatStr="" formCat="4243" sasCode="2" value="2">Yes</PRESENCE>
+				<GLAZING_CLARITY attrCat="-9999" attrCatStr="" formCat="4243" sasCode="1" value="1">Clear</GLAZING_CLARITY>
+				<GLAZING_COND attrCat="-9999" attrCatStr="" formCat="4243" sasCode="1" value="1">Intact</GLAZING_COND>
+				<GLAZING_TINT attrCat="" attrCatStr="" formCat="4243" sasCode="2" value="1">No</GLAZING_TINT>
+			</GLAZING>
+			<GLAZING GLAZING_LOC="10">
+				<GLAZING_LOC attrCat="-9999" attrCatStr="" formCat="4243" sasCode="10" value="10">Backlight</GLAZING_LOC>
+				<PRESENCE attrCat="" attrCatStr="" formCat="4243" sasCode="2" value="2">Yes</PRESENCE>
+				<GLAZING_CLARITY attrCat="-9999" attrCatStr="" formCat="4243" sasCode="1" value="1">Clear</GLAZING_CLARITY>
+				<GLAZING_COND attrCat="-9999" attrCatStr="" formCat="4243" sasCode="1" value="1">Intact</GLAZING_COND>
+				<GLAZING_TINT attrCat="" attrCatStr="" formCat="4243" sasCode="2" value="1">No</GLAZING_TINT>
+			</GLAZING>
+			<GLAZING GLAZING_LOC="15">
+				<GLAZING_LOC attrCat="-9999" attrCatStr="" formCat="4243" sasCode="15" value="15">Roof</GLAZING_LOC>
+				<PRESENCE attrCat="" attrCatStr="" formCat="4243" sasCode="1" value="1">No</PRESENCE>
+				<GLAZING_CLARITY attrCat="" attrCatStr="" formCat="4243" sasCode="8887" value="-8887">No glazing at this location</GLAZING_CLARITY>
+				<GLAZING_COND attrCat="" attrCatStr="" formCat="4243" sasCode="8887" value="-8887">No glazing at this location</GLAZING_COND>
+				<GLAZING_TINT attrCat="" attrCatStr="" formCat="4243" sasCode="8887" value="-8887">No glazing at this location</GLAZING_TINT>
+			</GLAZING>
+			<GLAZING GLAZING_LOC="20">
+				<GLAZING_LOC attrCat="-9999" attrCatStr="" formCat="4243" sasCode="20" value="20">Other (specify) :</GLAZING_LOC>
+				<PRESENCE attrCat="" attrCatStr="" formCat="4243" sasCode="1" value="1">No</PRESENCE>
+				<GLAZING_CLARITY attrCat="" attrCatStr="" formCat="4243" sasCode="8887" value="-8887">No glazing at this location</GLAZING_CLARITY>
+				<GLAZING_COND attrCat="" attrCatStr="" formCat="4243" sasCode="8887" value="-8887">No glazing at this location</GLAZING_COND>
+				<GLAZING_TINT attrCat="" attrCatStr="" formCat="4243" sasCode="8887" value="-8887">No glazing at this location</GLAZING_TINT>
+			</GLAZING>
+			<MIRROR SIDE="1">
+				<SIDE_MIRROR attrCat="-9999" attrCatStr="" formCat="4238" sasCode="1" value="1">Yes, side mirror(s) present</SIDE_MIRROR>
+				<SIDE_MIRROR_LOCATION attrCat="-9999" attrCatStr="" formCat="4238" sasCode="1" value="1">Mounted on door</SIDE_MIRROR_LOCATION>
+				<SIDE_MIRROR_TYPE attrCat="-9999" attrCatStr="" formCat="4238" sasCode="1" value="1">Flat  Mirror</SIDE_MIRROR_TYPE>
+				<SIDE_MIRROR_ORIGIN attrCat="-9999" attrCatStr="" formCat="4238" sasCode="1" value="1">OEM side mirror</SIDE_MIRROR_ORIGIN>
+			</MIRROR>
+			<MIRROR SIDE="2">
+				<SIDE_MIRROR attrCat="-9999" attrCatStr="" formCat="4238" sasCode="1" value="1">Yes, side mirror(s) present</SIDE_MIRROR>
+				<SIDE_MIRROR_LOCATION attrCat="-9999" attrCatStr="" formCat="4238" sasCode="1" value="1">Mounted on door</SIDE_MIRROR_LOCATION>
+				<SIDE_MIRROR_TYPE attrCat="-9999" attrCatStr="" formCat="4238" sasCode="2" value="2">Convex Mirror</SIDE_MIRROR_TYPE>
+				<SIDE_MIRROR_ORIGIN attrCat="-9999" attrCatStr="" formCat="4238" sasCode="1" value="1">OEM side mirror</SIDE_MIRROR_ORIGIN>
+			</MIRROR>
+			<OFFICIALRECORDS>
+				<PAR_ALCOHOL_PRES attrCat="-9999" attrCatStr="" formCat="4236" sasCode="1" value="1">No alcohol present</PAR_ALCOHOL_PRES>
+				<PAR_DRUG_PRES attrCat="-9999" attrCatStr="" formCat="4236" sasCode="1" value="1">No</PAR_DRUG_PRES>
+				<POL_BELTUSE attrCat="-9999" attrCatStr="" formCat="4236" sasCode="5" value="5">Lap and shoulder belt</POL_BELTUSE>
+				<SPEED_LIMIT formCat="4236">72</SPEED_LIMIT>
+				<ADVISORY_LIMIT attrCat="-9999" attrCatStr="" formCat="4236" sasCode="7776" value="-7776">No advisory limit</ADVISORY_LIMIT>
+				<PAR_TRAVEL_SPEED attrCat="" attrCatStr="" formCat="4236" sasCode="8879" value="-8879">Not reported</PAR_TRAVEL_SPEED>
+				<KABCOU attrCat="-9999" attrCatStr="" formCat="4236" sasCode="1" value="2">C - Possible injury</KABCOU>
+				<PARTOWED attrCat="" attrCatStr="" formCat="4236" sasCode="1" value="2">Towed due to vehicle damage</PARTOWED>
+			</OFFICIALRECORDS>
+			<PRECRASHVEHICLE>
+				<STABILITY attrCat="-9999" attrCatStr="" formCat="6161" sasCode="1" value="1">Tracking/stationary</STABILITY>
+				<LOCATION attrCat="-9999" attrCatStr="" formCat="6161" sasCode="1" value="1">Stayed in original travel lane</LOCATION>
+				<RIGHT_OF_WAY attrCat="-9999" attrCatStr="" formCat="6161" sasCode="1" value="1">No</RIGHT_OF_WAY>
+				<PRE_CRASH_SPILL attrCat="" attrCatStr="" formCat="6161" sasCode="1" value="1">No cargo</PRE_CRASH_SPILL>
+				<TRAVEL_LANE attrCat="-9999" attrCatStr="" formCat="6161" sasCode="2" value="2">Lane two</TRAVEL_LANE>
+				<RELATION_TO_JUNCTION attrCat="-9999" attrCatStr="" formCat="6161" sasCode="2" value="2">Intersection</RELATION_TO_JUNCTION>
+				<RELATION_ROADWAY attrCat="-9999" attrCatStr="" formCat="6161" sasCode="1" value="1">On roadway</RELATION_ROADWAY>
+				<NATURAL_LIGHTING attrCat="-9999" attrCatStr="" formCat="6161" sasCode="3" value="3">Dark, but lighted </NATURAL_LIGHTING>
+			</PRECRASHVEHICLE>
+			<ROADWAY>
+				<ROADWAY_DEF attrCat="-9999" attrCatStr="" formCat="6161" sasCode="1" value="1">No deficiencies noted</ROADWAY_DEF>
+				<TRAFFICWAY_FLOW attrCat="-9999" attrCatStr="" formCat="6161" sasCode="1" value="1">Not physically divided (two way traffic)</TRAFFICWAY_FLOW>
+				<NUM_OF_TRAVEL_LANES attrCat="-9999" attrCatStr="" formCat="6161" sasCode="3" value="3">Three</NUM_OF_TRAVEL_LANES>
+				<RUMBLE_STRIP attrCat="-9999" attrCatStr="" formCat="6161" sasCode="1" value="1">No rumble strip present</RUMBLE_STRIP>
+				<SURFACE_TYPE attrCat="-9999" attrCatStr="" formCat="6161" sasCode="2" value="2">Bituminous (asphalt)</SURFACE_TYPE>
+				<SURFACE_CONDITION attrCat="-9999" attrCatStr="" formCat="6161" sasCode="1" value="1">Dry</SURFACE_CONDITION>
+				<ROADWAY_ALIGN attrCat="-9999" attrCatStr="" formCat="6161" sasCode="1" value="1">Straight</ROADWAY_ALIGN>
+				<ROADWAY_VERT_PROFILE attrCat="-9999" attrCatStr="" formCat="6161" sasCode="1" value="1">Level</ROADWAY_VERT_PROFILE>
+				<ACCESS_CONTROL attrCat="-9999" attrCatStr="" formCat="6161" sasCode="2" value="2">No control</ACCESS_CONTROL>
+				<CHORD_LENGTH attrCat="-9999" attrCatStr="" formCat="6161" sasCode="9997" value="-9997">Not applicable</CHORD_LENGTH>
+				<MIDORD_LENGTH attrCat="-9999" attrCatStr="" formCat="6161" sasCode="9997" value="-9997">Not applicable</MIDORD_LENGTH>
+				<RADIUS_CURVATURE attrCat="" attrCatStr="" formCat="6161" sasCode="999997" value="-9997">Not applicable</RADIUS_CURVATURE>
+				<SUPRELEV_HORIZ_MEAS attrCat="-9999" attrCatStr="" formCat="6161" sasCode="9997" value="-9997">Not applicable</SUPRELEV_HORIZ_MEAS>
+				<SUPRELEV_VERT_MEAS attrCat="-9999" attrCatStr="" formCat="6161" sasCode="9997" value="-9997">Not applicable</SUPRELEV_VERT_MEAS>
+				<SUPERELEVATION attrCat="" attrCatStr="" formCat="6161" sasCode="9997" value="-9997">Not applicable</SUPERELEVATION>
+				<TRAFFIC_DEVICE_FCTN attrCat="-9999" attrCatStr="" formCat="6161" sasCode="3" value="3">All traffic sign(s)/signal(s) functioning properly</TRAFFIC_DEVICE_FCTN>
+			</ROADWAY>
+			<TIRE TIRE_LOCATION="1">
+				<V_SAS_TIREMODEL>
+					<TMODEL>METRIC</TMODEL>
+				</V_SAS_TIREMODEL>
+				<V_SAS_TIRERECSIZE/>
+				<V_SAS_TIRESIZE>
+					<TSIZE>P185/70R14</TSIZE>
+				</V_SAS_TIRESIZE>
+				<TIRE_LOCATION attrCat="-9999" attrCatStr="" formCat="4238" sasCode="2" value="1">Left Front</TIRE_LOCATION>
+				<TIRE_MAKE attrCat="" attrCatStr="" formCat="4238" sasCode="8888" value="-8888">Other (specify)</TIRE_MAKE>
+				<TIRE_MODEL attrCat="" attrCatStr="" formCat="4238" sasCode="8888" value="-8888">Other (specify)</TIRE_MODEL>
+				<TIRE_SIZE_USED attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">P-Metric (specify)</TIRE_SIZE_USED>
+				<TIRE_ID_NUMBER attrCat="-9999" attrCatStr="" formCat="4238" sasCode="9999" value="-9999">Unknown</TIRE_ID_NUMBER>
+				<TIRE_TREAD_DEPTH formCat="4238">4</TIRE_TREAD_DEPTH>
+				<TIRE_PRESSURE formCat="4238">228</TIRE_PRESSURE>
+			</TIRE>
+			<TIRE TIRE_LOCATION="2">
+				<V_SAS_TIREMODEL>
+					<TMODEL>METRIC</TMODEL>
+				</V_SAS_TIREMODEL>
+				<V_SAS_TIRERECSIZE/>
+				<V_SAS_TIRESIZE>
+					<TSIZE>P195/70R14</TSIZE>
+				</V_SAS_TIRESIZE>
+				<TIRE_LOCATION attrCat="-9999" attrCatStr="" formCat="4238" sasCode="4" value="2">Left Rear</TIRE_LOCATION>
+				<TIRE_MAKE attrCat="" attrCatStr="" formCat="4238" sasCode="37" value="37">DAYTON</TIRE_MAKE>
+				<TIRE_MODEL attrCat="" attrCatStr="" formCat="4238" sasCode="8888" value="-8888">Other (specify)</TIRE_MODEL>
+				<TIRE_SIZE_USED attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">P-Metric (specify)</TIRE_SIZE_USED>
+				<TIRE_ID_NUMBER attrCat="-9999" attrCatStr="" formCat="4238" sasCode="9999" value="-9999">Unknown</TIRE_ID_NUMBER>
+				<TIRE_TREAD_DEPTH formCat="4238">4</TIRE_TREAD_DEPTH>
+				<TIRE_PRESSURE formCat="4238">234</TIRE_PRESSURE>
+			</TIRE>
+			<TIRE TIRE_LOCATION="3">
+				<V_SAS_TIREMODEL>
+					<TMODEL>METRIC</TMODEL>
+				</V_SAS_TIREMODEL>
+				<V_SAS_TIRERECSIZE/>
+				<V_SAS_TIRESIZE>
+					<TSIZE>P195/70R14</TSIZE>
+				</V_SAS_TIRESIZE>
+				<TIRE_LOCATION attrCat="-9999" attrCatStr="" formCat="4238" sasCode="3" value="3">Right Rear</TIRE_LOCATION>
+				<TIRE_MAKE attrCat="" attrCatStr="" formCat="4238" sasCode="37" value="37">DAYTON</TIRE_MAKE>
+				<TIRE_MODEL attrCat="" attrCatStr="" formCat="4238" sasCode="8888" value="-8888">Other (specify)</TIRE_MODEL>
+				<TIRE_SIZE_USED attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">P-Metric (specify)</TIRE_SIZE_USED>
+				<TIRE_ID_NUMBER attrCat="-9999" attrCatStr="" formCat="4238" sasCode="9999" value="-9999">Unknown</TIRE_ID_NUMBER>
+				<TIRE_TREAD_DEPTH formCat="4238">4</TIRE_TREAD_DEPTH>
+				<TIRE_PRESSURE formCat="4238">234</TIRE_PRESSURE>
+			</TIRE>
+			<TIRE TIRE_LOCATION="4">
+				<V_SAS_TIREMODEL>
+					<TMODEL>METRIC</TMODEL>
+				</V_SAS_TIREMODEL>
+				<V_SAS_TIRERECSIZE/>
+				<V_SAS_TIRESIZE>
+					<TSIZE>P185/70R14</TSIZE>
+				</V_SAS_TIRESIZE>
+				<TIRE_LOCATION attrCat="-9999" attrCatStr="" formCat="4238" sasCode="1" value="4">Right Front</TIRE_LOCATION>
+				<TIRE_MAKE attrCat="" attrCatStr="" formCat="4238" sasCode="8888" value="-8888">Other (specify)</TIRE_MAKE>
+				<TIRE_MODEL attrCat="" attrCatStr="" formCat="4238" sasCode="8888" value="-8888">Other (specify)</TIRE_MODEL>
+				<TIRE_SIZE_USED attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">P-Metric (specify)</TIRE_SIZE_USED>
+				<TIRE_ID_NUMBER attrCat="-9999" attrCatStr="" formCat="4238" sasCode="9999" value="-9999">Unknown</TIRE_ID_NUMBER>
+				<TIRE_TREAD_DEPTH formCat="4238">3</TIRE_TREAD_DEPTH>
+				<TIRE_PRESSURE formCat="4238">221</TIRE_PRESSURE>
+			</TIRE>
+			<TIREDAMAGE TIRE_LOCATION="1">
+				<TIRE_DAMAGE attrCat="-9999" attrCatStr="" formCat="4238" sasCode="9999" value="-9999">Unknown</TIRE_DAMAGE>
+			</TIREDAMAGE>
+			<TIREDAMAGE TIRE_LOCATION="2">
+				<TIRE_DAMAGE attrCat="-9999" attrCatStr="" formCat="4238" sasCode="9999" value="-9999">Unknown</TIRE_DAMAGE>
+			</TIREDAMAGE>
+			<TIREDAMAGE TIRE_LOCATION="3">
+				<TIRE_DAMAGE attrCat="-9999" attrCatStr="" formCat="4238" sasCode="9999" value="-9999">Unknown</TIRE_DAMAGE>
+			</TIREDAMAGE>
+			<TIREDAMAGE TIRE_LOCATION="4">
+				<TIRE_DAMAGE attrCat="-9999" attrCatStr="" formCat="4238" sasCode="9999" value="-9999">Unknown</TIRE_DAMAGE>
+			</TIREDAMAGE>
+			<TIRE_RECOMMENDATION>
+				<TIRE_REC_SIZE_FRONT attrCat="-9999" attrCatStr="" formCat="4238" sasCode="9999" value="-9999">Unknown</TIRE_REC_SIZE_FRONT>
+				<TIRE_REC_PRESS_FRONT attrCat="-9999" attrCatStr="" formCat="4238" sasCode="9999" value="-9999">Unknown</TIRE_REC_PRESS_FRONT>
+				<TIRE_REC_SIZE_REAR attrCat="-9999" attrCatStr="" formCat="4238" sasCode="9999" value="-9999">Unknown</TIRE_REC_SIZE_REAR>
+				<TIRE_REC_PRESS_REAR attrCat="-9999" attrCatStr="" formCat="4238" sasCode="9999" value="-9999">Unknown</TIRE_REC_PRESS_REAR>
+			</TIRE_RECOMMENDATION>
+			<TRAFFICCONTROLDEVICE>
+				<TRAFFIC_CONTROL_DEVICE attrCat="-9999" attrCatStr="" formCat="6161" sasCode="3" value="3">Control signal (on colors) w/o pedestrian signal</TRAFFIC_CONTROL_DEVICE>
+			</TRAFFICCONTROLDEVICE>
+			<TRAFFICWAYRESTRICT>
+				<TRAFFICWAY_RESTRICT attrCat="-9999" attrCatStr="" formCat="6161" sasCode="8841" value="-8841">No restrictions</TRAFFICWAY_RESTRICT>
+			</TRAFFICWAYRESTRICT>
+			<VEHICLE>
+				<XML_MAKEMODEL>
+					<INDEXVALUE>HONDA|ACCORD</INDEXVALUE>
+				</XML_MAKEMODEL>
+				<VEHNUMBER attrCat="" attrCatStr="" formCat="4235" sasCode="1" value="1">1</VEHNUMBER>
+				<MODELYEAR formCat="4235">1990</MODELYEAR>
+				<MAKE attrCat="" attrCatStr="" formCat="4235" sasCode="37" value="37">HONDA</MAKE>
+				<MODEL attrCat="37" attrCatStr="" formCat="4235" sasCode="32" value="774">ACCORD</MODEL>
+				<BODY_TYPE attrCat="1" attrCatStr="" formCat="4235" sasCode="4" value="4">4-door sedan, hardtop</BODY_TYPE>
+				<HIT_CLASS attrCat="1" attrCatStr="" formCat="4235" sasCode="3" value="3">Intermediate (wheelbase  &gt;= 265 but &lt; 278 cm)</HIT_CLASS>
+				<COLOR attrCat="-9999" attrCatStr="" formCat="4235" sasCode="5" value="5">Gold/tan/copper</COLOR>
+				<TRANSPORT attrCat="-9999" attrCatStr="" formCat="4235" sasCode="1" value="1">In transport</TRANSPORT>
+				<OTHER_VEH_LOC attrCat="-9999" attrCatStr="" formCat="4235" sasCode="9997" value="-9997">Not a parked vehicle</OTHER_VEH_LOC>
+				<INSPECTIONTYPE attrCat="-9999" attrCatStr="" formCat="4235" sasCode="1" value="1">Completed at scene</INSPECTIONTYPE>
+				<CARGO_WEIGHT formCat="4235">0</CARGO_WEIGHT>
+				<TOWTRAIL attrCat="" attrCatStr="" formCat="4235" sasCode="7774" value="-7774">Not collected during this study year</TOWTRAIL>
+				<SPECIALUSE attrCat="-9999" attrCatStr="" formCat="4235" sasCode="1" value="1">No Special Use</SPECIALUSE>
+				<ODOMETER formCat="4235">134339</ODOMETER>
+				<STATE_INSP attrCat="-9999" attrCatStr="" formCat="4235" sasCode="1" value="1">Current</STATE_INSP>
+				<STATE_REG attrCat="" attrCatStr="" formCat="4235" sasCode="39" value="39">PA</STATE_REG>
+				<CASEVEHICLE attrCat="" attrCatStr="" formCat="4235" sasCode="1" value="1">Yes</CASEVEHICLE>
+				<QUARTER_TURNS attrCat="" attrCatStr="" formCat="4239" sasCode="8866" value="-8866">No rollover</QUARTER_TURNS>
+				<ROLL_INIT_ROLL attrCat="-9999" attrCatStr="" formCat="4239" sasCode="1" value="-8866">No rollover</ROLL_INIT_ROLL>
+				<ROLL_INIT_TYPE attrCat="-9999" attrCatStr="" formCat="4239" sasCode="1" value="-8866">No rollover</ROLL_INIT_TYPE>
+				<ROLL_INIT_LOC attrCat="-9999" attrCatStr="" formCat="4239" sasCode="1" value="-8866">No rollover</ROLL_INIT_LOC>
+				<ROLL_INIT_OBJ_TYPE attrCat="" attrCatStr="" formCat="4239" sasCode="8866" value="-8866">No rollover</ROLL_INIT_OBJ_TYPE>
+				<ROLL_INIT_OBJ attrCat="-8866" attrCatStr="" formCat="4239" sasCode="8866" value="-8866">No rollover</ROLL_INIT_OBJ>
+				<INIT_PRINC_LOC attrCat="-9999" attrCatStr="" formCat="4239" sasCode="1" value="-8866">No rollover</INIT_PRINC_LOC>
+				<ROLLINTERUPTED attrCat="" attrCatStr="" formCat="4239" sasCode="8866" value="-8866">No rollover</ROLLINTERUPTED>
+				<ROLLESTIMATDISTANCE attrCat="" attrCatStr="" formCat="4239" sasCode="8866" value="-8866">No rollover</ROLLESTIMATDISTANCE>
+				<FIRE attrCat="-9999" attrCatStr="" formCat="4240" sasCode="1" value="1">No</FIRE>
+				<FIRE_IGNITION_TIME attrCat="-9999" attrCatStr="" formCat="4240" sasCode="9997" value="1">No Fire</FIRE_IGNITION_TIME>
+				<FIRE_ORIGIN attrCat="-9999" attrCatStr="" formCat="4240" sasCode="1" value="1">No fire</FIRE_ORIGIN>
+				<EDRINFO attrCat="" attrCatStr="" formCat="5094" sasCode="3" value="3">EDR information not obtained --Vehicle not supported by software (specify)</EDRINFO>
+			</VEHICLE>
+		</GeneralVehicle>
+		<GeneralVehicle VEHICLEID="366019194">
+			<XML_INSPDELAY>
+				<INSPECTDELAY>0</INSPECTDELAY>
+			</XML_INSPDELAY>
+			<XML_SANITIZEDVIN>
+				<SANVIN>1MEFM55S8YA</SANVIN>
+			</XML_SANITIZEDVIN>
+			<IMAGES>
+				<PIX_INDEX IMAGEID="366019320">
+					<IMAGEID>366019320</IMAGEID>
+					<VERSION>1</VERSION>
+					<SANITIZEDID>1</SANITIZEDID>
+					<IMAGETYPEID>1</IMAGETYPEID>
+					<SUBCATEGORYID>991</SUBCATEGORYID>
+					<CATID>22</CATID>
+					<CAPTION>FRONT</CAPTION>
+				</PIX_INDEX>
+				<PIX_INDEX IMAGEID="366019321">
+					<IMAGEID>366019321</IMAGEID>
+					<VERSION>1</VERSION>
+					<SANITIZEDID>1</SANITIZEDID>
+					<IMAGETYPEID>1</IMAGETYPEID>
+					<SUBCATEGORYID>1104</SUBCATEGORYID>
+					<CATID>22</CATID>
+					<CAPTION>Front/Left Oblique</CAPTION>
+				</PIX_INDEX>
+				<PIX_INDEX IMAGEID="366019322">
+					<IMAGEID>366019322</IMAGEID>
+					<VERSION>1</VERSION>
+					<SANITIZEDID>1</SANITIZEDID>
+					<IMAGETYPEID>1</IMAGETYPEID>
+					<SUBCATEGORYID>992</SUBCATEGORYID>
+					<CATID>22</CATID>
+					<CAPTION>LEFT SIDE, FRONT 1/2</CAPTION>
+				</PIX_INDEX>
+				<PIX_INDEX IMAGEID="366019323">
+					<IMAGEID>366019323</IMAGEID>
+					<VERSION>0</VERSION>
+					<SANITIZEDID>1</SANITIZEDID>
+					<IMAGETYPEID>1</IMAGETYPEID>
+					<SUBCATEGORYID>992</SUBCATEGORYID>
+					<CATID>22</CATID>
+					<CAPTION>LEFT SIDE, REAR 1/2</CAPTION>
+				</PIX_INDEX>
+				<PIX_INDEX IMAGEID="366019324">
+					<IMAGEID>366019324</IMAGEID>
+					<VERSION>1</VERSION>
+					<SANITIZEDID>1</SANITIZEDID>
+					<IMAGETYPEID>1</IMAGETYPEID>
+					<SUBCATEGORYID>1105</SUBCATEGORYID>
+					<CATID>22</CATID>
+					<CAPTION>Back/Left Oblique</CAPTION>
+				</PIX_INDEX>
+				<PIX_INDEX IMAGEID="366019325">
+					<IMAGEID>366019325</IMAGEID>
+					<VERSION>1</VERSION>
+					<SANITIZEDID>1</SANITIZEDID>
+					<IMAGETYPEID>1</IMAGETYPEID>
+					<SUBCATEGORYID>1106</SUBCATEGORYID>
+					<CATID>22</CATID>
+					<CAPTION>Back/Right Oblique</CAPTION>
+				</PIX_INDEX>
+				<PIX_INDEX IMAGEID="366019326">
+					<IMAGEID>366019326</IMAGEID>
+					<VERSION>0</VERSION>
+					<SANITIZEDID>1</SANITIZEDID>
+					<IMAGETYPEID>1</IMAGETYPEID>
+					<SUBCATEGORYID>994</SUBCATEGORYID>
+					<CATID>22</CATID>
+					<CAPTION>RIGHT SIDE, REAR 1/2</CAPTION>
+				</PIX_INDEX>
+				<PIX_INDEX IMAGEID="366019327">
+					<IMAGEID>366019327</IMAGEID>
+					<VERSION>0</VERSION>
+					<SANITIZEDID>1</SANITIZEDID>
+					<IMAGETYPEID>1</IMAGETYPEID>
+					<SUBCATEGORYID>994</SUBCATEGORYID>
+					<CATID>22</CATID>
+					<CAPTION>RIGHT SIDE, FRONT 1/2</CAPTION>
+				</PIX_INDEX>
+				<PIX_INDEX IMAGEID="366019328">
+					<IMAGEID>366019328</IMAGEID>
+					<VERSION>1</VERSION>
+					<SANITIZEDID>1</SANITIZEDID>
+					<IMAGETYPEID>1</IMAGETYPEID>
+					<SUBCATEGORYID>1107</SUBCATEGORYID>
+					<CATID>22</CATID>
+					<CAPTION>Front/Right Oblique</CAPTION>
+				</PIX_INDEX>
+				<PIX_INDEX IMAGEID="366019330">
+					<IMAGEID>366019330</IMAGEID>
+					<VERSION>0</VERSION>
+					<SANITIZEDID>1</SANITIZEDID>
+					<IMAGETYPEID>1</IMAGETYPEID>
+					<SUBCATEGORYID>1038</SUBCATEGORYID>
+					<CATID>22</CATID>
+					<CAPTION>RIGHT SIDE, LATERAL</CAPTION>
+				</PIX_INDEX>
+				<PIX_INDEX IMAGEID="366019331">
+					<IMAGEID>366019331</IMAGEID>
+					<VERSION>0</VERSION>
+					<SANITIZEDID>1</SANITIZEDID>
+					<IMAGETYPEID>1</IMAGETYPEID>
+					<SUBCATEGORYID>1038</SUBCATEGORYID>
+					<CATID>22</CATID>
+					<CAPTION>FRONT VIEW</CAPTION>
+				</PIX_INDEX>
+			</IMAGES>
+			<ATMOSPHERIC_CONDITION>
+				<ATMOSPHERICCONDITION attrCat="-9999" attrCatStr="" formCat="6161" sasCode="1" value="-8841">Clear--No adverse conditions</ATMOSPHERICCONDITION>
+			</ATMOSPHERIC_CONDITION>
+			<CDC CDCID="353031643">
+				<EVENTID>353031628</EVENTID>
+				<SAS_CDCNUM>
+					<NUM>1</NUM>
+				</SAS_CDCNUM>
+				<CDCID formCat="5094">353031643</CDCID>
+				<CLOCK_FORCE attrCat="" attrCatStr="" formCat="6157" sasCode="9" value="9">09</CLOCK_FORCE>
+				<DEFORMATIONLOCATION attrCat="3" attrCatStr="" formCat="6157" sasCode="4" value="4">L Left Side</DEFORMATIONLOCATION>
+				<LONGLATLOCATION attrCat="3" attrCatStr="" formCat="6157" sasCode="15" value="15">B Side Rear - left or right</LONGLATLOCATION>
+				<VERTLATLOCATION attrCat="1" attrCatStr="" formCat="6157" sasCode="27" value="27">E Everything below belt line</VERTLATLOCATION>
+				<DAMAGEDISTRIBUTION attrCat="0" attrCatStr="" formCat="6157" sasCode="40" value="40">W Wide Impact Area</DAMAGEDISTRIBUTION>
+				<DAMAGEEXTENT attrCat="0" attrCatStr="" formCat="6157" sasCode="50" value="50">Two</DAMAGEEXTENT>
+			</CDC>
+			<CDC CDCID="366019237">
+				<EVENTID>366019204</EVENTID>
+				<SAS_CDCNUM>
+					<NUM>1</NUM>
+				</SAS_CDCNUM>
+				<CDCID formCat="5094">366019237</CDCID>
+				<CLOCK_FORCE attrCat="" attrCatStr="" formCat="6157" sasCode="9" value="9">09</CLOCK_FORCE>
+				<DEFORMATIONLOCATION attrCat="3" attrCatStr="" formCat="6157" sasCode="4" value="4">L Left Side</DEFORMATIONLOCATION>
+				<LONGLATLOCATION attrCat="3" attrCatStr="" formCat="6157" sasCode="13" value="13">F Side Front - left or right</LONGLATLOCATION>
+				<VERTLATLOCATION attrCat="1" attrCatStr="" formCat="6157" sasCode="27" value="27">E Everything below belt line</VERTLATLOCATION>
+				<DAMAGEDISTRIBUTION attrCat="0" attrCatStr="" formCat="6157" sasCode="40" value="40">W Wide Impact Area</DAMAGEDISTRIBUTION>
+				<DAMAGEEXTENT attrCat="0" attrCatStr="" formCat="6157" sasCode="50" value="50">Two</DAMAGEEXTENT>
+			</CDC>
+			<DI_DRIVER>
+				<LICENSE_STATE attrCat="" attrCatStr="" formCat="7647" sasCode="39" value="39">PA</LICENSE_STATE>
+				<LICENSE_STATUS attrCat="-9999" attrCatStr="" formCat="7647" sasCode="1" value="1">Current and valid</LICENSE_STATUS>
+				<LIC_ENDORSEMENT attrCat="-9999" attrCatStr="" formCat="7647" sasCode="1" value="1">No endorsements</LIC_ENDORSEMENT>
+				<LIC_RESTRICTION attrCat="-9999" attrCatStr="" formCat="7647" sasCode="1" value="1">No restrictions</LIC_RESTRICTION>
+				<ETHNICITY attrCat="-9999" attrCatStr="" formCat="7647" sasCode="1" value="1">White (non-Hispanic)</ETHNICITY>
+				<DRIVER_RACE attrCat="" attrCatStr="" formCat="7647" sasCode="7774" value="-7774">Not collected during this study year</DRIVER_RACE>
+				<DRIVER_ETHNICITY attrCat="" attrCatStr="" formCat="7647" sasCode="7774" value="-7774">Not collected during this study year</DRIVER_ETHNICITY>
+			</DI_DRIVER>
+			<EQUIPMENT EQUIP_TYPE="103">
+				<EQUIP_TYPE attrCat="1" attrCatStr="Safety" formCat="4238" sasCode="103" value="103">Daytime running lights</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="7774" value="-7774">Not collected during this study year</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="7774" value="-7774">Not collected during this study year</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="" attrCatStr="" formCat="4238" sasCode="7774" value="-7774">Not collected during this study year</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="7774" value="-7774">Not collected during this study year</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="1088">
+				<EQUIP_TYPE attrCat="1" attrCatStr="Safety" formCat="4238" sasCode="1088" value="1088">Other safety equip. (specify) :</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="2088">
+				<EQUIP_TYPE attrCat="4" attrCatStr="Braking and Handling" formCat="4238" sasCode="2088" value="2088">Other braking and handling (specify) :</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="3088">
+				<EQUIP_TYPE attrCat="5" attrCatStr="Advanced" formCat="4238" sasCode="3088" value="3088">Other advanced equip (specify) :</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="4088">
+				<EQUIP_TYPE attrCat="2" attrCatStr="Convenience" formCat="4238" sasCode="4088" value="4088">Other convenience (specify) :</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="1">
+				<EQUIP_TYPE attrCat="1" attrCatStr="Safety" formCat="4238" sasCode="1" value="1">Rear crash avoidance (other than camera)</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="2">
+				<EQUIP_TYPE attrCat="4" attrCatStr="Braking and Handling" formCat="4238" sasCode="2" value="2">ABS</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="2" value="2">Yes</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="2" value="2">Yes</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="964" attrCatStr="EXTERIOR" formCat="4238" sasCode="6" value="6">Exterior - undercarriage</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="3">
+				<EQUIP_TYPE attrCat="5" attrCatStr="Advanced" formCat="4238" sasCode="3" value="3">Navigation system-installed in vehicle</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="4">
+				<EQUIP_TYPE attrCat="1" attrCatStr="Safety" formCat="4238" sasCode="4" value="4">Mirror mounted turn signals</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="5">
+				<EQUIP_TYPE attrCat="2" attrCatStr="Convenience" formCat="4238" sasCode="5" value="5">DVD player - 1st row</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="6">
+				<EQUIP_TYPE attrCat="4" attrCatStr="Braking and Handling" formCat="4238" sasCode="6" value="6">Variable suspension</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="7">
+				<EQUIP_TYPE attrCat="2" attrCatStr="Convenience" formCat="4238" sasCode="7" value="7">Radar or laser detector</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="8">
+				<EQUIP_TYPE attrCat="1" attrCatStr="Safety" formCat="4238" sasCode="8" value="8">Run-flat tires</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="9">
+				<EQUIP_TYPE attrCat="5" attrCatStr="Advanced" formCat="4238" sasCode="9" value="9">Navigation system - portable</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="10">
+				<EQUIP_TYPE attrCat="2" attrCatStr="Convenience" formCat="4238" sasCode="10" value="10">DVD player - 2nd row</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="12">
+				<EQUIP_TYPE attrCat="4" attrCatStr="Braking and Handling" formCat="4238" sasCode="12" value="12">Electronic stability control</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="14">
+				<EQUIP_TYPE attrCat="1" attrCatStr="Safety" formCat="4238" sasCode="14" value="14">Tire pressure monitoring system</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="16">
+				<EQUIP_TYPE attrCat="4" attrCatStr="Braking and Handling" formCat="4238" sasCode="16" value="16">Traction control</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="17">
+				<EQUIP_TYPE attrCat="2" attrCatStr="Convenience" formCat="4238" sasCode="17" value="17">Headlight wiper/washer</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="18">
+				<EQUIP_TYPE attrCat="1" attrCatStr="Safety" formCat="4238" sasCode="18" value="18">Wide angle mirror</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="20">
+				<EQUIP_TYPE attrCat="4" attrCatStr="Braking and Handling" formCat="4238" sasCode="20" value="20">Electronic brake assist</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="21">
+				<EQUIP_TYPE attrCat="2" attrCatStr="Convenience" formCat="4238" sasCode="21" value="21">Adjustable pedals</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="22">
+				<EQUIP_TYPE attrCat="2" attrCatStr="Convenience" formCat="4238" sasCode="22" value="22">Clothes rod</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="23">
+				<EQUIP_TYPE attrCat="2" attrCatStr="Convenience" formCat="4238" sasCode="23" value="23">Cellular/mobile phone</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="24">
+				<EQUIP_TYPE attrCat="1" attrCatStr="Safety" formCat="4238" sasCode="24" value="24">Pet/cargo barrier</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="25">
+				<EQUIP_TYPE attrCat="1" attrCatStr="Safety" formCat="4238" sasCode="25" value="25">Auto dimming rearview mirror(s)</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="26">
+				<EQUIP_TYPE attrCat="4" attrCatStr="Braking and Handling" formCat="4238" sasCode="26" value="26">4WD/AWD</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="27">
+				<EQUIP_TYPE attrCat="5" attrCatStr="Advanced" formCat="4238" sasCode="27" value="27">ITS (intelligent communication system) (specify):</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="28">
+				<EQUIP_TYPE attrCat="2" attrCatStr="Convenience" formCat="4238" sasCode="28" value="28">Sport shift transmission</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="29">
+				<EQUIP_TYPE attrCat="2" attrCatStr="Convenience" formCat="4238" sasCode="29" value="29">Steering wheel mounted radio/climate controls</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="30">
+				<EQUIP_TYPE attrCat="2" attrCatStr="Convenience" formCat="4238" sasCode="30" value="30">Window wind deflector</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="31">
+				<EQUIP_TYPE attrCat="1" attrCatStr="Safety" formCat="4238" sasCode="31" value="31">Collision warning system</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="32">
+				<EQUIP_TYPE attrCat="2" attrCatStr="Convenience" formCat="4238" sasCode="32" value="32">Rear spoiler</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="33">
+				<EQUIP_TYPE attrCat="2" attrCatStr="Convenience" formCat="4238" sasCode="33" value="33">Bug shield /hood protector</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="34">
+				<EQUIP_TYPE attrCat="1" attrCatStr="Safety" formCat="4238" sasCode="34" value="34">Lane or roadway-departure warning system</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="35">
+				<EQUIP_TYPE attrCat="2" attrCatStr="Convenience" formCat="4238" sasCode="35" value="35">Satellite radio</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="36">
+				<EQUIP_TYPE attrCat="1" attrCatStr="Safety" formCat="4238" sasCode="36" value="36">Cruise control-adaptive/intelligent</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="37">
+				<EQUIP_TYPE attrCat="2" attrCatStr="Convenience" formCat="4238" sasCode="37" value="37">Sunroof</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="38">
+				<EQUIP_TYPE attrCat="1" attrCatStr="Safety" formCat="4238" sasCode="38" value="38">Drowsy driver sensing system</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="39">
+				<EQUIP_TYPE attrCat="2" attrCatStr="Convenience" formCat="4238" sasCode="39" value="39">Child mirror</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="40">
+				<EQUIP_TYPE attrCat="4" attrCatStr="Braking and Handling" formCat="4238" sasCode="40" value="40">Altered suspension (raised, lowered, etc.)</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="41">
+				<EQUIP_TYPE attrCat="2" attrCatStr="Convenience" formCat="4238" sasCode="41" value="41">Hands free cell phone kit</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="42">
+				<EQUIP_TYPE attrCat="4" attrCatStr="Braking and Handling" formCat="4238" sasCode="42" value="42">Tires (oversized, low profile, etc.)</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="43">
+				<EQUIP_TYPE attrCat="2" attrCatStr="Convenience" formCat="4238" sasCode="43" value="43">Non-standard steering wheel</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="44">
+				<EQUIP_TYPE attrCat="2" attrCatStr="Convenience" formCat="4238" sasCode="44" value="44">Voice activated controls</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="45">
+				<EQUIP_TYPE attrCat="4" attrCatStr="Braking and Handling" formCat="4238" sasCode="45" value="45">Custom (non-OEM) wheels</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="46">
+				<EQUIP_TYPE attrCat="4" attrCatStr="Braking and Handling" formCat="4238" sasCode="46" value="46">Cargo holder - roof mounted</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="47">
+				<EQUIP_TYPE attrCat="4" attrCatStr="Braking and Handling" formCat="4238" sasCode="47" value="47">Cargo holder - rear mounted</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="48">
+				<EQUIP_TYPE attrCat="4" attrCatStr="Braking and Handling" formCat="4238" sasCode="48" value="48">Bike rack - hitch mounted</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="49">
+				<EQUIP_TYPE attrCat="4" attrCatStr="Braking and Handling" formCat="4238" sasCode="49" value="49">Bike rack - roof mounted</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="50">
+				<EQUIP_TYPE attrCat="2" attrCatStr="Convenience" formCat="4238" sasCode="50" value="50">Large speakers</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="52">
+				<EQUIP_TYPE attrCat="5" attrCatStr="Advanced" formCat="4238" sasCode="52" value="52">Rear view camera</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="54">
+				<EQUIP_TYPE attrCat="5" attrCatStr="Advanced" formCat="4238" sasCode="54" value="54">Front object sensor</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="55">
+				<EQUIP_TYPE attrCat="5" attrCatStr="Advanced" formCat="4238" sasCode="55" value="55">Heads-up display</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="57">
+				<EQUIP_TYPE attrCat="5" attrCatStr="Advanced" formCat="4238" sasCode="57" value="57">Night vision display</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="90">
+				<EQUIP_TYPE attrCat="2" attrCatStr="Convenience" formCat="4238" sasCode="90" value="90">Cruise control-conventional</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="91">
+				<EQUIP_TYPE attrCat="3" attrCatStr="Other" formCat="4238" sasCode="91" value="91">Power hand controls</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="92">
+				<EQUIP_TYPE attrCat="3" attrCatStr="Other" formCat="4238" sasCode="92" value="92">Manual hand controls</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="93">
+				<EQUIP_TYPE attrCat="3" attrCatStr="Other" formCat="4238" sasCode="93" value="93">Other adaptive equipment</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="100">
+				<EQUIP_TYPE attrCat="5" attrCatStr="Advanced" formCat="4238" sasCode="100" value="100">Adaptive Front-Light System (AFS)</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="101">
+				<EQUIP_TYPE attrCat="2" attrCatStr="Convenience" formCat="4238" sasCode="101" value="101">Integrated hands free communication system</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<EQUIPMENT EQUIP_TYPE="102">
+				<EQUIP_TYPE attrCat="1" attrCatStr="Safety" formCat="4238" sasCode="102" value="102">Bi-Xenon headlamps</EQUIP_TYPE>
+				<EQUIP_AVAILID attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">No</EQUIP_AVAILID>
+				<EQUIP_USE attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_USE>
+				<EQUIP_LOCATION attrCat="-9998" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</EQUIP_LOCATION>
+				<AFTER_MKT_EQUIP attrCat="" attrCatStr="" formCat="4238" sasCode="9998" value="-9998">Not equipped</AFTER_MKT_EQUIP>
+			</EQUIPMENT>
+			<GLAZING GLAZING_LOC="1">
+				<GLAZING_LOC attrCat="-9999" attrCatStr="" formCat="4243" sasCode="1" value="1">Windshield</GLAZING_LOC>
+				<PRESENCE attrCat="" attrCatStr="" formCat="4243" sasCode="2" value="2">Yes</PRESENCE>
+				<GLAZING_CLARITY attrCat="-9999" attrCatStr="" formCat="4243" sasCode="1" value="1">Clear</GLAZING_CLARITY>
+				<GLAZING_COND attrCat="-9999" attrCatStr="" formCat="4243" sasCode="1" value="1">Intact</GLAZING_COND>
+				<GLAZING_TINT attrCat="" attrCatStr="" formCat="4243" sasCode="2" value="1">No</GLAZING_TINT>
+			</GLAZING>
+			<GLAZING GLAZING_LOC="2">
+				<GLAZING_LOC attrCat="-9999" attrCatStr="" formCat="4243" sasCode="2" value="2">Left front</GLAZING_LOC>
+				<PRESENCE attrCat="" attrCatStr="" formCat="4243" sasCode="2" value="2">Yes</PRESENCE>
+				<GLAZING_CLARITY attrCat="-9999" attrCatStr="" formCat="4243" sasCode="1" value="1">Clear</GLAZING_CLARITY>
+				<GLAZING_COND attrCat="-9999" attrCatStr="" formCat="4243" sasCode="1" value="1">Intact</GLAZING_COND>
+				<GLAZING_TINT attrCat="" attrCatStr="" formCat="4243" sasCode="2" value="1">No</GLAZING_TINT>
+			</GLAZING>
+			<GLAZING GLAZING_LOC="3">
+				<GLAZING_LOC attrCat="-9999" attrCatStr="" formCat="4243" sasCode="3" value="3">Right front</GLAZING_LOC>
+				<PRESENCE attrCat="" attrCatStr="" formCat="4243" sasCode="2" value="2">Yes</PRESENCE>
+				<GLAZING_CLARITY attrCat="-9999" attrCatStr="" formCat="4243" sasCode="1" value="1">Clear</GLAZING_CLARITY>
+				<GLAZING_COND attrCat="-9999" attrCatStr="" formCat="4243" sasCode="1" value="1">Intact</GLAZING_COND>
+				<GLAZING_TINT attrCat="" attrCatStr="" formCat="4243" sasCode="2" value="1">No</GLAZING_TINT>
+			</GLAZING>
+			<GLAZING GLAZING_LOC="4">
+				<GLAZING_LOC attrCat="-9999" attrCatStr="" formCat="4243" sasCode="4" value="4">Left rear</GLAZING_LOC>
+				<PRESENCE attrCat="" attrCatStr="" formCat="4243" sasCode="2" value="2">Yes</PRESENCE>
+				<GLAZING_CLARITY attrCat="-9999" attrCatStr="" formCat="4243" sasCode="1" value="1">Clear</GLAZING_CLARITY>
+				<GLAZING_COND attrCat="-9999" attrCatStr="" formCat="4243" sasCode="1" value="1">Intact</GLAZING_COND>
+				<GLAZING_TINT attrCat="" attrCatStr="" formCat="4243" sasCode="2" value="1">No</GLAZING_TINT>
+			</GLAZING>
+			<GLAZING GLAZING_LOC="5">
+				<GLAZING_LOC attrCat="-9999" attrCatStr="" formCat="4243" sasCode="5" value="5">Second window left rear</GLAZING_LOC>
+				<PRESENCE attrCat="" attrCatStr="" formCat="4243" sasCode="1" value="1">No</PRESENCE>
+				<GLAZING_CLARITY attrCat="" attrCatStr="" formCat="4243" sasCode="8887" value="-8887">No glazing at this location</GLAZING_CLARITY>
+				<GLAZING_COND attrCat="" attrCatStr="" formCat="4243" sasCode="8887" value="-8887">No glazing at this location</GLAZING_COND>
+				<GLAZING_TINT attrCat="" attrCatStr="" formCat="4243" sasCode="8887" value="-8887">No glazing at this location</GLAZING_TINT>
+			</GLAZING>
+			<GLAZING GLAZING_LOC="6">
+				<GLAZING_LOC attrCat="-9999" attrCatStr="" formCat="4243" sasCode="6" value="6">Right rear</GLAZING_LOC>
+				<PRESENCE attrCat="" attrCatStr="" formCat="4243" sasCode="2" value="2">Yes</PRESENCE>
+				<GLAZING_CLARITY attrCat="-9999" attrCatStr="" formCat="4243" sasCode="1" value="1">Clear</GLAZING_CLARITY>
+				<GLAZING_COND attrCat="-9999" attrCatStr="" formCat="4243" sasCode="1" value="1">Intact</GLAZING_COND>
+				<GLAZING_TINT attrCat="" attrCatStr="" formCat="4243" sasCode="2" value="1">No</GLAZING_TINT>
+			</GLAZING>
+			<GLAZING GLAZING_LOC="7">
+				<GLAZING_LOC attrCat="-9999" attrCatStr="" formCat="4243" sasCode="7" value="7">Second window right rear</GLAZING_LOC>
+				<PRESENCE attrCat="" attrCatStr="" formCat="4243" sasCode="1" value="1">No</PRESENCE>
+				<GLAZING_CLARITY attrCat="" attrCatStr="" formCat="4243" sasCode="8887" value="-8887">No glazing at this location</GLAZING_CLARITY>
+				<GLAZING_COND attrCat="" attrCatStr="" formCat="4243" sasCode="8887" value="-8887">No glazing at this location</GLAZING_COND>
+				<GLAZING_TINT attrCat="" attrCatStr="" formCat="4243" sasCode="8887" value="-8887">No glazing at this location</GLAZING_TINT>
+			</GLAZING>
+			<GLAZING GLAZING_LOC="10">
+				<GLAZING_LOC attrCat="-9999" attrCatStr="" formCat="4243" sasCode="10" value="10">Backlight</GLAZING_LOC>
+				<PRESENCE attrCat="" attrCatStr="" formCat="4243" sasCode="2" value="2">Yes</PRESENCE>
+				<GLAZING_CLARITY attrCat="-9999" attrCatStr="" formCat="4243" sasCode="1" value="1">Clear</GLAZING_CLARITY>
+				<GLAZING_COND attrCat="-9999" attrCatStr="" formCat="4243" sasCode="1" value="1">Intact</GLAZING_COND>
+				<GLAZING_TINT attrCat="" attrCatStr="" formCat="4243" sasCode="2" value="1">No</GLAZING_TINT>
+			</GLAZING>
+			<GLAZING GLAZING_LOC="15">
+				<GLAZING_LOC attrCat="-9999" attrCatStr="" formCat="4243" sasCode="15" value="15">Roof</GLAZING_LOC>
+				<PRESENCE attrCat="" attrCatStr="" formCat="4243" sasCode="1" value="1">No</PRESENCE>
+				<GLAZING_CLARITY attrCat="" attrCatStr="" formCat="4243" sasCode="8887" value="-8887">No glazing at this location</GLAZING_CLARITY>
+				<GLAZING_COND attrCat="" attrCatStr="" formCat="4243" sasCode="8887" value="-8887">No glazing at this location</GLAZING_COND>
+				<GLAZING_TINT attrCat="" attrCatStr="" formCat="4243" sasCode="8887" value="-8887">No glazing at this location</GLAZING_TINT>
+			</GLAZING>
+			<GLAZING GLAZING_LOC="20">
+				<GLAZING_LOC attrCat="-9999" attrCatStr="" formCat="4243" sasCode="20" value="20">Other (specify) :</GLAZING_LOC>
+				<PRESENCE attrCat="" attrCatStr="" formCat="4243" sasCode="1" value="1">No</PRESENCE>
+				<GLAZING_CLARITY attrCat="" attrCatStr="" formCat="4243" sasCode="8887" value="-8887">No glazing at this location</GLAZING_CLARITY>
+				<GLAZING_COND attrCat="" attrCatStr="" formCat="4243" sasCode="8887" value="-8887">No glazing at this location</GLAZING_COND>
+				<GLAZING_TINT attrCat="" attrCatStr="" formCat="4243" sasCode="8887" value="-8887">No glazing at this location</GLAZING_TINT>
+			</GLAZING>
+			<MIRROR SIDE="1">
+				<SIDE_MIRROR attrCat="-9999" attrCatStr="" formCat="4238" sasCode="1" value="1">Yes, side mirror(s) present</SIDE_MIRROR>
+				<SIDE_MIRROR_LOCATION attrCat="-9999" attrCatStr="" formCat="4238" sasCode="1" value="1">Mounted on door</SIDE_MIRROR_LOCATION>
+				<SIDE_MIRROR_TYPE attrCat="-9999" attrCatStr="" formCat="4238" sasCode="1" value="1">Flat  Mirror</SIDE_MIRROR_TYPE>
+				<SIDE_MIRROR_ORIGIN attrCat="-9999" attrCatStr="" formCat="4238" sasCode="1" value="1">OEM side mirror</SIDE_MIRROR_ORIGIN>
+			</MIRROR>
+			<MIRROR SIDE="2">
+				<SIDE_MIRROR attrCat="-9999" attrCatStr="" formCat="4238" sasCode="1" value="1">Yes, side mirror(s) present</SIDE_MIRROR>
+				<SIDE_MIRROR_LOCATION attrCat="-9999" attrCatStr="" formCat="4238" sasCode="1" value="1">Mounted on door</SIDE_MIRROR_LOCATION>
+				<SIDE_MIRROR_TYPE attrCat="-9999" attrCatStr="" formCat="4238" sasCode="2" value="2">Convex Mirror</SIDE_MIRROR_TYPE>
+				<SIDE_MIRROR_ORIGIN attrCat="-9999" attrCatStr="" formCat="4238" sasCode="1" value="1">OEM side mirror</SIDE_MIRROR_ORIGIN>
+			</MIRROR>
+			<OFFICIALRECORDS>
+				<PAR_ALCOHOL_PRES attrCat="-9999" attrCatStr="" formCat="4236" sasCode="1" value="1">No alcohol present</PAR_ALCOHOL_PRES>
+				<PAR_DRUG_PRES attrCat="-9999" attrCatStr="" formCat="4236" sasCode="1" value="1">No</PAR_DRUG_PRES>
+				<POL_BELTUSE attrCat="-9999" attrCatStr="" formCat="4236" sasCode="5" value="5">Lap and shoulder belt</POL_BELTUSE>
+				<SPEED_LIMIT formCat="4236">64</SPEED_LIMIT>
+				<ADVISORY_LIMIT attrCat="-9999" attrCatStr="" formCat="4236" sasCode="7776" value="-7776">No advisory limit</ADVISORY_LIMIT>
+				<PAR_TRAVEL_SPEED attrCat="" attrCatStr="" formCat="4236" sasCode="8879" value="-8879">Not reported</PAR_TRAVEL_SPEED>
+				<KABCOU attrCat="-9999" attrCatStr="" formCat="4236" sasCode="1" value="2">C - Possible injury</KABCOU>
+				<PARTOWED attrCat="" attrCatStr="" formCat="4236" sasCode="0" value="1">Not towed due to vehicle damage</PARTOWED>
+			</OFFICIALRECORDS>
+			<PRECRASHVEHICLE>
+				<STABILITY attrCat="-9999" attrCatStr="" formCat="6161" sasCode="1" value="1">Tracking/stationary</STABILITY>
+				<LOCATION attrCat="-9999" attrCatStr="" formCat="6161" sasCode="1" value="1">Stayed in original travel lane</LOCATION>
+				<RIGHT_OF_WAY attrCat="-9999" attrCatStr="" formCat="6161" sasCode="2" value="2">Yes</RIGHT_OF_WAY>
+				<PRE_CRASH_SPILL attrCat="" attrCatStr="" formCat="6161" sasCode="1" value="1">No cargo</PRE_CRASH_SPILL>
+				<TRAVEL_LANE attrCat="-9999" attrCatStr="" formCat="6161" sasCode="1" value="1">Lane one (right curb lane)</TRAVEL_LANE>
+				<RELATION_TO_JUNCTION attrCat="-9999" attrCatStr="" formCat="6161" sasCode="2" value="2">Intersection</RELATION_TO_JUNCTION>
+				<RELATION_ROADWAY attrCat="-9999" attrCatStr="" formCat="6161" sasCode="1" value="1">On roadway</RELATION_ROADWAY>
+				<NATURAL_LIGHTING attrCat="-9999" attrCatStr="" formCat="6161" sasCode="3" value="3">Dark, but lighted </NATURAL_LIGHTING>
+			</PRECRASHVEHICLE>
+			<ROADWAY>
+				<ROADWAY_DEF attrCat="-9999" attrCatStr="" formCat="6161" sasCode="1" value="1">No deficiencies noted</ROADWAY_DEF>
+				<TRAFFICWAY_FLOW attrCat="-9999" attrCatStr="" formCat="6161" sasCode="1" value="1">Not physically divided (two way traffic)</TRAFFICWAY_FLOW>
+				<NUM_OF_TRAVEL_LANES attrCat="-9999" attrCatStr="" formCat="6161" sasCode="2" value="2">Two</NUM_OF_TRAVEL_LANES>
+				<RUMBLE_STRIP attrCat="-9999" attrCatStr="" formCat="6161" sasCode="1" value="1">No rumble strip present</RUMBLE_STRIP>
+				<SURFACE_TYPE attrCat="-9999" attrCatStr="" formCat="6161" sasCode="2" value="2">Bituminous (asphalt)</SURFACE_TYPE>
+				<SURFACE_CONDITION attrCat="-9999" attrCatStr="" formCat="6161" sasCode="1" value="1">Dry</SURFACE_CONDITION>
+				<ROADWAY_ALIGN attrCat="-9999" attrCatStr="" formCat="6161" sasCode="1" value="1">Straight</ROADWAY_ALIGN>
+				<ROADWAY_VERT_PROFILE attrCat="-9999" attrCatStr="" formCat="6161" sasCode="1" value="1">Level</ROADWAY_VERT_PROFILE>
+				<ACCESS_CONTROL attrCat="-9999" attrCatStr="" formCat="6161" sasCode="2" value="2">No control</ACCESS_CONTROL>
+				<CHORD_LENGTH attrCat="-9999" attrCatStr="" formCat="6161" sasCode="9997" value="-9997">Not applicable</CHORD_LENGTH>
+				<MIDORD_LENGTH attrCat="-9999" attrCatStr="" formCat="6161" sasCode="9997" value="-9997">Not applicable</MIDORD_LENGTH>
+				<RADIUS_CURVATURE attrCat="" attrCatStr="" formCat="6161" sasCode="999997" value="-9997">Not applicable</RADIUS_CURVATURE>
+				<SUPRELEV_HORIZ_MEAS attrCat="-9999" attrCatStr="" formCat="6161" sasCode="9997" value="-9997">Not applicable</SUPRELEV_HORIZ_MEAS>
+				<SUPRELEV_VERT_MEAS attrCat="-9999" attrCatStr="" formCat="6161" sasCode="9997" value="-9997">Not applicable</SUPRELEV_VERT_MEAS>
+				<SUPERELEVATION attrCat="" attrCatStr="" formCat="6161" sasCode="9997" value="-9997">Not applicable</SUPERELEVATION>
+				<TRAFFIC_DEVICE_FCTN attrCat="-9999" attrCatStr="" formCat="6161" sasCode="3" value="3">All traffic sign(s)/signal(s) functioning properly</TRAFFIC_DEVICE_FCTN>
+			</ROADWAY>
+			<TIRE TIRE_LOCATION="1">
+				<V_SAS_TIREMODEL/>
+				<V_SAS_TIRERECSIZE>
+					<TRECSIZE>P215/60R16</TRECSIZE>
+				</V_SAS_TIRERECSIZE>
+				<V_SAS_TIRESIZE>
+					<TSIZE>P215/60R16</TSIZE>
+				</V_SAS_TIRESIZE>
+				<TIRE_LOCATION attrCat="-9999" attrCatStr="" formCat="4238" sasCode="2" value="1">Left Front</TIRE_LOCATION>
+				<TIRE_MAKE attrCat="" attrCatStr="" formCat="4238" sasCode="122" value="122">PIRELLI</TIRE_MAKE>
+				<TIRE_MODEL attrCat="-9999" attrCatStr="" formCat="4238" sasCode="9999" value="-9999">Unknown</TIRE_MODEL>
+				<TIRE_SIZE_USED attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">P-Metric (specify)</TIRE_SIZE_USED>
+				<TIRE_ID_NUMBER attrCat="-9999" attrCatStr="" formCat="4238" sasCode="9999" value="-9999">Unknown</TIRE_ID_NUMBER>
+				<TIRE_TREAD_DEPTH formCat="4238">8</TIRE_TREAD_DEPTH>
+				<TIRE_PRESSURE formCat="4238">221</TIRE_PRESSURE>
+			</TIRE>
+			<TIRE TIRE_LOCATION="2">
+				<V_SAS_TIREMODEL/>
+				<V_SAS_TIRERECSIZE>
+					<TRECSIZE>P215/60R16</TRECSIZE>
+				</V_SAS_TIRERECSIZE>
+				<V_SAS_TIRESIZE>
+					<TSIZE>P215/60R16</TSIZE>
+				</V_SAS_TIRESIZE>
+				<TIRE_LOCATION attrCat="-9999" attrCatStr="" formCat="4238" sasCode="4" value="2">Left Rear</TIRE_LOCATION>
+				<TIRE_MAKE attrCat="" attrCatStr="" formCat="4238" sasCode="122" value="122">PIRELLI</TIRE_MAKE>
+				<TIRE_MODEL attrCat="-9999" attrCatStr="" formCat="4238" sasCode="9999" value="-9999">Unknown</TIRE_MODEL>
+				<TIRE_SIZE_USED attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">P-Metric (specify)</TIRE_SIZE_USED>
+				<TIRE_ID_NUMBER attrCat="-9999" attrCatStr="" formCat="4238" sasCode="9999" value="-9999">Unknown</TIRE_ID_NUMBER>
+				<TIRE_TREAD_DEPTH formCat="4238">9</TIRE_TREAD_DEPTH>
+				<TIRE_PRESSURE formCat="4238">234</TIRE_PRESSURE>
+			</TIRE>
+			<TIRE TIRE_LOCATION="3">
+				<V_SAS_TIREMODEL/>
+				<V_SAS_TIRERECSIZE>
+					<TRECSIZE>P215/60R16</TRECSIZE>
+				</V_SAS_TIRERECSIZE>
+				<V_SAS_TIRESIZE>
+					<TSIZE>P215/60R16</TSIZE>
+				</V_SAS_TIRESIZE>
+				<TIRE_LOCATION attrCat="-9999" attrCatStr="" formCat="4238" sasCode="3" value="3">Right Rear</TIRE_LOCATION>
+				<TIRE_MAKE attrCat="" attrCatStr="" formCat="4238" sasCode="122" value="122">PIRELLI</TIRE_MAKE>
+				<TIRE_MODEL attrCat="-9999" attrCatStr="" formCat="4238" sasCode="9999" value="-9999">Unknown</TIRE_MODEL>
+				<TIRE_SIZE_USED attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">P-Metric (specify)</TIRE_SIZE_USED>
+				<TIRE_ID_NUMBER attrCat="-9999" attrCatStr="" formCat="4238" sasCode="9999" value="-9999">Unknown</TIRE_ID_NUMBER>
+				<TIRE_TREAD_DEPTH formCat="4238">9</TIRE_TREAD_DEPTH>
+				<TIRE_PRESSURE formCat="4238">207</TIRE_PRESSURE>
+			</TIRE>
+			<TIRE TIRE_LOCATION="4">
+				<V_SAS_TIREMODEL/>
+				<V_SAS_TIRERECSIZE>
+					<TRECSIZE>P215/60R16</TRECSIZE>
+				</V_SAS_TIRERECSIZE>
+				<V_SAS_TIRESIZE>
+					<TSIZE>P215/60R16</TSIZE>
+				</V_SAS_TIRESIZE>
+				<TIRE_LOCATION attrCat="-9999" attrCatStr="" formCat="4238" sasCode="1" value="4">Right Front</TIRE_LOCATION>
+				<TIRE_MAKE attrCat="" attrCatStr="" formCat="4238" sasCode="122" value="122">PIRELLI</TIRE_MAKE>
+				<TIRE_MODEL attrCat="-9999" attrCatStr="" formCat="4238" sasCode="9999" value="-9999">Unknown</TIRE_MODEL>
+				<TIRE_SIZE_USED attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">P-Metric (specify)</TIRE_SIZE_USED>
+				<TIRE_ID_NUMBER attrCat="-9999" attrCatStr="" formCat="4238" sasCode="9999" value="-9999">Unknown</TIRE_ID_NUMBER>
+				<TIRE_TREAD_DEPTH formCat="4238">8</TIRE_TREAD_DEPTH>
+				<TIRE_PRESSURE formCat="4238">221</TIRE_PRESSURE>
+			</TIRE>
+			<TIREDAMAGE TIRE_LOCATION="1">
+				<TIRE_DAMAGE attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="-8887">No damage</TIRE_DAMAGE>
+			</TIREDAMAGE>
+			<TIREDAMAGE TIRE_LOCATION="2">
+				<TIRE_DAMAGE attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="-8887">No damage</TIRE_DAMAGE>
+			</TIREDAMAGE>
+			<TIREDAMAGE TIRE_LOCATION="3">
+				<TIRE_DAMAGE attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="-8887">No damage</TIRE_DAMAGE>
+			</TIREDAMAGE>
+			<TIREDAMAGE TIRE_LOCATION="4">
+				<TIRE_DAMAGE attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="-8887">No damage</TIRE_DAMAGE>
+			</TIREDAMAGE>
+			<TIRE_RECOMMENDATION>
+				<TIRE_REC_SIZE_FRONT attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">P metric (specify)</TIRE_REC_SIZE_FRONT>
+				<TIRE_REC_PRESS_FRONT formCat="4238">207</TIRE_REC_PRESS_FRONT>
+				<TIRE_REC_SIZE_REAR attrCat="" attrCatStr="" formCat="4238" sasCode="1" value="1">P metric (specify)</TIRE_REC_SIZE_REAR>
+				<TIRE_REC_PRESS_REAR formCat="4238">207</TIRE_REC_PRESS_REAR>
+			</TIRE_RECOMMENDATION>
+			<TRAFFICCONTROLDEVICE>
+				<TRAFFIC_CONTROL_DEVICE attrCat="-9999" attrCatStr="" formCat="6161" sasCode="3" value="3">Control signal (on colors) w/o pedestrian signal</TRAFFIC_CONTROL_DEVICE>
+			</TRAFFICCONTROLDEVICE>
+			<TRAFFICWAYRESTRICT>
+				<TRAFFICWAY_RESTRICT attrCat="-9999" attrCatStr="" formCat="6161" sasCode="8841" value="-8841">No restrictions</TRAFFICWAY_RESTRICT>
+			</TRAFFICWAYRESTRICT>
+			<VEHICLE>
+				<XML_MAKEMODEL>
+					<INDEXVALUE>MERCURY|SABLE</INDEXVALUE>
+				</XML_MAKEMODEL>
+				<VEHNUMBER attrCat="" attrCatStr="" formCat="4235" sasCode="2" value="2">2</VEHNUMBER>
+				<MODELYEAR formCat="4235">2000</MODELYEAR>
+				<MAKE attrCat="" attrCatStr="" formCat="4235" sasCode="14" value="14">MERCURY</MAKE>
+				<MODEL attrCat="14" attrCatStr="" formCat="4235" sasCode="17" value="1121">SABLE</MODEL>
+				<BODY_TYPE attrCat="1" attrCatStr="" formCat="4235" sasCode="4" value="4">4-door sedan, hardtop</BODY_TYPE>
+				<HIT_CLASS attrCat="1" attrCatStr="" formCat="4235" sasCode="3" value="3">Intermediate (wheelbase  &gt;= 265 but &lt; 278 cm)</HIT_CLASS>
+				<COLOR attrCat="-9999" attrCatStr="" formCat="4235" sasCode="5" value="5">Gold/tan/copper</COLOR>
+				<TRANSPORT attrCat="-9999" attrCatStr="" formCat="4235" sasCode="1" value="1">In transport</TRANSPORT>
+				<OTHER_VEH_LOC attrCat="-9999" attrCatStr="" formCat="4235" sasCode="9997" value="-9997">Not a parked vehicle</OTHER_VEH_LOC>
+				<INSPECTIONTYPE attrCat="-9999" attrCatStr="" formCat="4235" sasCode="1" value="1">Completed at scene</INSPECTIONTYPE>
+				<CARGO_WEIGHT formCat="4235">0</CARGO_WEIGHT>
+				<TOWTRAIL attrCat="" attrCatStr="" formCat="4235" sasCode="7774" value="-7774">Not collected during this study year</TOWTRAIL>
+				<SPECIALUSE attrCat="-9999" attrCatStr="" formCat="4235" sasCode="1" value="1">No Special Use</SPECIALUSE>
+				<ODOMETER formCat="4235">79737</ODOMETER>
+				<STATE_INSP attrCat="-9999" attrCatStr="" formCat="4235" sasCode="1" value="1">Current</STATE_INSP>
+				<STATE_REG attrCat="" attrCatStr="" formCat="4235" sasCode="39" value="39">PA</STATE_REG>
+				<CASEVEHICLE attrCat="" attrCatStr="" formCat="4235" sasCode="1" value="1">Yes</CASEVEHICLE>
+				<QUARTER_TURNS attrCat="" attrCatStr="" formCat="4239" sasCode="8866" value="-8866">No rollover</QUARTER_TURNS>
+				<ROLL_INIT_ROLL attrCat="-9999" attrCatStr="" formCat="4239" sasCode="1" value="-8866">No rollover</ROLL_INIT_ROLL>
+				<ROLL_INIT_TYPE attrCat="-9999" attrCatStr="" formCat="4239" sasCode="1" value="-8866">No rollover</ROLL_INIT_TYPE>
+				<ROLL_INIT_LOC attrCat="-9999" attrCatStr="" formCat="4239" sasCode="1" value="-8866">No rollover</ROLL_INIT_LOC>
+				<ROLL_INIT_OBJ_TYPE attrCat="" attrCatStr="" formCat="4239" sasCode="8866" value="-8866">No rollover</ROLL_INIT_OBJ_TYPE>
+				<ROLL_INIT_OBJ attrCat="-8866" attrCatStr="" formCat="4239" sasCode="8866" value="-8866">No rollover</ROLL_INIT_OBJ>
+				<INIT_PRINC_LOC attrCat="-9999" attrCatStr="" formCat="4239" sasCode="1" value="-8866">No rollover</INIT_PRINC_LOC>
+				<ROLLINTERUPTED attrCat="" attrCatStr="" formCat="4239" sasCode="8866" value="-8866">No rollover</ROLLINTERUPTED>
+				<ROLLESTIMATDISTANCE attrCat="" attrCatStr="" formCat="4239" sasCode="8866" value="-8866">No rollover</ROLLESTIMATDISTANCE>
+				<FIRE attrCat="-9999" attrCatStr="" formCat="4240" sasCode="1" value="1">No</FIRE>
+				<FIRE_IGNITION_TIME attrCat="-9999" attrCatStr="" formCat="4240" sasCode="9997" value="1">No Fire</FIRE_IGNITION_TIME>
+				<FIRE_ORIGIN attrCat="-9999" attrCatStr="" formCat="4240" sasCode="1" value="1">No fire</FIRE_ORIGIN>
+				<EDRINFO attrCat="" attrCatStr="" formCat="5094" sasCode="3" value="3">EDR information not obtained --Vehicle not supported by software (specify)</EDRINFO>
+			</VEHICLE>
+		</GeneralVehicle>
+		<Occupant VEHICLEID="366019189">
+			<OccupantByVehicle OCCID="1644">
+				<OCCUPANT>
+					<OCCNUMBER attrCat="" attrCatStr="" formCat="" sasCode="1" value="1">1</OCCNUMBER>
+					<AGE formCat="">540</AGE>
+					<SEX_PREGNANCY attrCat="-9999" attrCatStr="" formCat="" sasCode="2" value="2">Female</SEX_PREGNANCY>
+					<HEIGHT formCat="">165</HEIGHT>
+					<WEIGHT formCat="">64</WEIGHT>
+					<SEATPOS attrCat="" attrCatStr="" formCat="" sasCode="11" value="11">Front row, left position</SEATPOS>
+					<KABCOU attrCat="-9999" attrCatStr="" formCat="" sasCode="1" value="2">C - Possible injury</KABCOU>
+					<EMSTRANSPORT attrCat="" attrCatStr="" formCat="" sasCode="1" value="2">Yes</EMSTRANSPORT>
+					<ROLE attrCat="-9999" attrCatStr="" formCat="" sasCode="1" value="1">Driver</ROLE>
+				</OCCUPANT>
+			</OccupantByVehicle>
+		</Occupant>
+		<Occupant VEHICLEID="366019194">
+			<OccupantByVehicle OCCID="1645">
+				<OCCUPANT>
+					<OCCNUMBER attrCat="" attrCatStr="" formCat="" sasCode="1" value="1">1</OCCNUMBER>
+					<AGE formCat="">696</AGE>
+					<SEX_PREGNANCY attrCat="-9999" attrCatStr="" formCat="" sasCode="2" value="2">Female</SEX_PREGNANCY>
+					<HEIGHT formCat="">173</HEIGHT>
+					<WEIGHT formCat="">82</WEIGHT>
+					<SEATPOS attrCat="" attrCatStr="" formCat="" sasCode="11" value="11">Front row, left position</SEATPOS>
+					<KABCOU attrCat="-9999" attrCatStr="" formCat="" sasCode="1" value="2">C - Possible injury</KABCOU>
+					<EMSTRANSPORT attrCat="" attrCatStr="" formCat="" sasCode="1" value="2">Yes</EMSTRANSPORT>
+					<ROLE attrCat="-9999" attrCatStr="" formCat="" sasCode="1" value="1">Driver</ROLE>
+				</OCCUPANT>
+			</OccupantByVehicle>
+		</Occupant>
+		<Crash>
+			<IMAGES>
+				<PIX_INDEX IMAGEID="36675567">
+					<IMAGEID>36675567</IMAGEID>
+					<VERSION>0</VERSION>
+					<IMAGETYPEID>62</IMAGETYPEID>
+					<SUBCATEGORYID>999</SUBCATEGORYID>
+				</PIX_INDEX>
+				<PIX_INDEX IMAGEID="36675568">
+					<IMAGEID>36675568</IMAGEID>
+					<VERSION>0</VERSION>
+					<IMAGETYPEID>122</IMAGETYPEID>
+					<SUBCATEGORYID>999</SUBCATEGORYID>
+				</PIX_INDEX>
+				<PIX_INDEX IMAGEID="366019349">
+					<IMAGEID>366019349</IMAGEID>
+					<VERSION>0</VERSION>
+					<SANITIZEDID>1</SANITIZEDID>
+					<IMAGETYPEID>1</IMAGETYPEID>
+					<SUBCATEGORYID>1114</SUBCATEGORYID>
+					<CATID>19</CATID>
+					<CAPTION>V1 Approach - #1</CAPTION>
+				</PIX_INDEX>
+				<PIX_INDEX IMAGEID="366019350">
+					<IMAGEID>366019350</IMAGEID>
+					<VERSION>1</VERSION>
+					<SANITIZEDID>1</SANITIZEDID>
+					<IMAGETYPEID>1</IMAGETYPEID>
+					<SUBCATEGORYID>1114</SUBCATEGORYID>
+					<CATID>19</CATID>
+					<CAPTION>V1 Approach - #2</CAPTION>
+				</PIX_INDEX>
+				<PIX_INDEX IMAGEID="366019351">
+					<IMAGEID>366019351</IMAGEID>
+					<VERSION>1</VERSION>
+					<SANITIZEDID>1</SANITIZEDID>
+					<IMAGETYPEID>1</IMAGETYPEID>
+					<SUBCATEGORYID>1114</SUBCATEGORYID>
+					<CATID>19</CATID>
+					<CAPTION>V1 Approach - #3</CAPTION>
+				</PIX_INDEX>
+				<PIX_INDEX IMAGEID="366019352">
+					<IMAGEID>366019352</IMAGEID>
+					<VERSION>1</VERSION>
+					<SANITIZEDID>1</SANITIZEDID>
+					<IMAGETYPEID>1</IMAGETYPEID>
+					<SUBCATEGORYID>1115</SUBCATEGORYID>
+					<CATID>19</CATID>
+					<CAPTION>V1 Point of Impact </CAPTION>
+				</PIX_INDEX>
+				<PIX_INDEX IMAGEID="366019353">
+					<IMAGEID>366019353</IMAGEID>
+					<VERSION>1</VERSION>
+					<SANITIZEDID>1</SANITIZEDID>
+					<IMAGETYPEID>1</IMAGETYPEID>
+					<SUBCATEGORYID>1000</SUBCATEGORYID>
+					<CATID>19</CATID>
+					<CAPTION>V1 LOOK BACK TO PRECRASH</CAPTION>
+				</PIX_INDEX>
+				<PIX_INDEX IMAGEID="366019354">
+					<IMAGEID>366019354</IMAGEID>
+					<VERSION>1</VERSION>
+					<SANITIZEDID>1</SANITIZEDID>
+					<IMAGETYPEID>1</IMAGETYPEID>
+					<SUBCATEGORYID>1118</SUBCATEGORYID>
+					<CATID>19</CATID>
+					<CAPTION>V1 Lookback From Impact to PreCrash </CAPTION>
+				</PIX_INDEX>
+				<PIX_INDEX IMAGEID="366019355">
+					<IMAGEID>366019355</IMAGEID>
+					<VERSION>1</VERSION>
+					<SANITIZEDID>1</SANITIZEDID>
+					<IMAGETYPEID>1</IMAGETYPEID>
+					<SUBCATEGORYID>1117</SUBCATEGORYID>
+					<CATID>19</CATID>
+					<CAPTION>V1 Lookback Beyond Final Rest to Impact </CAPTION>
+				</PIX_INDEX>
+				<PIX_INDEX IMAGEID="366019378">
+					<IMAGEID>366019378</IMAGEID>
+					<VERSION>1</VERSION>
+					<SANITIZEDID>1</SANITIZEDID>
+					<IMAGETYPEID>1</IMAGETYPEID>
+					<SUBCATEGORYID>1114</SUBCATEGORYID>
+					<CATID>19</CATID>
+					<CAPTION>V2 Approach - #1</CAPTION>
+				</PIX_INDEX>
+				<PIX_INDEX IMAGEID="366019379">
+					<IMAGEID>366019379</IMAGEID>
+					<VERSION>1</VERSION>
+					<SANITIZEDID>1</SANITIZEDID>
+					<IMAGETYPEID>1</IMAGETYPEID>
+					<SUBCATEGORYID>1114</SUBCATEGORYID>
+					<CATID>19</CATID>
+					<CAPTION>V2 Approach - #2</CAPTION>
+				</PIX_INDEX>
+				<PIX_INDEX IMAGEID="366019380">
+					<IMAGEID>366019380</IMAGEID>
+					<VERSION>1</VERSION>
+					<SANITIZEDID>1</SANITIZEDID>
+					<IMAGETYPEID>1</IMAGETYPEID>
+					<SUBCATEGORYID>1114</SUBCATEGORYID>
+					<CATID>19</CATID>
+					<CAPTION>V2 Approach - #3</CAPTION>
+				</PIX_INDEX>
+				<PIX_INDEX IMAGEID="366019381">
+					<IMAGEID>366019381</IMAGEID>
+					<VERSION>0</VERSION>
+					<SANITIZEDID>1</SANITIZEDID>
+					<IMAGETYPEID>1</IMAGETYPEID>
+					<SUBCATEGORYID>1115</SUBCATEGORYID>
+					<CATID>19</CATID>
+					<CAPTION>V2 Point of Impact </CAPTION>
+				</PIX_INDEX>
+				<PIX_INDEX IMAGEID="366019382">
+					<IMAGEID>366019382</IMAGEID>
+					<VERSION>0</VERSION>
+					<SANITIZEDID>1</SANITIZEDID>
+					<IMAGETYPEID>1</IMAGETYPEID>
+					<SUBCATEGORYID>1000</SUBCATEGORYID>
+					<CATID>19</CATID>
+					<CAPTION>V2 LOOK BACK TO PRECRASH</CAPTION>
+				</PIX_INDEX>
+				<PIX_INDEX IMAGEID="366019383">
+					<IMAGEID>366019383</IMAGEID>
+					<VERSION>0</VERSION>
+					<SANITIZEDID>1</SANITIZEDID>
+					<IMAGETYPEID>1</IMAGETYPEID>
+					<SUBCATEGORYID>1117</SUBCATEGORYID>
+					<CATID>19</CATID>
+					<CAPTION>V2 Lookback Beyond Final Rest to Impact </CAPTION>
+				</PIX_INDEX>
+				<PIX_INDEX IMAGEID="366019384">
+					<IMAGEID>366019384</IMAGEID>
+					<VERSION>0</VERSION>
+					<SANITIZEDID>1</SANITIZEDID>
+					<IMAGETYPEID>1</IMAGETYPEID>
+					<SUBCATEGORYID>1118</SUBCATEGORYID>
+					<CATID>19</CATID>
+					<CAPTION>V2 Lookback From Impact to PreCrash </CAPTION>
+				</PIX_INDEX>
+			</IMAGES>
+			<IMAGES_onScene>
+				<PIX_INDEX IMAGEID="366019387">
+					<IMAGEID>366019387</IMAGEID>
+					<VERSION>1</VERSION>
+					<SANITIZEDID>1</SANITIZEDID>
+					<IMAGETYPEID>1</IMAGETYPEID>
+					<SUBCATEGORYID>2002</SUBCATEGORYID>
+					<CATID>3</CATID>
+					<CAPTION>V2 APPROACH</CAPTION>
+				</PIX_INDEX>
+				<PIX_INDEX IMAGEID="366019388">
+					<IMAGEID>366019388</IMAGEID>
+					<VERSION>1</VERSION>
+					<SANITIZEDID>1</SANITIZEDID>
+					<IMAGETYPEID>1</IMAGETYPEID>
+					<SUBCATEGORYID>2002</SUBCATEGORYID>
+					<CATID>3</CATID>
+					<CAPTION>V1 APPROACH</CAPTION>
+				</PIX_INDEX>
+			</IMAGES_onScene>
+			<CRASH CASEID="2005005447002">
+				<ORGID>5</ORGID>
+				<CASEWEIGHT>0</CASEWEIGHT>
+				<CASENUMBER>3</CASENUMBER>
+				<XML_CASESUMMARY>
+					<SUMMARY>This accident occurred on a two-way, two-lane, not physically divided, traffic signal-controlled intersection.  The conditions of the road at the time of the crash were dry and no adverse atmospheric conditions were present.  The gradient for both lanes of vehicle travel were level.  The posted speed limit for vehicle one (V1) was 72kph (45mph), whereas the posted speed limit for vehicle two (V2) was 40mph.\r\r\n\r\r\nV1 was a 1990 brown Honda Accord, which ran a steady red light at approximately 34-48kph (21-30mph) before impacting the left front side of V2.  The impact caused V2 to be pushed to its right nearly 12-15 meters.  V1 and V2 contacted again right rear with left rear respectively, and spun V2 almost 90 degrees clockwise before coming to final rest in the southbound lane.  V1 continued forward and to the left as well as spun counter-clockwise almost 45 degrees before coming to final rest.  The final resting position for vehicle 1 was partially off the road at the corner of the southbound and westbound lanes.  This vehicle was towed from the scene.\r\r\n\r\r\nThe driver of V1 was a 46-year-old female who was taken to the hospital via ambulance due to injuries.  She claimed that the traffic signal seemed to go from green directly to red, without turning yellow.  After observing the traffic signal for some time, no atypical patterns were noted.  This vehicle was towed due to damage.\r\r\n\r\r\nThe Critical Precrash Event  for V1 was coded as this vehicle traveling crossing over (passing through) an intersection.  The Critical Reason for the Critical Precrash Event  was a recognition error, inadequate surveillance (looked but did not see).  After obtaining the interview from the driver of V1, it was revealed that she suffers from muscular dystrophy.  This condition however, according to the driver, has not hindered her ability to drive the vehicle.  No postproduction modifications on V1 were present at the time of inspection.  The driver stated that no medications other than vitamins were taken prior to the accident.  Furthermore, her emotional and fatigue levels at the time of the crash, as well as the days preceding, were normal.  He medical records revealed that she was taking an allergy medication and the possible side effects are drowsiness and fatigue.\r\r\n\r\r\nThe driver of V2 was a 58-year-old female who was also taken to the hospital via ambulance, due to injuries.  V2 was a 2000 tan Mercury Sable, passing through an intersection between 50-64kph (31-40mph) with the right of way, as per a green traffic signal.  Upon realization of the impending crash, the driver of V2 attempted to avoid the collision by steering her vehicle to the right.  With this maneuver, the driver unfortunately could not prevent this crash.  This vehicle was towed from the scene.\r\r\n\r\r\nThe Critical Precrash Event for this vehicle was that the other vehicle encroached from crossing street, across path.  The Critical Reason for the Critical Precrash Event was not coded to this vehicle.  She claimed to be in good health and was not taking any medications, prescription or otherwise, on the day of or prior to the crash.   She was wearing glasses that corrected a myopic (near-sighted) condition.\r\r\n\r\r\n\r\r\nOTHER POSSIBLE FACTORS:\r\r\n\r\r\nDuring the interview with the driver of V1, she mentioned that because of her muscular dystrophy, she had trouble walking for a long period of time because her legs weren\'t strong enough to support her weight.  She stated that she would take therapy exercises at her local health club.  During these exercises she would exercise her legs in a pool, which would allow her more freedom because her weight would be reduced.  She never mentioned that she required a wheel chair or walker.     \r\r\n</SUMMARY>
+				</XML_CASESUMMARY>
+				<XML_CRASHTYPE/>
+				<XML_CRASHDERIVED>
+					<CRASHYEAR>2005</CRASHYEAR>
+					<CRASHMONTH>02</CRASHMONTH>
+					<DAYOFWEEK>Friday</DAYOFWEEK>
+					<CASESTR>2005-005-003</CASESTR>
+					<VEHCOUNT>2</VEHCOUNT>
+				</XML_CRASHDERIVED>
+				<FACTOR_VEHICLE VEHNUMBER="1">
+					<XML_FACTORS>
+						<AGGBEHAVIOR>Present</AGGBEHAVIOR>
+						<DECISION>Present</DECISION>
+						<PHYSICAL>Present</PHYSICAL>
+						<DRUGS>Present</DRUGS>
+						<SURVEILLANCE>Present</SURVEILLANCE>
+					</XML_FACTORS>
+				</FACTOR_VEHICLE>
+				<FACTOR_VEHICLE VEHNUMBER="2">
+					<XML_FACTORS>
+						<DECISION>Present</DECISION>
+					</XML_FACTORS>
+				</FACTOR_VEHICLE>
+				<TIME formCat="28078">2007</TIME>
+				<KABCOU attrCat="-9999" attrCatStr="" formCat="28078" sasCode="1" value="2">C - Possible injury</KABCOU>
+			</CRASH>
+			<EVENT EVENTID="353031628">
+				<EVENT_NUMBER attrCat="" attrCatStr="" formCat="28079" sasCode="2" value="2">2</EVENT_NUMBER>
+				<VEHICLE_STRIKER formCat="28079">366019189</VEHICLE_STRIKER>
+				<STRIKER_CLASS attrCat="1" attrCatStr="" formCat="28079" sasCode="3" value="3">Intermediate (wheelbase  &gt;= 265 but &lt; 278 cm)</STRIKER_CLASS>
+				<STRIKER_AREA_DAMAGE attrCat="6270" attrCatStr="" formCat="28079" sasCode="4" value="4">Right Side</STRIKER_AREA_DAMAGE>
+				<OBJECT_HIT_TYPE attrCat="" attrCatStr="" formCat="28079" sasCode="1" value="1">Vehicle</OBJECT_HIT_TYPE>
+				<OBJECT_HIT attrCat="1" attrCatStr="" formCat="28079" sasCode="2" value="2">Vehicle#2</OBJECT_HIT>
+				<HIT_CLASS attrCat="1" attrCatStr="" formCat="28079" sasCode="3" value="3">Intermediate (wheelbase  &gt;= 265 but &lt; 278 cm)</HIT_CLASS>
+				<HIT_AREA_DAMAGE attrCat="6270" attrCatStr="" formCat="28079" sasCode="5" value="5">Left Side</HIT_AREA_DAMAGE>
+			</EVENT>
+			<EVENT EVENTID="366019204">
+				<EVENT_NUMBER attrCat="" attrCatStr="" formCat="28079" sasCode="1" value="1">1</EVENT_NUMBER>
+				<VEHICLE_STRIKER formCat="28079">366019189</VEHICLE_STRIKER>
+				<STRIKER_CLASS attrCat="1" attrCatStr="" formCat="28079" sasCode="3" value="3">Intermediate (wheelbase  &gt;= 265 but &lt; 278 cm)</STRIKER_CLASS>
+				<STRIKER_AREA_DAMAGE attrCat="6270" attrCatStr="" formCat="28079" sasCode="3" value="3">Front</STRIKER_AREA_DAMAGE>
+				<OBJECT_HIT_TYPE attrCat="" attrCatStr="" formCat="28079" sasCode="1" value="1">Vehicle</OBJECT_HIT_TYPE>
+				<OBJECT_HIT attrCat="1" attrCatStr="" formCat="28079" sasCode="2" value="2">Vehicle#2</OBJECT_HIT>
+				<HIT_CLASS attrCat="1" attrCatStr="" formCat="28079" sasCode="3" value="3">Intermediate (wheelbase  &gt;= 265 but &lt; 278 cm)</HIT_CLASS>
+				<HIT_AREA_DAMAGE attrCat="6270" attrCatStr="" formCat="28079" sasCode="5" value="5">Left Side</HIT_AREA_DAMAGE>
+			</EVENT>
+		</Crash>
+		<PrecrashAssessmentForm VEHICLEID="366019189">
+			<REASONCATEGORY>
+				<CATID>1</CATID>
+				<DESCRIPTION>Driver Related Factor</DESCRIPTION>
+			</REASONCATEGORY>
+			<ATMOSPHERIC_CONDITION>
+				<ATMOSPHERICCONDITION attrCat="-9999" attrCatStr="" formCat="2" sasCode="1" value="-8841">Clear--No adverse conditions</ATMOSPHERICCONDITION>
+			</ATMOSPHERIC_CONDITION>
+			<AVOIDANCE>
+				<AVOID_MANEUVER attrCat="" attrCatStr="" formCat="1" sasCode="3" value="3">Braking without lock-up</AVOID_MANEUVER>
+			</AVOIDANCE>
+			<CARGOSHIFT>
+				<CARGO_SHIFT_MANEUVER attrCat="" attrCatStr="" formCat="1" sasCode="1" value="-8841">No cargo</CARGO_SHIFT_MANEUVER>
+			</CARGOSHIFT>
+			<DRIVERACTIVITY>
+				<OTHER_DRIVER_ACTIVITY attrCat="-9999" attrCatStr="" formCat="2" sasCode="1" value="-8885">No non-driving activities</OTHER_DRIVER_ACTIVITY>
+			</DRIVERACTIVITY>
+			<DRIVERDRUG DRIVERDRUGID="353031637">
+				<INTERVIEW_SRC>353031631</INTERVIEW_SRC>
+				<DRUG attrCat="2" attrCatStr="" formCat="2" sasCode="61" value="61">Vitamins</DRUG>
+			</DRIVERDRUG>
+			<DRIVERPERFORMANCE>
+				<DRIV_PERFORM_ERROR attrCat="" attrCatStr="" formCat="2" sasCode="1" value="-8841">No performance errors</DRIV_PERFORM_ERROR>
+			</DRIVERPERFORMANCE>
+			<DRIVER_AGGRESSION>
+				<AGGRSV_ACT attrCat="-9999" attrCatStr="" formCat="2" sasCode="5" value="5">Ignoring traffic control devices (eg. stopping, then running red light)</AGGRSV_ACT>
+			</DRIVER_AGGRESSION>
+			<DRIVER_AGGRESSION_REASON>
+				<AGGRSV_DRIVE_REASON attrCat="-9999" attrCatStr="" formCat="2" sasCode="9999" value="-9999">Unknown</AGGRSV_DRIVE_REASON>
+			</DRIVER_AGGRESSION_REASON>
+			<DRIVER_BEHAVIOR>
+				<THINKING_ABOUT attrCat="" attrCatStr="" formCat="2" sasCode="1" value="1">No inattention factors</THINKING_ABOUT>
+				<CONVERSATION attrCat="-9999" attrCatStr="" formCat="2" sasCode="1" value="1">Not conversing</CONVERSATION>
+				<CONVERSE_RELATIONSHIP attrCat="-9999" attrCatStr="" formCat="2" sasCode="9997" value="-9997">Not applicable</CONVERSE_RELATIONSHIP>
+				<DISTRACTION_DISCUSS_SUBJECT attrCat="-9999" attrCatStr="" formCat="2" sasCode="9997" value="-9997">Not applicable</DISTRACTION_DISCUSS_SUBJECT>
+				<EXTERIOR_FACTOR_REAR_TRACK attrCat="-9999" attrCatStr="" formCat="2" sasCode="9997" value="-9997">Not applicable</EXTERIOR_FACTOR_REAR_TRACK>
+				<SURVEILLANCE attrCat="-9999" attrCatStr="" formCat="2" sasCode="7" value="7">Looked, but did not see</SURVEILLANCE>
+				<OTHER_REC_FACTOR attrCat="-9999" attrCatStr="" formCat="2" sasCode="1" value="1">No other recognition factors</OTHER_REC_FACTOR>
+				<TRAVEL_FAST attrCat="-9999" attrCatStr="" formCat="2" sasCode="1" value="1">No traveling too fast for conditions factors</TRAVEL_FAST>
+				<FOLLOW_CLOSE attrCat="-9999" attrCatStr="" formCat="2" sasCode="1" value="1">No following too closely factors</FOLLOW_CLOSE>
+				<MISJUDGE_GAP_VEL attrCat="-9999" attrCatStr="" formCat="2" sasCode="1" value="1">No misjudgment factors</MISJUDGE_GAP_VEL>
+				<VEH_APPR_DIREC attrCat="-9999" attrCatStr="" formCat="2" sasCode="1" value="1">No misjudgment factors</VEH_APPR_DIREC>
+				<FALSE_ASSUMPTION attrCat="-9999" attrCatStr="" formCat="2" sasCode="1" value="1">No false assumption factors</FALSE_ASSUMPTION>
+				<INADEQ_EVASIVE_ACTION attrCat="-9999" attrCatStr="" formCat="2" sasCode="1" value="1">No inadequate evasive action factors</INADEQ_EVASIVE_ACTION>
+				<DECISION_FACTOR attrCat="-9999" attrCatStr="" formCat="2" sasCode="1" value="1">No other decision factors</DECISION_FACTOR>
+				<DRIVER_UPSET attrCat="" attrCatStr="" formCat="2" sasCode="1" value="1">No</DRIVER_UPSET>
+				<WORK_STRESS attrCat="-9999" attrCatStr="" formCat="2" sasCode="1" value="1">No employer relation factors</WORK_STRESS>
+				<IN_A_HURRY attrCat="-9999" attrCatStr="" formCat="2" sasCode="1" value="1">Not in a hurry</IN_A_HURRY>
+				<EMOT_FACTOR attrCat="" attrCatStr="" formCat="2" sasCode="2" value="1">No</EMOT_FACTOR>
+				<RECENT_EXP_THIS_VEHICLE attrCat="-9999" attrCatStr="" formCat="2" sasCode="1" value="1">More than 10 times in the past three months</RECENT_EXP_THIS_VEHICLE>
+				<THIS_ROUTE_FREQUENCY attrCat="-9999" attrCatStr="" formCat="2" sasCode="1" value="1">Daily</THIS_ROUTE_FREQUENCY>
+			</DRIVER_BEHAVIOR>
+			<DRIVER_HEALTH>
+				<ALCOHOL_TEST_SOURCE attrCat="-9999" attrCatStr="" formCat="2" sasCode="1" value="1">No BAC test</ALCOHOL_TEST_SOURCE>
+				<ALCOHOL_TEST_RESULT attrCat="" attrCatStr="" formCat="2" sasCode="9996" value="-9996">No BAC test</ALCOHOL_TEST_RESULT>
+				<ALCOHOL_TEST_TIME attrCat="" attrCatStr="" formCat="2" sasCode="9996" value="9996">No BAC test</ALCOHOL_TEST_TIME>
+				<ALCOHOL_TEST_DELAY attrCat="" attrCatStr="" formCat="2" sasCode="9996" value="-9996">No BAC test</ALCOHOL_TEST_DELAY>
+				<MEDPRESENT attrCat="-9999" attrCatStr="" formCat="2" sasCode="1" value="1">Yes</MEDPRESENT>
+				<ILLNESS attrCat="-9999" attrCatStr="" formCat="2" sasCode="1" value="1">No</ILLNESS>
+				<HEARING_IMPAIRMENT attrCat="-9999" attrCatStr="" formCat="2" sasCode="1" value="1">No</HEARING_IMPAIRMENT>
+				<HEAR_WORN attrCat="-9999" attrCatStr="" formCat="2" sasCode="9997" value="-9997">Not applicable</HEAR_WORN>
+			</DRIVER_HEALTH>
+			<DRIVER_PHYSICALFACTOR>
+				<PHYSICAL_FACTOR attrCat="-9999" attrCatStr="" formCat="2" sasCode="10" value="10">Other (specify) :</PHYSICAL_FACTOR>
+			</DRIVER_PHYSICALFACTOR>
+			<EXTERIORFACTOR>
+				<EXTERIOR_FACTOR attrCat="-9999" attrCatStr="" formCat="2" sasCode="1" value="-8841">No exterior factors</EXTERIOR_FACTOR>
+			</EXTERIORFACTOR>
+			<EXTERIORFACTOR_LOC>
+				<EXTERIOR_FACTOR_LOCATION attrCat="-9999" attrCatStr="" formCat="2" sasCode="1" value="-8841">No exterior factors</EXTERIOR_FACTOR_LOCATION>
+			</EXTERIORFACTOR_LOC>
+			<FATIGUE>
+				<TRIP_LENGTH formCat="2">0.1</TRIP_LENGTH>
+				<TIME_ELAPS_DRIVING attrCat="-9999" attrCatStr="" formCat="2" sasCode="1" value="1">&lt; half hour</TIME_ELAPS_DRIVING>
+				<TRIP_START_TIME formCat="2">2000</TRIP_START_TIME>
+				<SLEEPSTART_TIME attrCat="" attrCatStr="" formCat="2" sasCode="9999" value="9999">Unknown (9999)</SLEEPSTART_TIME>
+				<SLEEPEND_TIME attrCat="" attrCatStr="" formCat="2" sasCode="9999" value="9999">Unknown (9999)</SLEEPEND_TIME>
+				<LASTSLEEP attrCat="-9999" attrCatStr="" formCat="2" sasCode="9999" value="-9999">Unknown</LASTSLEEP>
+				<SLEEP24HRS attrCat="-9999" attrCatStr="" formCat="2" sasCode="9999" value="-9999">Unknown</SLEEP24HRS>
+				<HOURSAWAKE attrCat="-9999" attrCatStr="" formCat="2" sasCode="9999" value="-9999">Unknown</HOURSAWAKE>
+				<AVGSLEEPINT formCat="2">10</AVGSLEEPINT>
+				<SLEEPROTATE attrCat="" attrCatStr="" formCat="2" sasCode="2" value="2">Yes</SLEEPROTATE>
+				<WORKSHORTEST attrCat="-9999" attrCatStr="" formCat="2" sasCode="9997" value="-9997">Not applicable</WORKSHORTEST>
+				<WORKLONGEST attrCat="-9999" attrCatStr="" formCat="2" sasCode="9997" value="-9997">Not applicable</WORKLONGEST>
+				<WORKAVG attrCat="-9999" attrCatStr="" formCat="2" sasCode="9997" value="-9997">Not applicable</WORKAVG>
+				<WORKTOTAL attrCat="-9999" attrCatStr="" formCat="2" sasCode="9997" value="-9997">Not applicable</WORKTOTAL>
+				<DRIVER_FATIGUE attrCat="-9999" attrCatStr="" formCat="2" sasCode="2" value="2">Driver not fatigued</DRIVER_FATIGUE>
+			</FATIGUE>
+			<FLOWINTERRUPTFACTOR>
+				<FLOW_INTERRUPT_FACTOR attrCat="-9999" attrCatStr="" formCat="2" sasCode="1" value="-8841">No traffic flow factors</FLOW_INTERRUPT_FACTOR>
+			</FLOWINTERRUPTFACTOR>
+			<HARMFULEVENTSEQ SEQUENCENUMBER="0">
+				<SEQUENCENUMBER>0</SEQUENCENUMBER>
+				<PRE_FIRST_HARMFUL_EVENT_SEQ attrCat="-9999" attrCatStr="" formCat="1" sasCode="1" value="1">No pre-first harmful event maneuver sequence</PRE_FIRST_HARMFUL_EVENT_SEQ>
+			</HARMFULEVENTSEQ>
+			<ILLEGALMANEUVER>
+				<ILLEGAL_MANEUVER attrCat="-9999" attrCatStr="" formCat="2" sasCode="6" value="6">Failed to obey TCD</ILLEGAL_MANEUVER>
+			</ILLEGALMANEUVER>
+			<OFFICIALRECORDS>
+				<PAR_ALCOHOL_PRES attrCat="-9999" attrCatStr="" formCat="2" sasCode="1" value="1">No alcohol present</PAR_ALCOHOL_PRES>
+			</OFFICIALRECORDS>
+			<OTHER_ENVIRONFACTOR>
+				<OTHER_ENVIRON_FACTOR attrCat="-9999" attrCatStr="" formCat="2" sasCode="1" value="-8841">No other factors</OTHER_ENVIRON_FACTOR>
+			</OTHER_ENVIRONFACTOR>
+			<OTHER_EXPFACTOR>
+				<OTHER_EXP_FACTOR attrCat="-9999" attrCatStr="" formCat="2" sasCode="1" value="-8841">No other factor types</OTHER_EXP_FACTOR>
+			</OTHER_EXPFACTOR>
+			<PRECRASH>
+				<PRE_EVENT_MOVEMENT attrCat="-9999" attrCatStr="" formCat="1" sasCode="1" value="1">Going straight</PRE_EVENT_MOVEMENT>
+				<CRITICAL_EVENT attrCat="3729" attrCatStr="This Vehicle Traveling" formCat="1" sasCode="27" value="27">Crossing over (passing through) intersection</CRITICAL_EVENT>
+				<CRITICAL_REASON attrCat="1" attrCatStr="Driver Related Factor" formCat="1" sasCode="113" value="113">Inadequate surveillance (e.g., failed to look, looked but did not see)</CRITICAL_REASON>
+				<STABILITY attrCat="-9999" attrCatStr="" formCat="1" sasCode="1" value="1">Tracking/stationary</STABILITY>
+				<LOCATION attrCat="-9999" attrCatStr="" formCat="1" sasCode="1" value="1">Stayed in original travel lane</LOCATION>
+				<CRASH_TYPE attrCat="3810" attrCatStr="Intersecting Paths veh damage" formCat="1" sasCode="88" value="88">Straight Paths: Striking from the Left</CRASH_TYPE>
+				<RIGHT_OF_WAY attrCat="-9999" attrCatStr="" formCat="1" sasCode="1" value="1">No</RIGHT_OF_WAY>
+				<PRE_CRASH_SPILL attrCat="" attrCatStr="" formCat="1" sasCode="1" value="1">No cargo</PRE_CRASH_SPILL>
+				<CARGO_SHIFT_LOCATION attrCat="" attrCatStr="" formCat="1" sasCode="1" value="1">No cargo</CARGO_SHIFT_LOCATION>
+				<SIGHT_LINE_RESTRICTION attrCat="-9999" attrCatStr="" formCat="2" sasCode="1" value="1">No sight restrictions</SIGHT_LINE_RESTRICTION>
+			</PRECRASH>
+			<ROADWAY_RELATED_FACTOR>
+				<ROAD_RELATED_FACTOR attrCat="-9999" attrCatStr="" formCat="2" sasCode="1" value="-8841">No roadway related factors</ROAD_RELATED_FACTOR>
+			</ROADWAY_RELATED_FACTOR>
+			<VEH_CONDFACTOR>
+				<VEH_COND_RELAT_FACTOR attrCat="-9999" attrCatStr="" formCat="2" sasCode="1" value="-8841">No vehicle related factors</VEH_COND_RELAT_FACTOR>
+			</VEH_CONDFACTOR>
+		</PrecrashAssessmentForm>
+		<PrecrashAssessmentForm VEHICLEID="366019194">
+			<ATMOSPHERIC_CONDITION>
+				<ATMOSPHERICCONDITION attrCat="-9999" attrCatStr="" formCat="2" sasCode="1" value="-8841">Clear--No adverse conditions</ATMOSPHERICCONDITION>
+			</ATMOSPHERIC_CONDITION>
+			<AVOIDANCE>
+				<AVOID_MANEUVER attrCat="-9999" attrCatStr="" formCat="1" sasCode="8" value="8">Steering right</AVOID_MANEUVER>
+			</AVOIDANCE>
+			<CARGOSHIFT>
+				<CARGO_SHIFT_MANEUVER attrCat="" attrCatStr="" formCat="1" sasCode="1" value="-8841">No cargo</CARGO_SHIFT_MANEUVER>
+			</CARGOSHIFT>
+			<DRIVERACTIVITY>
+				<OTHER_DRIVER_ACTIVITY attrCat="-9999" attrCatStr="" formCat="2" sasCode="1" value="-8885">No non-driving activities</OTHER_DRIVER_ACTIVITY>
+			</DRIVERACTIVITY>
+			<DRIVERPERFORMANCE>
+				<DRIV_PERFORM_ERROR attrCat="" attrCatStr="" formCat="2" sasCode="1" value="-8841">No performance errors</DRIV_PERFORM_ERROR>
+			</DRIVERPERFORMANCE>
+			<DRIVER_AGGRESSION>
+				<AGGRSV_ACT attrCat="-9999" attrCatStr="" formCat="2" sasCode="1" value="-8841">No aggressive driving behaviors</AGGRSV_ACT>
+			</DRIVER_AGGRESSION>
+			<DRIVER_AGGRESSION_REASON>
+				<AGGRSV_DRIVE_REASON attrCat="-9999" attrCatStr="" formCat="2" sasCode="1" value="-8841">No aggressive driving behaviors</AGGRSV_DRIVE_REASON>
+			</DRIVER_AGGRESSION_REASON>
+			<DRIVER_BEHAVIOR>
+				<THINKING_ABOUT attrCat="" attrCatStr="" formCat="2" sasCode="1" value="1">No inattention factors</THINKING_ABOUT>
+				<CONVERSATION attrCat="-9999" attrCatStr="" formCat="2" sasCode="1" value="1">Not conversing</CONVERSATION>
+				<CONVERSE_RELATIONSHIP attrCat="-9999" attrCatStr="" formCat="2" sasCode="9997" value="-9997">Not applicable</CONVERSE_RELATIONSHIP>
+				<DISTRACTION_DISCUSS_SUBJECT attrCat="-9999" attrCatStr="" formCat="2" sasCode="9997" value="-9997">Not applicable</DISTRACTION_DISCUSS_SUBJECT>
+				<EXTERIOR_FACTOR_REAR_TRACK attrCat="-9999" attrCatStr="" formCat="2" sasCode="9997" value="-9997">Not applicable</EXTERIOR_FACTOR_REAR_TRACK>
+				<SURVEILLANCE attrCat="-9999" attrCatStr="" formCat="2" sasCode="1" value="1">No inadequate surveillance factors</SURVEILLANCE>
+				<OTHER_REC_FACTOR attrCat="-9999" attrCatStr="" formCat="2" sasCode="1" value="1">No other recognition factors</OTHER_REC_FACTOR>
+				<TRAVEL_FAST attrCat="-9999" attrCatStr="" formCat="2" sasCode="1" value="1">No traveling too fast for conditions factors</TRAVEL_FAST>
+				<FOLLOW_CLOSE attrCat="-9999" attrCatStr="" formCat="2" sasCode="1" value="1">No following too closely factors</FOLLOW_CLOSE>
+				<MISJUDGE_GAP_VEL attrCat="-9999" attrCatStr="" formCat="2" sasCode="1" value="1">No misjudgment factors</MISJUDGE_GAP_VEL>
+				<VEH_APPR_DIREC attrCat="-9999" attrCatStr="" formCat="2" sasCode="1" value="1">No misjudgment factors</VEH_APPR_DIREC>
+				<FALSE_ASSUMPTION attrCat="-9999" attrCatStr="" formCat="2" sasCode="5" value="5">Assumed that other driver would yield right-of-way</FALSE_ASSUMPTION>
+				<INADEQ_EVASIVE_ACTION attrCat="-9999" attrCatStr="" formCat="2" sasCode="1" value="1">No inadequate evasive action factors</INADEQ_EVASIVE_ACTION>
+				<DECISION_FACTOR attrCat="-9999" attrCatStr="" formCat="2" sasCode="1" value="1">No other decision factors</DECISION_FACTOR>
+				<DRIVER_UPSET attrCat="" attrCatStr="" formCat="2" sasCode="1" value="1">No</DRIVER_UPSET>
+				<WORK_STRESS attrCat="-9999" attrCatStr="" formCat="2" sasCode="1" value="1">No employer relation factors</WORK_STRESS>
+				<IN_A_HURRY attrCat="-9999" attrCatStr="" formCat="2" sasCode="1" value="1">Not in a hurry</IN_A_HURRY>
+				<EMOT_FACTOR attrCat="" attrCatStr="" formCat="2" sasCode="2" value="1">No</EMOT_FACTOR>
+				<RECENT_EXP_THIS_VEHICLE attrCat="-9999" attrCatStr="" formCat="2" sasCode="1" value="1">More than 10 times in the past three months</RECENT_EXP_THIS_VEHICLE>
+				<THIS_ROUTE_FREQUENCY attrCat="-9999" attrCatStr="" formCat="2" sasCode="1" value="1">Daily</THIS_ROUTE_FREQUENCY>
+			</DRIVER_BEHAVIOR>
+			<DRIVER_HEALTH>
+				<ALCOHOL_TEST_SOURCE attrCat="-9999" attrCatStr="" formCat="2" sasCode="1" value="1">No BAC test</ALCOHOL_TEST_SOURCE>
+				<ALCOHOL_TEST_RESULT attrCat="" attrCatStr="" formCat="2" sasCode="9996" value="-9996">No BAC test</ALCOHOL_TEST_RESULT>
+				<ALCOHOL_TEST_TIME attrCat="" attrCatStr="" formCat="2" sasCode="9996" value="9996">No BAC test</ALCOHOL_TEST_TIME>
+				<ALCOHOL_TEST_DELAY attrCat="" attrCatStr="" formCat="2" sasCode="9996" value="-9996">No BAC test</ALCOHOL_TEST_DELAY>
+				<MEDPRESENT attrCat="-9999" attrCatStr="" formCat="2" sasCode="2" value="2">No</MEDPRESENT>
+				<ILLNESS attrCat="-9999" attrCatStr="" formCat="2" sasCode="1" value="1">No</ILLNESS>
+				<HEARING_IMPAIRMENT attrCat="-9999" attrCatStr="" formCat="2" sasCode="1" value="1">No</HEARING_IMPAIRMENT>
+				<HEAR_WORN attrCat="-9999" attrCatStr="" formCat="2" sasCode="9997" value="-9997">Not applicable</HEAR_WORN>
+			</DRIVER_HEALTH>
+			<DRIVER_PHYSICALFACTOR>
+				<PHYSICAL_FACTOR attrCat="-9999" attrCatStr="" formCat="2" sasCode="1" value="-8841">No other physical factors</PHYSICAL_FACTOR>
+			</DRIVER_PHYSICALFACTOR>
+			<EXTERIORFACTOR>
+				<EXTERIOR_FACTOR attrCat="-9999" attrCatStr="" formCat="2" sasCode="1" value="-8841">No exterior factors</EXTERIOR_FACTOR>
+			</EXTERIORFACTOR>
+			<EXTERIORFACTOR_LOC>
+				<EXTERIOR_FACTOR_LOCATION attrCat="-9999" attrCatStr="" formCat="2" sasCode="1" value="-8841">No exterior factors</EXTERIOR_FACTOR_LOCATION>
+			</EXTERIORFACTOR_LOC>
+			<FATIGUE>
+				<TRIP_LENGTH formCat="2">0.87</TRIP_LENGTH>
+				<TIME_ELAPS_DRIVING attrCat="-9999" attrCatStr="" formCat="2" sasCode="2" value="2">30-59 minutes</TIME_ELAPS_DRIVING>
+				<TRIP_START_TIME formCat="2">1915</TRIP_START_TIME>
+				<SLEEPSTART_TIME formCat="2">2200</SLEEPSTART_TIME>
+				<SLEEPEND_TIME formCat="2">0600</SLEEPEND_TIME>
+				<LASTSLEEP formCat="2">8</LASTSLEEP>
+				<SLEEP24HRS formCat="2">8</SLEEP24HRS>
+				<HOURSAWAKE formCat="2">14</HOURSAWAKE>
+				<AVGSLEEPINT formCat="2">8</AVGSLEEPINT>
+				<SLEEPROTATE attrCat="" attrCatStr="" formCat="2" sasCode="1" value="1">No</SLEEPROTATE>
+				<WORKSHORTEST attrCat="-9999" attrCatStr="" formCat="2" sasCode="9999" value="-9999">Unknown</WORKSHORTEST>
+				<WORKLONGEST attrCat="-9999" attrCatStr="" formCat="2" sasCode="9999" value="-9999">Unknown</WORKLONGEST>
+				<WORKAVG attrCat="-9999" attrCatStr="" formCat="2" sasCode="9999" value="-9999">Unknown</WORKAVG>
+				<WORKTOTAL attrCat="-9999" attrCatStr="" formCat="2" sasCode="9999" value="-9999">Unknown</WORKTOTAL>
+				<DRIVER_FATIGUE attrCat="-9999" attrCatStr="" formCat="2" sasCode="2" value="2">Driver not fatigued</DRIVER_FATIGUE>
+			</FATIGUE>
+			<FLOWINTERRUPTFACTOR>
+				<FLOW_INTERRUPT_FACTOR attrCat="-9999" attrCatStr="" formCat="2" sasCode="1" value="-8841">No traffic flow factors</FLOW_INTERRUPT_FACTOR>
+			</FLOWINTERRUPTFACTOR>
+			<HARMFULEVENTSEQ SEQUENCENUMBER="0">
+				<SEQUENCENUMBER>0</SEQUENCENUMBER>
+				<PRE_FIRST_HARMFUL_EVENT_SEQ attrCat="-9999" attrCatStr="" formCat="1" sasCode="1" value="1">No pre-first harmful event maneuver sequence</PRE_FIRST_HARMFUL_EVENT_SEQ>
+			</HARMFULEVENTSEQ>
+			<ILLEGALMANEUVER>
+				<ILLEGAL_MANEUVER attrCat="-9999" attrCatStr="" formCat="2" sasCode="1" value="-8841">No illegal manuever factors</ILLEGAL_MANEUVER>
+			</ILLEGALMANEUVER>
+			<OFFICIALRECORDS>
+				<PAR_ALCOHOL_PRES attrCat="-9999" attrCatStr="" formCat="2" sasCode="1" value="1">No alcohol present</PAR_ALCOHOL_PRES>
+			</OFFICIALRECORDS>
+			<OTHER_ENVIRONFACTOR>
+				<OTHER_ENVIRON_FACTOR attrCat="-9999" attrCatStr="" formCat="2" sasCode="1" value="-8841">No other factors</OTHER_ENVIRON_FACTOR>
+			</OTHER_ENVIRONFACTOR>
+			<OTHER_EXPFACTOR>
+				<OTHER_EXP_FACTOR attrCat="-9999" attrCatStr="" formCat="2" sasCode="1" value="-8841">No other factor types</OTHER_EXP_FACTOR>
+			</OTHER_EXPFACTOR>
+			<PRECRASH>
+				<PRE_EVENT_MOVEMENT attrCat="-9999" attrCatStr="" formCat="1" sasCode="1" value="1">Going straight</PRE_EVENT_MOVEMENT>
+				<CRITICAL_EVENT attrCat="3795" attrCatStr="Other Vehicle Encroachment" formCat="1" sasCode="66" value="66">From crossing street, across path</CRITICAL_EVENT>
+				<CRITICAL_REASON attrCat="6" attrCatStr="Not coded to this vehicle" formCat="1" sasCode="1" value="1">Critical reason not coded to this vehicle</CRITICAL_REASON>
+				<STABILITY attrCat="-9999" attrCatStr="" formCat="1" sasCode="1" value="1">Tracking/stationary</STABILITY>
+				<LOCATION attrCat="-9999" attrCatStr="" formCat="1" sasCode="1" value="1">Stayed in original travel lane</LOCATION>
+				<CRASH_TYPE attrCat="3810" attrCatStr="Intersecting Paths veh damage" formCat="1" sasCode="89" value="89">Straight Paths: Struck on the Left</CRASH_TYPE>
+				<RIGHT_OF_WAY attrCat="-9999" attrCatStr="" formCat="1" sasCode="2" value="2">Yes</RIGHT_OF_WAY>
+				<PRE_CRASH_SPILL attrCat="" attrCatStr="" formCat="1" sasCode="1" value="1">No cargo</PRE_CRASH_SPILL>
+				<CARGO_SHIFT_LOCATION attrCat="" attrCatStr="" formCat="1" sasCode="1" value="1">No cargo</CARGO_SHIFT_LOCATION>
+				<SIGHT_LINE_RESTRICTION attrCat="-9999" attrCatStr="" formCat="2" sasCode="1" value="1">No sight restrictions</SIGHT_LINE_RESTRICTION>
+			</PRECRASH>
+			<ROADWAY_RELATED_FACTOR>
+				<ROAD_RELATED_FACTOR attrCat="-9999" attrCatStr="" formCat="2" sasCode="1" value="-8841">No roadway related factors</ROAD_RELATED_FACTOR>
+			</ROADWAY_RELATED_FACTOR>
+			<VEH_CONDFACTOR>
+				<VEH_COND_RELAT_FACTOR attrCat="-9999" attrCatStr="" formCat="2" sasCode="1" value="-8841">No vehicle related factors</VEH_COND_RELAT_FACTOR>
+			</VEH_CONDFACTOR>
+		</PrecrashAssessmentForm>
+	</NMVCCS>
+</Case>
