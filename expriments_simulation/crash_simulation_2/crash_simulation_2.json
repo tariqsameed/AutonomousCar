@@ -7,5 +7,6 @@
   "collision_point" : "308.46771202670277, 39.318581604695254",
   "collision_radius" : "1",
   "crash_simulations" : 100,
-  "road_gps" : "48.57548, 13.46862"
+  "road_gps" : "48.57548, 13.46862",
+  "road_beamng_collision_point" : "308.46771202670277, 39.318581604695254"
 }
