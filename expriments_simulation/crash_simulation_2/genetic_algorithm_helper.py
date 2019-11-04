@@ -3,7 +3,7 @@ import math
 import random
 
 from expriments_simulation.crash_simulation_2.crash_simulation_helper import getV1BeamNGCoordinaes, getV2BeamNGCoordinaes
-
+from expriments_simulation.crash_simulation_2.crash_simulation_2 import populations_fitness
 
 V1_SPEED_INDEX_1 = 0
 V1_SPEED_INDEX_2 = 1
