@@ -8,7 +8,9 @@ import numpy as np
 from expriments_simulation.crash_simulation_2.crash_simulation_helper import getV1BeamNGCoordinaes, getV2BeamNGCoordinaes
 from expriments_simulation.crash_simulation_2.crash_simulation_helper import AngleBtw2Points, getDistance
 from expriments_simulation.crash_simulation_2.vehicle_state_helper import DamageExtraction, DistanceExtraction, RotationExtraction
-
+import csv
+import sys
+sys.stdout = open('output.txt','w')
 
 # create road geometry in beamng.
 filename = 'passau3'
@@ -37,6 +39,35 @@ print("Lanes Loaded")
 
 width_dict = pickle.load(open(map_width_serialize, "rb"))
 print("Width Loaded") # tuples of lat and long
+
+
+# ----------------------------- create csv file --------------------------
+pos_crash_dict = {}
+
+csv_columns = ['chromosome','v1_speed', 'v1_waypoint', 'v2_speed','v2_waypoint', 'striker_damage', 'victim_damage',
+               'striker_distance', 'victim_distance', 'striker_rotation', 'victim_rotation', 'fitness_value']
+csv_file = "pos_crash_analysis.csv"
+try:
+    with open(csv_file, 'w', encoding='utf-8') as csvfile:
+        writer = csv.DictWriter(csvfile, fieldnames=csv_columns, delimiter=',', lineterminator='\n')
+        writer.writeheader()
+except IOError:
+    print("I/O error")
+# -------------------------------------------------------------------------
+
+def saveDictionaryToCsvFile():
+    csv_columns = ['chromosome', 'v1_speed', 'v1_waypoint', 'v2_speed', 'v2_waypoint', 'striker_damage',
+                   'victim_damage', 'striker_distance', 'victim_distance', 'striker_rotation', 'victim_rotation',
+                   'fitness_value']
+    csv_file = "pos_crash_analysis.csv"
+    try:
+        with open(csv_file, 'a', encoding='utf-8') as csvfile:
+            writer = csv.DictWriter(csvfile, fieldnames=csv_columns, delimiter=',', lineterminator='\n')
+            writer.writerow(pos_crash_dict)
+    except IOError:
+        print("I/O error")
+
+# -------------------------------------------------------------------------
 
 beamng = BeamNGpy('localhost', 64256, home='F:\Softwares\BeamNG_Research_SVN')
 scenario = Scenario('GridMap', 'crash_simulation_2')
@@ -138,7 +169,7 @@ damages = list()
 populations_fitness = {} # fitness function to store fitness values of chromosomes.
 
 # ----------------------------- genetic algorithm helper --------------------
-def generateRandomPopulation(N=10,Gene=14):
+def generateRandomPopulation(N=20,Gene=14):
     print("random population")
     initial_population = [[np.random.randint(0,9) for i in range(Gene)] for j in range(N)]
     return initial_population
@@ -180,7 +211,7 @@ def decoding_of_parameter(chromosome):
 # --------------------------- genetic algorithm helper  ----------------------
 
 #initial population
-populations = generateRandomPopulation(5,14)
+populations = generateRandomPopulation(10,14)
 print(populations)
 
 # code to run the simulation and set the fitness of the function.
@@ -216,6 +247,12 @@ for population in populations:
     scenario.add_vehicle(vehicleStriker, pos=(striker_points[0][0], striker_points[0][1], 0), rot=(0, 0, 192)) # get car heading angle
     scenario.add_vehicle(vehicleVictim, pos=(victim_points[0][0], victim_points[0][1], 0), rot=(0, 0, -85))
 
+    # save values to dictionary
+    pos_crash_dict["chromosome"] = population
+    pos_crash_dict["v1_speed"]  = striker_speeds[0]
+    pos_crash_dict["v1_waypoint"] = striker_points[0]
+    pos_crash_dict["v2_speed"] = victim_speeds[0]
+    pos_crash_dict["v2_waypoint"] = victim_points[0]
 
     scenario.make(beamng)
     bng = beamng.open(launch=True)
@@ -320,6 +357,20 @@ for population in populations:
                 # set the fitness function value
                 populations_fitness[tuple(population)] = multiObjectiveFitnessScore
 
+                # save value to dictionary.
+
+                pos_crash_dict["striker_damage"] = critical_damage_score[0]
+                pos_crash_dict["victim_damage"] = critical_damage_score[1]
+                pos_crash_dict["striker_distance"] = distance_score[0]
+                pos_crash_dict["victim_distance"] = distance_score[1]
+                pos_crash_dict["striker_rotation"] = rotation_score[0]
+                pos_crash_dict["victim_rotation"] = rotation_score[1]
+                pos_crash_dict["fitness_value"] = multiObjectiveFitnessScore
+
+                if critical_damage_score[0] > 0.0 or critical_damage_score[1] > 0.0:
+                    print("critical scenario")
+                    saveDictionaryToCsvFile()
+
                 break
 
 
@@ -331,7 +382,7 @@ for population in populations:
 ## -------------------------------- genetic algorithm helper --------------------------
 
 
-def tournament_parent_selection(populations, n=2, tsize=2):
+def tournament_parent_selection(populations, n=2, tsize=3):
     global populations_fitness
     print('tournament selection')
     selected_candidates = []
@@ -374,6 +425,7 @@ def crossover(chromosome1,chromosome2):
 
     # Return children
     #return child_1, child_2
+   # child_1 = random.shuffle(child_1)
     return child_1
 
 
@@ -398,7 +450,7 @@ def crossover_mutation(selected_parents):
 ## -------------------------------- genetic algorithm helper --------------------------
 
 # iteration of genetic algorithm.
-for _ in range(50): # Number of Generations to be Iterated.
+for _ in range(100): # Number of Generations to be Iterated.
     print("genetic algorithm simulation")
     selected_parents = tournament_parent_selection(populations)
     next_population = crossover_mutation(selected_parents=selected_parents)
@@ -432,6 +484,13 @@ for _ in range(50): # Number of Generations to be Iterated.
                              rot=(0, 0, 192))  # get car heading angle
         scenario.add_vehicle(vehicleVictim, pos=(victim_points[0][0], victim_points[0][1], 0),
                              rot=(0, 0, -85))  # get car heading anlge
+
+        # save values to dictionary
+        pos_crash_dict["chromosome"] = children
+        pos_crash_dict["v1_speed"] = striker_speeds[0]
+        pos_crash_dict["v1_waypoint"] = striker_points[0]
+        pos_crash_dict["v2_speed"] = victim_speeds[0]
+        pos_crash_dict["v2_waypoint"] = victim_points[0]
 
 
         scenario.make(beamng)
@@ -537,6 +596,19 @@ for _ in range(50): # Number of Generations to be Iterated.
 
                     # set the fitness function value
                     populations_fitness[tuple(children)] = multiObjectiveFitnessScore
+
+                    # save value to dictionary.
+
+                    pos_crash_dict["striker_damage"] = critical_damage_score[0]
+                    pos_crash_dict["victim_damage"] = critical_damage_score[1]
+                    pos_crash_dict["striker_distance"] = distance_score[0]
+                    pos_crash_dict["victim_distance"] = distance_score[1]
+                    pos_crash_dict["striker_rotation"] = rotation_score[0]
+                    pos_crash_dict["victim_rotation"] = rotation_score[1]
+                    pos_crash_dict["fitness_value"] = multiObjectiveFitnessScore
+
+                    if critical_damage_score[0] > 0 or critical_damage_score[1] > 0:
+                        saveDictionaryToCsvFile()
 
                     break
 
