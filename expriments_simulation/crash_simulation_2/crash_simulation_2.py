@@ -41,6 +41,8 @@ width_dict = pickle.load(open(map_width_serialize, "rb"))
 print("Width Loaded") # tuples of lat and long
 
 
+# ---------------------------- save genetic algorithm iteration-----------------------------------------
+f= open("genetic_algorithm_iteration.csv","w+")
 # ----------------------------- create csv file --------------------------
 pos_crash_dict = {}
 
@@ -112,13 +114,12 @@ for sample in three_way:
     print(getDistance(point1,point2))
 
     nodes0 = [
-        (point1[0], point1[1], -4, 4), # method to get the road width from elastic search or number of lanes. (forward and backward)
-        (point2[0], point2[1], -4, 4)
+        (point1[0], point1[1], 0, 8), # method to get the road width from elastic search or number of lanes. (forward and backward)
+        (point2[0], point2[1], 0, 8)
     ]
 
     road_a.nodes.extend(nodes0)
     scenario.add_road(road_a)
-
 
 
 vehicleStriker = Vehicle('striker', model='etk800', licence='PYTHON', colour='White')
@@ -235,8 +236,8 @@ for population in populations:
     # Add it to our scenario at this position and rotation
 
     # alpha = AngleBtw2Points([5,5],[7,4])
-    striker_alpha = AngleBtw2Points(road_striker[0],road_striker[1])
-    victim_alpha = AngleBtw2Points(road_victim[0],road_victim[1])
+    striker_alpha = AngleBtw2Points(road_striker[1], road_striker[0])
+    victim_alpha = AngleBtw2Points(road_victim[1], road_victim[0])
 
     print("striker angle")
     print(striker_alpha)
@@ -378,6 +379,14 @@ for population in populations:
 
     finally:
         bng.close()
+
+# -------------- save genetic algorithm iterator -------------------------------------
+lines = ""
+for k, v in populations_fitness.items():
+    lines = lines + str(k) + ',' + str(v) + ','
+
+lines = lines[:-1]
+f.writelines(lines)
 
 ## -------------------------------- genetic algorithm helper --------------------------
 
@@ -640,5 +649,15 @@ for _ in range(100): # Number of Generations to be Iterated.
         print("length")
         print(len(populations_fitness))
         populations = list(populations_fitness.keys())
+
+        # -------------- save genetic algorithm iterator -------------------------------------
+        lines = ""
+        for k, v in populations_fitness.items():
+            lines = lines + str(k) + ',' + str(v) + ','
+
+        lines = lines[:-1]
+        f.writelines(lines)
+
+        ## -------------------------------- genetic algorithm helper --------------------------
 
         # iteratoin of genetic algorithm finished.

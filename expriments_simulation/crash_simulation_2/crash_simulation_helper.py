@@ -27,7 +27,7 @@ def getPolyLineCoordinates(node_a,node_b, distance,width):
     dy = float(point2[1] - node_a[1])
 
     L = float(math.sqrt(float(float(dx * dx) + float(dy * dy)))) # handle division by zero
-    U = (float(-dy / L), float(dx / L))
+    U = (float(dy / L), float(dx / L))
     F = float(width)
 
     # Point on one side
