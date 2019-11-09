@@ -1,11 +1,14 @@
 {
-  "crash_report_id": "1234",
-  "csv_file": "",
-  "striker_distance_from_center": "",
-  "victim_distance_from_center": "",
-  "collision_point" : "",
-  "collision_radius" : "",
-  "striker_car_type" : "",
-  "collision_car_type" : "",
-  "crash_simulations" : 1000
+  "crash_report_id": "2005045705823",
+  "intersection_type" : "C" ,
+  "road_type" : "two way,two lane undivided",
+  "initial_striker_car_direction" : "north",
+  "initial_victim_car_direction" : "east",
+  "collision_point" : "308.46771202670277, 39.318581604695254",
+  "collision_radius" : "1",
+  "crash_simulations" : 200,
+  "road_gps" : "48.13749, 11.5559",
+  "road_beamng_collision_point" : "308.46771202670277, 39.318581604695254"
 }
+
+// 48.13749, 11.5559
