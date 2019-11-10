@@ -1,115 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <osm version="0.6" generator="Overpass API 0.7.55.7 8b86ff77">
 <note>The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.</note>
-<meta osm_base="2019-11-08T12:19:02Z"/>
+<meta osm_base="2019-11-10T11:01:02Z"/>
 
-  <node id="277383" lat="48.1374960" lon="11.5559027"/>
-  <node id="1955341" lat="48.1363843" lon="11.5558655"/>
-  <node id="19107558" lat="48.1375164" lon="11.5532572"/>
-  <node id="2944348393" lat="48.1378822" lon="11.5559166"/>
-  <node id="3498172714" lat="48.1364970" lon="11.5558689">
+  <node id="21409936" lat="48.1586353" lon="11.5196901"/>
+  <node id="21411044" lat="48.1572798" lon="11.5198226"/>
+  <node id="30898097" lat="48.1571668" lon="11.5166092"/>
+  <node id="1649291582" lat="48.1573769" lon="11.5225152"/>
+  <node id="1649291586" lat="48.1575004" lon="11.5262623"/>
+  <node id="1660771762" lat="48.1572097" lon="11.5180329"/>
+  <node id="1698127990" lat="48.1559885" lon="11.5199130"/>
+  <node id="2279673598" lat="48.1560338" lon="11.5199114">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing_ref" v="pelican"/>
     <tag k="highway" v="traffic_signals"/>
-    <tag k="traffic_signals:direction" v="backward"/>
   </node>
-  <node id="3498172717" lat="48.1373378" lon="11.5558974">
-    <tag k="highway" v="traffic_signals"/>
-    <tag k="traffic_signals:direction" v="forward"/>
-  </node>
-  <node id="3498172719" lat="48.1374924" lon="11.5561120">
-    <tag k="highway" v="traffic_signals"/>
-    <tag k="traffic_signals:direction" v="forward"/>
-  </node>
-  <node id="3498172720" lat="48.1374977" lon="11.5556857">
-    <tag k="highway" v="traffic_signals"/>
-    <tag k="traffic_signals:direction" v="backward"/>
-  </node>
-  <node id="3498172723" lat="48.1376104" lon="11.5559068">
-    <tag k="highway" v="traffic_signals"/>
-    <tag k="traffic_signals:direction" v="backward"/>
-  </node>
-  <node id="3709902956" lat="48.1374900" lon="11.5562501"/>
-  <node id="3709902960" lat="48.1376653" lon="11.5559088"/>
-  <node id="3861525018" lat="48.1367131" lon="11.5558762"/>
-  <node id="4692487276" lat="48.1368316" lon="11.5558802"/>
-  <node id="4692487278" lat="48.1369220" lon="11.5558833"/>
-  <node id="5249554562" lat="48.1374863" lon="11.5564799"/>
-  <way id="37665691">
-    <nd ref="1955341"/>
-    <nd ref="3498172714"/>
-    <nd ref="3861525018"/>
-    <nd ref="4692487276"/>
-    <nd ref="4692487278"/>
-    <nd ref="3498172717"/>
-    <nd ref="277383"/>
+  <node id="2709412842" lat="48.1574451" lon="11.5248764"/>
+  <node id="2709429302" lat="48.1573325" lon="11.5212850"/>
+  <node id="2709429343" lat="48.1573101" lon="11.5206147"/>
+  <node id="2709429356" lat="48.1572426" lon="11.5188733"/>
+  <node id="2709501311" lat="48.1566403" lon="11.5198672"/>
+  <node id="3307782364" lat="48.1585369" lon="11.5196984"/>
+  <node id="3307782372" lat="48.1574967" lon="11.5261686"/>
+  <node id="4342399605" lat="48.1574117" lon="11.5237194"/>
+  <node id="4342399606" lat="48.1574329" lon="11.5244537"/>
+  <way id="4042895">
+    <nd ref="21409936"/>
+    <nd ref="3307782364"/>
+    <nd ref="21411044"/>
     <tag k="cycleway" v="track"/>
-    <tag k="highway" v="secondary"/>
-    <tag k="lanes" v="4"/>
-    <tag k="lit" v="yes"/>
-    <tag k="maxspeed" v="50"/>
-    <tag k="name" v="Paul-Heyse-Straße"/>
-    <tag k="oneway" v="no"/>
-    <tag k="surface" v="asphalt"/>
-    <tag k="tmc" v="DE:27997/30131"/>
+    <tag k="highway" v="residential"/>
+    <tag k="maxspeed" v="30"/>
+    <tag k="name" v="Hubertusstraße"/>
   </way>
-  <way id="37665696">
-    <nd ref="
-
-
-
-    "/>
-    <nd ref="3498172720"/>
-    <nd ref="19107558"/>
-    <tag k="highway" v="secondary"/>
-    <tag k="lanes" v="4"/>
-    <tag k="lit" v="yes"/>
-    <tag k="maxspeed" v="50"/>
-    <tag k="name" v="Schwanthalerstraße"/>
-    <tag k="sidewalk" v="both"/>
-    <tag k="surface" v="asphalt"/>
-    <tag k="tmc" v="DE:27975/27976"/>
+  <way id="81965544">
+    <nd ref="21411044"/>
+    <nd ref="2709501311"/>
+    <nd ref="2279673598"/>
+    <nd ref="1698127990"/>
+    <tag k="cycleway" v="track"/>
+    <tag k="highway" v="residential"/>
+    <tag k="maxspeed" v="30"/>
+    <tag k="name" v="Hubertusstraße"/>
   </way>
-  <way id="37665697">
-    <nd ref="277383"/>
-    <nd ref="3498172723"/>
-    <tag k="bicycle" v="yes"/>
-    <tag k="highway" v="secondary"/>
-    <tag k="lanes" v="4"/>
-    <tag k="lit" v="yes"/>
-    <tag k="maxspeed" v="50"/>
-    <tag k="name" v="Paul-Heyse-Straße"/>
-    <tag k="oneway" v="no"/>
-    <tag k="surface" v="asphalt"/>
-    <tag k="tmc" v="DE:30131/27998"/>
+  <way id="81965546">
+    <nd ref="21411044"/>
+    <nd ref="2709429343"/>
+    <nd ref="2709429302"/>
+    <nd ref="1649291582"/>
+    <nd ref="4342399605"/>
+    <nd ref="4342399606"/>
+    <nd ref="2709412842"/>
+    <nd ref="3307782372"/>
+    <nd ref="1649291586"/>
+    <tag k="highway" v="residential"/>
+    <tag k="maxspeed" v="30"/>
+    <tag k="name" v="Prinzenstraße"/>
   </way>
-  <way id="357204350">
-    <nd ref="5249554562"/>
-    <nd ref="3709902956"/>
-    <nd ref="3498172719"/>
-    <nd ref="277383"/>
-    <tag k="highway" v="secondary"/>
-    <tag k="lanes" v="4"/>
-    <tag k="lanes:forward" v="2"/>
-    <tag k="lit" v="yes"/>
-    <tag k="maxspeed" v="50"/>
-    <tag k="name" v="Schwanthalerstraße"/>
-    <tag k="sidewalk" v="both"/>
+  <way id="153369901">
+    <nd ref="21411044"/>
+    <nd ref="2709429356"/>
+    <nd ref="1660771762"/>
+    <nd ref="30898097"/>
+    <tag k="highway" v="residential"/>
+    <tag k="maxspeed" v="30"/>
+    <tag k="name" v="Prinzenstraße"/>
     <tag k="surface" v="asphalt"/>
-    <tag k="tmc" v="DE:27976/27977"/>
-    <tag k="turn:lanes:forward" v="left|through;right"/>
-  </way>
-  <way id="384535860">
-    <nd ref="3498172723"/>
-    <nd ref="3709902960"/>
-    <nd ref="2944348393"/>
-    <tag k="bicycle" v="yes"/>
-    <tag k="highway" v="secondary"/>
-    <tag k="lanes" v="5"/>
-    <tag k="lit" v="yes"/>
-    <tag k="maxspeed" v="50"/>
-    <tag k="name" v="Paul-Heyse-Straße"/>
-    <tag k="oneway" v="no"/>
-    <tag k="surface" v="asphalt"/>
-    <tag k="tmc" v="DE:30131/27998"/>
   </way>
 
 </osm>
