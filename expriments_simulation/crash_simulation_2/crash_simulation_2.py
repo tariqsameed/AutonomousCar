@@ -212,7 +212,7 @@ def decoding_of_parameter(chromosome):
 # --------------------------- genetic algorithm helper  ----------------------
 
 #initial population
-populations = generateRandomPopulation(10,14)
+populations = generateRandomPopulation(5,14)
 print(populations)
 
 # code to run the simulation and set the fitness of the function.
@@ -386,7 +386,7 @@ for k, v in populations_fitness.items():
     lines = lines + str(k) + ',' + str(v) + ','
 
 lines = lines[:-1]
-f.writelines(lines)
+f.writelines(lines + '\n')
 
 ## -------------------------------- genetic algorithm helper --------------------------
 
@@ -459,7 +459,7 @@ def crossover_mutation(selected_parents):
 ## -------------------------------- genetic algorithm helper --------------------------
 
 # iteration of genetic algorithm.
-for _ in range(100): # Number of Generations to be Iterated.
+for _ in range(3): # Number of Generations to be Iterated.
     print("genetic algorithm simulation")
     selected_parents = tournament_parent_selection(populations)
     next_population = crossover_mutation(selected_parents=selected_parents)
@@ -656,7 +656,7 @@ for _ in range(100): # Number of Generations to be Iterated.
             lines = lines + str(k) + ',' + str(v) + ','
 
         lines = lines[:-1]
-        f.writelines(lines)
+        f.writelines(lines + '\n')
 
         ## -------------------------------- genetic algorithm helper --------------------------
 

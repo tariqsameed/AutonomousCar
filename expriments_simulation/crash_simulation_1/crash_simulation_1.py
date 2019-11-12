@@ -5,9 +5,9 @@ from beamngpy.sensors import Electrics, Damage
 import math
 import random
 import numpy as np
-from expriments_simulation.crash_simulation_2.crash_simulation_helper import getV1BeamNGCoordinaes, getV2BeamNGCoordinaes
-from expriments_simulation.crash_simulation_2.crash_simulation_helper import AngleBtw2Points, getDistance
-from expriments_simulation.crash_simulation_2.vehicle_state_helper import DamageExtraction, DistanceExtraction, RotationExtraction
+from expriments_simulation.crash_simulation_1.crash_simulation_helper import getV1BeamNGCoordinaes, getV2BeamNGCoordinaes
+from expriments_simulation.crash_simulation_1.crash_simulation_helper import AngleBtw2Points, getDistance
+from expriments_simulation.crash_simulation_1.vehicle_state_helper import DamageExtraction, DistanceExtraction, RotationExtraction
 import csv
 import sys
 sys.stdout = open('output.txt','w')
@@ -378,7 +378,7 @@ for k, v in populations_fitness.items():
     lines = lines + str(k) + ',' + str(v) + ','
 
 lines = lines[:-1]
-f.writelines(lines)
+f.writelines(lines + '\n')
 
 ## -------------------------------- genetic algorithm helper --------------------------
 
@@ -639,7 +639,7 @@ for _ in range(3): # Number of Generations to be Iterated.
         print("genetic algorithm saving iteration")
         print(lines)
         lines = lines[:-1]
-        f.writelines(lines)
+        f.writelines(lines + '\n')
 
         ## -------------------------------- genetic algorithm helper --------------------------
 
