@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="Overpass API 0.7.55.1009 5e627b63">
+<note>The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.</note>
+<meta osm_base="2019-11-15T16:52:02Z"/>
+
+  <node id="26110944" lat="48.1204828" lon="11.5270417"/>
+  <node id="26110945" lat="48.1205217" lon="11.5274866"/>
+  <node id="26110946" lat="48.1205258" lon="11.5282185"/>
+  <node id="26110947" lat="48.1204232" lon="11.5288879"/>
+  <node id="26110950" lat="48.1198255" lon="11.5301400">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="26110985" lat="48.1212659" lon="11.5225566"/>
+  <node id="26110987" lat="48.1202151" lon="11.5224194"/>
+  <node id="26110989" lat="48.1188117" lon="11.5224787"/>
+  <node id="26111069" lat="48.1203417" lon="11.5254555"/>
+  <node id="26111098" lat="48.1206469" lon="11.5196906"/>
+  <node id="26111103" lat="48.1204991" lon="11.5203237">
+    <tag k="crossing_ref" v="zebra"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="26111104" lat="48.1203069" lon="11.5212850"/>
+  <node id="26111107" lat="48.1202186" lon="11.5221723"/>
+  <node id="295283185" lat="48.1198703" lon="11.5300501"/>
+  <node id="343103017" lat="48.1204920" lon="11.5285715"/>
+  <node id="343103018" lat="48.1205384" lon="11.5279078"/>
+  <node id="654025460" lat="48.1203548" lon="11.5255841"/>
+  <node id="654252793" lat="48.1202129" lon="11.5222658">
+    <tag k="crossing" v="uncontrolled"/>
+    <tag k="crossing:island" v="no"/>
+    <tag k="crossing_ref" v="zebra"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="no"/>
+  </node>
+  <node id="740715432" lat="48.1202698" lon="11.5292986"/>
+  <node id="761145279" lat="48.1202195" lon="11.5229003"/>
+  <node id="761145283" lat="48.1202354" lon="11.5240772"/>
+  <node id="761145284" lat="48.1207621" lon="11.5224702"/>
+  <node id="761145292" lat="48.1202466" lon="11.5242735"/>
+  <node id="762722953" lat="48.1202630" lon="11.5215708"/>
+  <node id="1234677679" lat="48.1205649" lon="11.5224431"/>
+  <node id="1234677681" lat="48.1204420" lon="11.5224330"/>
+  <node id="1234677682" lat="48.1203272" lon="11.5224280"/>
+  <node id="1234677687" lat="48.1209177" lon="11.5224930"/>
+  <node id="1240913840" lat="48.1203864" lon="11.5289984"/>
+  <node id="1574267211" lat="48.1202311" lon="11.5239221"/>
+  <node id="2334010485" lat="48.1191797" lon="11.5224716"/>
+  <node id="2399233973" lat="48.1204589" lon="11.5204917"/>
+  <node id="2461510489" lat="48.1202274" lon="11.5235989"/>
+  <node id="2875114576" lat="48.1197407" lon="11.5224437"/>
+  <node id="3073246719" lat="48.1191244" lon="11.5224740"/>
+  <node id="3116949015" lat="48.1203474" lon="11.5255184"/>
+  <node id="4214245822" lat="48.1204490" lon="11.5205436"/>
+  <node id="5834003690" lat="48.1199830" lon="11.5298381"/>
+  <node id="5834003768" lat="48.1199373" lon="11.5224336"/>
+  <node id="6069320640" lat="48.1205393" lon="11.5201514"/>
+  <node id="6418446133" lat="48.1205939" lon="11.5199174"/>
+  <node id="6418446143" lat="48.1204643" lon="11.5204691"/>
+  <node id="6438420562" lat="48.1199235" lon="11.5224343"/>
+  <node id="6939232998" lat="48.1205307" lon="11.5277129"/>
+  <node id="6939233005" lat="48.1205101" lon="11.5283827"/>
+  <node id="6939233023" lat="48.1200148" lon="11.5297782"/>
+  <node id="6939233026" lat="48.1201711" lon="11.5294842"/>
+  <node id="6939233030" lat="48.1200983" lon="11.5296212"/>
+  <node id="6939233037" lat="48.1202103" lon="11.5294105"/>
+  <node id="6939233039" lat="48.1201987" lon="11.5294323"/>
+  <way id="4347877">
+    <nd ref="26110950"/>
+    <nd ref="295283185"/>
+    <nd ref="5834003690"/>
+    <nd ref="6939233023"/>
+    <nd ref="6939233030"/>
+    <nd ref="6939233026"/>
+    <nd ref="6939233039"/>
+    <nd ref="6939233037"/>
+    <nd ref="740715432"/>
+    <nd ref="1240913840"/>
+    <nd ref="26110947"/>
+    <nd ref="343103017"/>
+    <nd ref="6939233005"/>
+    <nd ref="26110946"/>
+    <nd ref="343103018"/>
+    <nd ref="6939232998"/>
+    <nd ref="26110945"/>
+    <nd ref="26110944"/>
+    <nd ref="654025460"/>
+    <nd ref="3116949015"/>
+    <nd ref="26111069"/>
+    <nd ref="761145292"/>
+    <nd ref="761145283"/>
+    <nd ref="1574267211"/>
+    <nd ref="2461510489"/>
+    <nd ref="761145279"/>
+    <nd ref="26110987"/>
+    <tag k="highway" v="residential"/>
+    <tag k="maxspeed" v="30"/>
+    <tag k="name" v="Hinterbärenbadstraße"/>
+  </way>
+  <way id="4347903">
+    <nd ref="26110985"/>
+    <nd ref="1234677687"/>
+    <nd ref="761145284"/>
+    <nd ref="1234677679"/>
+    <nd ref="1234677681"/>
+    <nd ref="1234677682"/>
+    <nd ref="26110987"/>
+    <tag k="highway" v="residential"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="30"/>
+    <tag k="name" v="Fernpaßstraße"/>
+    <tag k="surface" v="asphalt"/>
+  </way>
+  <way id="4885809">
+    <nd ref="26110989"/>
+    <nd ref="3073246719"/>
+    <nd ref="2334010485"/>
+    <nd ref="2875114576"/>
+    <nd ref="6438420562"/>
+    <nd ref="5834003768"/>
+    <nd ref="26110987"/>
+    <tag k="cycleway" v="opposite"/>
+    <tag k="highway" v="residential"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="30"/>
+    <tag k="name" v="Fernpaßstraße"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="oneway:bicycle" v="no"/>
+    <tag k="surface" v="asphalt"/>
+  </way>
+  <way id="121104941">
+    <nd ref="26111098"/>
+    <nd ref="6418446133"/>
+    <nd ref="6069320640"/>
+    <nd ref="26111103"/>
+    <nd ref="6418446143"/>
+    <nd ref="2399233973"/>
+    <nd ref="4214245822"/>
+    <nd ref="26111104"/>
+    <nd ref="762722953"/>
+    <nd ref="26111107"/>
+    <nd ref="654252793"/>
+    <nd ref="26110987"/>
+    <tag k="highway" v="residential"/>
+    <tag k="maxspeed" v="30"/>
+    <tag k="name" v="Hinterbärenbadstraße"/>
+  </way>
+
+</osm>
