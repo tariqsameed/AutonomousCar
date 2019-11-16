@@ -1,11 +1,11 @@
 import math
 from math import atan2,degrees
 
-road_a_distance = 30
-road_b_distance = 30
+road_a_distance = 20
+road_b_distance = 20
 
-road_a = [(241, 72),(238, 143)]
-road_b = [(167, 139),(238, 143)]
+road_a = [(203, 125), (202, 156)]
+road_b = [(238, 156), (202, 156)]
 
 def AngleBtw2Points(pointA, pointB):
     changeInX = pointB[0] - pointA[0]
