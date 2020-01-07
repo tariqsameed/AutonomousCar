@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="Overpass API 0.7.55.7 8b86ff77">
+<note>The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.</note>
+<meta osm_base="2019-11-18T15:47:02Z"/>
+
+  <node id="1955554" lat="48.1645659" lon="11.5644001">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="16527629" lat="48.1663362" lon="11.5620919"/>
+  <node id="16527631" lat="48.1646126" lon="11.5627197"/>
+  <node id="16527632" lat="48.1621417" lon="11.5622800"/>
+  <node id="16527634" lat="48.1636602" lon="11.5627361"/>
+  <node id="16527676" lat="48.1646824" lon="11.5607661"/>
+  <node id="27479902" lat="48.1646340" lon="11.5631156"/>
+  <node id="27733777" lat="48.1611648" lon="11.5619199"/>
+  <node id="267151004" lat="48.1669056" lon="11.5618891"/>
+  <node id="315658945" lat="48.1645287" lon="11.5627512"/>
+  <node id="427540544" lat="48.1645747" lon="11.5643321"/>
+  <node id="500288852" lat="48.1615234" lon="11.5620472"/>
+  <node id="660733764" lat="48.1682976" lon="11.5615714"/>
+  <node id="678298113" lat="48.1646196" lon="11.5622316"/>
+  <node id="678298829" lat="48.1634350" lon="11.5626662"/>
+  <node id="1077641170" lat="48.1666136" lon="11.5619962"/>
+  <node id="1077641180" lat="48.1663828" lon="11.5620734">
+    <tag k="crossing" v="marked"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="no"/>
+  </node>
+  <node id="1077641229" lat="48.1638163" lon="11.5627867">
+    <tag k="crossing" v="uncontrolled"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="no"/>
+  </node>
+  <node id="1329697700" lat="48.1658013" lon="11.5622931"/>
+  <node id="1562571627" lat="48.1612241" lon="11.5619392">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing_ref" v="toucan"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="tactile_paving" v="no"/>
+  </node>
+  <node id="1562571630" lat="48.1612732" lon="11.5619588">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="1564838749" lat="48.1619182" lon="11.5621959"/>
+  <node id="1692572876" lat="48.1678244" lon="11.5616820"/>
+  <node id="1692629637" lat="48.1646454" lon="11.5617308"/>
+  <node id="2357421298" lat="48.1640148" lon="11.5628191"/>
+  <node id="2786527428" lat="48.1670833" lon="11.5618491"/>
+  <node id="2786527442" lat="48.1678046" lon="11.5616866"/>
+  <node id="2786527464" lat="48.1671967" lon="11.5618235"/>
+  <node id="2786527534" lat="48.1671229" lon="11.5618402"/>
+  <node id="2836611150" lat="48.1678577" lon="11.5616742"/>
+  <node id="3123091177" lat="48.1647337" lon="11.5626762"/>
+  <node id="3310019816" lat="48.1635003" lon="11.5626868"/>
+  <node id="3310019821" lat="48.1635208" lon="11.5626931"/>
+  <node id="3551117668" lat="48.1612982" lon="11.5619676"/>
+  <node id="4549493337" lat="48.1646757" lon="11.5610609"/>
+  <node id="4729062274" lat="48.1613669" lon="11.5619925"/>
+  <way id="5346622">
+    <nd ref="16527631"/>
+    <nd ref="27479902"/>
+    <nd ref="427540544"/>
+    <nd ref="1955554"/>
+    <tag k="bicycle" v="yes"/>
+    <tag k="cycleway" v="opposite"/>
+    <tag k="highway" v="residential"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="30"/>
+    <tag k="name" v="Clemensstraße"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="oneway:bicycle" v="no"/>
+    <tag k="smoothness" v="excellent"/>
+    <tag k="surface" v="asphalt"/>
+  </way>
+  <way id="29279743">
+    <nd ref="16527631"/>
+    <nd ref="315658945"/>
+    <nd ref="2357421298"/>
+    <nd ref="1077641229"/>
+    <nd ref="16527634"/>
+    <nd ref="3310019821"/>
+    <nd ref="3310019816"/>
+    <nd ref="678298829"/>
+    <nd ref="16527632"/>
+    <nd ref="1564838749"/>
+    <nd ref="500288852"/>
+    <nd ref="4729062274"/>
+    <nd ref="3551117668"/>
+    <nd ref="1562571630"/>
+    <nd ref="1562571627"/>
+    <nd ref="27733777"/>
+    <tag k="bicycle" v="yes"/>
+    <tag k="highway" v="residential"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="30"/>
+    <tag k="name" v="Winzererstraße"/>
+    <tag k="smoothness" v="good"/>
+    <tag k="surface" v="asphalt"/>
+  </way>
+  <way id="157028977">
+    <nd ref="660733764"/>
+    <nd ref="2836611150"/>
+    <nd ref="1692572876"/>
+    <nd ref="2786527442"/>
+    <nd ref="2786527464"/>
+    <nd ref="2786527534"/>
+    <nd ref="2786527428"/>
+    <nd ref="267151004"/>
+    <nd ref="1077641170"/>
+    <nd ref="1077641180"/>
+    <nd ref="16527629"/>
+    <nd ref="1329697700"/>
+    <nd ref="3123091177"/>
+    <nd ref="16527631"/>
+    <tag k="bicycle" v="designated"/>
+    <tag k="bicycle_road" v="yes"/>
+    <tag k="highway" v="residential"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="30"/>
+    <tag k="motor_vehicle" v="yes"/>
+    <tag k="name" v="Winzererstraße"/>
+    <tag k="sidewalk" v="both"/>
+    <tag k="surface" v="asphalt"/>
+  </way>
+  <way id="181922320">
+    <nd ref="16527631"/>
+    <nd ref="678298113"/>
+    <nd ref="1692629637"/>
+    <nd ref="4549493337"/>
+    <nd ref="16527676"/>
+    <tag k="bicycle" v="designated"/>
+    <tag k="bicycle_road" v="yes"/>
+    <tag k="highway" v="residential"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="30"/>
+    <tag k="motor_vehicle" v="yes"/>
+    <tag k="name" v="Saarstraße"/>
+    <tag k="surface" v="asphalt"/>
+  </way>
+
+</osm>

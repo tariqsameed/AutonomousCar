@@ -1,0 +1,2 @@
+chromosome,v1_speed,v1_waypoint,v2_speed,v2_waypoint,striker_damage,victim_damage,striker_distance,victim_distance,striker_rotation,victim_rotation,fitness_value
+"[5, 6, 7, 2, 5, 5, 8, 8, 7, 5, 4, 2, 4, 7]",56,"(241.08724609554653, 93.53852803928368)",58,"(193.11492681988577, 141.4665113156039)",1.0,1.0,0.1,0.2,0.3,0.3,2.9

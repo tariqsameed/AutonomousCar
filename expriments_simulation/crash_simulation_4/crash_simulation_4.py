@@ -74,7 +74,7 @@ def saveDictionaryToCsvFile():
 beamng = BeamNGpy('localhost', 64256, home='F:\Softwares\BeamNG_Research_SVN')
 scenario = Scenario('GridMap', 'crash_simulation_1')
 
-road_a = Road('track_editor_C_center', looped=False)
+road_a = Road('custom_track_center', looped=False)
 
 collision_point =[]
 four_way = []
@@ -87,28 +87,28 @@ for tup in graph_degree:
         print(tup[0],tup[1])
         four_way_coordinate.append(node_dict[tup[0]])
         four_way_points = graph.neighbors(tup[0])
-        print(four_way_points)
+        #print(four_way_points)
         print("collision point")
         print(beamng_dict[tup[0]])
         collision_point.append(beamng_dict[tup[0]])
         for node in four_way_points:
             way_geo = (node, node_dict[tup[0]], lane_dict[tup[0]], width_dict[tup[0]])  # node, coordinate, number of lanes , width
-            print(way_geo)
+            #print(way_geo)
             pair = (tup[0], node)
             four_way.append(pair)
             four_way_coordinate.append(node_dict[node])
 
 
-print(four_way)
+#print(four_way)
 for sample in four_way:
     print("4 way")
-    road_a = Road('track_editor_C_center', looped=False)
+    road_a = Road('custom_track_center', looped=False)
 
     point1 = list(beamng_dict[sample[0]])
     point2 = list(beamng_dict[sample[1]])
 
-    print(point1, point2)
-    print(getDistance(point1,point2))
+    #print(point1, point2)
+    #print(getDistance(point1,point2))
 
     nodes0 = [
         (point1[0], point1[1], 0, 16), # method to get the road width from elastic search or number of lanes. (forward and backward)
@@ -119,7 +119,7 @@ for sample in four_way:
     scenario.add_road(road_a)
 
 
-vehicleStriker = Vehicle('striker', model='etk800', licence='PYTHON', colour='White')
+vehicleStriker = Vehicle('striker', model='etk800', licence='PYTHON', colour='Yellow')
 damageStriker = Damage();
 vehicleStriker.attach_sensor('damagesS', damageStriker);
 
@@ -142,7 +142,7 @@ POINT_OF_IMPACT_RADIUS = 10
 POINT_OF_IMPACT_ANGLE_1 = 11
 POINT_OF_IMPACT_ANGLE_2 = 12
 POINT_OF_IMPACT_ANGLE_3 = 13
-IMPACT_POSITION_X = 202
+IMPACT_POSITION_X = 204
 IMPACT_POSITION_Y = 156
 
 
@@ -164,6 +164,12 @@ populations_fitness = {}  # fitness function to store fitness values of chromoso
 def generateRandomPopulation(N=5,Gene=14):
     print("random population")
     initial_population = [[np.random.randint(0,9) for i in range(Gene)] for j in range(N)]
+    initial_population = []
+    initial_population.append([1, 7, 8, 3, 2, 2, 4, 8, 7, 4, 1, 7, 3, 2])
+    initial_population.append([5, 1, 5, 4, 7, 0, 8, 8, 5, 6, 3, 4, 0, 7])
+    initial_population.append([2, 2, 6, 1, 8, 4, 0, 7, 0, 4, 1, 4, 5, 7])
+    initial_population.append([4, 6, 4, 0, 7, 5, 2, 4, 0, 2, 3, 5, 3, 4])
+    initial_population.append([4, 7, 0, 1, 0, 3, 0, 8, 1, 0, 6, 6, 1, 3])
     return initial_population
 
 
@@ -204,11 +210,13 @@ def decoding_of_parameter(chromosome):
 
 #initial population
 populations = generateRandomPopulation(5,14)
+print('initial population')
 print(populations)
 
 
 # code to run the simulation and set the fitness of the function.
 for population in populations:
+    print(' ')
     print(population)
     collision_points = []
     striker_points = []
@@ -217,6 +225,7 @@ for population in populations:
     victim_speeds = []
 
     beamng_parameters = decoding_of_parameter(population)
+    print('beamng parameters')
     print(beamng_parameters)
     striker_speeds.append(beamng_parameters[0])
     striker_points.append(beamng_parameters[1])
@@ -228,17 +237,9 @@ for population in populations:
     # Add it to our scenario at this position and rotation
 
     # alpha = AngleBtw2Points([5,5],[7,4])
-    striker_alpha = AngleBtw2Points(road_striker[1], road_striker[0])
-    victim_alpha = AngleBtw2Points(road_victim[1], road_victim[0])
-
-    print("striker angle")
-    print(striker_alpha)
-    print("victim angle")
-    print(victim_alpha)
-
-
-    scenario.add_vehicle(vehicleStriker, pos=(striker_points[0][0], striker_points[0][1], 0), rot=(0, 0, 180)) # get car heading angle
     scenario.add_vehicle(vehicleVictim, pos=(victim_points[0][0], victim_points[0][1], 0), rot=(0, 0, 90))
+    scenario.add_vehicle(vehicleStriker, pos=(striker_points[0][0], striker_points[0][1], 0), rot=(0, 0, 180)) # get car heading angle
+
 
         # save values to dictionary
     pos_crash_dict["chromosome"] = population
@@ -449,16 +450,14 @@ def crossover_mutation(selected_parents):
 ## -------------------------------- genetic algorithm helper --------------------------
 
     # iteration of genetic algorithm.
-for _ in range(3):  # Number of Generations to be Iterated.
+for _ in range(20):  # Number of Generations to be Iterated.
     print("genetic algorithm simulation")
     selected_parents = tournament_parent_selection(populations)
     next_population = crossover_mutation(selected_parents=selected_parents)
     print("population")
     print(populations)
-    print("selected parents")
-    print(selected_parents)
-    print("next population")
-    print(next_population)
+    print("selected parents " + str(selected_parents))
+    print("next population " + str(next_population))
 
     for children in next_population:
         print("iteration of children")
@@ -469,6 +468,7 @@ for _ in range(3):  # Number of Generations to be Iterated.
         victim_speeds = []
 
         beamng_parameters = decoding_of_parameter(population)
+        print('beamng parameters')
         print(beamng_parameters)
         striker_speeds.append(beamng_parameters[0])
         striker_points.append(beamng_parameters[1])

@@ -123,10 +123,10 @@ def decoding_of_parameter(chromosome):
 
 
     # position length
-    total_distance_v1 = float(int(str(chromosome[V1_DISTANCE_INDEX_1]) + str(chromosome[V1_DISTANCE_INDEX_2])) / 100)
+    total_distance_v1 = float(int(str(chromosome[V1_DISTANCE_INDEX_1]) + str(chromosome[V1_DISTANCE_INDEX_2])) / 50)
     v1_pos_bg = getV1BeamNGCoordinaes(total_distance_v1,  chromosome[V1_WIDTH_INDEX])  # get beamng coordinates (polyline coordinate). it will be always calculated from center - joint
 
-    total_distance_v2 = float(int(str(chromosome[V2_DISTANCE_INDEX_1]) + str(chromosome[V2_DISTANCE_INDEX_2])) / 100)
+    total_distance_v2 = float(int(str(chromosome[V2_DISTANCE_INDEX_1]) + str(chromosome[V2_DISTANCE_INDEX_2])) / 50)
     v2_pos_bg = getV2BeamNGCoordinaes(total_distance_v2, chromosome[V2_WIDTH_INDEX])  # get beamng coordinates (polyline coordinate). it will be always calculated from center - joint
 
     return v1_speed, v1_pos_bg, v2_speed, v2_pos_bg, impact_point

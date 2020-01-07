@@ -55,7 +55,8 @@ def crossover_mutation(selected_parents):
                 population_next.append(mutation(child.tolist()))
 
     print(population_next)
-    return population_next
+    return population_next[:2]
+
 
 
 def tournament_parent_selection(populations, n=2, tsize=5):
@@ -69,7 +70,7 @@ def tournament_parent_selection(populations, n=2, tsize=5):
         current = None
         for candidate in candidates:
             if fittest_population_in_tournament is None:
-                fittest_population_in_tournament = random.randint(1,10)
+                fittest_population_in_tournament = random.randint(1,10) # assign the fitness of current chromosome.
                 current = candidate
 
             if populations_fitness[tuple(candidate)] > fittest_population_in_tournament:

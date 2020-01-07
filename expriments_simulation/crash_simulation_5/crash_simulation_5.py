@@ -5,15 +5,15 @@ from beamngpy.sensors import Electrics, Damage
 import math
 import random
 import numpy as np
-from expriments_simulation.crash_simulation_2.crash_simulation_helper import getV1BeamNGCoordinaes, getV2BeamNGCoordinaes
-from expriments_simulation.crash_simulation_2.crash_simulation_helper import AngleBtw2Points, getDistance
-from expriments_simulation.crash_simulation_2.vehicle_state_helper import DamageExtraction, DistanceExtraction, RotationExtraction
+from expriments_simulation.crash_simulation_5.crash_simulation_helper import getV1BeamNGCoordinaes, getV2BeamNGCoordinaes
+from expriments_simulation.crash_simulation_5.crash_simulation_helper import AngleBtw2Points, getDistance
+from expriments_simulation.crash_simulation_5.vehicle_state_helper import DamageExtraction, DistanceExtraction, RotationExtraction
 import csv
 import sys
 sys.stdout = open('output.txt','w')
 
 # create road geometry in beamng.
-filename = 'passau3'
+filename = 'munich4'
 map_ways_serialize = filename + '.ways.serialize'
 map_nodes_serialize = filename + '.nodes.serialize'
 map_beamng_serialize = filename + '.nodes.serialize.beamng'
@@ -72,45 +72,42 @@ def saveDictionaryToCsvFile():
 # -------------------------------------------------------------------------
 
 beamng = BeamNGpy('localhost', 64256, home='F:\Softwares\BeamNG_Research_SVN')
-scenario = Scenario('GridMap', 'crash_simulation_2')
+scenario = Scenario('GridMap', 'crash_simulation_1')
 
 road_a = Road('custom_track_center', looped=False)
 
 collision_point =[]
-three_way = []
-# 3 Way intersection
-for tup in graph_degree:
-    three_way_coordinate = []
+four_way = []
 
-    if tup[1] == 3:
-        three_way_coordinate.append(node_dict[tup[0]])
-        three_way_points = graph.neighbors(tup[0])
-        way_geo = (tup[0], node_dict[tup[0]], lane_dict[tup[0]], width_dict[tup[0]])
-        #print(way_geo)
+# 4 Way intersection
+for tup in graph_degree:
+    four_way_coordinate = []
+
+    if tup[1] == 4:
+        #print(tup[0],tup[1])
+        four_way_coordinate.append(node_dict[tup[0]])
+        four_way_points = graph.neighbors(tup[0])
+        #print(four_way_points)
         print("collision point")
         print(beamng_dict[tup[0]])
         collision_point.append(beamng_dict[tup[0]])
-        for node in three_way_points:
-            way_geo = (node, node_dict[tup[0]], lane_dict[tup[0]], width_dict[tup[0]]) # node, coordinate, number of lanes , width
+        for node in four_way_points:
+            way_geo = (node, node_dict[tup[0]], lane_dict[tup[0]], width_dict[tup[0]])  # node, coordinate, number of lanes , width
             #print(way_geo)
-            pair=(tup[0],node)  # nodes connected to center or intersection point
-            #print(pair)
-            #print(beamng_dict[tup[0]],beamng_dict[node])
-            three_way.append(pair)
-            three_way_coordinate.append(node_dict[node]) # list of lat and long for map plot
+            pair = (tup[0], node)
+            four_way.append(pair)
+            four_way_coordinate.append(node_dict[node])
 
 
-
-# # Create required road for BeamNG
-# graph_edges = graph.edges
-#
-for sample in three_way:
-    print("3 way")
+print(four_way)
+for sample in four_way:
+    print("4 way")
     road_a = Road('custom_track_center', looped=False)
 
     point1 = list(beamng_dict[sample[0]])
     point2 = list(beamng_dict[sample[1]])
 
+    #print(point1, point2)
     #print(getDistance(point1,point2))
 
     nodes0 = [
@@ -122,7 +119,6 @@ for sample in three_way:
     scenario.add_road(road_a)
 
 
-
 vehicleStriker = Vehicle('striker', model='etk800', licence='PYTHON', colour='Yellow')
 damageStriker = Damage();
 vehicleStriker.attach_sensor('damagesS', damageStriker);
@@ -131,14 +127,7 @@ vehicleVictim = Vehicle('victim', model='etk800', licence='PYTHON', colour='Whit
 damageVictim = Damage();
 vehicleVictim.attach_sensor('damagesV', damageVictim);
 
-# road creation  and vehicle initializatoin with sensors completed.-------------------------------------------
 
-def getDistance(node_a,node_b):
-    dist = math.sqrt((node_a[1] - node_b[1]) ** 2 + (node_a[0] - node_b[0]) ** 2)
-    return dist
-
-
-# genetic algorithm chromosome indexes.
 V1_SPEED_INDEX_1 = 0
 V1_SPEED_INDEX_2 = 1
 V1_DISTANCE_INDEX_1 = 2
@@ -153,14 +142,15 @@ POINT_OF_IMPACT_RADIUS = 10
 POINT_OF_IMPACT_ANGLE_1 = 11
 POINT_OF_IMPACT_ANGLE_2 = 12
 POINT_OF_IMPACT_ANGLE_3 = 13
-IMPACT_POSITION_X = 308.46771202670277
-IMPACT_POSITION_Y = 39.318581604695254
+IMPACT_POSITION_X = 145
+IMPACT_POSITION_Y = 383
+
 
 # roads for striker and victim vehicle.
-road_striker = [(303.3618974852293, 19.92615900347052),(308.46771202670277, 39.318581604695254)]
-road_victim =  [(271.612527256231, 48.38151988796675),(308.46771202670277, 39.318581604695254)]
+road_striker = [(147, 378),(144,383)] ,
+road_victim = [(174, 385),(144,383)]
 
-actual_striker_damage = "L"
+actual_striker_damage = "R"
 actual_victim_damage = "F"
 
 # parameters for vehicle state extraction
@@ -168,18 +158,12 @@ positions = list()
 directions = list()
 damages = list()
 
-populations_fitness = {} # fitness function to store fitness values of chromosomes.
+populations_fitness = {}  # fitness function to store fitness values of chromosomes.
 
 # ----------------------------- genetic algorithm helper --------------------
-def generateRandomPopulation(N=20,Gene=14):
+def generateRandomPopulation(N=5,Gene=14):
     print("random population")
     initial_population = [[np.random.randint(0,9) for i in range(Gene)] for j in range(N)]
-    initial_population = []
-    initial_population.append([1, 8, 1, 3, 1, 6, 8, 3, 3, 8, 0, 5, 6, 7])
-    initial_population.append([2, 4, 2, 6, 6, 1, 1, 5, 4, 3, 4, 5, 5, 2])
-    initial_population.append([7, 4, 7, 3, 5, 4, 4, 4, 7, 1, 7, 4, 4, 0])
-    initial_population.append([4, 5, 3, 0, 3, 3, 8, 2, 3, 3, 4, 7, 7, 7])
-    initial_population.append([8, 2, 6, 3, 6, 5, 2, 3, 5, 2, 0, 4, 2, 5])
     return initial_population
 
 
@@ -213,18 +197,23 @@ def decoding_of_parameter(chromosome):
     total_distance_v2 = float(int(str(chromosome[V2_DISTANCE_INDEX_1]) + str(chromosome[V2_DISTANCE_INDEX_2])) / 50)
     v2_pos_bg = getV2BeamNGCoordinaes(total_distance_v2, chromosome[V2_WIDTH_INDEX] % 4)  # get beamng coordinates (polyline coordinate). it will be always calculated from center - joint
 
+    if v1_pos_bg == '':
+        v1_pos_bg =  147.5659453309703, 379.80073514399635
+
     return v1_speed, v1_pos_bg, v2_speed, v2_pos_bg, impact_point
 
 
 # --------------------------- genetic algorithm helper  ----------------------
 
-#initial population
-populations = generateRandomPopulation(5,14)
+# initial population
+populations = generateRandomPopulation(5, 14)
 print('initial population')
 print(populations)
 
+
 # code to run the simulation and set the fitness of the function.
 for population in populations:
+    print(' ')
     print(population)
     collision_points = []
     striker_points = []
@@ -244,28 +233,19 @@ for population in populations:
     # create beamng scenario and run the simulation.
     # Add it to our scenario at this position and rotation
 
-    # alpha = AngleBtw2Points([5,5],[7,4])
-    striker_alpha = AngleBtw2Points(road_striker[1], road_striker[0])
-    victim_alpha = AngleBtw2Points(road_victim[1], road_victim[0])
+    scenario.add_vehicle(vehicleStriker, pos=(striker_points[0][0], striker_points[0][1], 0), rot=(0, 0, 180)) # get car heading angle
+    scenario.add_vehicle(vehicleVictim, pos=(victim_points[0][0], victim_points[0][1], 0), rot=(0, 0, 90))
 
-    # print("striker angle")
-    # print(striker_alpha)
-    # print("victim angle")
-    # print(victim_alpha)
-
-
-    scenario.add_vehicle(vehicleStriker, pos=(striker_points[0][0], striker_points[0][1], 0), rot=(0, 0, 192)) # get car heading angle
-    scenario.add_vehicle(vehicleVictim, pos=(victim_points[0][0], victim_points[0][1], 0), rot=(0, 0, -80))
-
-    # save values to dictionary
+        # save values to dictionary
     pos_crash_dict["chromosome"] = population
-    pos_crash_dict["v1_speed"]  = striker_speeds[0]
+    pos_crash_dict["v1_speed"] = striker_speeds[0]
     pos_crash_dict["v1_waypoint"] = striker_points[0]
     pos_crash_dict["v2_speed"] = victim_speeds[0]
     pos_crash_dict["v2_waypoint"] = victim_points[0]
 
     scenario.make(beamng)
     bng = beamng.open(launch=True)
+
     try:
         bng.load_scenario(scenario)
         bng.start_scenario()
@@ -309,22 +289,19 @@ for population in populations:
 
             vehicleStriker.update_vehicle()  # Synchs the vehicle's "state" variable with the simulator
             sensors = bng.poll_sensors(vehicleStriker)  # Polls the data of all sensors attached to the vehicle
-            #print(vehicleStriker.state['pos'])
-            if vehicleStriker.state['pos'][0] > 306 and vehicleStriker.state['pos'][1] > 39:
+            # print(vehicleStriker.state['pos'])
+            if vehicleStriker.state['pos'][0] > 144 and vehicleStriker.state['pos'][1] > 383:
                 # print('free state')
                 vehicleStriker.control(throttle=0, steering=0, brake=0, parkingbrake=0)
                 vehicleStriker.update_vehicle()
 
-
-
             vehicleVictim.update_vehicle()  # Synchs the vehicle's "state" variable with the simulator
             sensors = bng.poll_sensors(vehicleVictim)  # Polls the data of all sensors attached to the vehicle
-            #print(vehicleStriker.state['pos'])
-            if vehicleVictim.state['pos'][0] > 306 and vehicleVictim.state['pos'][1] > 39:
-                #print('free state')
+            # print(vehicleStriker.state['pos'])
+            if vehicleVictim.state['pos'][0] > 144 and vehicleVictim.state['pos'][1] > 383:
+                # print('free state')
                 vehicleVictim.control(throttle=0, steering=0, brake=0, parkingbrake=0)
                 vehicleVictim.update_vehicle()
-
 
             if number > 58:
 
@@ -337,7 +314,6 @@ for population in populations:
                 if 'damagesS' in sensorsStriker:
                     striker_damage = sensorsStriker['damagesS']
 
-
                 # victim vehicle state extraction
                 victim_damage = {}
                 vehicleVictim.update_vehicle()  # Synchs the vehicle's "state" variable with the simulator
@@ -347,12 +323,14 @@ for population in populations:
                 if 'damagesV' in sensorsVictim:
                     victim_damage = sensorsVictim['damagesV']
 
-
                 # multiobjective fitness function.
                 multiObjectiveFitnessScore = 0
-                critical_damage_score = DamageExtraction(striker_damage, victim_damage, actual_striker_damage, actual_victim_damage)
-                distance_score = DistanceExtraction(striker_speeds[0],striker_position,collision_points[0], victim_speeds[0],victim_position, collision_points[0])
-                rotation_score = RotationExtraction(striker_points[0], collision_points[0], striker_position, victim_points[0], collision_points[0], victim_position)
+                critical_damage_score = DamageExtraction(striker_damage, victim_damage, actual_striker_damage,
+                                                         actual_victim_damage)
+                distance_score = DistanceExtraction(striker_speeds[0], striker_position, collision_points[0],
+                                                    victim_speeds[0], victim_position, collision_points[0])
+                rotation_score = RotationExtraction(striker_points[0], collision_points[0], striker_position,
+                                                    victim_points[0], collision_points[0], victim_position)
 
                 print("multiObjectiveFitnessScore")
                 print(critical_damage_score)
@@ -383,12 +361,11 @@ for population in populations:
 
                 break
 
-
         bng.stop_scenario()
-        pos_crash_dict = {}
 
     finally:
         bng.close()
+
 
 # -------------- save genetic algorithm iterator -------------------------------------
 lines = ""
@@ -468,17 +445,16 @@ def crossover_mutation(selected_parents):
 
 ## -------------------------------- genetic algorithm helper --------------------------
 
+
 # iteration of genetic algorithm.
-for _ in range(20): # Number of Generations to be Iterated.
+for _ in range(20):  # Number of Generations to be Iterated.
     print("genetic algorithm simulation")
     selected_parents = tournament_parent_selection(populations)
     next_population = crossover_mutation(selected_parents=selected_parents)
     print("population")
     print(populations)
-    print("selected parents")
-    print(selected_parents)
-    print("next population")
-    print(next_population)
+    print("selected parents " + str(selected_parents))
+    print("next population " + str(next_population))
 
     for children in next_population:
         print("iteration of children")
@@ -496,13 +472,10 @@ for _ in range(20): # Number of Generations to be Iterated.
         victim_points.append(beamng_parameters[3])
         collision_points.append(beamng_parameters[4])
 
-        striker_alpha = AngleBtw2Points(road_striker[0], road_striker[1])
-        victim_alpha = AngleBtw2Points(road_victim[0], road_victim[1])
-
         scenario.add_vehicle(vehicleStriker, pos=(striker_points[0][0], striker_points[0][1], 0),
-                             rot=(0, 0, 192))  # get car heading angle
+                             rot=(0, 0, 180))  # get car heading angle
         scenario.add_vehicle(vehicleVictim, pos=(victim_points[0][0], victim_points[0][1], 0),
-                             rot=(0, 0, -90))  # get car heading anlge
+                             rot=(0, 0, 90))  # get car heading anlge
 
         # save values to dictionary
         pos_crash_dict["chromosome"] = children
@@ -510,7 +483,6 @@ for _ in range(20): # Number of Generations to be Iterated.
         pos_crash_dict["v1_waypoint"] = striker_points[0]
         pos_crash_dict["v2_speed"] = victim_speeds[0]
         pos_crash_dict["v2_waypoint"] = victim_points[0]
-
 
         scenario.make(beamng)
         bng = beamng.open(launch=True)
@@ -559,7 +531,7 @@ for _ in range(20): # Number of Generations to be Iterated.
                 vehicleStriker.update_vehicle()  # Synchs the vehicle's "state" variable with the simulator
                 sensors = bng.poll_sensors(vehicleStriker)  # Polls the data of all sensors attached to the vehicle
                 # print(vehicleStriker.state['pos'])
-                if vehicleStriker.state['pos'][0] > 306 and vehicleStriker.state['pos'][1] > 39:
+                if vehicleStriker.state['pos'][0] > 145 and vehicleStriker.state['pos'][1] > 383:
                     # print('free state')
                     vehicleStriker.control(throttle=0, steering=0, brake=0, parkingbrake=0)
                     vehicleStriker.update_vehicle()
@@ -567,7 +539,7 @@ for _ in range(20): # Number of Generations to be Iterated.
                 vehicleVictim.update_vehicle()  # Synchs the vehicle's "state" variable with the simulator
                 sensors = bng.poll_sensors(vehicleVictim)  # Polls the data of all sensors attached to the vehicle
                 # print(vehicleStriker.state['pos'])
-                if vehicleVictim.state['pos'][0] > 306 and vehicleVictim.state['pos'][1] > 39:
+                if vehicleVictim.state['pos'][0] > 145 and vehicleVictim.state['pos'][1] > 383:
                     # print('free state')
                     vehicleVictim.control(throttle=0, steering=0, brake=0, parkingbrake=0)
                     vehicleVictim.update_vehicle()
@@ -640,23 +612,12 @@ for _ in range(20): # Number of Generations to be Iterated.
 
         print("adding children")
         print(populations_fitness)
-        # add children to population
-        # if children not in populations:
-        #     populations.append(children)
-        #
-        #
-        #
-        #temporary_fitness_dict = {}
-        #
-        # for pop in populations:
-        #     temporary_fitness_dict[tuple(pop)] = populations_fitness[tuple(pop)]
-
 
         populations_fitness_tuples = sorted(populations_fitness.items(), key=lambda x: x[1], reverse=True)
         populations_fitness = dict((x, y) for x, y in populations_fitness_tuples)
         print(populations_fitness)
         populations_fitness.popitem()
-        print("length")
+        print("length " + str(len(populations_fitness)))
         print(len(populations_fitness))
         populations = list(populations_fitness.keys())
 
@@ -665,6 +626,8 @@ for _ in range(20): # Number of Generations to be Iterated.
         for k, v in populations_fitness.items():
             lines = lines + str(k) + ',' + str(v) + ','
 
+        print("genetic algorithm saving iteration")
+        print(lines)
         lines = lines[:-1]
         f.writelines(lines + '\n')
 
@@ -673,7 +636,11 @@ for _ in range(20): # Number of Generations to be Iterated.
         # iteratoin of genetic algorithm finished.
 
 
-
+# vehicleStriker = Vehicle('striker', model='etk800', licence='PYTHON', colour='White')
+# vehicleVictim = Vehicle('victim', model='etk800', licence='PYTHON', colour='White')
+#
+# scenario.add_vehicle(vehicleStriker, pos=(203, 125, 0), rot=(0, 0, 180)) # get car heading angle
+# scenario.add_vehicle(vehicleVictim, pos=(238, 156, 0), rot=(0, 0, 90))
 
 
 # scenario.make(beamng)
@@ -685,5 +652,3 @@ for _ in range(20): # Number of Generations to be Iterated.
 #     input('Press enter when done...')
 # finally:
 #     bng.close()
-
-# [[2, 7, 3, 0, 2, 3, 0, 4, 7, 5, 0, 5, 6, 1], [4, 3, 1, 4, 6, 1, 5, 4, 1, 4, 6, 4, 1, 6], [8, 5, 8, 8, 6, 0, 4, 5, 2, 6, 7, 5, 0, 1], [1, 3, 4, 5, 7, 1, 2, 7, 7, 2, 2, 6, 8, 4], [7, 4, 3, 5, 3, 4, 6, 4, 6, 3, 5, 2, 3, 3]]

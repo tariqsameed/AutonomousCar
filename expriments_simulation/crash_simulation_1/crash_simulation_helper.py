@@ -1,8 +1,8 @@
 import math
 from math import atan2,degrees
 
-road_a_distance = 30
-road_b_distance = 30
+road_a_distance = 15
+road_b_distance = 15
 
 road_a = [(241, 72),(238, 143)]
 road_b = [(167, 139),(238, 143)]

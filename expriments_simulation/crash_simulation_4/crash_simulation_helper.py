@@ -1,8 +1,8 @@
 import math
 from math import atan2,degrees
 
-road_a_distance = 20
-road_b_distance = 20
+road_a_distance = 15
+road_b_distance = 15
 
 road_a = [(203, 125), (202, 156)]
 road_b = [(238, 156), (202, 156)]
@@ -12,7 +12,7 @@ def AngleBtw2Points(pointA, pointB):
     changeInY = pointB[1] - pointA[1]
     return degrees(atan2(changeInY,changeInX)) #remove degrees if you want your answer in radians
 
-def getPolyLineCoordinates(node_a,node_b, distance,width):
+def getV1PolyLineCoordinates(node_a,node_b, distance,width):
     #print("get polyline coordinate")
     # Assumption. width from the center of the road.
     real_distance = getDistance(node_a,node_b)
@@ -37,6 +37,30 @@ def getPolyLineCoordinates(node_a,node_b, distance,width):
     return x2p,y2p
 
 
+def getV2PolyLineCoordinates(node_a,node_b, distance,width):
+    #print("get polyline coordinate")
+    # Assumption. width from the center of the road.
+    real_distance = getDistance(node_a,node_b)
+    t = distance / real_distance
+
+    if t == 0.0:
+        t = 0.05
+
+    point2 = (((1 - t) * node_a[0] + t * node_b[0]), ((1 - t) * node_a[1] + t * node_b[1]))
+
+    dx = float(point2[0] - node_a[0])
+    dy = float(point2[1] - node_a[1])
+
+    L = float(math.sqrt(float(float(dx * dx) + float(dy * dy)))) # handle division by zero
+    U = (float(dy / L), float(dx / L))
+    F = float(width)
+
+    # Point on one side
+    x2p = float(point2[0] - U[0] * F) - 1
+    y2p = float(point2[1] - U[1] * F)
+
+    return x2p,y2p
+
 def getDistance(node_a,node_b):
     dist = math.sqrt((node_a[1] - node_b[1]) ** 2 + (node_a[0] - node_b[0]) ** 2)
     return dist
@@ -59,7 +83,7 @@ def getV1BeamNGCoordinaes(total_distance_v1, width):
             v1_poly_distance = v1_poly_distance + node_distance
             #print("road found")
             #beamng_pos =   getPolyLineCoordinates(beamng_dict[node[0]],beamng_dict[node[1]],v1_poly_distance,width)
-            beamng_pos = getPolyLineCoordinates(v1_roads[0], v1_roads[1], v1_poly_distance, width)
+            beamng_pos = getV1PolyLineCoordinates(v1_roads[0], v1_roads[1], v1_poly_distance, width)
             break
 
     #print(beamng_pos)
@@ -87,7 +111,7 @@ def getV2BeamNGCoordinaes(total_distance_v2, width):
             v2_poly_distance = v2_poly_distance + node_distance
             #print("road found")
             #beamng_pos = getPolyLineCoordinates(beamng_dict[node[0]],beamng_dict[node[1]], v2_poly_distance, width)
-            beamng_pos = getPolyLineCoordinates(v2_roads[0], v2_roads[1], v2_poly_distance, width)
+            beamng_pos = getV2PolyLineCoordinates(v2_roads[0], v2_roads[1], v2_poly_distance, width)
             break
 
     print(beamng_pos)

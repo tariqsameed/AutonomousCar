@@ -1,13 +1,15 @@
 import math
 from math import atan2,degrees
 
-road_a_distance = 20
+road_a_distance = 15
 road_b_distance = 20
 
-road_a = [(303.3618974852293, 19.92615900347052),(308.46771202670277, 39.318581604695254)]
-road_b =  [(271.612527256231, 48.38151988796675),(308.46771202670277, 39.318581604695254)]
+road_a = [(147, 378),(144,383)]
+road_b = [(174, 385),(144,383)]
 
 def AngleBtw2Points(pointA, pointB):
+    print('pointA' + str(pointA))
+    print('pointB' + str(pointB))
     changeInX = pointB[0] - pointA[0]
     changeInY = pointB[1] - pointA[1]
     return degrees(atan2(changeInY,changeInX)) #remove degrees if you want your answer in radians
@@ -23,16 +25,16 @@ def getV1PolyLineCoordinates(node_a,node_b, distance,width):
 
     point2 = (((1 - t) * node_a[0] + t * node_b[0]), ((1 - t) * node_a[1] + t * node_b[1]))
 
-    dx = float(point2[0] + node_a[0])
-    dy = float(point2[1] + node_a[1])
+    dx = float(point2[0] - node_a[0])
+    dy = float(point2[1] - node_a[1])
 
     L = float(math.sqrt(float(float(dx * dx) + float(dy * dy)))) # handle division by zero
     U = (float(dy / L), float(dx / L))
     F = float(width)
 
     # Point on one side
-    x2p = float(point2[0] - U[0] * F) + 1
-    y2p = float(point2[1] - U[1] * F)
+    x2p = float(point2[0] + U[0] * F)
+    y2p = float(point2[1] + U[1] * F) - 2
 
     return x2p,y2p
 
@@ -48,18 +50,19 @@ def getV2PolyLineCoordinates(node_a,node_b, distance,width):
 
     point2 = (((1 - t) * node_a[0] + t * node_b[0]), ((1 - t) * node_a[1] + t * node_b[1]))
 
-    dx = float(point2[0] + node_a[0])
-    dy = float(point2[1] + node_a[1])
+    dx = float(point2[0] - node_a[0])
+    dy = float(point2[1] - node_a[1])
 
     L = float(math.sqrt(float(float(dx * dx) + float(dy * dy)))) # handle division by zero
     U = (float(dy / L), float(dx / L))
     F = float(width)
 
     # Point on one side
-    x2p = float(point2[0] - U[0] * F)
-    y2p = float(point2[1] - U[1] * F) - 1
+    x2p = float(point2[0] + U[0] * F)
+    y2p = float(point2[1] + U[1] * F)
 
     return x2p,y2p
+
 
 def getDistance(node_a,node_b):
     dist = math.sqrt((node_a[1] - node_b[1]) ** 2 + (node_a[0] - node_b[0]) ** 2)

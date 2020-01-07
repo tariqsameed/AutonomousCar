@@ -40,7 +40,7 @@ def DamageExtraction(striker_damage, victim_damage, actual_striker_damage, actua
 
             # left damage
             for keys in stkeys:
-                if 'fender_L' in keys or 'door_FL' in keys or 'doorglass_RL_wagon' in keys or 'door_RL_wagon' in keys or 'mirror_L' in keys or 'door_RL' in keys:
+                if 'fender_L' in keys or 'doorglass_FL' or 'door_FL' in keys or 'doorglass_RL_wagon' in keys or 'door_RL_wagon' in keys or 'mirror_L' in keys or 'door_RL' in keys:
                     #print("striker left")
                     striker_damage_area = striker_damage_area + 'L'
                     break
@@ -48,11 +48,11 @@ def DamageExtraction(striker_damage, victim_damage, actual_striker_damage, actua
             print(striker_damage_area)
 
             if actual_striker_damage in striker_damage_area:
-                print(0.25)
-                victim_damage_score = 0.25
+                print(1.0)
+                striker_damage_score = 1.0
             else:
-                print(0.15)
-                victim_damage_score = 0.15
+                print(0.5)
+                striker_damage_score = 0.5
 
 
 
@@ -90,11 +90,11 @@ def DamageExtraction(striker_damage, victim_damage, actual_striker_damage, actua
             print(victim_damage_area)
 
             if actual_victim_damage in victim_damage_area:
-                print(0.25)
-                victim_damage_score = 0.25
+                print(1.0)
+                victim_damage_score = 1.0
             else:
-                print(0.15)
-                victim_damage_score = 0.15
+                print(0.5)
+                victim_damage_score = 0.5
 
 
     return striker_damage_score, victim_damage_score
@@ -108,8 +108,8 @@ def DistanceExtraction(striker_speed, striker_after_position, striker_collision_
     distance_stiker = math.hypot(striker_collision_position[0] - striker_after_position[0], striker_collision_position[1] - striker_after_position[1])
     distance_victim = math.hypot(victim_collision_position[0] - victim_after_position[0], victim_collision_position[1] - victim_after_position[1])
 
-    print(distance_stiker)
-    print(distance_victim)
+    print('stiker distance ' + str(distance_stiker))
+    print('victim distance ' + str(distance_victim))
 
     # the fitness fucntion of distance eztraction is limited to the speed of 20 ms
     # range of speed for calculation.
@@ -117,83 +117,31 @@ def DistanceExtraction(striker_speed, striker_after_position, striker_collision_
     striker_distance_score = 0
     victim_distance_score = 0
 
-    #---------------------------------------------------------------------------------------
-    # striker distance for 25 ms
-    if striker_speed > 22 and striker_speed < 28 and distance_stiker >= 11 and distance_stiker < 17:
-        striker_distance_score = 0.07
-
-    if striker_speed > 22 and striker_speed < 28 and distance_stiker >= 7 and distance_stiker < 11:
-        striker_distance_score = 0.05
-
-    if striker_speed > 22 and striker_speed < 28 and distance_stiker > 0 and distance_stiker < 7:
-        striker_distance_score = 0.03
-
-
-    # victim_distance for 25 ms
-    if victim_speed > 22 and victim_speed < 28 and distance_victim >= 11 and distance_victim < 17:
-        striker_distance_score = 0.07
-
-    if victim_speed > 22 and victim_speed < 28 and distance_victim >= 7 and distance_victim < 11:
-        striker_distance_score = 0.05
-
-    if victim_speed > 22 and victim_speed < 28 and distance_victim > 0 and distance_victim < 7:
-        striker_distance_score = 0.03
     # ---------------------------------------------------------------------------------------
-
-    # striker distance for 20 ms
-    if striker_speed > 17 and striker_speed <= 22 and distance_stiker >= 9 and distance_stiker < 14:
-        striker_distance_score = 0.07
-
-    if striker_speed > 17 and striker_speed <= 22 and distance_stiker >= 5 and distance_stiker < 9:
-        striker_distance_score = 0.05
-
-    if striker_speed > 17 and striker_speed <= 22 and distance_stiker > 0 and distance_stiker < 5:
-        striker_distance_score = 0.03
-
-
-    # victim_distance for 20 ms
-    if victim_speed > 17 and victim_speed <= 22 and distance_victim >= 9 and distance_victim < 14:
-        striker_distance_score = 0.07
-
-    if victim_speed > 17 and victim_speed <= 22 and distance_victim >= 5 and distance_victim < 9:
-        striker_distance_score = 0.05
-
-    if victim_speed > 17 and victim_speed <= 22 and distance_victim > 0 and distance_victim < 5:
-        striker_distance_score = 0.03
-
-
-    # ---------------------------------------------------------------------------------------
+    #  distance calculation without speed.
 
     # striker distance for 15 ms
-    if striker_speed > 11 and striker_speed <= 17 and distance_stiker >= 7 and distance_stiker < 11:
-        striker_distance_score = 0.07
+    if striker_speed >= 0 and distance_stiker > 0 and distance_stiker < 8:
+        striker_distance_score = 0.1
 
-    if striker_speed > 11 and striker_speed <= 17 and distance_stiker >= 4 and distance_stiker < 7:
-        striker_distance_score = 0.05
+    if striker_speed >= 0 and distance_stiker > 7 and distance_stiker <= 15:
+        striker_distance_score = 0.3
 
-    if striker_speed > 11 and striker_speed <= 17 and distance_stiker > 0 and distance_stiker < 4:
-        striker_distance_score = 0.03
-
-    # victim_distance for 20 ms
-    if victim_speed > 11 and victim_speed <= 17 and distance_victim >= 7 and distance_victim < 11:
-        striker_distance_score = 0.07
-
-    if victim_speed > 11 and victim_speed <= 17 and distance_victim >= 4 and distance_victim < 7:
-        striker_distance_score = 0.05
-
-    if victim_speed > 11 and victim_speed <= 17 and distance_victim > 0 and distance_victim < 4:
-        striker_distance_score = 0.03
-
-    # --------------------------------------------------------------------------------------------
-
-    # striker distance for 15 ms
-    if striker_speed >= 0 and striker_speed <= 11 and distance_stiker < 4:
-        striker_distance_score = 0.07
+    if striker_speed >= 0 and distance_stiker > 15:
+        striker_distance_score = 0.2
 
 
     # victim_distance for 20 ms
-    if victim_speed >= 0 and victim_speed <= 11 and distance_victim < 4 :
-        striker_distance_score = 0.07
+    if victim_speed >= 0 and distance_victim > 0 and distance_victim < 8 :
+        victim_distance_score = 0.1
+
+    # victim_distance for 20 ms
+    if victim_speed >= 0 and distance_victim > 7 and distance_victim <= 15:
+        victim_distance_score = 0.3
+
+        # victim_distance for 20 ms
+    if victim_speed >= 0 and distance_victim > 15:
+        victim_distance_score = 0.2
 
     # --------------------------------------------------------------------------------------------
 
@@ -225,35 +173,35 @@ def RotationExtraction(striker_precrash_position, striker_collision_point, strik
     victim_heading = AngleBtw2Points(victim_precrash_position, victim_collision_point)
 
     striker_deviation = (striker_heading + striker_alpha) % 360
+    print('striker deviation'+ str(striker_deviation))
     victim_deviation = (victim_heading + victim_alpha) % 360
 
     striker_deviaiton_score = 0
     victim_deviation_score = 0
 
-    if striker_deviation > 0 and  striker_deviation <= 30:
-        striker_deviaiton_score = 0.08
+    if striker_deviation > 0 and  striker_deviation <= 50:
+        striker_deviaton_score = 0.1
 
-    if striker_deviation > 30 and  striker_deviation <= 45:
-        striker_deviaiton_score = 0.05
+    if striker_deviation > 50 and  striker_deviation <= 100:
+        striker_deviaton_score = 0.2
 
-    if striker_deviation > 45:
-        striker_deviaiton_score = 0.03
+    if striker_deviation > 100:
+        striker_deviaton_score = 0.3
 
 
     #---------------------------------------------------------
 
-    if victim_deviation > 0 and victim_deviation <= 30:
-        victim_deviaiton_score = 0.08
+    if victim_deviation > 0 and victim_deviation <= 10:
+        victim_deviation_score = 0.1
 
-    if victim_deviation > 30 and victim_deviation <= 45:
-        victim_deviaiton_score = 0.05
+    if victim_deviation > 10 and victim_deviation <= 20:
+        victim_deviation_score = 0.2
 
-    if victim_deviation > 45:
-        victim_deviaiton_score = 0.03
+    if victim_deviation > 20:
+        victim_deviation_score = 0.3
 
-
-    print(striker_deviaiton_score)
-    print(victim_deviaiton_score)
+    print('striker rotation score ' + str(striker_deviaton_score))
+    print('victim rotation score ' + str(victim_deviation_score))
 
     return  striker_deviaiton_score,victim_deviation_score
 

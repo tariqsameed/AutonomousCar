@@ -40,9 +40,6 @@ print("Lanes Loaded")
 width_dict = pickle.load(open(map_width_serialize, "rb"))
 print("Width Loaded") # tuples of lat and long
 
-
-# ---------------------------- save genetic algorithm iteration-----------------------------------------
-f= open("genetic_algorithm_iteration.csv","w+")
 # ----------------------------- create csv file --------------------------
 pos_crash_dict = {}
 
@@ -66,6 +63,7 @@ def saveDictionaryToCsvFile():
         with open(csv_file, 'a', encoding='utf-8') as csvfile:
             writer = csv.DictWriter(csvfile, fieldnames=csv_columns, delimiter=',', lineterminator='\n')
             writer.writerow(pos_crash_dict)
+            print(pos_crash_dict)
     except IOError:
         print("I/O error")
 
@@ -74,7 +72,7 @@ def saveDictionaryToCsvFile():
 beamng = BeamNGpy('localhost', 64256, home='F:\Softwares\BeamNG_Research_SVN')
 scenario = Scenario('GridMap', 'crash_simulation_1')
 
-road_a = Road('track_editor_C_center', looped=False)
+road_a = Road('custom_track_center', looped=False)
 
 collision_point =[]
 four_way = []
@@ -87,13 +85,13 @@ for tup in graph_degree:
         print(tup[0],tup[1])
         four_way_coordinate.append(node_dict[tup[0]])
         four_way_points = graph.neighbors(tup[0])
-        print(four_way_points)
+        #print(four_way_points)
         print("collision point")
         print(beamng_dict[tup[0]])
         collision_point.append(beamng_dict[tup[0]])
         for node in four_way_points:
             way_geo = (node, node_dict[tup[0]], lane_dict[tup[0]], width_dict[tup[0]])  # node, coordinate, number of lanes , width
-            print(way_geo)
+            #print(way_geo)
             pair = (tup[0], node)
             four_way.append(pair)
             four_way_coordinate.append(node_dict[node])
@@ -101,14 +99,14 @@ for tup in graph_degree:
 
 print(four_way)
 for sample in four_way:
-    print("4 way")
-    road_a = Road('track_editor_C_center', looped=False)
+    #print("4 way")
+    road_a = Road('custom_track_center', looped=False)
 
     point1 = list(beamng_dict[sample[0]])
     point2 = list(beamng_dict[sample[1]])
 
-    print(point1, point2)
-    print(getDistance(point1,point2))
+    #print(point1, point2)
+    #print(getDistance(point1,point2))
 
     nodes0 = [
         (point1[0], point1[1], 0, 16), # method to get the road width from elastic search or number of lanes. (forward and backward)
@@ -120,7 +118,7 @@ for sample in four_way:
 
 
 
-vehicleStriker = Vehicle('striker', model='etk800', licence='PYTHON', colour='White')
+vehicleStriker = Vehicle('striker', model='etk800', licence='PYTHON', colour='Yellow')
 damageStriker = Damage();
 vehicleStriker.attach_sensor('damagesS', damageStriker);
 
@@ -143,7 +141,7 @@ POINT_OF_IMPACT_RADIUS = 10
 POINT_OF_IMPACT_ANGLE_1 = 11
 POINT_OF_IMPACT_ANGLE_2 = 12
 POINT_OF_IMPACT_ANGLE_3 = 13
-IMPACT_POSITION_X = 238
+IMPACT_POSITION_X = 239
 IMPACT_POSITION_Y = 143
 
 
@@ -162,9 +160,15 @@ damages = list()
 populations_fitness = {} # fitness function to store fitness values of chromosomes.
 
 # ----------------------------- genetic algorithm helper --------------------
-def generateRandomPopulation(N=5,Gene=14):
+def generateRandomPopulation(N=10,Gene=14):
     print("random population")
     initial_population = [[np.random.randint(0,9) for i in range(Gene)] for j in range(N)]
+    initial_population = []
+    initial_population.append([5, 6, 7, 2, 5, 5, 8, 8, 7, 5, 4, 2, 4, 7])
+    initial_population.append([1, 1, 3, 7, 8, 3, 6, 3, 0, 3, 4, 7, 0, 2])
+    initial_population.append([7, 0, 8, 0, 8, 6, 1, 4, 6, 4, 6, 8, 7, 6])
+    initial_population.append([6, 7, 3, 0, 2, 5, 6, 5, 2, 7, 6, 3, 4, 2])
+    initial_population.append([6, 4, 1, 1, 5, 7, 4, 1, 4, 0, 5, 8, 5, 5])
     return initial_population
 
 
@@ -205,11 +209,13 @@ def decoding_of_parameter(chromosome):
 
 #initial population
 populations = generateRandomPopulation(5,14)
+print('initial population')
 print(populations)
 
 
 # code to run the simulation and set the fitness of the function.
 for population in populations:
+    print(' ')
     print(population)
     collision_points = []
     striker_points = []
@@ -218,6 +224,7 @@ for population in populations:
     victim_speeds = []
 
     beamng_parameters = decoding_of_parameter(population)
+    print('beamng parameters')
     print(beamng_parameters)
     striker_speeds.append(beamng_parameters[0])
     striker_points.append(beamng_parameters[1])
@@ -232,13 +239,7 @@ for population in populations:
     striker_alpha = AngleBtw2Points(road_striker[1], road_striker[0])
     victim_alpha = AngleBtw2Points(road_victim[1], road_victim[0])
 
-    print("striker angle")
-    print(striker_alpha)
-    print("victim angle")
-    print(victim_alpha)
-
-
-    scenario.add_vehicle(vehicleStriker, pos=(striker_points[0][0], striker_points[0][1], 0), rot=(0, 0, 180)) # get car heading angle
+    scenario.add_vehicle(vehicleStriker, pos=(striker_points[0][0], striker_points[0][1], 0), rot=(0, 0, 180))  # get car heading angle
     scenario.add_vehicle(vehicleVictim, pos=(victim_points[0][0], victim_points[0][1], 0), rot=(0, 0, -90))
 
         # save values to dictionary
@@ -360,7 +361,7 @@ for population in populations:
                 pos_crash_dict["victim_rotation"] = rotation_score[1]
                 pos_crash_dict["fitness_value"] = multiObjectiveFitnessScore
 
-                if critical_damage_score[0] > 0.0 or critical_damage_score[1] > 0.0:
+                if critical_damage_score[0] > 0 or critical_damage_score[1] > 0:
                     print("critical scenario")
                     saveDictionaryToCsvFile()
 
@@ -371,7 +372,8 @@ for population in populations:
     finally:
         bng.close()
 
-
+# ---------------------------- save genetic algorithm iteration-----------------------------------------
+f = open("genetic_algorithm_iteration.csv", "w+")
 # -------------- save genetic algorithm iterator -------------------------------------
 lines = ""
 for k, v in populations_fitness.items():
@@ -379,9 +381,10 @@ for k, v in populations_fitness.items():
 
 lines = lines[:-1]
 f.writelines(lines + '\n')
-
+print(lines)
 ## -------------------------------- genetic algorithm helper --------------------------
 
+#exit()
 
 def tournament_parent_selection(populations, n=2, tsize=3):
     global populations_fitness
@@ -410,6 +413,7 @@ def tournament_parent_selection(populations, n=2, tsize=3):
 def mutation(chromosome):
     print("mutation")
     chromosome[random.randint(0, len(chromosome) - 1)] = random.randint(min(chromosome), max(chromosome) - 1)
+    random.shuffle(chromosome)
     return  chromosome
 
 
@@ -451,16 +455,14 @@ def crossover_mutation(selected_parents):
 ## -------------------------------- genetic algorithm helper --------------------------
 
 # iteration of genetic algorithm.
-for _ in range(3): # Number of Generations to be Iterated.
+for _ in range(20): # Number of Generations to be Iterated.
     print("genetic algorithm simulation")
     selected_parents = tournament_parent_selection(populations)
     next_population = crossover_mutation(selected_parents=selected_parents)
     print("population")
     print(populations)
-    print("selected parents")
-    print(selected_parents)
-    print("next population")
-    print(next_population)
+    print("selected parents " + str(selected_parents) )
+    print("next population " + str(next_population))
 
     for children in next_population:
         print("iteration of children")
@@ -608,6 +610,7 @@ for _ in range(3): # Number of Generations to be Iterated.
                     pos_crash_dict["fitness_value"] = multiObjectiveFitnessScore
 
                     if critical_damage_score[0] > 0 or critical_damage_score[1] > 0:
+                        print("critical scenario")
                         saveDictionaryToCsvFile()
 
                     break
@@ -627,8 +630,7 @@ for _ in range(3): # Number of Generations to be Iterated.
         populations_fitness = dict((x, y) for x, y in populations_fitness_tuples)
         print(populations_fitness)
         populations_fitness.popitem()
-        print("length")
-        print(len(populations_fitness))
+        print("length " + str(len(populations_fitness)))
         populations = list(populations_fitness.keys())
 
         # -------------- save genetic algorithm iterator -------------------------------------
