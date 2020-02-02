@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .error {
+        color: red;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-lite@4.0.2"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "data": {"name": "data-9adc023157b45bb16659ff28e03046ee"}, "mark": "bar", "encoding": {"color": {"type": "nominal", "field": "type", "legend": {"title": "Response"}, "scale": {"domain": ["Very Unlikely", "Unlikely", "Does Not Matter", "Likely", "Very Likely"], "range": ["#c30d24", "#f3a583", "#cccccc", "#94c6da", "#1770ab"]}}, "x": {"type": "quantitative", "field": "percentage_start"}, "x2": {"field": "percentage_end"}, "y": {"type": "nominal", "axis": {"domain": false, "minExtent": 60, "offset": 5, "ticks": false, "title": "Statement Study"}, "field": "question"}}, "$schema": "https://vega.github.io/schema/vega-lite/v4.0.2.json", "datasets": {"data-9adc023157b45bb16659ff28e03046ee": [{"percentage": 0.0, "percentage_end": 0.0, "percentage_start": 0.0, "question": "Statement 1", "type": "Very Unlikely", "value": 24}, {"percentage": 0.0, "percentage_end": 0.0, "percentage_start": 0.0, "question": "Statement 1", "type": "Unlikely", "value": 294}, {"percentage": 0.0, "percentage_end": 0.0, "percentage_start": 0.0, "question": "Statement 1", "type": "Does Not Matter", "value": 594}, {"percentage": 14.67, "percentage_end": 14.67, "percentage_start": 0.0, "question": "Statement 1", "type": "Likely", "value": 1927}, {"percentage": 85.33, "percentage_end": 100.0, "percentage_start": 14.67, "question": "Statement 1", "type": "Very Likely", "value": 376}, {"percentage": 2.67, "percentage_end": -7.995, "percentage_start": -10.665, "question": "Statement 2", "type": "Very Unlikely", "value": 2}, {"percentage": 5.33, "percentage_end": -2.665, "percentage_start": -7.995, "question": "Statement 2", "type": "Unlikely", "value": 2}, {"percentage": 5.33, "percentage_end": 2.665, "percentage_start": -2.665, "question": "Statement 2", "type": "Does Not Matter", "value": 0}, {"percentage": 38.66, "percentage_end": 41.325, "percentage_start": 2.665, "question": "Statement 2", "type": "Likely", "value": 7}, {"percentage": 48.0, "percentage_end": 89.325, "percentage_start": 41.325, "question": "Statement 2", "type": "Very Likely", "value": 11}, {"percentage": 6.67, "percentage_end": -20.67, "percentage_start": -27.34, "question": "Statement 3", "type": "Very Unlikely", "value": 2}, {"percentage": 14.67, "percentage_end": -6.0, "percentage_start": -20.67, "question": "Statement 3", "type": "Unlikely", "value": 0}, {"percentage": 12.0, "percentage_end": 6.0, "percentage_start": -6.0, "question": "Statement 3", "type": "Does Not Matter", "value": 2}, {"percentage": 30.67, "percentage_end": 36.67, "percentage_start": 6.0, "question": "Statement 3", "type": "Likely", "value": 4}, {"percentage": 36.0, "percentage_end": 72.67, "percentage_start": 36.67, "question": "Statement 3", "type": "Very Likely", "value": 2}, {"percentage": 14.67, "percentage_end": -5.33, "percentage_start": -20.0, "question": "Statement 4", "type": "Very Unlikely", "value": 0}, {"percentage": 5.33, "percentage_end": 0.0, "percentage_start": -5.33, "question": "Statement 4", "type": "Unlikely", "value": 2}, {"percentage": 0.0, "percentage_end": 0.0, "percentage_start": 0.0, "question": "Statement 4", "type": "Does Not Matter", "value": 1}, {"percentage": 21.33, "percentage_end": 21.33, "percentage_start": 0.0, "question": "Statement 4", "type": "Likely", "value": 7}, {"percentage": 58.66, "percentage_end": 79.99, "percentage_start": 21.33, "question": "Statement 4", "type": "Very Likely", "value": 6}, {"percentage": 16.0, "percentage_end": -13.995, "percentage_start": -29.995, "question": "Statement 5", "type": "Very Unlikely", "value": 0}, {"percentage": 10.66, "percentage_end": -3.335, "percentage_start": -13.995, "question": "Statement 5", "type": "Unlikely", "value": 1}, {"percentage": 6.67, "percentage_end": 3.335, "percentage_start": -3.335, "question": "Statement 5", "type": "Does Not Matter", "value": 3}, {"percentage": 33.33, "percentage_end": 36.665, "percentage_start": 3.335, "question": "Statement 5", "type": "Likely", "value": 16}, {"percentage": 33.33, "percentage_end": 69.995, "percentage_start": 36.665, "question": "Statement 5", "type": "Very Likely", "value": 4}, {"percentage": 6.67, "percentage_end": -17.325, "percentage_start": -23.995, "question": "Statement 6", "type": "Very Unlikely", "value": 0}, {"percentage": 10.66, "percentage_end": -6.665, "percentage_start": -17.325, "question": "Statement 6", "type": "Unlikely", "value": 1}, {"percentage": 13.33, "percentage_end": 6.665, "percentage_start": -6.665, "question": "Statement 6", "type": "Does Not Matter", "value": 3}, {"percentage": 36.0, "percentage_end": 42.665, "percentage_start": 6.665, "question": "Statement 6", "type": "Likely", "value": 16}, {"percentage": 33.33, "percentage_end": 75.995, "percentage_start": 42.665, "question": "Statement 6", "type": "Very Likely", "value": 4}, {"percentage": 8.0, "percentage_end": -12.0, "percentage_start": -20.0, "question": "Statement 7", "type": "Very Unlikely", "value": 0}, {"percentage": 12.0, "percentage_end": 0.0, "percentage_start": -12.0, "question": "Statement 7", "type": "Unlikely", "value": 1}, {"percentage": 0.0, "percentage_end": 0.0, "percentage_start": 0.0, "question": "Statement 7", "type": "Does Not Matter", "value": 3}, {"percentage": 24.0, "percentage_end": 24.0, "percentage_start": 0.0, "question": "Statement 7", "type": "Likely", "value": 16}, {"percentage": 56.0, "percentage_end": 80.0, "percentage_start": 24.0, "question": "Statement 7", "type": "Very Likely", "value": 4}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div class="error" style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
