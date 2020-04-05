@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="Overpass API 0.7.55.9 ab41fea6">
+<note>The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.</note>
+<meta osm_base="2020-02-03T08:29:02Z"/>
+
+  <node id="21558309" lat="48.1601579" lon="11.5773719">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="27479770" lat="48.1599462" lon="11.5802367">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="27479818" lat="48.1597526" lon="11.5830628"/>
+  <node id="370999587" lat="48.1599243" lon="11.5804706">
+    <tag k="bus" v="yes"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Friedrichstraße"/>
+    <tag k="public_transport" v="stop_position"/>
+    <tag k="wheelchair" v="yes"/>
+  </node>
+  <node id="2481335052" lat="48.1600865" lon="11.5783194"/>
+  <node id="2481363135" lat="48.1588029" lon="11.5800517"/>
+  <node id="2483776374" lat="48.1593885" lon="11.5801474"/>
+  <node id="2484942149" lat="48.1604476" lon="11.5803079"/>
+  <node id="2485085544" lat="48.1600515" lon="11.5788291"/>
+  <node id="2485085549" lat="48.1600842" lon="11.5783630"/>
+  <node id="2485185398" lat="48.1598231" lon="11.5820494"/>
+  <node id="2502762481" lat="48.1601496" lon="11.5774974"/>
+  <node id="2584356329" lat="48.1599826" lon="11.5797646"/>
+  <node id="3046332205" lat="48.1609050" lon="11.5803815"/>
+  <node id="3050624439" lat="48.1601116" lon="11.5779827"/>
+  <node id="3065699091" lat="48.1600049" lon="11.5793991"/>
+  <node id="3953447076" lat="48.1599304" lon="11.5803745"/>
+  <node id="6397269594" lat="48.1597975" lon="11.5824179"/>
+  <node id="6397269625" lat="48.1600610" lon="11.5786940"/>
+  <node id="6397269627" lat="48.1600644" lon="11.5786450"/>
+  <node id="6397269637" lat="48.1601142" lon="11.5779497"/>
+  <way id="80819310">
+    <nd ref="27479770"/>
+    <nd ref="2483776374"/>
+    <nd ref="2481363135"/>
+    <tag k="highway" v="residential"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="30"/>
+    <tag k="name" v="Friedrichstraße"/>
+    <tag k="sidewalk" v="both"/>
+    <tag k="smoothness" v="good"/>
+    <tag k="surface" v="asphalt"/>
+  </way>
+  <way id="80819312">
+    <nd ref="3046332205"/>
+    <nd ref="2484942149"/>
+    <nd ref="27479770"/>
+    <tag k="highway" v="residential"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="30"/>
+    <tag k="name" v="Friedrichstraße"/>
+    <tag k="parking:condition:both" v="ticket"/>
+    <tag k="parking:condition:both:residents" v="Schwabing Mitte"/>
+    <tag k="parking:lane:left" v="parallel"/>
+    <tag k="parking:lane:right" v="perpendicular"/>
+    <tag k="sidewalk" v="both"/>
+    <tag k="smoothness" v="good"/>
+    <tag k="surface" v="asphalt"/>
+  </way>
+  <way id="86414065">
+    <nd ref="27479818"/>
+    <nd ref="6397269594"/>
+    <nd ref="2485185398"/>
+    <nd ref="370999587"/>
+    <nd ref="3953447076"/>
+    <nd ref="27479770"/>
+    <tag k="cycleway" v="opposite"/>
+    <tag k="highway" v="tertiary"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="30"/>
+    <tag k="name" v="Hohenzollernstraße"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="oneway:bicycle" v="no"/>
+    <tag k="sidewalk" v="both"/>
+    <tag k="surface" v="asphalt"/>
+  </way>
+  <way id="158901369">
+    <nd ref="21558309"/>
+    <nd ref="2502762481"/>
+    <nd ref="6397269637"/>
+    <nd ref="3050624439"/>
+    <nd ref="2481335052"/>
+    <nd ref="2485085549"/>
+    <nd ref="6397269627"/>
+    <nd ref="6397269625"/>
+    <nd ref="2485085544"/>
+    <nd ref="3065699091"/>
+    <nd ref="2584356329"/>
+    <nd ref="27479770"/>
+    <tag k="highway" v="tertiary"/>
+    <tag k="lanes" v="2"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="50"/>
+    <tag k="name" v="Hohenzollernstraße"/>
+    <tag k="sidewalk" v="both"/>
+    <tag k="surface" v="asphalt"/>
+  </way>
+
+</osm>
