@@ -15,7 +15,7 @@ beamng = BeamNGpy('localhost', 64256, home='F:\Softwares\BeamNG_Research_SVN')  
 
 # Create a vehile instance that will be called 'ego' in the simulation
 # using the etk800 model the simulator ships with
-vehicle = Vehicle('ego', model='van', licence='PYTHON', colour='white')
+vehicle = Vehicle('ego', model='etk800', licence='PYTHON', colour='white')
 vehicleV = Vehicle('victim', model='etk800', licence='PYTHON', colour='red')
 # Create an Electrics sensor and attach it to the vehicle
 electrics = Electrics()
@@ -42,29 +42,27 @@ bng.start_scenario()  # After loading, the simulator waits for further input to 
 
 #vehicle.ai_set_mode('span')
 
-vehicle.update_vehicle()
-sensors = bng.poll_sensors(vehicle)
+# vehicle.update_vehicle()
+# sensors = bng.poll_sensors(vehicle)
+#
+# print('The vehicle position is:')
+# display(vehicle.state['pos'])
+#
+# print('The vehicle direction is:')
+# display(vehicle.state['dir'])
+#
+# print('The wheel speed is:')
+# display(sensors['electrics']['values']['wheelspeed'])
+#
+# print('The throttle intensity is:')
+# display(sensors['electrics']['values']['throttle'])
+#
+# print('The brake intensity is:')
+# display(sensors['electrics']['values']['brake'])
 
-print('The vehicle position is:')
-display(vehicle.state['pos'])
-
-print('The vehicle direction is:')
-display(vehicle.state['dir'])
-
-print('The wheel speed is:')
-display(sensors['electrics']['values']['wheelspeed'])
-
-print('The throttle intensity is:')
-display(sensors['electrics']['values']['throttle'])
-
-print('The brake intensity is:')
-display(sensors['electrics']['values']['brake'])
-
-print('The Damage is:')
-display(sensors['damages'])
-display(damage)
-
-Road('track_editor_C_center', looped=True)
+# print('The Damage is:')
+# display(sensors['damages'])
+# display(damage)
 
 positions = list()
 directions = list()
@@ -73,7 +71,7 @@ throttles = list()
 brakes = list()
 damages = list()
 
-for _ in range(240):
+for _ in range(150):
     time.sleep(0.1)
     vehicle.update_vehicle()  # Synchs the vehicle's "state" variable with the simulator
     sensors = bng.poll_sensors(vehicle)  # Polls the data of all sensors attached to the vehicle
@@ -82,18 +80,34 @@ for _ in range(240):
     wheel_speeds.append(sensors['electrics']['values']['wheelspeed'])
     throttles.append(sensors['electrics']['values']['throttle'])
     brakes.append(sensors['electrics']['values']['brake'])
+    damages.append(sensors['damages'])
 
-damages.append(sensors['damages'])
 bng.close()
 
 #print(wheel_speeds)
-print(directions)
+# print(directions)
+# print(damages[-1])
+
+# angles = [np.arctan2(d[1], d[0]) for d in directions]
+# x = [p[0] for p in positions]
+# y = [p[1] for p in positions]
+# plt.plot(x,y,'.', label='Position')
+# plt.plot(wheel_speeds,'c-', label='Speed')
+# plt.plot(angles, 'y-.', label='Rotation Angle')
+# plt.show()
+# plt.clf()
+
+x = [p[0] for p in positions]
+y = [p[1] for p in positions]
+plt.plot(x, y, '.')
+plt.axis('square')
+plt.show()
+plt.clf()
 
 
 
-#x = [p[0] for p in positions]
-#y = [p[1] for p in positions]
-#plt.plot(x, y, '.')
-#plt.axis('square')
-#plt.show()
-#plt.clf()
+angles = [np.arctan2(d[1], d[0]) for d in directions]
+r = wheel_speeds  # We simply use the speed as the radius in the radial plot
+plt.subplot(111, projection='polar')
+plt.scatter(angles, r)
+plt.show()

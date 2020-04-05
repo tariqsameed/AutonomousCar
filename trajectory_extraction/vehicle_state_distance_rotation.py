@@ -172,3 +172,5 @@ def RotationExtraction(striker_precrash_position, striker_collision_point, strik
     print(victim_deviaiton_score)
 
     return  striker_deviaiton_score,victim_deviation_score
+
+

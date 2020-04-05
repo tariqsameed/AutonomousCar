@@ -213,3 +213,14 @@ def createCrashSimulation():
 
 createCrashSimulation()
 
+
+# scenario.make(beamng)
+# bng = beamng.open(launch=True)
+# try:
+#     bng.load_scenario(scenario)
+#     bng.start_scenario()
+#
+#     input('Press enter when done...')
+# finally:
+#     bng.close()
+
