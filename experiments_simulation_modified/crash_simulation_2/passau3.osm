@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="Overpass API 0.7.55.7 8b86ff77">
+<note>The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.</note>
+<meta osm_base="2019-11-02T10:45:02Z"/>
+
+  <node id="57866339" lat="48.5752263" lon="13.4703118"/>
+  <node id="57866347" lat="48.5753264" lon="13.4696770"/>
+  <node id="57866351" lat="48.5754469" lon="13.4689198"/>
+  <node id="57866352" lat="48.5754913" lon="13.4686188"/>
+  <node id="57866359" lat="48.5758119" lon="13.4663639"/>
+  <node id="57866363" lat="48.5758605" lon="13.4659923"/>
+  <node id="57866367" lat="48.5759609" lon="13.4648628"/>
+  <node id="57866374" lat="48.5759596" lon="13.4644260"/>
+  <node id="57869815" lat="48.5751377" lon="13.4684899"/>
+  <node id="267275216" lat="48.5758947" lon="13.4656460"/>
+  <node id="267275217" lat="48.5757399" lon="13.4669170"/>
+  <node id="267275218" lat="48.5756554" lon="13.4675178"/>
+  <node id="267275238" lat="48.5759846" lon="13.4645876"/>
+  <node id="269329468" lat="48.5753706" lon="13.4694483"/>
+  <node id="293018981" lat="48.5753169" lon="13.4685494">
+    <tag k="amenity" v="parking"/>
+    <tag k="wheelchair" v="yes"/>
+  </node>
+  <node id="864720683" lat="48.5755702" lon="13.4681141">
+    <tag k="bus" v="yes"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Rathaus"/>
+    <tag k="network" v="Verkehrsbetriebsgesellschaft Passau"/>
+    <tag k="network:guid" v="DE-BY-VBP"/>
+    <tag k="network:short" v="VBP"/>
+    <tag k="note" v="Linien 1,2,3,4"/>
+    <tag k="operator" v="Stadtwerke Passau"/>
+    <tag k="public_transport" v="stop_position"/>
+    <tag k="uic_ref" v="245327"/>
+  </node>
+  <node id="1917278843" lat="48.5754359" lon="13.4689961">
+    <tag k="bus" v="yes"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Rathaus"/>
+    <tag k="network" v="Verkehrsbetriebsgesellschaft Passau"/>
+    <tag k="network:guid" v="DE-BY-VBP"/>
+    <tag k="network:short" v="VBP"/>
+    <tag k="note" v="Pendelbus Oberhausmuseum"/>
+    <tag k="operator" v="Stadtwerke Passau"/>
+    <tag k="public_transport" v="stop_position"/>
+    <tag k="uic_ref" v="245016"/>
+    <tag k="wheelchair" v="yes"/>
+  </node>
+  <node id="2115422231" lat="48.5759748" lon="13.4644881"/>
+  <node id="2313484282" lat="48.5759392" lon="13.4651429"/>
+  <way id="7864016">
+    <nd ref="57866339"/>
+    <nd ref="57866347"/>
+    <nd ref="269329468"/>
+    <nd ref="1917278843"/>
+    <nd ref="57866351"/>
+    <nd ref="57866352"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Fritz-Schäffer-Promenade"/>
+    <tag k="surface" v="asphalt"/>
+  </way>
+  <way id="7864515">
+    <nd ref="57869815"/>
+    <nd ref="293018981"/>
+    <nd ref="57866352"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Schrottgasse"/>
+    <tag k="surface" v="asphalt"/>
+  </way>
+  <way id="108322891">
+    <nd ref="57866352"/>
+    <nd ref="864720683"/>
+    <nd ref="267275218"/>
+    <nd ref="267275217"/>
+    <nd ref="57866359"/>
+    <nd ref="57866363"/>
+    <nd ref="267275216"/>
+    <nd ref="2313484282"/>
+    <nd ref="57866367"/>
+    <nd ref="267275238"/>
+    <nd ref="2115422231"/>
+    <nd ref="57866374"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Fritz-Schäffer-Promenade"/>
+    <tag k="surface" v="asphalt"/>
+  </way>
+
+</osm>

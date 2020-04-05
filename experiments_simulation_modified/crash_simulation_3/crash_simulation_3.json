@@ -1,0 +1,12 @@
+{
+  "crash_report_id": "2006005289982",
+  "intersection_type" : "Y" ,
+  "road_type" : "two lane undivided",
+  "initial_striker_car_direction" : "north",
+  "initial_victim_car_direction" : "east",
+  "collision_point" : "308.46771202670277, 39.318581604695254",
+  "collision_radius" : "1",
+  "crash_simulations" : 20,
+  "road_gps" : "47.48165,8.44995",
+  "road_beamng_collision_point" : "308.46771202670277, 39.318581604695254"
+}
