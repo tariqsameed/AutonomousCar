@@ -7,6 +7,9 @@ from geopy.distance import great_circle
 filename = 'passau'
 path = "../resources/osm/"
 
+filename = 'munich4'
+path = r'F:\Passau_Masters\Research Work\Alessio\AutonomousCar\expriments_simulation\crash_simulation_6\\'
+
 map_ways = path + filename + '.ways'
 map_ways_serialize = path + filename + '.ways.serialize'
 map_nodes_serialize = path + filename + '.nodes.serialize'

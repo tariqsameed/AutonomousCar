@@ -1,7 +1,12 @@
 import pickle
 import math
+from geopy import distance
 filename = 'passau'
 path = "../resources/osm/"
+
+filename = 'munich4'
+path = r'F:\Passau_Masters\Research Work\Alessio\AutonomousCar\expriments_simulation\crash_simulation_6\\'
+
 
 map_degree_serialize = path + filename + '.ways.degree.serialize'
 map_ways_serialize = path + filename + '.ways.serialize'
@@ -67,15 +72,18 @@ for tup in graph_degree:
     four_way_coordinate = []
     four_way = []
     if tup[1] == 4:
-        four_way_coordinate.append(tup[0])
+        print(tup[0],tup[1])
+        four_way_coordinate.append(node_dict[tup[0]])
         four_way_points = graph.neighbors(tup[0])
         for node in four_way_points:
             pair = (tup[0], node)
             four_way.append(pair)
             four_way_coordinate.append(node_dict[node])   # list of lat and long for map plot
+            print(distance.distance(node_dict[tup[0]], node_dict[node]).km * 1000)
 
     if four_way_coordinate:
         four_way_coordinates.append(four_way_coordinate) # list of lat and long for map plot (4 way)
+        print(four_way_coordinates)
 
     if four_way:
         four_way_list.append(four_way)    # It is required for angle calculations and further reference required to query in graph

@@ -7,6 +7,10 @@ import sys
 
 filename = 'passau'
 path = "../resources/osm/"
+
+filename = 'munich4'
+path = r'F:\Passau_Masters\Research Work\Alessio\AutonomousCar\expriments_simulation\crash_simulation_6\\'
+
 map_ways_serialize = path + filename + '.ways.serialize'
 map_nodes_serialize = path + filename + '.nodes.serialize'
 map_beamng_serialize = path + filename + '.nodes.serialize.beamng'
@@ -40,8 +44,10 @@ def getDistanceBetweenTwoNodes(startingPointX,startingPointY, destinationPointX,
 
 # get coordinates on BeamNG in meters
 def getNormalizedBeamNGCoordinates(startingPointX,startingPointY, lonCartesian, latCartesian):
+    print(startingPointX,startingPointY, lonCartesian, latCartesian)
     xComponent = getDistanceBetweenTwoNodes(startingPointX,startingPointY,lonCartesian,startingPointY)
     yComponent = getDistanceBetweenTwoNodes(startingPointX,startingPointY,startingPointX,latCartesian)
+    print(xComponent,yComponent)
     return  xComponent,yComponent
 
 # get coordinates (substracting minimum from coordinates)
@@ -65,7 +71,8 @@ def findMinLonLat(lat_lon_list):
     #print("Min")
     minLon = min(lat_lon_list, key=lambda t: t[0])
     minLat = min(lat_lon_list, key=lambda t: t[1])
-    #print(minLon[0],minLat[1])
+    print("min")
+    print(minLon[0],minLat[1])
     return  minLon[0],minLat[1]
 
 def findMinMaxLonLat(graph):
@@ -98,6 +105,7 @@ def startRoadCreation():
                 gridBeamNGy,gridBeamNGx = getNormalizedBeamNGCoordinates(minMaxLonLat[0], minMaxLonLat[1], element[0], element[1])
                 beamNG_lat_lon[coordinate] = (gridBeamNGx,gridBeamNGy)
                 beamNG_coordintes.append((gridBeamNGx,gridBeamNGy))
+                break
 
 
         x_val = [x[0] for x in beamNG_coordintes]
@@ -111,7 +119,7 @@ def startRoadCreation():
             plt.annotate('(%s, %s)' % xy, xy=xy, textcoords='data')  # <--
 
         #plt.show()
-        plt.savefig('osm_normalized_beamng.png')
+        plt.savefig(r'F:\Passau_Masters\Research Work\Alessio\AutonomousCar\expriments_simulation\crash_simulation_6\osm_normalized_beamng.png')
 
         pickle.dump(beamNG_lat_lon, open(map_beamng_serialize, "wb"), protocol=4)
         print("Done")

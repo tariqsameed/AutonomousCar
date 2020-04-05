@@ -5,7 +5,7 @@ from elasticsearch import Elasticsearch
 filename = 'passau'
 path = "../resources/osm/"
 map = path + filename + '.osm'
-
+map = r'F:\Passau_Masters\Research Work\Alessio\AutonomousCar\expriments_simulation\crash_simulation_6\munich4.osm'
 es = Elasticsearch()
 
 # wayid, nodes, separate Lanes, width of road

@@ -6,6 +6,10 @@ import pickle
 filename = 'passau'
 path = "../resources/osm/"
 
+filename = 'munich4'
+path = r'F:\Passau_Masters\Research Work\Alessio\AutonomousCar\expriments_simulation\crash_simulation_6\\'
+
+
 map = path + filename + '.osm'
 map_lanes = path + filename + '.lanes'
 map_width = path + filename + '.width'

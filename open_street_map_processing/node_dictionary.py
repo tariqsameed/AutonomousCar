@@ -7,6 +7,10 @@ import os
 filename = 'passau'
 path = "../resources/osm/"
 
+filename = 'munich4'
+path = r'F:\Passau_Masters\Research Work\Alessio\AutonomousCar\expriments_simulation\crash_simulation_6\\'
+
+
 map_nodes = path + filename + '.nodes'
 map_nodes_serialize = path + filename + '.nodes.serialize'
 node_dict = {}

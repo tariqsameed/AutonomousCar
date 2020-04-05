@@ -2,8 +2,12 @@ import networkx as nx
 import pickle
 
 filename = 'passau'
-known_connected_node_passau = '50376711'
+known_connected_node_passau = '27479770' #'50376711'
 path = "../resources/osm/"
+
+filename = 'munich4'
+path = r'F:\Passau_Masters\Research Work\Alessio\AutonomousCar\expriments_simulation\crash_simulation_6\\'
+
 
 map_nodes_serialize = path + filename + '.nodes.serialize'
 map_nodes_connected_serialize = path + filename + '.nodes.connected.serialize'
