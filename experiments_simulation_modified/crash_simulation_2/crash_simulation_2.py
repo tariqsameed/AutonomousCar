@@ -478,27 +478,22 @@ def tournament_parent_selection(populations, n=2, tsize=3):
 
 def mutation(chromosome):
     print("mutation")
+    chromosome = expandChromosome(chromosome)
     chromosome[random.randint(0, len(chromosome) - 1)] = random.randint(min(chromosome), max(chromosome) - 1)
     random.shuffle(chromosome)
-    return  chromosome
+    return shrinkChromosome(chromosome)
 
 
-def crossover(chromosome1,chromosome2):
+def crossover(chromosome1, chromosome2):
     print("crossover")
-    crossover_point = random.randint(1, len(chromosome1) - 1)
+    crossover_point = random.randint(1, len(expandChromosome(chromosome1)) - 1)
 
+    chromosome1 = expandChromosome(chromosome1)
+    chromosome2 = expandChromosome(chromosome2)
     # Create children. np.hstack joins two arrays
-    child_1 = np.hstack((chromosome1[0:crossover_point],
+    child = np.hstack((chromosome1[0:crossover_point],
                          chromosome2[crossover_point:]))
-
-    # child_2 = np.hstack((chromosome2[0:crossover_point],
-    #                      chromosome1[crossover_point:]))
-
-    # Return children
-    #return child_1, child_2
-   # child_1 = random.shuffle(child_1)
-    return child_1
-
+    return shrinkChromosome(child)
 
 
 def crossover_mutation(selected_parents):
@@ -507,13 +502,10 @@ def crossover_mutation(selected_parents):
     population_next = []
     n = 1
     for i in range(int(len(selected_parents) / 2)):
-        for j in range(n): # number of children
+        for j in range(n):  # number of children
             chromosome1, chromosome2 = selected_parents[i], selected_parents[len(selected_parents) - 1 - i]
-            childs = crossover(chromosome1,chromosome2)
-            #childs = mutation(childs)
-            # for child in childs:
-            #     population_next.append(mutation(child.tolist()))
-            population_next.append(mutation(childs.tolist()))
+            childs = crossover(chromosome1, chromosome2)
+            population_next.append(mutation(childs))
 
     print(population_next)
     return population_next
