@@ -10,7 +10,7 @@ from expriments_simulation.crash_simulation_4.crash_simulation_helper import Ang
 from expriments_simulation.crash_simulation_4.vehicle_state_helper import DamageExtraction, DistanceExtraction, RotationExtraction
 import csv
 import sys
-sys.stdout = open('output.txt','w')
+#sys.stdout = open('output.txt','w')
 
 # create road geometry in beamng.
 filename = 'munich4'
@@ -92,13 +92,13 @@ for tup in graph_degree:
         print(beamng_dict[tup[0]])
         collision_point.append(beamng_dict[tup[0]])
         for node in four_way_points:
-            way_geo = (node, node_dict[tup[0]], lane_dict[tup[0]], width_dict[tup[0]])  # node, coordinate, number of lanes , width
-            #print(way_geo)
+            way_geo = (node, node_dict[tup[0]], lane_dict[tup[0]], width_dict[tup[0]], beamng_dict[node])  # node, coordinate, number of lanes , width
+            print(way_geo)
             pair = (tup[0], node)
             four_way.append(pair)
             four_way_coordinate.append(node_dict[node])
 
-
+input('Press enter when done...')
 #print(four_way)
 for sample in four_way:
     print("4 way")
@@ -119,11 +119,11 @@ for sample in four_way:
     scenario.add_road(road_a)
 
 
-vehicleStriker = Vehicle('striker', model='etk800', licence='PYTHON', colour='Yellow')
+vehicleStriker = Vehicle('striker', model='etk800', licence='Striker', colour='Yellow')
 damageStriker = Damage();
 vehicleStriker.attach_sensor('damagesS', damageStriker);
 
-vehicleVictim = Vehicle('victim', model='etk800', licence='PYTHON', colour='White')
+vehicleVictim = Vehicle('victim', model='etk800', licence='Victim', colour='White')
 damageVictim = Damage();
 vehicleVictim.attach_sensor('damagesV', damageVictim);
 
@@ -165,11 +165,11 @@ def generateRandomPopulation(N=5,Gene=14):
     print("random population")
     initial_population = [[np.random.randint(0,9) for i in range(Gene)] for j in range(N)]
     initial_population = []
-    initial_population.append([1, 7, 8, 3, 2, 2, 4, 8, 7, 4, 1, 7, 3, 2])
-    initial_population.append([5, 1, 5, 4, 7, 0, 8, 8, 5, 6, 3, 4, 0, 7])
+    # initial_population.append([1, 7, 8, 3, 2, 2, 4, 8, 7, 4, 1, 7, 3, 2])
+    # initial_population.append([5, 1, 5, 4, 7, 0, 8, 8, 5, 6, 3, 4, 0, 7])
     initial_population.append([2, 2, 6, 1, 8, 4, 0, 7, 0, 4, 1, 4, 5, 7])
-    initial_population.append([4, 6, 4, 0, 7, 5, 2, 4, 0, 2, 3, 5, 3, 4])
-    initial_population.append([4, 7, 0, 1, 0, 3, 0, 8, 1, 0, 6, 6, 1, 3])
+    # initial_population.append([4, 6, 4, 0, 7, 5, 2, 4, 0, 2, 3, 5, 3, 4])
+    # initial_population.append([4, 7, 0, 1, 0, 3, 0, 8, 1, 0, 6, 6, 1, 3])
     return initial_population
 
 
@@ -237,8 +237,9 @@ for population in populations:
     # Add it to our scenario at this position and rotation
 
     # alpha = AngleBtw2Points([5,5],[7,4])
+    scenario.add_vehicle(vehicleStriker, pos=(striker_points[0][0], striker_points[0][1], 0),
+                         rot=(0, 0, 180))  # get car heading angle
     scenario.add_vehicle(vehicleVictim, pos=(victim_points[0][0], victim_points[0][1], 0), rot=(0, 0, 90))
-    scenario.add_vehicle(vehicleStriker, pos=(striker_points[0][0], striker_points[0][1], 0), rot=(0, 0, 180)) # get car heading angle
 
 
         # save values to dictionary

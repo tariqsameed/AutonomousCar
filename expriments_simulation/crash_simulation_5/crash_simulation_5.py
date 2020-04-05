@@ -10,7 +10,7 @@ from expriments_simulation.crash_simulation_5.crash_simulation_helper import Ang
 from expriments_simulation.crash_simulation_5.vehicle_state_helper import DamageExtraction, DistanceExtraction, RotationExtraction
 import csv
 import sys
-sys.stdout = open('output.txt','w')
+#sys.stdout = open('output.txt','w')
 
 # create road geometry in beamng.
 filename = 'munich4'
@@ -92,13 +92,13 @@ for tup in graph_degree:
         print(beamng_dict[tup[0]])
         collision_point.append(beamng_dict[tup[0]])
         for node in four_way_points:
-            way_geo = (node, node_dict[tup[0]], lane_dict[tup[0]], width_dict[tup[0]])  # node, coordinate, number of lanes , width
-            #print(way_geo)
+            way_geo = (node, node_dict[tup[0]], lane_dict[tup[0]], width_dict[tup[0]], beamng_dict[node])  # node, coordinate, number of lanes , width
+            print(way_geo)
             pair = (tup[0], node)
             four_way.append(pair)
             four_way_coordinate.append(node_dict[node])
 
-
+#input('Press enter when done...')
 print(four_way)
 for sample in four_way:
     print("4 way")
@@ -119,11 +119,11 @@ for sample in four_way:
     scenario.add_road(road_a)
 
 
-vehicleStriker = Vehicle('striker', model='etk800', licence='PYTHON', colour='Yellow')
+vehicleStriker = Vehicle('striker', model='etk800', licence='Striker', colour='Yellow')
 damageStriker = Damage();
 vehicleStriker.attach_sensor('damagesS', damageStriker);
 
-vehicleVictim = Vehicle('victim', model='etk800', licence='PYTHON', colour='White')
+vehicleVictim = Vehicle('victim', model='etk800', licence='Victim', colour='White')
 damageVictim = Damage();
 vehicleVictim.attach_sensor('damagesV', damageVictim);
 
@@ -249,7 +249,6 @@ for population in populations:
     try:
         bng.load_scenario(scenario)
         bng.start_scenario()
-
         # path for striker vehicle
         node0 = {
             'pos': (striker_points[0][0], striker_points[0][1], 0),

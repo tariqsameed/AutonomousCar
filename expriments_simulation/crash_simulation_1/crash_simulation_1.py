@@ -1,7 +1,7 @@
 import pickle
 from beamngpy import BeamNGpy, Scenario, Road, Vehicle, setup_logging
 import time
-from beamngpy.sensors import Electrics, Damage
+from beamngpy.sensors import Electrics, Damage, Camera
 import math
 import random
 import numpy as np
@@ -10,7 +10,7 @@ from expriments_simulation.crash_simulation_1.crash_simulation_helper import Ang
 from expriments_simulation.crash_simulation_1.vehicle_state_helper import DamageExtraction, DistanceExtraction, RotationExtraction
 import csv
 import sys
-sys.stdout = open('output.txt','w')
+#sys.stdout = open('output.txt','w')
 
 # create road geometry in beamng.
 filename = 'munich4'
@@ -90,13 +90,13 @@ for tup in graph_degree:
         print(beamng_dict[tup[0]])
         collision_point.append(beamng_dict[tup[0]])
         for node in four_way_points:
-            way_geo = (node, node_dict[tup[0]], lane_dict[tup[0]], width_dict[tup[0]])  # node, coordinate, number of lanes , width
-            #print(way_geo)
+            way_geo = (node, node_dict[tup[0]], lane_dict[tup[0]], width_dict[tup[0]],beamng_dict[node])  # node, coordinate, number of lanes , width
+            print(way_geo)
             pair = (tup[0], node)
             four_way.append(pair)
             four_way_coordinate.append(node_dict[node])
 
-
+#input('Press enter when done...')
 print(four_way)
 for sample in four_way:
     #print("4 way")
@@ -118,11 +118,11 @@ for sample in four_way:
 
 
 
-vehicleStriker = Vehicle('striker', model='etk800', licence='PYTHON', colour='Yellow')
+vehicleStriker = Vehicle('striker', model='etk800', licence='Striker', colour='Yellow')
 damageStriker = Damage();
 vehicleStriker.attach_sensor('damagesS', damageStriker);
 
-vehicleVictim = Vehicle('victim', model='etk800', licence='PYTHON', colour='White')
+vehicleVictim = Vehicle('victim', model='etk800', licence='Victim', colour='White')
 damageVictim = Damage();
 vehicleVictim.attach_sensor('damagesV', damageVictim);
 
@@ -165,10 +165,10 @@ def generateRandomPopulation(N=10,Gene=14):
     initial_population = [[np.random.randint(0,9) for i in range(Gene)] for j in range(N)]
     initial_population = []
     initial_population.append([5, 6, 7, 2, 5, 5, 8, 8, 7, 5, 4, 2, 4, 7])
-    initial_population.append([1, 1, 3, 7, 8, 3, 6, 3, 0, 3, 4, 7, 0, 2])
-    initial_population.append([7, 0, 8, 0, 8, 6, 1, 4, 6, 4, 6, 8, 7, 6])
-    initial_population.append([6, 7, 3, 0, 2, 5, 6, 5, 2, 7, 6, 3, 4, 2])
-    initial_population.append([6, 4, 1, 1, 5, 7, 4, 1, 4, 0, 5, 8, 5, 5])
+    # initial_population.append([1, 1, 3, 7, 8, 3, 6, 3, 0, 3, 4, 7, 0, 2])
+    # initial_population.append([7, 0, 8, 0, 8, 6, 1, 4, 6, 4, 6, 8, 7, 6])
+    # initial_population.append([6, 7, 3, 0, 2, 5, 6, 5, 2, 7, 6, 3, 4, 2])
+    # initial_population.append([6, 4, 1, 1, 5, 7, 4, 1, 4, 0, 5, 8, 5, 5])
     return initial_population
 
 
@@ -499,8 +499,8 @@ for _ in range(20): # Number of Generations to be Iterated.
         bng = beamng.open(launch=True)
         try:
             bng.load_scenario(scenario)
-            bng.start_scenario()
 
+            bng.start_scenario()
             # path for striker vehicle
             node0 = {
                 'pos': (striker_points[0][0], striker_points[0][1], 0),

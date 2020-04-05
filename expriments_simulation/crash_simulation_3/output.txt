@@ -6,32 +6,4 @@ Lanes Loaded
 Width Loaded
 collision point
 (334.3529587990675, 165.95866245783088)
-3 way
-3 way
-3 way
-random population
-initial population
-[[8, 1, 5, 3, 3, 7, 3, 8, 8, 4, 1, 6, 2, 0]]
- 
-[8, 1, 5, 3, 3, 7, 3, 8, 8, 4, 1, 6, 2, 0]
-decoding of parameters
-(306.5245185052554, 172.25767435710236)
-beamng parameters
-(81, (306.89370026864736, 148.3158840029947), 73, (306.5245185052554, 172.25767435710236), (334.0, 165.0))
-damage extraction
-striker damage area FL
-1.0
-victim damage area FBR
-1.0
-Distance Extraction
-stiker distance 11.556637156829133
-victim distance 75.8899004346574
-rotation extraction
-0.3
-0.3
-multiObjectiveFitnessScore
-(1.0, 1.0)
-(0.3, 0.2)
-(0.3, 0.3)
-3.0999999999999996
-critical scenario
+Press enter when done...

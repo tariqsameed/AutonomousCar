@@ -1,0 +1,39 @@
+Nodes Loaded
+Graph Loaded
+BeamNG Nodes Loaded
+Graph Degree
+Lanes Loaded
+Width Loaded
+collision point
+(308.46771202670277, 39.318581604695254)
+3 way
+3 way
+3 way
+random population
+initial population
+[[1, 8, 1, 3, 1, 6, 8, 3, 3, 8, 0, 5, 6, 7]]
+[1, 8, 1, 3, 1, 6, 8, 3, 3, 8, 0, 5, 6, 7]
+decoding of parameters
+(284.43065844900536, 44.22945505284302)
+beamng parameters
+(18, (305.6122686453592, 23.957497102063012), 68, (284.43065844900536, 44.22945505284302), (308.46771202670277, 39.318581604695254))
+damage extraction
+FL
+1.0
+FL
+1.0
+Distance Extraction
+stiker distance 32.68486569643684
+victim distance 15.216811680055514
+rotation extraction
+striker deviation173.34725110355217
+striker rotation score 0.3
+victim rotation score 0.3
+multiObjectiveFitnessScore
+(1.0, 1.0)
+(0.2, 0.2)
+(0, 0.3)
+2.7
+critical scenario
+genetic algorithm simulation
+tournament selection
