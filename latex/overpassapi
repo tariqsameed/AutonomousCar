@@ -1,0 +1,8 @@
+/*  around is distane in meters around latitude and longitude. */
+[out:xml];
+( way
+  (around:around=200,latitude=48.5706833,longitude=13.4587882)
+  [highway~"^(primary|secondary|tertiary|residential)$"]
+  [name];
+>;);out;
+

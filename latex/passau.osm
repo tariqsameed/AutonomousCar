@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="Overpass API 0.7.55.7 8b86ff77">
+<meta osm_base="2019-08-15T11:22:02Z"/>
+  <node id="595019" lat="48.5718470" lon="13.4607844">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <way id="108277170">
+    <nd ref="1771953000"/>
+    <nd ref="60775846"/>
+    <nd ref="595019"/>
+    <tag k="highway" v="tertiary"/>
+    <tag k="lanes" v="2"/>
+    <tag k="maxspeed" v="30"/>
+    <tag k="name" v="Innstraße"/>
+    <tag k="sidewalk" v="both"/>
+    <tag k="surface" v="asphalt"/>
+  </way>
+</osm>
