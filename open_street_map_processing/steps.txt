@@ -1,0 +1,12 @@
+Download OSM Map
+Seperate Node Way file
+Elastic Search geo ways
+Elastic Search geo nodes
+node dictionary
+ways graph
+node dictionary connected - known node
+lane width dictionary
+node degree intersection
+OSM Map plot.
+
+OSM Beamng Coordinates normalization
