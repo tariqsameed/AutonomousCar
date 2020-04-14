@@ -12,6 +12,9 @@ import csv
 import sys
 sys.stdout = open('output.txt','w')
 
+from datetime import datetime
+print(datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
+
 # create road geometry in beamng.
 filename = 'regensberg3'
 map_ways_serialize = filename + '.ways.serialize'
@@ -169,7 +172,7 @@ populations_fitness = {} # fitness function to store fitness values of chromosom
 def generateRandomPopulation(N=5,Gene=10):
     print("random population")
     random_population = [[np.random.randint(1,9) for i in range(Gene + 4)] for j in range(N - 1)]
-    random_population.append([8, 1, 5, 3, 3, 7, 3, 8, 8, 4, 1, 6, 2, 1])
+    random_population.append([1, 4, 5, 3, 3, 1, 2, 8, 8, 4, 1, 6, 2, 1])
     initial_population = convertPopulation(random_population)
     return initial_population
 
@@ -296,10 +299,8 @@ for population in populations:
 
     # alpha = AngleBtw2Points([5,5],[7,4])
 
+    scenario.add_vehicle(vehicleStriker, pos=(striker_points[0][0], striker_points[0][1], 0), rot=(0, 0, 240))  # get car heading angle
     scenario.add_vehicle(vehicleVictim, pos=(victim_points[0][0], victim_points[0][1], 0), rot=(0, 0, -78))
-    scenario.add_vehicle(vehicleStriker, pos=(striker_points[0][0], striker_points[0][1], 0),
-                         rot=(0, 0, 240))  # get car heading angle
-
 
     # save values to dictionary
     pos_crash_dict["chromosome"] = population
@@ -379,6 +380,7 @@ for population in populations:
                 striker_direction = vehicleStriker.state['dir']
                 if 'damagesS' in sensorsStriker:
                     striker_damage = sensorsStriker['damagesS']
+                    print(striker_damage)
 
 
                 # victim vehicle state extraction
@@ -389,6 +391,7 @@ for population in populations:
                 victim_direction = vehicleVictim.state['dir']
                 if 'damagesV' in sensorsVictim:
                     victim_damage = sensorsVictim['damagesV']
+                    print(victim_damage)
 
 
                 # multiobjective fitness function.
@@ -695,7 +698,7 @@ for _ in range(20): # Number of Generations to be Iterated.
 
         # iteratoin of genetic algorithm finished.
 
-
+print(datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
 
 # scenario.make(beamng)
 # bng = beamng.open(launch=True)

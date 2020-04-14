@@ -14,7 +14,7 @@ def DamageExtraction(striker_damage, victim_damage, actual_striker_damage, actua
     if 'damage' in striker_damage:
 
         # Striker Damage
-        if striker_damage['damage'] > 100:
+        if striker_damage['damage'] > 0:
             stkeys = striker_damage['partDamage']
             #front damage
             for keys in stkeys:
@@ -57,7 +57,7 @@ def DamageExtraction(striker_damage, victim_damage, actual_striker_damage, actua
 
 
         # Victim Damage
-        if victim_damage['damage'] > 100:
+        if victim_damage['damage'] > 0:
             vikeys = victim_damage['partDamage']
             # front damage
             for keys in vikeys:
