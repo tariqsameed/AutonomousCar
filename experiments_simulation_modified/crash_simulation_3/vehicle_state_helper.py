@@ -155,7 +155,7 @@ def AngleBtw2Points(pointA, pointB):
 import math
 def getAngle(a, b, c):
     ang = math.degrees(math.atan2(c[1] - b[1], c[0] - b[0]) - math.atan2(a[1] - b[1], a[0] - b[0]))
-    return ang
+    return  ang + 360 if ang < 0 else ang
 
 
 
@@ -166,35 +166,55 @@ def RotationExtraction(striker_precrash_position, striker_collision_point, strik
     striker_alpha = getAngle(striker_precrash_position, striker_collision_point, striker_post_crash_position)
     victim_alpha = getAngle(victim_precrash_position, victim_collision_point, victim_post_crash_position)
 
-    striker_heading = AngleBtw2Points(striker_precrash_position, striker_collision_point)
-    victim_heading = AngleBtw2Points(victim_precrash_position, victim_collision_point)
-
-    striker_deviation = (striker_heading + striker_alpha) % 360
-    victim_deviation = (victim_heading + victim_alpha) % 360
+    print("striker angle")
+    print(striker_alpha)
+    print("victim angle")
+    print(victim_alpha)
 
     striker_deviation_score = 0
     victim_deviation_score = 0
 
-    if striker_deviation > 0 and  striker_deviation <= 30:
-        striker_deviation_score = 0.1
-
-    if striker_deviation > 30 and  striker_deviation <= 60:
-        striker_deviation_score = 0.2
-
-    if striker_deviation > 60:
+    if(striker_alpha < 180):
+        print("striker clockwise rotation")
         striker_deviation_score = 0.3
 
+    else:
+        print("striker counter-clockwise rotation")
+        striker_deviation_score = 0
 
-    #---------------------------------------------------------
-
-    if victim_deviation > 0 and victim_deviation <= 30:
-        victim_deviation_score = 0.1
-
-    if victim_deviation > 30 and victim_deviation <= 60:
-        victim_deviation_score = 0.2
-
-    if victim_deviation > 60:
+    if (victim_alpha < 180):
+        print("victim clockwise rotation")
+        victim_deviation_score = 0
+    else:
+        print("victim counter-clockwise rotation")
         victim_deviation_score = 0.3
+
+    # striker_heading = AngleBtw2Points(striker_precrash_position, striker_collision_point)
+    # victim_heading = AngleBtw2Points(victim_precrash_position, victim_collision_point)
+    #
+    # striker_deviation = (striker_heading + striker_alpha) % 360
+    # victim_deviation = (victim_heading + victim_alpha) % 360
+
+    # if striker_deviation > 0 and  striker_deviation <= 30:
+    #     striker_deviation_score = 0.1
+    #
+    # if striker_deviation > 30 and  striker_deviation <= 60:
+    #     striker_deviation_score = 0.2
+    #
+    # if striker_deviation > 60:
+    #     striker_deviation_score = 0.3
+    #
+    #
+    # #---------------------------------------------------------
+    #
+    # if victim_deviation > 0 and victim_deviation <= 30:
+    #     victim_deviation_score = 0.1
+    #
+    # if victim_deviation > 30 and victim_deviation <= 60:
+    #     victim_deviation_score = 0.2
+    #
+    # if victim_deviation > 60:
+    #     victim_deviation_score = 0.3
 
 
     print(striker_deviation_score)
