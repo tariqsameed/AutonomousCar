@@ -174,32 +174,47 @@ def RotationExtraction(striker_precrash_position, striker_collision_point, strik
     striker_deviation = (striker_heading + striker_alpha) % 360
     victim_deviation = (victim_heading + victim_alpha) % 360
 
-    striker_deviaton_score = 0
+    striker_deviation_score = 0
     victim_deviation_score = 0
 
-    if striker_deviation > 0 and  striker_deviation <= 8:
-        striker_deviaton_score = 0.3
+    if (striker_alpha < 180):
+        print("striker clockwise rotation")
+        striker_deviation_score = 0
 
-    if striker_deviation > 8 and  striker_deviation <= 16:
-        striker_deviaton_score = 0.2
+    else:
+        print("striker counter-clockwise rotation")
+        striker_deviation_score = 0.3
 
-    if striker_deviation > 16:
-        striker_deviaton_score = 0.1
-
-
-    #---------------------------------------------------------
-
-    if victim_deviation > 0 and victim_deviation <= 20:
-        victim_deviation_score = 0.1
-
-    if victim_deviation > 20 and victim_deviation <= 40:
-        victim_deviation_score = 0.2
-
-    if victim_deviation > 40:
+    if (victim_alpha < 180):
+        print("victim clockwise rotation")
         victim_deviation_score = 0.3
+    else:
+        print("victim counter-clockwise rotation")
+        victim_deviation_score = 0
 
-    print('striker rotation score ' + str(striker_deviaton_score))
+    # if striker_deviation > 0 and  striker_deviation <= 8:
+    #     striker_deviaton_score = 0.3
+    #
+    # if striker_deviation > 8 and  striker_deviation <= 16:
+    #     striker_deviaton_score = 0.2
+    #
+    # if striker_deviation > 16:
+    #     striker_deviaton_score = 0.1
+    #
+    #
+    # #---------------------------------------------------------
+    #
+    # if victim_deviation > 0 and victim_deviation <= 20:
+    #     victim_deviation_score = 0.1
+    #
+    # if victim_deviation > 20 and victim_deviation <= 40:
+    #     victim_deviation_score = 0.2
+    #
+    # if victim_deviation > 40:
+    #     victim_deviation_score = 0.3
+
+    print('striker rotation score ' + str(striker_deviation_score))
     print('victim rotation score ' + str(victim_deviation_score))
 
-    return  striker_deviaton_score,victim_deviation_score
+    return  striker_deviation_score,victim_deviation_score
 

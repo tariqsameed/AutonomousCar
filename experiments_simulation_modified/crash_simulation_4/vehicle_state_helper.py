@@ -152,7 +152,7 @@ def AngleBtw2Points(pointA, pointB):
 import math
 def getAngle(a, b, c):
     ang = math.degrees(math.atan2(c[1] - b[1], c[0] - b[0]) - math.atan2(a[1] - b[1], a[0] - b[0]))
-    return ang
+    return ang + 360 if ang < 0 else ang
 
 
 
@@ -169,33 +169,48 @@ def RotationExtraction(striker_precrash_position, striker_collision_point, strik
     striker_deviation = (striker_heading + striker_alpha) % 360
     victim_deviation = (victim_heading + victim_alpha) % 360
 
-    striker_deviaiton_score = 0
+    striker_deviation_score = 0
     victim_deviation_score = 0
 
-    if striker_deviation > 0 and  striker_deviation <= 15:
-        striker_deviaiton_score = 0.3
+    if (striker_alpha < 180):
+        print("striker clockwise rotation")
+        striker_deviation_score = 0
 
-    if striker_deviation > 15 and  striker_deviation <= 30:
-        striker_deviaiton_score = 0.2
+    else:
+        print("striker counter-clockwise rotation")
+        striker_deviation_score = 0.3
 
-    if striker_deviation > 30:
-        striker_deviaiton_score = 0.1
+    if (victim_alpha < 180):
+        print("victim clockwise rotation")
+        victim_deviation_score = 0
+    else:
+        print("victim counter-clockwise rotation")
+        victim_deviation_score = 0.3
+
+    # if striker_deviation > 0 and  striker_deviation <= 15:
+    #     striker_deviaiton_score = 0.3
+    #
+    # if striker_deviation > 15 and  striker_deviation <= 30:
+    #     striker_deviaiton_score = 0.2
+    #
+    # if striker_deviation > 30:
+    #     striker_deviaiton_score = 0.1
+    #
+    #
+    # #---------------------------------------------------------
+    #
+    # if victim_deviation > 0 and victim_deviation <= 15:
+    #     victim_deviaiton_score = 0.3
+    #
+    # if victim_deviation > 15 and victim_deviation <= 30:
+    #     victim_deviaiton_score = 0.2
+    #
+    # if victim_deviation > 30:
+    #     victim_deviaiton_score = 0.1
 
 
-    #---------------------------------------------------------
+    print(striker_deviation_score)
+    print(victim_deviation_score)
 
-    if victim_deviation > 0 and victim_deviation <= 15:
-        victim_deviaiton_score = 0.3
-
-    if victim_deviation > 15 and victim_deviation <= 30:
-        victim_deviaiton_score = 0.2
-
-    if victim_deviation > 30:
-        victim_deviaiton_score = 0.1
-
-
-    print(striker_deviaiton_score)
-    print(victim_deviaiton_score)
-
-    return  striker_deviaiton_score,victim_deviation_score
+    return  striker_deviation_score,victim_deviation_score
 
