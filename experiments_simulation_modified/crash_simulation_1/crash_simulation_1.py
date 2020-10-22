@@ -10,7 +10,11 @@ from experiments_simulation_modified.crash_simulation_1.crash_simulation_helper 
 from experiments_simulation_modified.crash_simulation_1.vehicle_state_helper import DamageExtraction, DistanceExtraction, RotationExtraction
 import csv
 import sys
+import json
 sys.stdout = open('output.txt','w')
+
+from datetime import datetime
+print(datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
 
 # create road geometry in beamng.
 filename = 'munich4'
@@ -68,6 +72,29 @@ def saveDictionaryToCsvFile():
         print("I/O error")
 
 # -------------------------------------------------------------------------
+
+actual_striker_damage = ""
+actual_victim_damage = ""
+crash_fitness_function = False
+distance_fitness_function =  False
+rotation_fitness_function = False
+# read fitness function json file.
+with open('fitness_function_1.json') as json_file:
+    data = json.load(json_file)
+
+    actual_striker_damage = data['actual_striker_damage']
+    actual_victim_damage = data['actual_victim_damage']
+    crash_fitness_function = data['crash_fitness_function']
+    distance_fitness_function =  data['distance_fitness_function']
+    rotation_fitness_function = data['rotation_fitness_function']
+
+    print(actual_striker_damage)
+    print(actual_victim_damage)
+    print(crash_fitness_function)
+    print(distance_fitness_function)
+    print(rotation_fitness_function)
+
+# --------------------------------------------------------------------------
 
 beamng = BeamNGpy('localhost', 64256, home='F:\Softwares\BeamNG_Research_SVN')
 scenario = Scenario('GridMap', 'crash_simulation_1')
@@ -145,8 +172,8 @@ IMPACT_POSITION_Y = 143
 road_striker = [(241, 72),(238, 143)]
 road_victim =  [(167, 139),(238, 143)]
 
-actual_striker_damage = "F"
-actual_victim_damage = "R"
+#actual_striker_damage = "F"
+#actual_victim_damage = "R"
 
 # parameters for vehicle state extraction
 positions = list()
@@ -385,11 +412,18 @@ for population in populations:
 
                 # multiobjective fitness function.
                 multiObjectiveFitnessScore = 0
-                critical_damage_score = DamageExtraction(striker_damage, victim_damage, actual_striker_damage,
+                critical_damage_score = (0,0)
+                distance_score = (0,0)
+                rotation_score = (0,0)
+
+                if crash_fitness_function:
+                    critical_damage_score = DamageExtraction(striker_damage, victim_damage, actual_striker_damage,
                                                          actual_victim_damage)
-                distance_score = DistanceExtraction(striker_speeds[0], striker_position, collision_points[0],
+                if distance_fitness_function:
+                    distance_score = DistanceExtraction(striker_speeds[0], striker_position, collision_points[0],
                                                     victim_speeds[0], victim_position, collision_points[0])
-                rotation_score = RotationExtraction(striker_points[0], collision_points[0], striker_position,
+                if rotation_fitness_function:
+                    rotation_score = RotationExtraction(striker_points[0], collision_points[0], striker_position,
                                                     victim_points[0], collision_points[0], victim_position)
 
                 print("multiObjectiveFitnessScore")
@@ -425,6 +459,7 @@ for population in populations:
 
     finally:
         bng.close()
+
 
 # ---------------------------- save genetic algorithm iteration-----------------------------------------
 f = open("genetic_algorithm_iteration.csv", "w+")
@@ -626,12 +661,19 @@ for _ in range(20): # Number of Generations to be Iterated.
 
                     # multiobjective fitness function.
                     multiObjectiveFitnessScore = 0
-                    critical_damage_score = DamageExtraction(striker_damage, victim_damage, actual_striker_damage,
-                                                             actual_victim_damage)
-                    distance_score = DistanceExtraction(striker_speeds[0], striker_position, collision_points[0],
-                                                        victim_speeds[0], victim_position, collision_points[0])
-                    rotation_score = RotationExtraction(striker_points[0], collision_points[0], striker_position,
-                                                        victim_points[0], collision_points[0], victim_position)
+                    critical_damage_score = (0, 0)
+                    distance_score = (0, 0)
+                    rotation_score = (0, 0)
+
+                    if crash_fitness_function:
+                        critical_damage_score = DamageExtraction(striker_damage, victim_damage, actual_striker_damage,
+                                                                 actual_victim_damage)
+                    if distance_fitness_function:
+                        distance_score = DistanceExtraction(striker_speeds[0], striker_position, collision_points[0],
+                                                            victim_speeds[0], victim_position, collision_points[0])
+                    if rotation_fitness_function:
+                        rotation_score = RotationExtraction(striker_points[0], collision_points[0], striker_position,
+                                                            victim_points[0], collision_points[0], victim_position)
 
                     print("multiObjectiveFitnessScore")
                     print(critical_damage_score)
@@ -694,7 +736,7 @@ for _ in range(20): # Number of Generations to be Iterated.
 
         # iteratoin of genetic algorithm finished.
 
-
+print(datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
 #
 # scenario.make(beamng)
 # bng = beamng.open(launch=True)
