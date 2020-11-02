@@ -630,10 +630,50 @@ for _ in range(20): # Number of Generations to be Iterated.
         striker_alpha = AngleBtw2Points(road_striker[0], road_striker[1])
         victim_alpha = AngleBtw2Points(road_victim[0], road_victim[1])
 
-        scenario.add_vehicle(vehicleStriker, pos=(striker_points[0][0], striker_points[0][1], 0),
-                             rot=(0, 0, 180))  # get car heading angle
-        scenario.add_vehicle(vehicleVictim, pos=(victim_points[0][0], victim_points[0][1], 0),
-                             rot=(0, 0, -90))  # get car heading anlge
+        striker_population = {
+            'speed': beamng_parameters[0], # starting speed
+            'col_speed': beamng_parameters[0], # collision speed
+            # starting point
+            'pos_x': beamng_parameters[1][0],
+            'pos_y': beamng_parameters[1][1],
+            'pos_z': 0,
+            # collision point
+            'col_x': beamng_parameters[4][0],
+            'col_y': beamng_parameters[4][1],
+            'col_z': 0,
+            # rotation coordinate 
+            'rot_x': 0,
+            'rot_y': 0,
+            'rot_z': 180,
+        }
+
+        victim_population = {
+            'speed': 56, # starting speed
+            'col_speed': beamng_parameters[2], # collision speed
+            # starting point
+            'pos_x': beamng_parameters[3][0],
+            'pos_y': beamng_parameters[3][1],
+            'pos_z': 0,
+            # collision point
+            'col_x': beamng_parameters[4][0],
+            'col_y': beamng_parameters[4][1],
+            'col_z': 0,
+            # rotation coordinate
+            'rot_x': 0,
+            'rot_y': 0,
+            'rot_z': -90,
+        }
+        
+        scenario.add_vehicle(
+            vehicleStriker, 
+            pos = (striker_population['pos_x'], striker_population['pos_y'], striker_population['pos_z']), 
+            rot = (striker_population['rot_x'], striker_population['rot_y'], striker_population['rot_z'])
+        )
+        scenario.add_vehicle(
+            vehicleVictim, 
+            pos = (victim_population['pos_x'], victim_population['pos_y'], victim_population['pos_z']), 
+            rot = (victim_population['rot_x'], victim_population['rot_y'], victim_population['rot_z'])
+        )
 
         # save values to dictionary
         pos_crash_dict["chromosome"] = children
@@ -643,44 +683,26 @@ for _ in range(20): # Number of Generations to be Iterated.
         pos_crash_dict["v2_waypoint"] = victim_points[0]
 
         scenario.make(beamng)
+
+        striker_path = path_generator(striker_population, num_points = 10, extra_points = 3)
+        victim_path = path_generator(victim_population, num_points = 10, extra_points = 3, is_striker = False)
+
+
         bng = beamng.open(launch=True)
+        bng.set_deterministic()
+
         try:
             bng.load_scenario(scenario)
-
             bng.start_scenario()
-            # path for striker vehicle
-            node0 = {
-                'pos': (striker_points[0][0], striker_points[0][1], 0),
-                'speed': 0,
-            }
-
-            node1 = {
-                'pos': (collision_points[0][0], collision_points[0][1], 0),
-                'speed': striker_speeds[0],
-            }
-
-            script = list()
-            script.append(node0)
-            script.append(node1)
-
-            vehicleStriker.ai_set_line(script)
-
-            # path for victim vehicle
-            node2 = {
-                'pos': (victim_points[0][0], victim_points[0][1], 0),
-                'speed': 0,
-            }
-
-            node3 = {
-                'pos': (collision_points[0][0], collision_points[0][1], 0),
-                'speed': victim_speeds[0],
-            }
-
-            script = list()
-            script.append(node2)
-            script.append(node3)
-
-            vehicleVictim.ai_set_line(script)
+            bng.add_debug_line(striker_path['points'], striker_path['point_colors'],
+                spheres=striker_path['spheres'], sphere_colors=striker_path['sphere_colors'],
+                cling=True, offset=0.1)
+            bng.add_debug_line(victim_path['points'], victim_path['point_colors'],
+                spheres=victim_path['spheres'], sphere_colors=victim_path['sphere_colors'],
+                cling=True, offset=0.1)
+            
+            vehicleStriker.ai_set_script(striker_path['script'])
+            vehicleVictim.ai_set_script(victim_path['script'])
 
             # vehicle state extraction and fitness function here
             for number in range(60):
@@ -770,7 +792,7 @@ for _ in range(20): # Number of Generations to be Iterated.
                     break
 
             # input('Press enter when done...')
-            bng.stop_scenario()
+            bng.kill_beamng()
 
 
         finally:
