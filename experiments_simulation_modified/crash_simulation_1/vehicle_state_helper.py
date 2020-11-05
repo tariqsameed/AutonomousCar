@@ -15,7 +15,7 @@ def DamageExtraction(striker_damage, victim_damage, actual_striker_damage, actua
 
         # Striker Damage
         if striker_damage['damage'] > 100:
-            stkeys = striker_damage['partDamage']
+            stkeys = striker_damage['part_damage']
             #front damage
             for keys in stkeys:
                 if 'bumperbar_F' in keys or 'body_wagon' in keys or 'door_FL' in keys or 'headlight_R' in keys or 'bumper_F' in keys or  'headlight_L' in keys or 'fender_R' in keys or 'fender_L' in keys or 'hood' in keys or 'door_FR' in keys:
@@ -59,7 +59,7 @@ def DamageExtraction(striker_damage, victim_damage, actual_striker_damage, actua
 
         # Victim Damage
         if victim_damage['damage'] > 100:
-            vikeys = victim_damage['partDamage']
+            vikeys = victim_damage['part_damage']
             # front damage
             for keys in vikeys:
                 if 'bumperbar_F' in keys or 'door_FL' in keys or 'headlight_R' in keys or 'bumper_F' in keys or 'headlight_L' in keys or 'fender_R' in keys or 'fender_L' in keys or 'hood' in keys or 'door_FR' in keys:
